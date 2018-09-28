@@ -1,0 +1,26 @@
+{
+  "name": "wechat",
+  "description": "wechat develop for tapin",
+  "authors": [
+    {
+      "name": "dxxxue dong",
+      "email": "dxxxue@gmail.com"
+    }
+  ],
+  "config": {
+    "vendor-dir": "./vendor"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    },
+    {
+      "package": false
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "overtrue/wechat": "~4.0"
+  }
+}
