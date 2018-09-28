@@ -5,6 +5,8 @@
  * Desc:
  */
 
+include_once './vendor/autoload.php';
+
 $config = array(
     'app_id' => 'wx8069899a270024e4',
     'secret' => '80658d132a6cdd7d37faa0eb3cdca07e',
