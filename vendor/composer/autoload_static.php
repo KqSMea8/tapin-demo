@@ -4,24 +4,41 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInite781ba7ac382d53be44ee64d5c6d1fae
+class ComposerStaticInit61c1f992b63e648b5c064b090b19c94c
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        '023d27dca8066ef29e6739335ea73bad' => __DIR__ . '/..' . '/symfony/polyfill-php70/bootstrap.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        '32dcc8afd4335739640db7d200c1971d' => __DIR__ . '/..' . '/symfony/polyfill-apcu/bootstrap.php',
+        'fe62ba7e10580d903cc46d808b5961a4' => __DIR__ . '/..' . '/tightenco/collect/src/Collect/Support/helpers.php',
+        'caf31cc6ec7cf2241cb6f12c226c3846' => __DIR__ . '/..' . '/tightenco/collect/src/Collect/Support/alias.php',
+        '3a37ebac017bc098e9a86b35401e7a68' => __DIR__ . '/..' . '/mongodb/mongodb/src/functions.php',
         'f0e7e63bbb278a92db02393536748c5f' => __DIR__ . '/..' . '/overtrue/wechat/src/Kernel/Support/Helpers.php',
         '6747f579ad6817f318cc3a7e7a0abb93' => __DIR__ . '/..' . '/overtrue/wechat/src/Kernel/Helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'Tightenco\\Collect\\' => 18,
+        ),
         'S' => 
         array (
+            'Symfony\\Polyfill\\Php70\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Apcu\\' => 22,
+            'Symfony\\Component\\VarDumper\\' => 28,
             'Symfony\\Component\\HttpFoundation\\' => 33,
             'Symfony\\Component\\Cache\\' => 24,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
+        ),
+        'Q' => 
+        array (
+            'QL\\' => 3,
         ),
         'P' => 
         array (
@@ -38,6 +55,11 @@ class ComposerStaticInite781ba7ac382d53be44ee64d5c6d1fae
         'M' => 
         array (
             'Monolog\\' => 8,
+            'MongoDB\\' => 8,
+        ),
+        'J' => 
+        array (
+            'Jaeger\\' => 7,
         ),
         'G' => 
         array (
@@ -50,12 +72,32 @@ class ComposerStaticInite781ba7ac382d53be44ee64d5c6d1fae
             'EasyWeChat\\' => 11,
             'EasyWeChatComposer\\' => 19,
         ),
+        'A' => 
+        array (
+            'Ares333\\Curl\\' => 13,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Tightenco\\Collect\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/tightenco/collect/src/Collect',
+        ),
+        'Symfony\\Polyfill\\Php70\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php70',
+        ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Polyfill\\Apcu\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-apcu',
+        ),
+        'Symfony\\Component\\VarDumper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
         'Symfony\\Component\\HttpFoundation\\' => 
         array (
@@ -68,6 +110,10 @@ class ComposerStaticInite781ba7ac382d53be44ee64d5c6d1fae
         'Symfony\\Bridge\\PsrHttpMessage\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/psr-http-message-bridge',
+        ),
+        'QL\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jaeger/querylist/src',
         ),
         'Psr\\SimpleCache\\' => 
         array (
@@ -97,6 +143,14 @@ class ComposerStaticInite781ba7ac382d53be44ee64d5c6d1fae
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'MongoDB\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mongodb/mongodb/src',
+        ),
+        'Jaeger\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jaeger/g-http/src',
+        ),
         'GuzzleHttp\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
@@ -117,9 +171,20 @@ class ComposerStaticInite781ba7ac382d53be44ee64d5c6d1fae
         array (
             0 => __DIR__ . '/..' . '/easywechat-composer/easywechat-composer/src',
         ),
+        'Ares333\\Curl\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ares333/php-curl/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
+        'S' => 
+        array (
+            'Sunra\\PhpSimple\\HtmlDomParser' => 
+            array (
+                0 => __DIR__ . '/..' . '/sunra/php-simple-html-dom-parser/Src',
+            ),
+        ),
         'P' => 
         array (
             'Pimple' => 
@@ -129,12 +194,36 @@ class ComposerStaticInite781ba7ac382d53be44ee64d5c6d1fae
         ),
     );
 
+    public static $classMap = array (
+        'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
+        'AssertionError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
+        'Callback' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'CallbackBody' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'CallbackParam' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'CallbackParameterToReference' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'CallbackReturnReference' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'CallbackReturnValue' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'DOMDocumentWrapper' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'DOMEvent' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'DivisionByZeroError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/DivisionByZeroError.php',
+        'Error' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/Error.php',
+        'ICallbackNamed' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'ParseError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ParseError.php',
+        'SessionUpdateTimestampHandlerInterface' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/SessionUpdateTimestampHandlerInterface.php',
+        'TypeError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/TypeError.php',
+        'phpQuery' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'phpQueryEvents' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'phpQueryObject' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+        'phpQueryPlugins' => __DIR__ . '/..' . '/jaeger/phpquery-single/phpQuery.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInite781ba7ac382d53be44ee64d5c6d1fae::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInite781ba7ac382d53be44ee64d5c6d1fae::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInite781ba7ac382d53be44ee64d5c6d1fae::$prefixesPsr0;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit61c1f992b63e648b5c064b090b19c94c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit61c1f992b63e648b5c064b090b19c94c::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit61c1f992b63e648b5c064b090b19c94c::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit61c1f992b63e648b5c064b090b19c94c::$classMap;
 
         }, null, ClassLoader::class);
     }

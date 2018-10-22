@@ -21,8 +21,8 @@ $config = array(
     ],
 );
 
-
 $app =  \EasyWeChat\Factory::officialAccount($config);
+dump($app);
 
 $type = $_GET['type'];
 switch ($type){
