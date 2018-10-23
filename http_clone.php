@@ -20,6 +20,9 @@ class HttpCloneDemo
 
     private $deepin_val = 0;
 
+    private static $_html_dir = '';
+    private static $_image_dir = '';
+
     /**
      * @var array 图片信息
      */
@@ -31,14 +34,25 @@ class HttpCloneDemo
     {
         $this->init();
 //        $this->getHtmlContent(self::$_web_site, 'index.html');
+//        echo 'success!';
+//        exit;
+//        $urls = $this->getHtmlUrl("http://www.iguangj.com/web/partner_list?t=top&top_id=1");
         $urls = $this->getHtmlUrl(self::$_web_site);
         foreach ($urls as $url){
             if (strpos($url, 'http://') === false){
                 continue;
             }
-            echo 'starting....'.$url."\n";
+            $child_urls = $this->getHtmlUrl($url);
+            foreach ($child_urls as $child){
+                echo 'starting....' . $child . "\n";
+                $this->getHtmlContent($child);
+                echo 'ending...' . $child . "\n";
+            }
+
+            echo 'starting....' . $url . "\n";
             $this->getHtmlContent($url);
-            echo 'ending...'.$url."\n";
+            echo 'ending...' . $url . "\n";
+
         }
 //        $this->getHtmlContent(self::$_web_site);
         echo 'success!';
@@ -76,11 +90,11 @@ class HttpCloneDemo
     {
         switch ($ext) {
             case 'html':
-                $file_name = './html/' . md5($name) . '.html';
+                $file_name = self::$_html_dir. md5($name) . '.html';
                 break;
 
             case 'image':
-                $file_name = './image/' . md5($name) . '.jpg';
+                $file_name = '../image/' .self::$_image_dir. md5($name) . '.jpg';
                 break;
 
             default:
@@ -127,9 +141,17 @@ class HttpCloneDemo
 //        if ($this->deepin_val > self::$_crawl_deepin){
 //            return false;
 //        }
+        if (strpos($url, 'iguangj.com') === false ) {
+            return false;
+        }
         $html = \Sunra\PhpSimple\HtmlDomParser::str_get_html(file_get_contents($url));
+        if (!is_object($html)){
+            return false;
+        }
         foreach ($html->find('a') as $a_element) {
-            $a_element->href = $this->getMd5Name($a_element->href, 'html');
+            if (@$a_element->href != 'http://www.iguangj.com/') {
+                $a_element->href = $this->getMd5Name($a_element->href, 'html');
+            }
         }
         foreach (array_filter($html->find('img')) as $a_element) {
             if (strpos($a_element->src, 'http://') === false) {
@@ -139,7 +161,7 @@ class HttpCloneDemo
             $a_element->src = $this->getMd5Name($a_element->src, 'image');
             if (!in_array($a_element->src, $this->image_data)){
                 $img_content = file_get_contents($origin_element);
-                file_put_contents(self::$_clone_dir . $a_element->src, $img_content);
+                file_put_contents(self::$_clone_dir.'html/'  .$a_element->src, $img_content);
                 $this->image_data[] = $a_element->src;
             }
         }
@@ -148,8 +170,9 @@ class HttpCloneDemo
             file_put_contents($down_file, $html);
             return true;
         }else{
-            $down_file = self::$_clone_dir . $this->getMd5Name($url, 'html');
+            $down_file = self::$_clone_dir . 'html/' . $this->getMd5Name($url, 'html');;
         }
+        echo  'downing...'.$down_file."\n";
         file_put_contents($down_file, $html);
 
 //        $url_data = $this->getHtmlUrl($url);
