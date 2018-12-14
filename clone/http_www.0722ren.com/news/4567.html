@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>15大另类经济学指数：服务员越漂亮 经济越低迷 - 随州人才网</title>
+<meta name="description" content="PPI、CPI、失业率、通胀率、M0、M1、M2……等晦涩难懂的指标已经被一些经济学者抛弃，他们转而采用许许多多非传统的指数来衡量经">
+<meta name="keywords" content="15大另类经济学指数：服务员越漂亮 经济越低迷">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/news.css" rel="stylesheet" type="text/css">
+<script src="../templates/demo11/js/jquery.js" type="text/javascript"></script><script type="text/javascript">
+$(document).ready(function()
+{
+		var id="4567";
+		var tsTimeStamp= new Date().getTime();
+		$.get("/plus/ajax_click.php", { "id": id,"time":tsTimeStamp,"act":"news_click"},
+			function (data,textStatus)
+			 {			
+				$("#click").html(data);
+			 }
+		);
+		$(".search_news").click(function(){
+			var key = $("#key").val();
+			news_search_location(key);
+		});
+		function news_search_location(key)
+		{
+			$("body").append('<div id="pageloadingbox">页面加载中....<div id="pageloadingbg">');
+			$("#pageloadingbg").css("opacity", 0.5);
+			$.get("/plus/ajax_search_location.php", {"act":"QS_newssearch","key":key},
+					function (data,textStatus)
+					 {
+						 window.location.href=data;
+					 }
+				);
+		}
+		// 等比例缩放图片
+		var w = $(".left_area .news_box").width();//容器宽度 
+	    $(".news_txt img").each(function(){//如果有很多图片，我们可以使用each()遍历 
+	        var img_w = $(this).width();//图片宽度 
+	        var img_h = $(this).height();//图片高度 
+	        if(img_w>w){//如果图片宽度超出容器宽度--要撑破了 
+	            var height = (w*img_h)/img_w; //高度等比缩放 
+	            $(this).css({"width":w,"height":height});//设置缩放后的宽度和高度 
+	        } 
+	    });
+});
+</script>
+</head>
+<body>
+<div id="new-header">
+	<div class="top-bar">
+	<div class="index-container clearfix">
+		<div class="welcome f-left" id="top_loginform"></div>
+		<ul class="top-nav f-right">
+<li class="t-nav-item f-left mobile"><a href="../mobile.html" class="underline">手机频道</a></li>
+			<li class="t-nav-item f-left"><a href="../index.html" class="underline nav-link">网站首页</a></li>
+			<li class="t-nav-item f-left mr15"><a href="../plus/shortcut.php" class="underline nav-link">保存到桌面</a></li>
+			<li class="t-nav-item f-left nav-more">
+				<span class="nav-more-type">网站导航<i class="more-arrow"></i></span>
+				<div class="sub-menu-out">
+                	<div class="sub-menu nav">
+                        <ul>
+<li>
+                            	<strong>个人服务</strong>
+                                <a href="../user/personal/personal_resume.php%EF%BC%9Fact=make1" target="_blank">创简历</a>
+                                <a href="../salary.html" target="_blank">查薪资</a>
+                                <a href="../evaluation/index.php" target="_blank">人才测评</a>
+                                <a href="../jobs/map-search.php%EF%BC%9Fid=1" target="_blank">地图找工作</a>
+                            </li>
+                            <li>
+                            	<strong>企业服务</strong>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank">发职位</a>
+                                <a href="../jobfair/jobfair-list.php" target="_blank">招聘会</a>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=simple_jobs" target="_blank">微信招聘</a>
+                                <a href="../hrtools/index.php" target="_blank">HR工具箱</a>
+                            </li>
+                            <li class="bd0">
+                            	<strong>更多</strong>
+                                <a rel="nofollow" href="../campus/index.php" target="_blank">校园招聘</a>
+                                <a rel="nofollow" href="../hunter/index.html" target="_blank">猎聘专区</a>
+                                <a rel="nofollow" href="../train/index.html" target="_blank">培训信息</a>
+                                <a rel="nofollow" href="../shop/index.php" target="_blank">积分商城</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+			</li>
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+	//顶部部登录
+	$.get('/plus/ajax_user.php', {"act":"top_loginform"}, function(data) {
+		$("#top_loginform").html(data);
+	});
+	$(".nav-more").hover(function() {
+		$(".sub-menu").toggle();
+	});
+</script><div class="header-main">
+		<div class="index-container clearfix">
+			<div class="common-logo f-left"><a href="../index.html"><img src="../data/images/logo.png" alt="随州人才网" width="251" height="85"></a></div>
+			<!--<div class="sub-station f-left">
+				<span class="station-control">总站<i class="station-arrow"></i></span>
+			</div>-->
+			<ul class="common-nav f-right">
+<li><a href="../index.html" target="_self">首  页</a></li>
+								<li><a href="../jobs/jobs-list.php" target="_self">找工作</a></li>
+								<li><a href="../resume/resume-list.php" target="_self">聘人才</a></li>
+								<li><a href="../simple/simple-list.php" target="_self">微招聘</a></li>
+								<li><a href="../hrtools/index.php" target="_self">HR工具箱</a></li>
+								<li><a href="../company/index.php" target="_self">企业黄页</a></li>
+								<li><a href="../jobs/map-search-1.html" target="_self">地图找工作</a></li>
+								<li class="active"><a href="index.html" target="_self">新闻资讯</a></li>
+							</ul>
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.common-nav li:last').css({'border-right':0});
+		$('.t-nav-item:last').css({'margin-right':0});
+	});
+</script><!-- 当前位置 --><div class="page_location link_bk">
+当前位置：<a href="../index.html">首页</a> &gt; <a href="index.html">新闻资讯</a> &gt; 
+<a href="news-list.php%EF%BC%9Fid=5">职场动态</a> &gt; 正文
+</div>
+	<!-- 主体内容 -->
+	<div class="container link_bk">
+		
+		<!-- 左边内容 -->
+		<div class="left_area">
+			<div class="news_box">
+				<div class="com_container">
+					<div class="title">15大另类经济学指数：服务员越漂亮 经济越低迷</div>
+					<div class="news_dateil">
+						<div class="time">2015-12-29 01:20</div>
+						<div class="time">查看：<span id="click"></span> 次</div>
+						<div>
+<a href="javascript:window.print();">[打印]</a> <a href="javascript:void(0);" onclick="window.external.addFavorite(parent.location.href,document.title);">[收藏]</a>
+</div>
+						<div class="clear"></div>
+					</div>
+					<div class="news_txt">
+						<p></p>
+<p>PPI、CPI、失业率、通胀率、M0、M1、M2……等晦涩难懂的指标已经被一些经济学者抛弃，他们转而采用许许多多非传统的指数来衡量经济，因为他们认为这些非传统的指数更能够准确地揭示经济的真正走向。其中一些非传统的指数可能已经被大众熟知，比如，口红指数、摩天大楼的诅咒、虐待儿童指数、男性内衣指数等。今天我们就一起来看看这些指数到底有哪些，究竟是怎么与我们的生活息息相关的。</p>
+<p><br>
+1、经济不好 儿童易被虐<br>
+经济学家研究发现，在经济低迷、消费者信心低落的时候，儿童遭受虐待的几率就会上升。经济学家珍妮・布鲁克斯(Jeanne Brooks-Gunn)等人指出，在美国经济“大衰退”(Great Recession)期间，消费者信心指数越糟糕，儿童遭痛打的可能性就会越大。</p>
+<p><br>
+2、男性内衣指数<br>
+在经济低迷的时候，失业率上升、家庭收入减少，为了节省支出，家庭成员都会节衣缩食。为了节省开支，男人将会放弃购买新内衣。对于该指数美联储前主席艾伦・格林斯潘(Alan Greenspan)比较支持。此外，研究公司Mintel研究发现，在2009年美国次贷危机（subprime crisis）爆发不久后，美国男性内衣销量自2003年以来首次大幅下降2.3%。</p>
+<p><br>
+3、服务员越漂亮 经济越低迷<br>
+据纽约观察家此前报道，如果服务员越来越漂亮，那就意味着经济越来越糟糕。观察家的解释是，当经济红火，颇有点“资色”的女性很容易找到工作环境舒适即不属厌恶型行业的工作，诸如商品模特、推销员等。此外，男性经济宽裕后更容易“金屋藏娇”。在经济低迷的时候，女性不容易找到工作，“金屋藏娇”的现象也会减少。</p>
+<p>4、摩天大楼指数<br>
+摩天大楼指数是经济运行状况的先行指标，1999年，德意志银行证券驻香港分析师安德鲁・劳伦斯(AndrewLawrence)首度提出 了“摩天大楼指数”即“劳伦斯魔咒”，因为他发现经济衰退或股市萧条往往都发生在新高楼落成的前后。这一惊人发现被称为“百年病态关联”：大厦建成，经济衰退！</p>
+<p><br>
+1930年“克莱斯勒大厦”（319米）和1931年“帝国大厦”（381米）完工，当时 纽约股市崩盘，碰上当时美国与全球经济大萧条时期。1973年纽约“世界贸易中心”（417米）、1974年芝加哥“威利斯大厦”（447米 ）相继落成后，全球发生了石油危机。1997年，吉隆坡“双子塔楼”（452米）成为世界最高建筑之际，同样也发生了 亚洲金融危机。台北101大楼2000年至2001年建成，高科技泡沫破灭，全球股市狂泻。具体的案例还有很多，这只是其中几个典型的案例。</p>
+<p>5、口红指数<br>
+该指数是由雅诗兰黛集团前总裁李奥纳多・兰黛(Leonard Lauder)提出。他以雅诗兰黛实际的营收数字做分析，发现口红的销售量在经济衰退期间逆势热销。金融教育网站Investopedia发布的数据显示，在9・11恐怖袭击后的经济衰退期内，口红销量翻了一番。</p>
+<p><br>
+在美国，每当经济不景气时，口红的销量反而直线上升。口红作为一种“廉价的非必要之物”，可以对消费者起到一种“安慰”作用，在美国经济不景气的情况下，人们仍会有强烈的消费欲望，所以会转而购买比较廉价的商品。因此口红销量大涨一般会出现在经济低迷的时候。</p>
+<p>6、自行车死亡事故比率<br>
+在经济繁荣的时候，自行车事故的比率通常呈现下行的态势，经济低迷疲软的时候，自行车事故比率则会上升。英国交通部公布的数据显示，2011年，削减举措生效后，自行车死亡事故比率同比增长12%。自行车事故死亡率在“大萧条”期间也攀升了58%。这可能与经济不景气，人们节省开支，放弃汽车，选择骑车出行有关。</p>
+<p>7、方便面指数<br>
+Preeyanuch Manomathaya曾针对泰国方便面和泰国经济之间的关联进行过研究。结果发现，在经济衰退最糟糕的阶段，即泰国经济萎缩4%，方便面的销量遭遇创纪录的跌幅。2009年，Thai President Foods公布38年内旗下方便面销量首次出现下滑。这里的方便面主要指泰国的大牌方便面MaMa，方便面指数也可以称为MaMa指数，是泰国市场专属的经济指数。</p>
+<p><br>
+8、高跟鞋指数<br>
+IBM的特雷夫・戴维斯Trevor Davis)博士指出，“经济越不景气，高跟鞋的鞋跟就会越高。”持这种观点的经济学家不在少数。他们认为，在经济繁荣富裕之际，女人反倒爱穿穿平底鞋。上个世纪二十年代，低跟鞋和平底鞋畅销。然而，在“大萧条”期间，低跟鞋和平底鞋销量下降，而高跟鞋的销量却上升。</p>
+<p>9、女性裙子越短 经济越发达<br>
+“美国仲裁之父”泰莱指出，裙摆离地尺码与股市盛衰成正比，即裙脚愈高股市愈旺，裙脚着地则股市“衰到贴地”，而此观点已被论证，从那张根据纽约名店 Smith Barney不同长度裙子的年销售量配合、印证股市指数绘制的走势图，可以清楚地看出在1897年至1990年间，裙摆短长与股市升降的确有正比关系。</p>
+<p><br>
+泰莱称，经济增长时，女人会穿短裙，因为她们要炫耀里面的长丝袜；销售中的“战斗机”薇芯搜索“销售”加入我们。当经济不景气时，女人买不起丝袜，只好把裙边放长，来掩饰没有穿长丝袜的窘迫。</p>
+<p>10、吸毒指数<br>
+意大利财政部次长“论股”理论指出，股市狂升爆泻或与股民大都吸毒有相关性，政府正在考虑应否与米兰证券交易所合作，展开一项对有关人士的“吸毒测验”，换句话说，如果“吸毒指数”上扬意味着股市狂旺急挫，反之则是大牛皮！</p>
+<p><br>
+11、鳄鱼数量指数<br>
+鳄鱼皮制品大多属于非必需品，而且价格一般偏高，例如高端鳄鱼皮包包的售价一般在2万美元以上。只有经济繁荣，人们收入增加的时候，人们才会考虑去购买鳄鱼皮制品。2009年美国爆发次贷危机，市场对鳄鱼皮皮包的需求大幅萎缩，路易斯安那州的鳄鱼养殖场陷入债务偿还困境。与此同时，鳄鱼在不停的产仔。但是，它们的皮已经不再被需要。因此鳄鱼数量越多偏多，经济运行就偏好。</p>
+<p>12、席梦思指数<br>
+据Business Insider此前报道，经济繁荣时，人们心情愉悦，房事频繁，席梦思自然销售畅旺。而经济萧条时，诸事不顺，贫贱夫妻百事哀，牛衣对泣，心思不在床上，席梦思的销量自然下滑。目前，席梦思指数成为经济学家观察经济景气的重要指标之一。</p>
+<p><br>
+13、约会指数<br>
+当经济开始走下坡路时，一切变得糟糕，人们开始寻找约会对象。或许是因为孤单，或许想在沉闷的氛围中寻找一丝明媚。全球最大的婚恋网站Match.com注意到，每当经济低迷时，网站的访问量就会大幅增加。</p>
+<p><br>
+14、言情小说指数<br>
+在经济不景气时，以旧时代为背景、色情暴露的、充斥性爱内容的言情小说极其畅销。2008年美国次贷危机席卷全球，大型言情读物出版商Harlequin销量却上涨32%。该出版商认为，言情小说内容相对轻松，可以让读者紧绷的神经得以缓解。此外，相对于其他娱乐产品或项目，书籍的价格相对较低。在二十世纪九十年代初衰退期间，Harlequin也曾出现类似的销量大涨。与该指数类似的指数还有票房指数。</p>
+<p>15、票房指数<br>
+严峻的经济环境反而能够有效促进票房走高。研究者认为，在经济不乐观时期，那种既能够满足消费者心理慰藉需求，价格又低到能消费得起的产品，往往能获得更好的市场待遇，影院能够让人沉浸其中而获得短暂的心理慰藉。</p>
+<p>这些指数不仅简单易懂，充满趣味性，而且贴近平民百姓的生活。社会是由千千万万个普通人组成的社会，社会经济的运行状况是在每个普通人经济行为共同作用下产生的结果。经济学和经济理论就存在于普通大众的生活中，因此经济学和经济学指数应该被大众所熟知，以便大众更好地调节自己的经济行为。<br></p>
+						<div class="share">
+							<!-- Baidu Button BEGIN -->
+						    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+						        <a class="bds_qzone"></a>
+						        <a class="bds_tsina"></a>
+						        <a class="bds_tqq"></a>
+						        <a class="bds_renren"></a>
+						        <span class="bds_more">更多</span>
+						    </div>
+						<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=659075"></script><script type="text/javascript" id="bdshell_js"></script><script type="text/javascript">
+							document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+						</script><div class="clear"></div>	
+						<!-- Baidu Button END -->
+						</div>
+						<div class="clear"></div>
+						<div class="next_page">
+							<div class="prev">
+																<a href="4565.html">上一篇：这些不起眼的职业 工资分分钟秒杀上班狗</a>
+															</div>
+							<div class="next">
+																<a href="4572.html">下一篇：涨不涨？2016年职工工资将这样调整</a>
+															</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+		<!-- 右边内容 -->
+		<div class="right_area">
+			
+			<div class="right_box">
+				<div class="title_box">
+					<h5>资讯分类</h5>
+				</div>
+				<div class="list">
+					<ul class="sort">
+<li><a href="news-list.php%EF%BC%9Fid=11">随州资讯</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=6">政策法规</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=13">下载中心</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=5" class="select">职场动态</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=4">面试指南</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=3">简历指南</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=2">职业培训</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=7">创业精英</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=8">职场测试</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=9">职场智慧</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=10">职场策略</a></li>
+												<div class="clear"></div>
+					</ul>
+<div class="clear"></div>
+				</div>
+			</div>
+			<div class="right_search">
+				<div class="news_search"><input type="text" name="key" id="key"></div>
+				<button class="news_sreach_but search_news">搜索</button>
+			</div>
+			<div class="clear"></div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>相关阅读</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6497.html" target="_blank">2018年金秋招聘月活动开展在即</a></li>
+												<li><a href="6374.html" target="_blank">随州一男子伤人潜逃16年 返乡求职老</a></li>
+												<li><a href="6358.html" target="_blank">中介发布名企暑期工招聘信息 收钱后</a></li>
+												<li><a href="6261.html" target="_blank">创业公司招人难：“生怕电话被求职</a></li>
+												<li><a href="6244.html" target="_blank">有钱开公司没钱开工资 随县一“老赖</a></li>
+												<li><a href="6197.html" target="_blank">曾都一男子涉嫌职务侵占被刑事拘留</a></li>
+												<li><a href="5851.html" target="_blank">女儿想卖房留学愁坏父母</a></li>
+											</ul>
+</div>
+			</div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>最新资讯</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6507.html" target="_blank">随县万福店农场“农民”评上职称了</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+											</ul>
+</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- 主体内容 结束 -->
+	<div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="../suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="../explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="../subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="../explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="../hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="../train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="../resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="../hrtools/hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="../user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="../jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="../data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="../index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html>

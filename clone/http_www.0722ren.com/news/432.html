@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>充分准备 应对电话面试 - 随州人才网</title>
+<meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp; 世界经理人文摘消息：现在什么都流行“远程”了，“远程会议”、“远程工作”，还有―――“远程面试”：在收">
+<meta name="keywords" content="充分准备 应对电话面试">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/news.css" rel="stylesheet" type="text/css">
+<script src="../templates/demo11/js/jquery.js" type="text/javascript"></script><script type="text/javascript">
+$(document).ready(function()
+{
+		var id="432";
+		var tsTimeStamp= new Date().getTime();
+		$.get("/plus/ajax_click.php", { "id": id,"time":tsTimeStamp,"act":"news_click"},
+			function (data,textStatus)
+			 {			
+				$("#click").html(data);
+			 }
+		);
+		$(".search_news").click(function(){
+			var key = $("#key").val();
+			news_search_location(key);
+		});
+		function news_search_location(key)
+		{
+			$("body").append('<div id="pageloadingbox">页面加载中....<div id="pageloadingbg">');
+			$("#pageloadingbg").css("opacity", 0.5);
+			$.get("/plus/ajax_search_location.php", {"act":"QS_newssearch","key":key},
+					function (data,textStatus)
+					 {
+						 window.location.href=data;
+					 }
+				);
+		}
+		// 等比例缩放图片
+		var w = $(".left_area .news_box").width();//容器宽度 
+	    $(".news_txt img").each(function(){//如果有很多图片，我们可以使用each()遍历 
+	        var img_w = $(this).width();//图片宽度 
+	        var img_h = $(this).height();//图片高度 
+	        if(img_w>w){//如果图片宽度超出容器宽度--要撑破了 
+	            var height = (w*img_h)/img_w; //高度等比缩放 
+	            $(this).css({"width":w,"height":height});//设置缩放后的宽度和高度 
+	        } 
+	    });
+});
+</script>
+</head>
+<body>
+<div id="new-header">
+	<div class="top-bar">
+	<div class="index-container clearfix">
+		<div class="welcome f-left" id="top_loginform"></div>
+		<ul class="top-nav f-right">
+<li class="t-nav-item f-left mobile"><a href="../mobile.html" class="underline">手机频道</a></li>
+			<li class="t-nav-item f-left"><a href="../index.html" class="underline nav-link">网站首页</a></li>
+			<li class="t-nav-item f-left mr15"><a href="../plus/shortcut.php" class="underline nav-link">保存到桌面</a></li>
+			<li class="t-nav-item f-left nav-more">
+				<span class="nav-more-type">网站导航<i class="more-arrow"></i></span>
+				<div class="sub-menu-out">
+                	<div class="sub-menu nav">
+                        <ul>
+<li>
+                            	<strong>个人服务</strong>
+                                <a href="../user/personal/personal_resume.php%EF%BC%9Fact=make1" target="_blank">创简历</a>
+                                <a href="../salary.html" target="_blank">查薪资</a>
+                                <a href="../evaluation/index.php" target="_blank">人才测评</a>
+                                <a href="../jobs/map-search.php%EF%BC%9Fid=1" target="_blank">地图找工作</a>
+                            </li>
+                            <li>
+                            	<strong>企业服务</strong>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank">发职位</a>
+                                <a href="../jobfair/jobfair-list.php" target="_blank">招聘会</a>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=simple_jobs" target="_blank">微信招聘</a>
+                                <a href="../hrtools/index.php" target="_blank">HR工具箱</a>
+                            </li>
+                            <li class="bd0">
+                            	<strong>更多</strong>
+                                <a rel="nofollow" href="../campus/index.php" target="_blank">校园招聘</a>
+                                <a rel="nofollow" href="../hunter/index.html" target="_blank">猎聘专区</a>
+                                <a rel="nofollow" href="../train/index.html" target="_blank">培训信息</a>
+                                <a rel="nofollow" href="../shop/index.php" target="_blank">积分商城</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+			</li>
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+	//顶部部登录
+	$.get('/plus/ajax_user.php', {"act":"top_loginform"}, function(data) {
+		$("#top_loginform").html(data);
+	});
+	$(".nav-more").hover(function() {
+		$(".sub-menu").toggle();
+	});
+</script><div class="header-main">
+		<div class="index-container clearfix">
+			<div class="common-logo f-left"><a href="../index.html"><img src="../data/images/logo.png" alt="随州人才网" width="251" height="85"></a></div>
+			<!--<div class="sub-station f-left">
+				<span class="station-control">总站<i class="station-arrow"></i></span>
+			</div>-->
+			<ul class="common-nav f-right">
+<li><a href="../index.html" target="_self">首  页</a></li>
+								<li><a href="../jobs/jobs-list.php" target="_self">找工作</a></li>
+								<li><a href="../resume/resume-list.php" target="_self">聘人才</a></li>
+								<li><a href="../simple/simple-list.php" target="_self">微招聘</a></li>
+								<li><a href="../hrtools/index.php" target="_self">HR工具箱</a></li>
+								<li><a href="../company/index.php" target="_self">企业黄页</a></li>
+								<li><a href="../jobs/map-search-1.html" target="_self">地图找工作</a></li>
+								<li class="active"><a href="index.html" target="_self">新闻资讯</a></li>
+							</ul>
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.common-nav li:last').css({'border-right':0});
+		$('.t-nav-item:last').css({'margin-right':0});
+	});
+</script><!-- 当前位置 --><div class="page_location link_bk">
+当前位置：<a href="../index.html">首页</a> &gt; <a href="index.html">新闻资讯</a> &gt; 
+<a href="news-list.php%EF%BC%9Fid=6">政策法规</a> &gt; 正文
+</div>
+	<!-- 主体内容 -->
+	<div class="container link_bk">
+		
+		<!-- 左边内容 -->
+		<div class="left_area">
+			<div class="news_box">
+				<div class="com_container">
+					<div class="title">充分准备 应对电话面试</div>
+					<div class="news_dateil">
+						<div class="time">2013-06-26 17:28</div>
+						<div class="time">查看：<span id="click"></span> 次</div>
+						<div>
+<a href="javascript:window.print();">[打印]</a> <a href="javascript:void(0);" onclick="window.external.addFavorite(parent.location.href,document.title);">[收藏]</a>
+</div>
+						<div class="clear"></div>
+					</div>
+					<div class="news_txt">
+						<p>    世界经理人文摘消息：现在什么都流行“远程”了，“远程会议”、“远程工作”，还有―――“远程面试”：在收到简历之后，为了在面试前做进一步的筛选，用人单位往往用打电话的形式进行首轮面试。对于大学毕业生来说，电话面试里用人单位将如何提问，应聘者又该如何应对？让“5个W”来回答你。</p>
+<p>　<strong>　why：用人单位为什么要进行电话面试？</strong></p>
+<p>　　赫敦职业咨询的专家Connie对记者说，求职者越来越多，用人单位的选择也越来越多，有时甚至是上百个人在争取一个职位。这就有必要在面试前先对求职者做一轮筛选，所以用人单位往往选择先在电话里和求职者做一次面试，对求职者各方面的情况有一个初步的掌握，再决定是否给他(她)面试的机会；</p>
+<p>　　另一方面，随着大学毕业生们在制作简历等方面的“求职技巧”越来越丰富，他们简历里的“水分”也开始增大，这使得用人单位无法单单从简历和求职信上去了解一个人。为了“挤”去水分，找到合适的人参加面试，用人单位也乐于先采用电话面试的手段。</p>
+<p>　　<strong>what：电话里面试些什么？</strong></p>
+<p>　　电话里用人单位的人事部门会问些什么问题？这个可能是毕业生们最关心的问题了。Connie说，电话面试，用人单位首先要做的是“Reconfirm”：对求职者求职信和简历上的内容进行重新的确认，看看是否有漏洞，是否有不符合事实的地方。在接听电话的时候，可以把自己的简历和求职信放在面前，这样可以对用人单位的问题有一个提前的准备。在对简历上内容进行了确认以后，用人单位还会在电话里问一些关于工作的问题，比如你的专业技能，你对应聘职位的个人看法，有的时候用人会问得更细节一些，问题会涉及到求职者的人品、阅历、视野等等。</p>
+<p>　　<strong>who：电话那头的人是谁？</strong></p>
+<p>　　“知己知彼，百战不殆。”想从容面对电话面试，就得先了解电话那头的“对手”是谁。对应届大学生进行电话面试，除非你是特别吸引公司的“牛人”，否则公司的人事主管是不会亲自去电话面试一个大学生的。专家说，公司里打电话给毕业生的一般是HR助理，顶多也就是人事专员。毕业生们要当心的是，打电话的人很可能会因为个人的好恶，而决定是否把你推荐给上级。Connie说，现在的大学生毕业最大的问题是不懂得基本的礼仪，更不要说什么亲和力了。</p>
+<p>　　接电话的时候不知道说“你好”，而是一个“冲头冲脑”的“喂”字，很可能就给打电话的人事助理一个先入为主的印象，“印象分”差了，接下来电话面试的效果就可想而知了。</p>
+<p>　　<strong>where：接电话也要选地方。 </strong></p>
+<p>　　安静是接受电话面试时最重要的条件。如果是事先和单位约好，那在约好的时间段应聘者要确保自己处在一个不被打扰的环境，这样你就不会被别的事情弄得心绪不宁，比如不要一面接电话一面上网，避免MSN或者QQ的提示音响个不停，或者让“你有未读邮件”这样的讯息跳出来影响你们的会谈；不要在闹哄哄的马路边或者茶坊里接电话，这样一来听不清对方的提问，二来嘈杂的环境也容易让人焦躁。如果求职者接到对方电话却不方便回答，那应该及时说明“不好意思，我现在不方便接电话，我们是否可以重新约一个时间”等，用人单位一般都会通情达理地同意你的要求。但千万不要横躺在椅子里进行电话面试，这样的姿势一定会影响到你的声音和态度。</p>
+<p><br> <strong>   when：正确的时间做正确的事。</strong></p>
+<p>　　听到多一个毕业生这样的抱怨：“某单位突然打电话来要电话面试我，电话中那边的沙哑的英语，再加上我紧张的心情，简直不知道对方在说什么，结束的时候我连‘Thanks’都忘了说了！”不少应聘者和用人单位说，可以随时打电话过来面试，结果自己却没有准备好，不是太仓促就是不清醒，最后使电话面试以失败而告终。所以一旦投递了自己的简历，就要随时做好对方打电话来的准备，并把本人的简历、笔记本、笔放在电话附近。如果要和用人单位商量电话面试的时间的话，尽量把时间安排在工作时间以内，你很难要求用人单位的HR在工作时间以外再抽时间去面试一个应届毕业生。</p>
+<p>　　<strong>电话面试成功秘笈：</strong></p>
+<p><strong>　　No.1记得微笑，对方会感受到你的笑容。</strong></p>
+<p><strong>　　No.2准备一杯水，在面试的过程你肯定会需要它。</strong></p>
+<p><strong>　　No.3不要主动把时间拖得太长，对方也有一个时间表，不可能在一个人身上花太多时间。</strong></p>
+<p><strong>　　No.4不要主动提出薪水报酬方面的问题，但如果被问到这样的问题，也不要刻意回避。</strong></p>
+<p><strong>　　No.5面试是双方相互观察和了解的过程，应聘者也可以向面试官提出任何你想了解的问题，这样会显得你更加关注公司。<br><br></strong>（编辑：王茜）</p>
+<br><br><div class="share">
+							<!-- Baidu Button BEGIN -->
+						    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+						        <a class="bds_qzone"></a>
+						        <a class="bds_tsina"></a>
+						        <a class="bds_tqq"></a>
+						        <a class="bds_renren"></a>
+						        <span class="bds_more">更多</span>
+						    </div>
+						<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=659075"></script><script type="text/javascript" id="bdshell_js"></script><script type="text/javascript">
+							document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+						</script><div class="clear"></div>	
+						<!-- Baidu Button END -->
+						</div>
+						<div class="clear"></div>
+						<div class="next_page">
+							<div class="prev">
+																<a href="427.html">上一篇：5点让面试官更加喜欢你</a>
+															</div>
+							<div class="next">
+																<a href="434.html">下一篇：职场面试揭秘：原来你是这样被“刷”掉的</a>
+															</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+		<!-- 右边内容 -->
+		<div class="right_area">
+			
+			<div class="right_box">
+				<div class="title_box">
+					<h5>资讯分类</h5>
+				</div>
+				<div class="list">
+					<ul class="sort">
+<li><a href="news-list.php%EF%BC%9Fid=11">随州资讯</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=6" class="select">政策法规</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=13">下载中心</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=5">职场动态</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=4">面试指南</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=3">简历指南</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=2">职业培训</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=7">创业精英</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=8">职场测试</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=9">职场智慧</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=10">职场策略</a></li>
+												<div class="clear"></div>
+					</ul>
+<div class="clear"></div>
+				</div>
+			</div>
+			<div class="right_search">
+				<div class="news_search"><input type="text" name="key" id="key"></div>
+				<button class="news_sreach_but search_news">搜索</button>
+			</div>
+			<div class="clear"></div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>相关阅读</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6492.html" target="_blank">随州市关于进一步加强医疗救助 同基</a></li>
+												<li><a href="6474.html" target="_blank">跨省异地就医直接结算相关政策解读</a></li>
+												<li><a href="6463.html" target="_blank">随州10月底可网上办理养老保险</a></li>
+												<li><a href="6439.html" target="_blank">湖北省大学生创业孵化示范基地奖补</a></li>
+												<li><a href="6438.html" target="_blank">湖北省就业提升计划实施方案和社保</a></li>
+												<li><a href="6405.html" target="_blank">“黑名单”管理+联合惩戒 让农民工</a></li>
+											</ul>
+</div>
+			</div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>最新资讯</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6507.html" target="_blank">随县万福店农场“农民”评上职称了</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+											</ul>
+</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- 主体内容 结束 -->
+	<div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="../suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="../explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="../subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="../explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="../hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="../train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="../resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="../hrtools/hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="../user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="../jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="../data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="../index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html>

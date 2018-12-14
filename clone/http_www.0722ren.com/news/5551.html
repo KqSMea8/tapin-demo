@@ -1,0 +1,533 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>学区值钱而学历不值钱 是学区错了还是学历错了 - 随州人才网</title>
+<meta name="description" content="
+	文/巴九灵（微信公众号：吴晓波频道）
+
+
+	最近这些年，每次中国房价大涨的时候，有两种观点一定会在社交媒体上被广为流传。">
+<meta name="keywords" content="学区值钱而学历不值钱 是学区错了还是学历错了">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/news.css" rel="stylesheet" type="text/css">
+<script src="../templates/demo11/js/jquery.js" type="text/javascript"></script><script type="text/javascript">
+$(document).ready(function()
+{
+		var id="5551";
+		var tsTimeStamp= new Date().getTime();
+		$.get("/plus/ajax_click.php", { "id": id,"time":tsTimeStamp,"act":"news_click"},
+			function (data,textStatus)
+			 {			
+				$("#click").html(data);
+			 }
+		);
+		$(".search_news").click(function(){
+			var key = $("#key").val();
+			news_search_location(key);
+		});
+		function news_search_location(key)
+		{
+			$("body").append('<div id="pageloadingbox">页面加载中....<div id="pageloadingbg">');
+			$("#pageloadingbg").css("opacity", 0.5);
+			$.get("/plus/ajax_search_location.php", {"act":"QS_newssearch","key":key},
+					function (data,textStatus)
+					 {
+						 window.location.href=data;
+					 }
+				);
+		}
+		// 等比例缩放图片
+		var w = $(".left_area .news_box").width();//容器宽度 
+	    $(".news_txt img").each(function(){//如果有很多图片，我们可以使用each()遍历 
+	        var img_w = $(this).width();//图片宽度 
+	        var img_h = $(this).height();//图片高度 
+	        if(img_w>w){//如果图片宽度超出容器宽度--要撑破了 
+	            var height = (w*img_h)/img_w; //高度等比缩放 
+	            $(this).css({"width":w,"height":height});//设置缩放后的宽度和高度 
+	        } 
+	    });
+});
+</script>
+</head>
+<body>
+<div id="new-header">
+	<div class="top-bar">
+	<div class="index-container clearfix">
+		<div class="welcome f-left" id="top_loginform"></div>
+		<ul class="top-nav f-right">
+<li class="t-nav-item f-left mobile"><a href="../mobile.html" class="underline">手机频道</a></li>
+			<li class="t-nav-item f-left"><a href="../index.html" class="underline nav-link">网站首页</a></li>
+			<li class="t-nav-item f-left mr15"><a href="../plus/shortcut.php" class="underline nav-link">保存到桌面</a></li>
+			<li class="t-nav-item f-left nav-more">
+				<span class="nav-more-type">网站导航<i class="more-arrow"></i></span>
+				<div class="sub-menu-out">
+                	<div class="sub-menu nav">
+                        <ul>
+<li>
+                            	<strong>个人服务</strong>
+                                <a href="../user/personal/personal_resume.php%EF%BC%9Fact=make1" target="_blank">创简历</a>
+                                <a href="../salary.html" target="_blank">查薪资</a>
+                                <a href="../evaluation/index.php" target="_blank">人才测评</a>
+                                <a href="../jobs/map-search.php%EF%BC%9Fid=1" target="_blank">地图找工作</a>
+                            </li>
+                            <li>
+                            	<strong>企业服务</strong>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank">发职位</a>
+                                <a href="../jobfair/jobfair-list.php" target="_blank">招聘会</a>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=simple_jobs" target="_blank">微信招聘</a>
+                                <a href="../hrtools/index.php" target="_blank">HR工具箱</a>
+                            </li>
+                            <li class="bd0">
+                            	<strong>更多</strong>
+                                <a rel="nofollow" href="../campus/index.php" target="_blank">校园招聘</a>
+                                <a rel="nofollow" href="../hunter/index.html" target="_blank">猎聘专区</a>
+                                <a rel="nofollow" href="../train/index.html" target="_blank">培训信息</a>
+                                <a rel="nofollow" href="../shop/index.php" target="_blank">积分商城</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+			</li>
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+	//顶部部登录
+	$.get('/plus/ajax_user.php', {"act":"top_loginform"}, function(data) {
+		$("#top_loginform").html(data);
+	});
+	$(".nav-more").hover(function() {
+		$(".sub-menu").toggle();
+	});
+</script><div class="header-main">
+		<div class="index-container clearfix">
+			<div class="common-logo f-left"><a href="../index.html"><img src="../data/images/logo.png" alt="随州人才网" width="251" height="85"></a></div>
+			<!--<div class="sub-station f-left">
+				<span class="station-control">总站<i class="station-arrow"></i></span>
+			</div>-->
+			<ul class="common-nav f-right">
+<li><a href="../index.html" target="_self">首  页</a></li>
+								<li><a href="../jobs/jobs-list.php" target="_self">找工作</a></li>
+								<li><a href="../resume/resume-list.php" target="_self">聘人才</a></li>
+								<li><a href="../simple/simple-list.php" target="_self">微招聘</a></li>
+								<li><a href="../hrtools/index.php" target="_self">HR工具箱</a></li>
+								<li><a href="../company/index.php" target="_self">企业黄页</a></li>
+								<li><a href="../jobs/map-search-1.html" target="_self">地图找工作</a></li>
+								<li class="active"><a href="index.html" target="_self">新闻资讯</a></li>
+							</ul>
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.common-nav li:last').css({'border-right':0});
+		$('.t-nav-item:last').css({'margin-right':0});
+	});
+</script><!-- 当前位置 --><div class="page_location link_bk">
+当前位置：<a href="../index.html">首页</a> &gt; <a href="index.html">新闻资讯</a> &gt; 
+<a href="news-list.php%EF%BC%9Fid=5">职场动态</a> &gt; 正文
+</div>
+	<!-- 主体内容 -->
+	<div class="container link_bk">
+		
+		<!-- 左边内容 -->
+		<div class="left_area">
+			<div class="news_box">
+				<div class="com_container">
+					<div class="title">学区值钱而学历不值钱 是学区错了还是学历错了</div>
+					<div class="news_dateil">
+						<div class="time">2017-03-16 23:16</div>
+						<div class="time">查看：<span id="click"></span> 次</div>
+						<div>
+<a href="javascript:window.print();">[打印]</a> <a href="javascript:void(0);" onclick="window.external.addFavorite(parent.location.href,document.title);">[收藏]</a>
+</div>
+						<div class="clear"></div>
+					</div>
+					<div class="news_txt">
+						<p></p>
+<p style="text-indent:2em;">
+	文/巴九灵（微信公众号：吴晓波频道）
+</p>
+<p style="text-indent:2em;">
+	最近这些年，每次中国房价大涨的时候，有两种观点一定会在社交媒体上被广为流传。
+</p>
+<p style="text-indent:2em;">
+	<strong>一种是“逃离北上广”，高房价倒逼人才远离一线城市；一种是“读书无用论”，辛苦一世不如有房两套。</strong>
+</p>
+<p style="text-indent:2em;">
+	逃离北上广，已经有了诸多的讨论，上至国家对地区的规划，下至网约车司机的资格，甚至一顿早饭的买卖……得失利弊各有诉说。
+</p>
+<div class="mbArticleSharePic ">
+	<div class="mbArticleShareBtn">
+		<span>转播到腾讯微博</span>
+	</div>
+<img alt="学区值钱而学历不值钱 是学区错了还是学历错了" src="../../http_inews.gtimg.com/newsapp_match/0/1266540111/0.html">
+</div>
+<p style="text-indent:2em;">
+	而读书无用的观点，则又被重新流传。有这样一个被广泛转载的段子：
+</p>
+<p style="text-indent:2em;">
+	一对清华、北大毕业的年轻父母拜问禅师：如果买不起（北京的）学区房，应该怎么办？
+</p>
+<p style="text-indent:2em;">
+	禅师回曰：如果清华、北大毕业生都买不起房，那还买学区房做啥？
+</p>
+<p style="text-indent:2em;">
+	有的观点认为，<strong>学区房最大的追求者就是中国现在的中产阶层，他们的最大构成群体是像上面这对父母一样通过高等教育改变命运的一代。</strong>
+</p>
+<p style="text-indent:2em;">
+	读书无用吗？
+</p>
+<p style="text-indent:2em;">
+	<strong>但今天购买学区房的行为，却仅仅是面对学历贬值，且其自身竞争软实力不可继承的徒劳之举。</strong>中国已经进入到不可逆转的阶层固化通道之中，存量资本而非知识，成为了决定一个人或一个家庭未来生活状态的最重要因素。
+</p>
+<p style="text-indent:2em;">
+	如果是这样，那还真是一个令人沮丧的事实。
+</p>
+<div class="mbArticleSharePic ">
+	<div class="mbArticleShareBtn">
+		<span>转播到腾讯微博</span>
+	</div>
+<img alt="学区值钱而学历不值钱 是学区错了还是学历错了" src="../../http_inews.gtimg.com/newsapp_match/0/1266540112/0.html">
+</div>
+<p style="text-indent:2em;">
+	中国和其他亚洲的儒家文化区，素有重视教育的传统，对于教育的投入，向来是从不吝啬的。<strong>学历能提高收入和社会地位，也是颇受认可的共识。</strong>
+</p>
+<p style="text-indent:2em;">
+	在各个群体的收入、资产水平上，小巴还没有找到可依靠的公开数据。但有一个群体，其资产数据和身份信息是相对公开、透明的，他们就是中国的富豪们。我们不妨从中来看一看学历或教育对财富的影响。
+</p>
+<p style="text-indent:2em;">
+	根据胡润富豪榜发布的数据，2016年中国top2000的富豪榜单上，拥有全日制本科或研究生学历的占比为一半，而另一半没有全日制本科或研究生学历的富豪，大部分也都会在中欧、长江甚至最近的湖畔大学等商学院进修。
+</p>
+<p style="text-indent:2em;">
+	注：这个榜单的人群为企业家群体，全日制本科或研究生学历不包含博士、专科、EMBA、商学院和短期课程等其他学历。
+</p>
+<p style="text-indent:2em;">
+	这个群体，年龄大约在53岁，平均的创业年龄是33岁。如果我们用一个人设来概括他们的平均经历，那这个人：
+</p>
+<p style="text-indent:2em;">
+	60年代中期出生
+</p>
+<p style="text-indent:2em;">
+	80年代上大学
+</p>
+<p style="text-indent:2em;">
+	（或没有上大学，直接就业）
+</p>
+<p style="text-indent:2em;">
+	毕业后10年左右，在90年代中期创业
+</p>
+<p style="text-indent:2em;">
+	用4-5年时间，在世纪交接时积累到第一桶金
+</p>
+<p style="text-indent:2em;">
+	再用6年左右时间，在2010年之前实现财务自由
+</p>
+<p style="text-indent:2em;">
+	大学文凭决定了60倍的富豪率
+</p>
+<p style="text-indent:2em;">
+	或许有人会认为，有一半富豪是没有大学学历的，这个比例不低啊，说明不一定要有学历才能实现财务自由啊。
+</p>
+<p style="text-indent:2em;">
+	<strong>但，30年前的大学录取率与今天不可同日而语。</strong>
+</p>
+<div class="mbArticleSharePic ">
+	<div class="mbArticleShareBtn">
+		<span>转播到腾讯微博</span>
+	</div>
+<img alt="学区值钱而学历不值钱 是学区错了还是学历错了" src="../../http_inews.gtimg.com/newsapp_match/0/1266540113/0.html">
+</div>
+<p style="text-indent:2em;">
+	中国1977年恢复高考，之后5年一直有大量大龄考生参考，因此录取率特别低。从1982年开始，整个80年代的本专科录取率稳定在20%-30%之间，本科占比可能不到一半（当时研究生数量更是稀少），因此我们粗略估计，在所有参加高考的人当中，其比例大概在10%-15%之间。
+</p>
+<p style="text-indent:2em;">
+	我们取其上限15%，再取80年代高考人数最多的一年――1988年，估算当时本科毕业人数，大概是272*15%=40.8万。
+</p>
+<p style="text-indent:2em;">
+	注：因为胡润富豪榜公布数据的学历分类为本科+研究生，因此此处把本科人群从专科中脱离进行估算，但实际数据只会更少。
+</p>
+<div class="mbArticleSharePic ">
+	<div class="mbArticleShareBtn">
+		<span>转播到腾讯微博</span>
+	</div>
+<img alt="学区值钱而学历不值钱 是学区错了还是学历错了" src="../../http_inews.gtimg.com/newsapp_match/0/1266540114/0.html">
+</div>
+<p style="text-indent:2em;">
+	数据来源：根据教育部公开数据整理
+</p>
+<p style="text-indent:2em;">
+	而1960年代，每年出生的人口在2500万上下，也就是说本科毕业生的占比仅有1.6%，算上专科人数也不到3%。
+</p>
+<p style="text-indent:2em;">
+	换言之，这1.6%的人，贡献了今天中国50%左右的亿万富豪，而其他超过98%的人也才贡献50%的富豪。
+</p>
+<p style="text-indent:2em;">
+	<strong>两个群体成为富豪的概率差距――60倍，这是大学（本科）学历在过去几十年中的财富回报价值。</strong>
+</p>
+<p style="text-indent:2em;">
+	学历，当然是值钱的，而且是很值钱的。
+</p>
+<p style="text-indent:2em;">
+	它的价值并不是在毕业之后的第一时间完全释放。这批人也要等到工作10年，30多岁开始创业，再经过10年的努力才实现财务自由。
+</p>
+<p style="text-indent:2em;">
+	而同一份榜单上，还有68位80后企业家资产达到20亿元及以上，其中22位白手起家，占比1/3左右。
+</p>
+<p style="text-indent:2em;">
+	致富要靠创业，名校是基本门槛
+</p>
+<p style="text-indent:2em;">
+	白手起家的年轻人中，客观上创造最多财富的群体无疑是创业者。这22位创业者中，至少13位在本科期间曾经就读于国内名校，3位就读于海外高校，仅有3位高中学历，另外3位无公开学位信息。
+</p>
+<p style="text-indent:2em;">
+	教育或学历在其中的作用，相较于过去其实是加速的，只不过它的内在逻辑在变化。如果回到十几年前，一张学历文凭或许就是一份中产的保障，<strong>而现在，学历是一张门票，进门后各凭本事竞争。</strong>
+</p>
+<div class="mbArticleSharePic ">
+	<div class="mbArticleShareBtn">
+		<span>转播到腾讯微博</span>
+	</div>
+<img alt="学区值钱而学历不值钱 是学区错了还是学历错了" src="../../http_inews.gtimg.com/newsapp_match/0/1266540115/0.html">
+</div>
+<p style="text-indent:2em;">
+	在小巴所在的杭州，有四大创业群体：浙大系校友、阿里系前员工、海归人士、浙商二代。他们的入门难度，从个人努力可以改变的程度而言，<strong>大概是浙大系=阿里系&lt;海归&lt;浙商二代，最难的毫无疑问是浙商二代，因为你爹妈的事业并不是你自己能决定的。</strong>
+</p>
+<p style="text-indent:2em;">
+	而相对简单的则是浙大校友和阿里巴巴前员工，这两个是真正的自由选择和竞争的群体，能力、选择乃至于自我的克制成为了关键，而外在的资源条件则是充裕的。创业者圈层社群的出现，在新兴的行业内衍生出一种高自由度的流动性，<strong>每个人都看到了自由的机会，被激发了内在欲望，但也面对着自由竞争的不确定性。</strong>
+</p>
+<p style="text-indent:2em;">
+	今天，更多的焦虑或许来自于机会、欲望和不确定性，这是一种人与人相比较之后的焦虑。我们对工作、企业承担的是有限责任，但对于自己的人生，则承担着无限的责任。
+</p>
+<p style="text-indent:2em;">
+	埃米尔・涂尔干是与卡尔・马克思、马克思・韦伯并驾齐驱的社会学三大奠基宗师之一，这位法国最早的社会学家，在1897年出版了代表作之一的《自杀论》。在他的统计中，<strong>当时法国自由职业者的自杀率远高于普通人群，其背后隐隐浮现的，是自由与责任、压力、焦虑的等价兑换。</strong>
+</p>
+<div class="mbArticleSharePic ">
+	<div class="mbArticleShareBtn">
+		<span>转播到腾讯微博</span>
+	</div>
+<img alt="学区值钱而学历不值钱 是学区错了还是学历错了" src="../../http_inews.gtimg.com/newsapp_match/0/1266540116/0.html">
+</div>
+<p style="text-indent:2em;">
+	<strong>自由职业者，远离束缚的工厂，获取空间和时间上的一部分自由。</strong>
+</p>
+<p style="text-indent:2em;">
+	这个结论，换在今天仍然成立。
+</p>
+<p style="text-indent:2em;">
+	这个社会在创造无数焦虑的同时，也必须为每一种焦虑提供一个视线范围内的终点。对于中国人来说，对教育的投入如果不是最优解，也至少该成为其中的一个解。
+</p>
+						<div class="share">
+							<!-- Baidu Button BEGIN -->
+						    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+						        <a class="bds_qzone"></a>
+						        <a class="bds_tsina"></a>
+						        <a class="bds_tqq"></a>
+						        <a class="bds_renren"></a>
+						        <span class="bds_more">更多</span>
+						    </div>
+						<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=659075"></script><script type="text/javascript" id="bdshell_js"></script><script type="text/javascript">
+							document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+						</script><div class="clear"></div>	
+						<!-- Baidu Button END -->
+						</div>
+						<div class="clear"></div>
+						<div class="next_page">
+							<div class="prev">
+																<a href="5329.html">上一篇：国务院发“红包” 七大群体收入要提高</a>
+															</div>
+							<div class="next">
+																<a href="5554.html">下一篇：建筑工人收入碾压“白领”：贴瓷砖年入20万</a>
+															</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+		<!-- 右边内容 -->
+		<div class="right_area">
+			
+			<div class="right_box">
+				<div class="title_box">
+					<h5>资讯分类</h5>
+				</div>
+				<div class="list">
+					<ul class="sort">
+<li><a href="news-list.php%EF%BC%9Fid=11">随州资讯</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=6">政策法规</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=13">下载中心</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=5" class="select">职场动态</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=4">面试指南</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=3">简历指南</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=2">职业培训</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=7">创业精英</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=8">职场测试</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=9">职场智慧</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=10">职场策略</a></li>
+												<div class="clear"></div>
+					</ul>
+<div class="clear"></div>
+				</div>
+			</div>
+			<div class="right_search">
+				<div class="news_search"><input type="text" name="key" id="key"></div>
+				<button class="news_sreach_but search_news">搜索</button>
+			</div>
+			<div class="clear"></div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>相关阅读</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6497.html" target="_blank">2018年金秋招聘月活动开展在即</a></li>
+												<li><a href="6374.html" target="_blank">随州一男子伤人潜逃16年 返乡求职老</a></li>
+												<li><a href="6358.html" target="_blank">中介发布名企暑期工招聘信息 收钱后</a></li>
+												<li><a href="6261.html" target="_blank">创业公司招人难：“生怕电话被求职</a></li>
+												<li><a href="6244.html" target="_blank">有钱开公司没钱开工资 随县一“老赖</a></li>
+												<li><a href="6197.html" target="_blank">曾都一男子涉嫌职务侵占被刑事拘留</a></li>
+												<li><a href="5851.html" target="_blank">女儿想卖房留学愁坏父母</a></li>
+											</ul>
+</div>
+			</div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>最新资讯</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6507.html" target="_blank">随县万福店农场“农民”评上职称了</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+											</ul>
+</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- 主体内容 结束 -->
+	<div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="../suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="../explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="../subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="../explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="../hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="../train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="../resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="../hrtools/hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="../user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="../jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="../data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="../index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html>

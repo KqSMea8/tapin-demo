@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>随州波导公司外贸出口创新高侧记 - 随州人才网</title>
+<meta name="description" content="    随州波导电子有限公司是全省机电产品出口10强企业，2013年出口总额达1.2亿美元，再创外贸出口新高。
+">
+<meta name="keywords" content="随州波导公司外贸出口创新高侧记">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/news.css" rel="stylesheet" type="text/css">
+<script src="../templates/demo11/js/jquery.js" type="text/javascript"></script><script type="text/javascript">
+$(document).ready(function()
+{
+		var id="1106";
+		var tsTimeStamp= new Date().getTime();
+		$.get("/plus/ajax_click.php", { "id": id,"time":tsTimeStamp,"act":"news_click"},
+			function (data,textStatus)
+			 {			
+				$("#click").html(data);
+			 }
+		);
+		$(".search_news").click(function(){
+			var key = $("#key").val();
+			news_search_location(key);
+		});
+		function news_search_location(key)
+		{
+			$("body").append('<div id="pageloadingbox">页面加载中....<div id="pageloadingbg">');
+			$("#pageloadingbg").css("opacity", 0.5);
+			$.get("/plus/ajax_search_location.php", {"act":"QS_newssearch","key":key},
+					function (data,textStatus)
+					 {
+						 window.location.href=data;
+					 }
+				);
+		}
+		// 等比例缩放图片
+		var w = $(".left_area .news_box").width();//容器宽度 
+	    $(".news_txt img").each(function(){//如果有很多图片，我们可以使用each()遍历 
+	        var img_w = $(this).width();//图片宽度 
+	        var img_h = $(this).height();//图片高度 
+	        if(img_w>w){//如果图片宽度超出容器宽度--要撑破了 
+	            var height = (w*img_h)/img_w; //高度等比缩放 
+	            $(this).css({"width":w,"height":height});//设置缩放后的宽度和高度 
+	        } 
+	    });
+});
+</script>
+</head>
+<body>
+<div id="new-header">
+	<div class="top-bar">
+	<div class="index-container clearfix">
+		<div class="welcome f-left" id="top_loginform"></div>
+		<ul class="top-nav f-right">
+<li class="t-nav-item f-left mobile"><a href="../mobile.html" class="underline">手机频道</a></li>
+			<li class="t-nav-item f-left"><a href="../index.html" class="underline nav-link">网站首页</a></li>
+			<li class="t-nav-item f-left mr15"><a href="../plus/shortcut.php" class="underline nav-link">保存到桌面</a></li>
+			<li class="t-nav-item f-left nav-more">
+				<span class="nav-more-type">网站导航<i class="more-arrow"></i></span>
+				<div class="sub-menu-out">
+                	<div class="sub-menu nav">
+                        <ul>
+<li>
+                            	<strong>个人服务</strong>
+                                <a href="../user/personal/personal_resume.php%EF%BC%9Fact=make1" target="_blank">创简历</a>
+                                <a href="../salary.html" target="_blank">查薪资</a>
+                                <a href="../evaluation/index.php" target="_blank">人才测评</a>
+                                <a href="../jobs/map-search.php%EF%BC%9Fid=1" target="_blank">地图找工作</a>
+                            </li>
+                            <li>
+                            	<strong>企业服务</strong>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank">发职位</a>
+                                <a href="../jobfair/jobfair-list.php" target="_blank">招聘会</a>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=simple_jobs" target="_blank">微信招聘</a>
+                                <a href="../hrtools/index.php" target="_blank">HR工具箱</a>
+                            </li>
+                            <li class="bd0">
+                            	<strong>更多</strong>
+                                <a rel="nofollow" href="../campus/index.php" target="_blank">校园招聘</a>
+                                <a rel="nofollow" href="../hunter/index.html" target="_blank">猎聘专区</a>
+                                <a rel="nofollow" href="../train/index.html" target="_blank">培训信息</a>
+                                <a rel="nofollow" href="../shop/index.php" target="_blank">积分商城</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+			</li>
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+	//顶部部登录
+	$.get('/plus/ajax_user.php', {"act":"top_loginform"}, function(data) {
+		$("#top_loginform").html(data);
+	});
+	$(".nav-more").hover(function() {
+		$(".sub-menu").toggle();
+	});
+</script><div class="header-main">
+		<div class="index-container clearfix">
+			<div class="common-logo f-left"><a href="../index.html"><img src="../data/images/logo.png" alt="随州人才网" width="251" height="85"></a></div>
+			<!--<div class="sub-station f-left">
+				<span class="station-control">总站<i class="station-arrow"></i></span>
+			</div>-->
+			<ul class="common-nav f-right">
+<li><a href="../index.html" target="_self">首  页</a></li>
+								<li><a href="../jobs/jobs-list.php" target="_self">找工作</a></li>
+								<li><a href="../resume/resume-list.php" target="_self">聘人才</a></li>
+								<li><a href="../simple/simple-list.php" target="_self">微招聘</a></li>
+								<li><a href="../hrtools/index.php" target="_self">HR工具箱</a></li>
+								<li><a href="../company/index.php" target="_self">企业黄页</a></li>
+								<li><a href="../jobs/map-search-1.html" target="_self">地图找工作</a></li>
+								<li class="active"><a href="index.html" target="_self">新闻资讯</a></li>
+							</ul>
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.common-nav li:last').css({'border-right':0});
+		$('.t-nav-item:last').css({'margin-right':0});
+	});
+</script><!-- 当前位置 --><div class="page_location link_bk">
+当前位置：<a href="../index.html">首页</a> &gt; <a href="index.html">新闻资讯</a> &gt; 
+<a href="news-list.php%EF%BC%9Fid=11">随州资讯</a> &gt; 正文
+</div>
+	<!-- 主体内容 -->
+	<div class="container link_bk">
+		
+		<!-- 左边内容 -->
+		<div class="left_area">
+			<div class="news_box">
+				<div class="com_container">
+					<div class="title">随州波导公司外贸出口创新高侧记</div>
+					<div class="news_dateil">
+						<div class="time">2013-12-25 10:59</div>
+						<div class="time">查看：<span id="click"></span> 次</div>
+						<div>
+<a href="javascript:window.print();">[打印]</a> <a href="javascript:void(0);" onclick="window.external.addFavorite(parent.location.href,document.title);">[收藏]</a>
+</div>
+						<div class="clear"></div>
+					</div>
+					<div class="news_txt">
+						<p></p>
+<p>    <a href="../index.html" target="_blank">随州</a>波导电子有限公司是全省机电产品出口10强企业，2013年出口总额达1.2亿美元，再创外贸出口新高。</p>
+<p><br>
+    在世界经济趋于下行，外贸形势仍然严峻的情况下，波导公司为何能逆势上扬，驰骋国际市场，取得辉煌业绩？</p>
+<p><br>
+    “卓越品质，由我打造”，“持续改进质量，不断降低成本”。12月20日，当记者走进波导公司生产车间，两条醒目的标语给出了最好的注解。</p>
+<p><br>
+    从国内市场到国际市场，从生产制造到产业转型，从产值震荡调整到业绩回稳提升……波导公司突破传统思维束缚，主动融入国际市场，大力拓展智能机、手机主板出口，探索出了一条大市场、大服务的国际战略规划的强企创效之路，用国际市场经营理念和服务标准来强化产品质量与提升品牌形象的发展之路。</p>
+<p> </p>
+<p>扎根随州做贡献 绚丽光彩尽绽放</p>
+<p><br>
+    波导股份成立于1992年10月，是目前国内仅存的一家首批拥有手机生产资质的企业。更屡次囊括中国名牌、中华精品、驰名商标等国内外各项大奖并蝉联多年手机销售冠军。</p>
+<p><br>
+    2002年，应随州市委市政府邀请，作为随州曾都区洛阳镇人的宁波波导股份公司董事长徐立华满怀报效桑梓的激情，毅然到随州创办“波导随州分公司”，当年7月租厂投产，次年搬进随州经济开发区新厂。</p>
+<p><br>
+    2002年至2008年上半年，波导随州分公司主要作为宁波总部配套的生产基地，原材料采购、产品销售由总部统一部署。</p>
+<p><br>
+    2008年下半年，“波导随州分公司”正式更名为“随州波导电子有限公司”，采购销售和进出口全部独立自主。之后的半年时间，宁波波导公司的3条手机生产线，分两批搬至随州，承担起波导的所有手机生产任务。</p>
+<p><br>
+    2008至2011年，在金融危机持续影响、山寨手机严重冲击下，公司业绩波动，产值下行。但波导团队卧薪尝胆、负重前行，积极关注行业变化，伺机待动。</p>
+<p><br>
+    2012年3月，宁波波导股份有限公司任命任少虎为随州波导电子有限公司总经理。面对多变的市场，任少虎带领公司全体员工转变思想，锐意改革，进行了产业升级改造和服务转型，丰富了产品结构，拓宽了市场渠道，使公司再次步入了发展的快车道，并取得了丰硕的成果。2012年，波导生产手机419万台，其中智能手机293万台、占总生产量70%，总产值9.29亿元、其中智能机占80%。出口总量达1.1亿美元，居随州企业第一位。国际国内市场占比为7:3。</p>
+<p><br>
+    2013年1-10月，波导已累计实现产值10.4亿人民币，同比增长33%；销售收入10.3亿人民币，同比增长23%；税收近1600万元，同比增长14%；出口9969万美元，同比增长2%。预计全年产值、销售收入、税收等同比增长将会在30%以上。</p>
+<p><br>
+    从2002年进入随州，波导扎根随州已有11年。波导累计完成投资1.6亿多元，累计实现销售收入173亿多元，其中出口创汇5.4亿多美元，累计缴纳税款2.6亿多元，年均安置就业1000多人次，向随州社会各界捐款近1600万元，为随州的经济和社会发展做出了巨大贡献。</p>
+<p> </p>
+<p>思路一变天地宽 创新转型竞风流</p>
+<p><br>
+    “波导二十年，唯一不变的是改变――创新。”随州波导电子有限公司总经理任少虎深有感触的告诉记者。波导公司一直将创新的理念融入到企业发展的各个环节，时刻提醒公司员工树新风、思改革。让全体员工以变革为契机，重新审视自己的工作，开动脑筋找问题，努力提高效率，保证质量，降低成本，增强产品的竞争力。</p>
+<p><br>
+    为落实改革思想，波导公司打破常规，让公司的中层干部实行竞争上岗，让各中层干部努力用新思维、新方法，提高业务水平、工作效率，确保公司目标的实现。2012年、2013年均较上年实现人均效率增长50%，人均产值翻一翻。</p>
+<p><br>
+    在国际国内市场站稳脚跟，科技创新是波导的重要法宝。作为国家高新技术企业，波导公司始终坚持创新。与法国萨基姆公司等国际通讯技术领先企业合作，提升创新能力；坚持自主研发创新，始终掌握着世界通讯终端应用平台最前沿的开发实力，研发的品种达数百款，取得了大批专利和软件著作权。2005年，波导整合了通讯、音频、视频等尖端技术，抢先研制出MP4系列手机。2008年，波导研制出了3G智能手机。2012年，手机行业开始转向智能时代，波导公司迅速调整发展战略，调整产品结构，生产由功能机向智能机全面转型，借“智”发展。2013年，紧跟运营商的4G布局，积极与上游平台合作，着手研发4G产品，对4G市场，“智”在必得！</p>
+<p><br>
+    “波导公司还根据市场调整发展战略，实现错位发展。”随州波导公司常务副总经理丁清泉说。为牢牢占据国内整机市场，2012年，波导公司新增TD机型生产，该机型专为移动通信公司定制，总量大。为实现产品多样化，今年公司在与MTK平台合作的基础上，增加与展讯平台合作，生产性价比更高的定制机，满足客户的不同需求。2012年，随州波导的整机订单和PC－BA订单出现井喷，波导自主品牌的销售更呈逐月递增态势。</p>
+<p><br>
+    要发展，公司不仅要借“智”还要借“力”。人性化的管理能为企业带来更多效益。近年来，公司投资数百万元新建了职工宿舍，解决了一大批职工的住宿问题。并对员工进行了工资普调，对管理人员实行竞聘上岗，极大地提高了生产积极性。</p>
+<p> </p>
+<p>投资研发齐头进 踌躇满志展宏图</p>
+<p><br>
+    投资是企业发展的活力源泉之一。为迅速实现产品结构调整，2012年7月――2013年5月，波导公司再次投入5000多万元，购置了目前世界上最先进的贴片设备，满足了当前智能机主板器件多、间距密、精度要求高的贴片加工特点，使公司具备了生产结构复杂、附加值高的智能手机的能力。同时升级、改造了部分老设备，公司的整体贴片能力迅速提升到1000万，生产能力和加工水平上升到了一个新高度。</p>
+<p><br>
+    通过整合波导公司BIRD自主品牌的传统营销渠道，加大国内市场投入和运作力度，使随州波导由单一的加工型企业转向集加工、内、外销，软件开发、销售、电子商务等于一身的企业，极大增强了企业抗风险能力，实现了企业的转型升级。</p>
+<p><br>
+    波导公司创立二十多年来，一直致力于通讯终端的研发和制造，在手机平台及软件应用方面积累了丰富的开发经验，率先研发出英语通、语音王、摄影、摄像等拓展功能性手机，为通讯业的发展做出了积极的贡献。2013年，中国手机市场全面进入了智能化时代，软件应用成为继手机硬件后的另一巨大金矿。波导公司及时抓住机遇并成功开发了一系列终端软件应用，除满足自身客户需求外，更积极推向市场，并取得了良好的市场反应。使波导成为国内少有的集硬件制造和软件应用开发于一身的手机厂商。</p>
+<p><br>
+    “虽然几度起伏，但是波导从没放弃在家乡随州的手机产业发展，波导集团公司的通信业务已经全部转移到了随州。”展望公司的发展前景，任少虎踌躇满志，他表示，波导公司将不断加强创新，加大与运营商合作，开拓更大的市场，争取为随州做出更大的贡献。预计在新的一年，随州波导公司4G业务、电子商务、应用软件的销售推广将有较大增长和收益，实现逐年增长20%以上目标，争取五年内再创历史新高。<br></p>
+						<div class="share">
+							<!-- Baidu Button BEGIN -->
+						    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+						        <a class="bds_qzone"></a>
+						        <a class="bds_tsina"></a>
+						        <a class="bds_tqq"></a>
+						        <a class="bds_renren"></a>
+						        <span class="bds_more">更多</span>
+						    </div>
+						<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=659075"></script><script type="text/javascript" id="bdshell_js"></script><script type="text/javascript">
+							document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+						</script><div class="clear"></div>	
+						<!-- Baidu Button END -->
+						</div>
+						<div class="clear"></div>
+						<div class="next_page">
+							<div class="prev">
+																<a href="1105.html">上一篇：随州市查补企业所得税1700余万元</a>
+															</div>
+							<div class="next">
+																<a href="1109.html">下一篇：随州小伙摘省创富先锋桂冠</a>
+															</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+		<!-- 右边内容 -->
+		<div class="right_area">
+			
+			<div class="right_box">
+				<div class="title_box">
+					<h5>资讯分类</h5>
+				</div>
+				<div class="list">
+					<ul class="sort">
+<li><a href="news-list.php%EF%BC%9Fid=11" class="select">随州资讯</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=6">政策法规</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=13">下载中心</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=5">职场动态</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=4">面试指南</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=3">简历指南</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=2">职业培训</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=7">创业精英</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=8">职场测试</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=9">职场智慧</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=10">职场策略</a></li>
+												<div class="clear"></div>
+					</ul>
+<div class="clear"></div>
+				</div>
+			</div>
+			<div class="right_search">
+				<div class="news_search"><input type="text" name="key" id="key"></div>
+				<button class="news_sreach_but search_news">搜索</button>
+			</div>
+			<div class="clear"></div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>相关阅读</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+												<li><a href="6503.html" target="_blank">2019年度随州城乡居民医保征收工作</a></li>
+												<li><a href="6501.html" target="_blank">随州市三季度农民工呈现回流迹象</a></li>
+											</ul>
+</div>
+			</div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>最新资讯</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6507.html" target="_blank">随县万福店农场“农民”评上职称了</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+											</ul>
+</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- 主体内容 结束 -->
+	<div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="../suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="../explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="../subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="../explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="../hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="../train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="../resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="../hrtools/hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="../user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="../jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="../data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="../index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html>

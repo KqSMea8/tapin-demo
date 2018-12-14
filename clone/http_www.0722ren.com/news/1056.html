@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>随州市2013年招商引资工作综述 - 随州人才网</title>
+<meta name="description" content="    投资，拉动经济增长的马车。招商，则是推动投资的重要举措。
+
+">
+<meta name="keywords" content="随州市2013年招商引资工作综述">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/news.css" rel="stylesheet" type="text/css">
+<script src="../templates/demo11/js/jquery.js" type="text/javascript"></script><script type="text/javascript">
+$(document).ready(function()
+{
+		var id="1056";
+		var tsTimeStamp= new Date().getTime();
+		$.get("/plus/ajax_click.php", { "id": id,"time":tsTimeStamp,"act":"news_click"},
+			function (data,textStatus)
+			 {			
+				$("#click").html(data);
+			 }
+		);
+		$(".search_news").click(function(){
+			var key = $("#key").val();
+			news_search_location(key);
+		});
+		function news_search_location(key)
+		{
+			$("body").append('<div id="pageloadingbox">页面加载中....<div id="pageloadingbg">');
+			$("#pageloadingbg").css("opacity", 0.5);
+			$.get("/plus/ajax_search_location.php", {"act":"QS_newssearch","key":key},
+					function (data,textStatus)
+					 {
+						 window.location.href=data;
+					 }
+				);
+		}
+		// 等比例缩放图片
+		var w = $(".left_area .news_box").width();//容器宽度 
+	    $(".news_txt img").each(function(){//如果有很多图片，我们可以使用each()遍历 
+	        var img_w = $(this).width();//图片宽度 
+	        var img_h = $(this).height();//图片高度 
+	        if(img_w>w){//如果图片宽度超出容器宽度--要撑破了 
+	            var height = (w*img_h)/img_w; //高度等比缩放 
+	            $(this).css({"width":w,"height":height});//设置缩放后的宽度和高度 
+	        } 
+	    });
+});
+</script>
+</head>
+<body>
+<div id="new-header">
+	<div class="top-bar">
+	<div class="index-container clearfix">
+		<div class="welcome f-left" id="top_loginform"></div>
+		<ul class="top-nav f-right">
+<li class="t-nav-item f-left mobile"><a href="../mobile.html" class="underline">手机频道</a></li>
+			<li class="t-nav-item f-left"><a href="../index.html" class="underline nav-link">网站首页</a></li>
+			<li class="t-nav-item f-left mr15"><a href="../plus/shortcut.php" class="underline nav-link">保存到桌面</a></li>
+			<li class="t-nav-item f-left nav-more">
+				<span class="nav-more-type">网站导航<i class="more-arrow"></i></span>
+				<div class="sub-menu-out">
+                	<div class="sub-menu nav">
+                        <ul>
+<li>
+                            	<strong>个人服务</strong>
+                                <a href="../user/personal/personal_resume.php%EF%BC%9Fact=make1" target="_blank">创简历</a>
+                                <a href="../salary.html" target="_blank">查薪资</a>
+                                <a href="../evaluation/index.php" target="_blank">人才测评</a>
+                                <a href="../jobs/map-search.php%EF%BC%9Fid=1" target="_blank">地图找工作</a>
+                            </li>
+                            <li>
+                            	<strong>企业服务</strong>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank">发职位</a>
+                                <a href="../jobfair/jobfair-list.php" target="_blank">招聘会</a>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=simple_jobs" target="_blank">微信招聘</a>
+                                <a href="../hrtools/index.php" target="_blank">HR工具箱</a>
+                            </li>
+                            <li class="bd0">
+                            	<strong>更多</strong>
+                                <a rel="nofollow" href="../campus/index.php" target="_blank">校园招聘</a>
+                                <a rel="nofollow" href="../hunter/index.html" target="_blank">猎聘专区</a>
+                                <a rel="nofollow" href="../train/index.html" target="_blank">培训信息</a>
+                                <a rel="nofollow" href="../shop/index.php" target="_blank">积分商城</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+			</li>
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+	//顶部部登录
+	$.get('/plus/ajax_user.php', {"act":"top_loginform"}, function(data) {
+		$("#top_loginform").html(data);
+	});
+	$(".nav-more").hover(function() {
+		$(".sub-menu").toggle();
+	});
+</script><div class="header-main">
+		<div class="index-container clearfix">
+			<div class="common-logo f-left"><a href="../index.html"><img src="../data/images/logo.png" alt="随州人才网" width="251" height="85"></a></div>
+			<!--<div class="sub-station f-left">
+				<span class="station-control">总站<i class="station-arrow"></i></span>
+			</div>-->
+			<ul class="common-nav f-right">
+<li><a href="../index.html" target="_self">首  页</a></li>
+								<li><a href="../jobs/jobs-list.php" target="_self">找工作</a></li>
+								<li><a href="../resume/resume-list.php" target="_self">聘人才</a></li>
+								<li><a href="../simple/simple-list.php" target="_self">微招聘</a></li>
+								<li><a href="../hrtools/index.php" target="_self">HR工具箱</a></li>
+								<li><a href="../company/index.php" target="_self">企业黄页</a></li>
+								<li><a href="../jobs/map-search-1.html" target="_self">地图找工作</a></li>
+								<li class="active"><a href="index.html" target="_self">新闻资讯</a></li>
+							</ul>
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.common-nav li:last').css({'border-right':0});
+		$('.t-nav-item:last').css({'margin-right':0});
+	});
+</script><!-- 当前位置 --><div class="page_location link_bk">
+当前位置：<a href="../index.html">首页</a> &gt; <a href="index.html">新闻资讯</a> &gt; 
+<a href="news-list.php%EF%BC%9Fid=11">随州资讯</a> &gt; 正文
+</div>
+	<!-- 主体内容 -->
+	<div class="container link_bk">
+		
+		<!-- 左边内容 -->
+		<div class="left_area">
+			<div class="news_box">
+				<div class="com_container">
+					<div class="title">随州市2013年招商引资工作综述</div>
+					<div class="news_dateil">
+						<div class="time">2013-12-18 11:29</div>
+						<div class="time">查看：<span id="click"></span> 次</div>
+						<div>
+<a href="javascript:window.print();">[打印]</a> <a href="javascript:void(0);" onclick="window.external.addFavorite(parent.location.href,document.title);">[收藏]</a>
+</div>
+						<div class="clear"></div>
+					</div>
+					<div class="news_txt">
+						<p></p>
+<p>    投资，拉动经济增长的马车。招商，则是推动投资的重要举措。</p>
+<p><br>
+    年初对外开放动员会上，<a href="../index.html" target="_blank">随州</a>市委书记刘晓鸣提出，用更加过硬的作风抓好招商引资工作，招商基础要落实硬要求，招商成效要落实硬检验，全面提高开放型经济水平。</p>
+<p><br>
+    号令一出，市委市政府主要领导、各级招商人员纷纷走出去，深入招商引资工作第一线。</p>
+<p><br>
+    付出总有回报，实干才能兴业。华能集团、中航工业、东风公司、航天汽车、徐工集团、华人集团、泰华电子……一批批项目落户随州，转化为实实在在的投资，成为经济增长的一个个爆发点。</p>
+<p><br>
+    截至目前，全市实际利用内联资金153亿元，占年度目标任务101%，同比增长41%；实际利用外资8274万美元，占年度目标任务102%，同比增长115%。</p>
+<p><br>
+    “招商引资是为经济发展增添后劲，需要实实在在的项目，需要扎扎实实的作风，需要实打实的活动载体。只有在‘实’字上下功夫，才能引来金凤凰。”市招商局局长朱军说。</p>
+<p><br>
+引凤成果重真实</p>
+<p><br>
+    建园区是筑巢，招商就是引凤。</p>
+<p><br>
+    从首都北京到特区深圳，都有随州招商人的身影。市委书记刘晓鸣，市委副书记、代市长郄英才多次带队北上南下，拜访老总，考察企业，寻求合作。十个招商专班常年奔赴在沿海，结交朋友，洽谈项目，承接转移。</p>
+<p><br>
+    功夫不负有心人。一只只金凤凰飞来随州，择枝筑巢。截至目前，全市新签约项目176个，合同金额287.1亿元。其中亿元以上项目59个，合同金额228.9亿元。不少项目投资过10亿、20亿。</p>
+<p><br>
+    ――汽车机械产业招大引强。乘中国专用汽车之都建设契机，央企、省企等500强企业纷纷落户随州：投资12亿元的中航特装科技产业园项目、投资4.4亿元的东风车轮年产1000万只车轮项目、投资5亿元的徐工机械生产基地建设项目、投资3亿元的航天双龙专用车改装车项目、投资3亿元的玉柴大力专用车项目……</p>
+<p><br>
+    ――农产品加工业不断壮大。投资4亿元的丰年生态旅游村及核桃基地项目、投资2.5亿元的康华智能蔬菜产业示范园项目、投资2.3亿元的炎帝科技香菇恒温化栽培项目、投资2亿元的中兴茶叶深加工出口项目、投资1.2亿元的通威饲料生产项目等纷纷抢滩随州。</p>
+<p><br>
+    ――电子信息产业竞进提质。投资10亿元的美亚迪PCB产业园项目、投资8亿元的允升电子产业科技园项目、投资3亿元的泰华电子兆级高频晶体生产项目、投资1.5亿元的明艺LED电子显示屏生产项目等纷至沓来。</p>
+<p> </p>
+<p>    ――战略性新兴产业实现突破。投资25亿元的华润天河口风电场项目、投资10亿元光彩聚丙烯薄膜生产线项目、投资10亿元的德润锂电池生产项目、投资7亿元的华人集团炎帝科技园项目……</p>
+<p><br>
+    还有马都司生态新区建设投资20亿元、人福科技医药产业园项目投资5亿元、昌瑞纺织投资3亿元、新诚达制衣投资2.6亿元、湖北银行在随州选址……一个个项目成为发展的新引擎、新动力。</p>
+<p><br>
+活动对接重务实</p>
+<p><br>
+    活动构筑桥梁，对接成就机遇。</p>
+<p><br>
+    市主要领导提出，要走出去、请进来，全员大招商，招大商。市领导带队外出招商，率先垂范，对接央企，寻找合作支点。</p>
+<p><br>
+    10月、11月，市主要领导两次带队赴京，拜访考察了中信集团、保利集团、航天科技、中国航天汽车公司、中国农业发展集团等一批知名央企，推介随州优势，积极对接发展的热点。</p>
+<p><br>
+    每次伸出的橄榄枝，都得到了央企的积极回应：中信集团将重点在金融投资网点布局上优先给予考虑；中国节能环保集团将加大对接的力度，加快合作进程，抓好协议落实；中国机械工业集团在专用车制造，农用机械研发、推广与应用等方面寻找合作的切入点；中青旅公司争取在旅游项目合作上取得成果……</p>
+<p><br>
+    有了戏台好唱戏。寻根节，已成为随州文化搭台、经济唱戏的好平台。</p>
+<p><br>
+    今年寻根节，市招商局根据随州发展的特点和优势，精心策划了经贸洽谈会，吸引了国内外140多家企业300余名客商参会。长江三峡集团、人福科技、九州通集团等慕名而来，考察随州，商谈合作。会上共签订各类投资合作项目111个，投资总额519.8亿元，其中合同金额282亿元。</p>
+<p><br>
+    我市还积极参加国家级、省级招商活动，充分利用国家、省级招商平台，积极宣传随州。第八届中博会、厦门投洽会、楚商大会、国际潮团联谊会、鄂港澳（粤）经贸洽谈会等活动，都活跃着随州招商人。通过参加活动，推介了随州，扩大了影响，引进了项目。截至目前，全市对外招商活动30余场次，组织集中签约8次，项目集中开工3次。</p>
+<p><br>
+    意向就是希望。市委副书记、代市长郄英才在多个场合指出，招商工作要紧盯双方达成的意向不放，锲而不舍地予以沟通对接，让意向结出硕果。</p>
+<p><br>
+    为此，市招商局依托驻京、驻深等地办事处和十个专班，分块予以对接，发扬“愚公移山”、“钉子”、“蚂蝗”精神，直到意向开花结果。</p>
+<p><br>
+夯实基础重扎实</p>
+<p><br>
+    万丈高楼从地起，基础工作是根本。</p>
+<p><br>
+    今年，市招商局根据随州地域和产业特色，编印了全新的《随州投资指南》，指南上包装了32个招商项目，让投资者一目了然。还精心制作了“随州市投资环境及产业介绍PPT”、“神韵随州”宣传片，使得招商推介更加形象、生动。</p>
+<p><br>
+    同时，在原有基础工作之上，为了让招商工作更有针对性，实现专业化招商，编印了重点招商目标企业目录，梳理了世界、中国500强企业信息，着重突出与随州产业对接的项目。厚达100多页的书册，按照我市“两大龙头”、“四大支柱”产业板块，收集了近300家企业信息，俨然一本“招商百科”。</p>
+<p><br>
+    落实是最好的发展。年初，市招商委将引资目标任务分解到各地各部门，实行“一把手”负责制，调动全市干群招商积极性，共谋发展。市政府也制定了奖励办法，对招商做出贡献的引资者予以奖励，激励全员招商。</p>
+<p><br>
+    招商好比谈生意，风险与机遇共存。尤其在合同中，有很多的猫腻。为此，市招商一班人对照相关法律法规，深入细致地研究合同，出台了防范招商引资合同风险的意见书，建立了重大项目评估机制，设立“防火墙”，成为引资者招商的“安全锦囊”，避免骗商、骗地等事件发生，让招引的项目更加真实。</p>
+<p><br>
+    项目落地，才算在随州生根、见效。为了挤掉招商中的“水分”，市招商局每月对招引项目实行不打招呼的抽查，一月一调度，一季一通报，半年一总结，年终结硬账，有效规避“开空头支票”的项目落户随州。</p>
+<p><br>
+服务跟踪重落实</p>
+<p><br>
+    招商人员往往是企业认识接触的第一个随州人，从洽谈到落地，企业最熟悉。在招商引资中，引资者扮演着“保姆”的角色。</p>
+<p><br>
+    海翼集团旗下的厦工重工是我市引进的大型企业，与湖北楚胜重组后，新的厦工楚胜实现了快速发展。为了让企业发展无后顾之忧，市招商局组织专人专班为其服务，积极与相关部门磋商项目发展中的困难，扫清合作障碍，办客商之所需，解客商之所难。</p>
+<p><br>
+    去年12月，厦工楚胜遇到新厂区办证、旧厂区搬迁等问题，市招商局积极协商，筹备了市主要领导与海翼集团领导的会晤，磋商解决各种难题。今年8月，海翼集团的随州地产汉东至尊项目遇到问题，市招商局再次积极帮扶，帮助疏通了发展中的“梗阻”。市招商局先后筹备5次专题协调会，其中印发2个市委专题会议纪要。</p>
+<p><br>
+    美亚迪精密电路项目中的供电问题、台资泰华电子企业工商注册、航天双龙新上项目招投标……一个个项目落地，都离不开招商人的真诚服务。许多项目负责人感动地说，招商局把我们当亲人看待，真心为我们的发展献计献策。</p>
+<p><br>
+    实干兴业谋发展，招大引强促跨越。“圣地车都”战略蓝图绘就，需要大项目、大投资的支撑，招商引资、扩大开放的重要性更为突出。</p>
+<p><br>
+    招商人需转变招商观念，策划大项目，瞄准大企业、大集团，寻找产业链条的对接，着力引进一批有利于增强我市经济实力，有利于企业转型升级，有利于延伸产业链条、做大产业集群，支撑作用大、科技含量高的好项目、大项目，助力圣地车都建设。<br></p>
+						<div class="share">
+							<!-- Baidu Button BEGIN -->
+						    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+						        <a class="bds_qzone"></a>
+						        <a class="bds_tsina"></a>
+						        <a class="bds_tqq"></a>
+						        <a class="bds_renren"></a>
+						        <span class="bds_more">更多</span>
+						    </div>
+						<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=659075"></script><script type="text/javascript" id="bdshell_js"></script><script type="text/javascript">
+							document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+						</script><div class="clear"></div>	
+						<!-- Baidu Button END -->
+						</div>
+						<div class="clear"></div>
+						<div class="next_page">
+							<div class="prev">
+																<a href="1055.html">上一篇：随州再增3个“国家地理标志保护产品”</a>
+															</div>
+							<div class="next">
+																<a href="1057.html">下一篇：随州市打响农民工工资清欠攻坚战</a>
+															</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+		<!-- 右边内容 -->
+		<div class="right_area">
+			
+			<div class="right_box">
+				<div class="title_box">
+					<h5>资讯分类</h5>
+				</div>
+				<div class="list">
+					<ul class="sort">
+<li><a href="news-list.php%EF%BC%9Fid=11" class="select">随州资讯</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=6">政策法规</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=13">下载中心</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=5">职场动态</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=4">面试指南</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=3">简历指南</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=2">职业培训</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=7">创业精英</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=8">职场测试</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=9">职场智慧</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=10">职场策略</a></li>
+												<div class="clear"></div>
+					</ul>
+<div class="clear"></div>
+				</div>
+			</div>
+			<div class="right_search">
+				<div class="news_search"><input type="text" name="key" id="key"></div>
+				<button class="news_sreach_but search_news">搜索</button>
+			</div>
+			<div class="clear"></div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>相关阅读</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+												<li><a href="6503.html" target="_blank">2019年度随州城乡居民医保征收工作</a></li>
+												<li><a href="6501.html" target="_blank">随州市三季度农民工呈现回流迹象</a></li>
+											</ul>
+</div>
+			</div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>最新资讯</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6507.html" target="_blank">随县万福店农场“农民”评上职称了</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+											</ul>
+</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- 主体内容 结束 -->
+	<div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="../suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="../explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="../subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="../explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="../hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="../train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="../resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="../hrtools/hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="../user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="../jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="../data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="../index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html>

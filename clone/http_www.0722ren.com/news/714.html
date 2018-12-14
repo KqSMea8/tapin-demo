@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>专家详解面试成功法宝技巧 - 随州人才网</title>
+<meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp; 面试发挥出色，可以在一定程度上弥补先前笔试或是其他条件如学历、专业上的不足。许多毕业生求职失败，都是输">
+<meta name="keywords" content="专家详解面试成功法宝技巧">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/news.css" rel="stylesheet" type="text/css">
+<script src="../templates/demo11/js/jquery.js" type="text/javascript"></script><script type="text/javascript">
+$(document).ready(function()
+{
+		var id="714";
+		var tsTimeStamp= new Date().getTime();
+		$.get("/plus/ajax_click.php", { "id": id,"time":tsTimeStamp,"act":"news_click"},
+			function (data,textStatus)
+			 {			
+				$("#click").html(data);
+			 }
+		);
+		$(".search_news").click(function(){
+			var key = $("#key").val();
+			news_search_location(key);
+		});
+		function news_search_location(key)
+		{
+			$("body").append('<div id="pageloadingbox">页面加载中....<div id="pageloadingbg">');
+			$("#pageloadingbg").css("opacity", 0.5);
+			$.get("/plus/ajax_search_location.php", {"act":"QS_newssearch","key":key},
+					function (data,textStatus)
+					 {
+						 window.location.href=data;
+					 }
+				);
+		}
+		// 等比例缩放图片
+		var w = $(".left_area .news_box").width();//容器宽度 
+	    $(".news_txt img").each(function(){//如果有很多图片，我们可以使用each()遍历 
+	        var img_w = $(this).width();//图片宽度 
+	        var img_h = $(this).height();//图片高度 
+	        if(img_w>w){//如果图片宽度超出容器宽度--要撑破了 
+	            var height = (w*img_h)/img_w; //高度等比缩放 
+	            $(this).css({"width":w,"height":height});//设置缩放后的宽度和高度 
+	        } 
+	    });
+});
+</script>
+</head>
+<body>
+<div id="new-header">
+	<div class="top-bar">
+	<div class="index-container clearfix">
+		<div class="welcome f-left" id="top_loginform"></div>
+		<ul class="top-nav f-right">
+<li class="t-nav-item f-left mobile"><a href="../mobile.html" class="underline">手机频道</a></li>
+			<li class="t-nav-item f-left"><a href="../index.html" class="underline nav-link">网站首页</a></li>
+			<li class="t-nav-item f-left mr15"><a href="../plus/shortcut.php" class="underline nav-link">保存到桌面</a></li>
+			<li class="t-nav-item f-left nav-more">
+				<span class="nav-more-type">网站导航<i class="more-arrow"></i></span>
+				<div class="sub-menu-out">
+                	<div class="sub-menu nav">
+                        <ul>
+<li>
+                            	<strong>个人服务</strong>
+                                <a href="../user/personal/personal_resume.php%EF%BC%9Fact=make1" target="_blank">创简历</a>
+                                <a href="../salary.html" target="_blank">查薪资</a>
+                                <a href="../evaluation/index.php" target="_blank">人才测评</a>
+                                <a href="../jobs/map-search.php%EF%BC%9Fid=1" target="_blank">地图找工作</a>
+                            </li>
+                            <li>
+                            	<strong>企业服务</strong>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank">发职位</a>
+                                <a href="../jobfair/jobfair-list.php" target="_blank">招聘会</a>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=simple_jobs" target="_blank">微信招聘</a>
+                                <a href="../hrtools/index.php" target="_blank">HR工具箱</a>
+                            </li>
+                            <li class="bd0">
+                            	<strong>更多</strong>
+                                <a rel="nofollow" href="../campus/index.php" target="_blank">校园招聘</a>
+                                <a rel="nofollow" href="../hunter/index.html" target="_blank">猎聘专区</a>
+                                <a rel="nofollow" href="../train/index.html" target="_blank">培训信息</a>
+                                <a rel="nofollow" href="../shop/index.php" target="_blank">积分商城</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+			</li>
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+	//顶部部登录
+	$.get('/plus/ajax_user.php', {"act":"top_loginform"}, function(data) {
+		$("#top_loginform").html(data);
+	});
+	$(".nav-more").hover(function() {
+		$(".sub-menu").toggle();
+	});
+</script><div class="header-main">
+		<div class="index-container clearfix">
+			<div class="common-logo f-left"><a href="../index.html"><img src="../data/images/logo.png" alt="随州人才网" width="251" height="85"></a></div>
+			<!--<div class="sub-station f-left">
+				<span class="station-control">总站<i class="station-arrow"></i></span>
+			</div>-->
+			<ul class="common-nav f-right">
+<li><a href="../index.html" target="_self">首  页</a></li>
+								<li><a href="../jobs/jobs-list.php" target="_self">找工作</a></li>
+								<li><a href="../resume/resume-list.php" target="_self">聘人才</a></li>
+								<li><a href="../simple/simple-list.php" target="_self">微招聘</a></li>
+								<li><a href="../hrtools/index.php" target="_self">HR工具箱</a></li>
+								<li><a href="../company/index.php" target="_self">企业黄页</a></li>
+								<li><a href="../jobs/map-search-1.html" target="_self">地图找工作</a></li>
+								<li class="active"><a href="index.html" target="_self">新闻资讯</a></li>
+							</ul>
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.common-nav li:last').css({'border-right':0});
+		$('.t-nav-item:last').css({'margin-right':0});
+	});
+</script><!-- 当前位置 --><div class="page_location link_bk">
+当前位置：<a href="../index.html">首页</a> &gt; <a href="index.html">新闻资讯</a> &gt; 
+<a href="news-list.php%EF%BC%9Fid=5">职场动态</a> &gt; 正文
+</div>
+	<!-- 主体内容 -->
+	<div class="container link_bk">
+		
+		<!-- 左边内容 -->
+		<div class="left_area">
+			<div class="news_box">
+				<div class="com_container">
+					<div class="title">专家详解面试成功法宝技巧</div>
+					<div class="news_dateil">
+						<div class="time">2013-07-08 09:06</div>
+						<div class="time">查看：<span id="click"></span> 次</div>
+						<div>
+<a href="javascript:window.print();">[打印]</a> <a href="javascript:void(0);" onclick="window.external.addFavorite(parent.location.href,document.title);">[收藏]</a>
+</div>
+						<div class="clear"></div>
+					</div>
+					<div class="news_txt">
+						<p>    面试发挥出色，可以在一定程度上弥补先前笔试或是其他条件如学历、专业上的不足。许多毕业生求职失败，都是输在了面试上。在新晚报与吉林省人事、教育部门联合举办的职业生涯规划巡回演讲活动上，吉林省人才交流中心市场交流部部长刘宝安向即将步入面试关口的应届大学生详细讲解了面试成功的十大法宝和回答考官问题的十大技巧。 </p>
+<p>   <strong> 技巧一：自我介绍不超2分钟</strong></p>
+<p>    “请你自我介绍一下”这道题90%以上的用人单位都会问，面试者事先最好以文字的形式写好背熟。其实面试者的基本情况用人单位已掌握，考这道题的目的是考核面试者的语言表达能力、逻辑能力、以及诚信度。所以，面试者在自我介绍的内容要与个人简历相一致，表述方式上尽量采用口语化，注意内容简洁，切中要害，不谈无关、无用的内容，条理要清晰，层次要分明。自我介绍不能超过2分钟，最好把握在1分钟左右。 </p>
+<p>    <strong>技巧二：强调温馨和睦的家庭氛围</strong> </p>
+<p>    “谈谈你的家庭情况”此类问题70%的用人单位都会涉及，面试者应简单地介绍家人，一般只需介绍父母，如果亲属和应聘的行业有关系的也可介绍。回答时注意强调温馨和睦的家庭氛围，父母对自己教育方面的重视，各位家庭成员的良好状况，以及家庭成员对自己工作的支持和自己对家庭的责任感。 </p>
+<p>    <strong>技巧三：用乐群性爱好点缀形象</strong> </p>
+<p>    “谈谈你的业余爱好”是合资企业、民企乐于问这道题，因为企业主要想通过此题了解面试者的性格是否开朗，是否具有团队精神。所以面试者千万不要说自己没有业余爱好，也不要说自己有那些庸俗的、令人感觉不好的爱好。谈爱好时最好不要说自己仅限于读书、听音乐、上网等一个人做的事，这样可能会令面试官怀疑应聘者性格孤僻，最好能有一些如篮球、羽毛球等，在户外和大家一起做的业余爱好来“点缀”自己的形象，突出面视者的乐群性和协作能力。 </p>
+<p>    <strong>技巧四：不忘本令考官难忘</strong> </p>
+<p>    “你最崇拜谁？”是近两年用人单位爱考的一道题。面试者回答时，不宜说自己谁都不崇拜，或者说崇拜自己，也最好不要说崇拜一个虚幻的、或者不知名的人，更不能崇拜一个明显具有负面形象的人。面试者所崇拜的人最好与自己所应聘的工作能“搭”上关系，说明自己所崇拜的人的哪些品质、哪些思想感染着自己、鼓舞着自己。 </p>
+<p>　<strong>　技巧五：座右铭与应聘行业相关</strong> </p>
+<p>    通过提问座右铭用人单位就可以判断面试者是否具有发展前途。面试者不要说那些易引起不好联想的座右铭，也不应说那些太抽象的座右铭，更不宜说太长的座右铭。座右铭最好能反映出自己某种优秀品质，或者和本专业、本行业相关的一句话，比如“只为成功找方法，不为失败找借口”。 </p>
+<p>    <strong>技巧六：说与工作“无关紧要”的缺点</strong> </p>
+<p>    当考官问到你的缺点时，面试者不能说自己没缺点，也不能把那些明显的优点说成缺点，但更不能挑严重影响所应聘工作的缺点，或者说令人不放心、不舒服的缺点。可以说出一些对于所应聘工作“无关紧要”的缺点，甚至是一些表面上看是缺点，从工作的角度看却是优点的缺点。 </p>
+<p>    <strong>技巧七：尽量回避待遇问题</strong> </p>
+<p>    考官问到“你为什么选择我们公司？”时就试图从此题中了解面试者求职的动机、愿望以及对此项工作的态度，面试者最好不要说太多待遇好等，可以说“我十分看好贵公司所在的行业，我认为贵公司十分重视人才，而且这项工作很适合我，相信自己一定能做好。” </p>
+<p>   <strong> 技巧八：遇到提问陷阱采用迂回战术</strong> </p>
+<p>    “如果我录用你，你将怎样开展工作”这是一道陷阱题，如果应聘者对于应聘的职位缺乏足够的了解，最好不要直接说出自己开展工作的具体办法，以免引起不良的效果。面试者可以尝试采用迂回战术来回答，如“首先听取领导的指示和要求，然后就有关情况进行了解和熟悉，接下来制定一份近期的工作计划并报领导批准，最后根据计划开展工作。” </p>
+<p>   <strong> 技巧九：回避回答对上级具体的希望</strong> </p>
+<p>    “你希望与什么样的上级共事？”通过面试者对上级的“希望”可以判断出面试者对自我要求的意识，这既是一个陷阱，又是一次机会。面试者要好好把握此机会，最好回避对上级具体的希望，多谈对自己的要求，如“做为刚步入社会新人，我应该多要求自己尽快熟悉环境、适应环境，而不应该对环境提出什么要求，只要能发挥我的专长就可以了。” </p>
+<p>  <strong>  技巧十：尽量体现机智、果敢和敬业</strong> </p>
+<p>    “你是应届毕业生，缺乏经验，如何能胜任这项工作？”此题的回答应体现出面试者的诚恳、机智、果敢及敬业。如“作为应届毕业生，在工作经验方面的确会有所欠缺，因此在读书期间我一直利用各种机会在这个行业里做兼职。我也发现，实际工作远比书本知识丰富、复杂。但我有较强的责任心、适应能力和学习能力，而且比较勤奋，所以在兼职中均能圆满完成各项工作，从中获取的经验也令我受益匪浅。请贵公司放心，学校所学及兼职的工作经验使我一定能胜任这个职位。” </p>
+<p>  <strong>  法宝一：穿戴入时注重细节</strong> </p>
+<p>    面试时衣着整洁、穿戴入时。根据季节需要着装，尤其是一些小细节，比如说，衣襟是否平整，纽扣是否系全等，都不能忽视，如果穿着凌乱，不注意小节，用人单位会因此联想到毕业生今后的工作态度也会不认真、不严谨，会给用人单位留下不好的印象。 </p>
+<p>  <strong>  法宝二：面试应早到15分钟</strong> </p>
+<p>    毕业生最好提前15分钟到场，到考场后尽快熟悉面试地点，提前看看面试考场的情况，清楚从候考室到面试考场的距离，洗手间在哪儿等。 </p>
+<p>   <strong> 法宝三：坚信自己能行</strong> </p>
+<p>    毕业生一定要轻松自信把握机会，其实面试就是考核毕业生的心理素质，如果自己都不给自己自信，那如何能面对众多考官的质疑，一定要相信自己能行。 </p>
+<p>  <strong>  法宝四：发音清楚掌握节奏</strong> </p>
+<p>    面试时要注意发音清楚，掌握节奏。在回答考官的问题时，毕业生讲话的声音要以坐得最远的考官能够清楚地听到你的回答为标准，讲话节奏快慢以考官能够完整地听清你的含义，略有思考为标准，毕业生应多加练习，面试时注意掌握情况，视情况而定。 </p>
+<p>    <strong>法宝五：视线落到考官“人中”处</strong> </p>
+<p>    回答问题时要注视考官，集中精力，表示礼貌。很多毕业生喜欢低着头，或看其他东西，这样做不仅不礼貌，同时也是一种缺乏自信的表现。刘宝安认为，面试时，毕业生不用和考官眼对眼的注视，可以看考官鼻尖到嘴唇之间，人中这个位置，这样既避免了尴尬，还令考官看到一种微笑状。 </p>
+<p>    <strong>法宝六：禁忌携带情侣同往</strong> </p>
+<p>    面试时切忌让家长、朋友陪同，尤其是携着情侣同往，这会让用人单位觉得其缺乏独立能力和信任感，今后在工作中也不能独立完成工作任务的感觉，所以面试应一人前往。 </p>
+<p><strong>　　法宝七：进场禁忌小动作</strong> </p>
+<p>    面试时坐姿应端正，坐在椅子上，身体略微前倾，两手自然放在两膝上，自如大方，切勿有抖动腿、翘二郎腿等小动作。同时，在进考场时，也要注意一些桌椅摆放位置是否端正等小细节，那些也许就是考官的一些小测试，毕业生遇此情况，一定留心纠正，摆正。 </p>
+<p>    <strong>法宝八：留心面试最后陷阱</strong> </p>
+<p>    每次在面视的最后时间，考官都会留部分时间让毕业生自行提问，看看毕业生关心的到底是什么。毕业生应该问问自己如何能在用人单位更好的发展等问题，不要问太过实际的问题，考生最好事先准备几个问题。 </p>
+<p>  <strong>  法宝九：切勿自己先报价</strong> </p>
+<p>    当用人单位与毕业生谈到薪水的问题时，千万不要先报价，如果报高了，用人单位不会买账，如果报低了，用人单位按照你的要求给发工资，又会吃亏。可以说“我很高兴来贵公司工作，我对工资没有过分的要求，只要和我同龄、同学历、同工作经历的员工一样的工资就行。”安心等着用人单位先报价。 </p>
+<p>  <strong>  法宝十：最后告辞注意礼节</strong> </p>
+<p>    有些用人单位在面试结束时，即使录用了该毕业生也会说一些“希望今后继续努力的话”，考验毕业生在遇到困难、挫折时，是什么态度，所以无论对方说的是真是假，都要虚心接受，并说一些感谢的话。</p>
+<br><br><div class="share">
+							<!-- Baidu Button BEGIN -->
+						    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+						        <a class="bds_qzone"></a>
+						        <a class="bds_tsina"></a>
+						        <a class="bds_tqq"></a>
+						        <a class="bds_renren"></a>
+						        <span class="bds_more">更多</span>
+						    </div>
+						<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=659075"></script><script type="text/javascript" id="bdshell_js"></script><script type="text/javascript">
+							document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+						</script><div class="clear"></div>	
+						<!-- Baidu Button END -->
+						</div>
+						<div class="clear"></div>
+						<div class="next_page">
+							<div class="prev">
+																<a href="709.html">上一篇：怎样回答面试所提的问题</a>
+															</div>
+							<div class="next">
+																<a href="715.html">下一篇：四专业自考生面授求职经验</a>
+															</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+		<!-- 右边内容 -->
+		<div class="right_area">
+			
+			<div class="right_box">
+				<div class="title_box">
+					<h5>资讯分类</h5>
+				</div>
+				<div class="list">
+					<ul class="sort">
+<li><a href="news-list.php%EF%BC%9Fid=11">随州资讯</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=6">政策法规</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=13">下载中心</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=5" class="select">职场动态</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=4">面试指南</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=3">简历指南</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=2">职业培训</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=7">创业精英</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=8">职场测试</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=9">职场智慧</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=10">职场策略</a></li>
+												<div class="clear"></div>
+					</ul>
+<div class="clear"></div>
+				</div>
+			</div>
+			<div class="right_search">
+				<div class="news_search"><input type="text" name="key" id="key"></div>
+				<button class="news_sreach_but search_news">搜索</button>
+			</div>
+			<div class="clear"></div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>相关阅读</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6497.html" target="_blank">2018年金秋招聘月活动开展在即</a></li>
+												<li><a href="6374.html" target="_blank">随州一男子伤人潜逃16年 返乡求职老</a></li>
+												<li><a href="6358.html" target="_blank">中介发布名企暑期工招聘信息 收钱后</a></li>
+												<li><a href="6261.html" target="_blank">创业公司招人难：“生怕电话被求职</a></li>
+												<li><a href="6244.html" target="_blank">有钱开公司没钱开工资 随县一“老赖</a></li>
+												<li><a href="6197.html" target="_blank">曾都一男子涉嫌职务侵占被刑事拘留</a></li>
+												<li><a href="5851.html" target="_blank">女儿想卖房留学愁坏父母</a></li>
+											</ul>
+</div>
+			</div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>最新资讯</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6507.html" target="_blank">随县万福店农场“农民”评上职称了</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+											</ul>
+</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- 主体内容 结束 -->
+	<div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="../suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="../explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="../subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="../explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="../hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="../train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="../resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="../hrtools/hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="../user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="../jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="../data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="../index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html>

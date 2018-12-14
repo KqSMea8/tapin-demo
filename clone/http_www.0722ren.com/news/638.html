@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>毕业生求职就业分析(1) - 随州人才网</title>
+<meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp; 3月，传统的新一届毕业生开始签约的季节。来自北京的消息显示，虽然2005的毕业生们仍然面临就业的压力，但日">
+<meta name="keywords" content="毕业生求职就业分析(1)">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/news.css" rel="stylesheet" type="text/css">
+<script src="../templates/demo11/js/jquery.js" type="text/javascript"></script><script type="text/javascript">
+$(document).ready(function()
+{
+		var id="638";
+		var tsTimeStamp= new Date().getTime();
+		$.get("/plus/ajax_click.php", { "id": id,"time":tsTimeStamp,"act":"news_click"},
+			function (data,textStatus)
+			 {			
+				$("#click").html(data);
+			 }
+		);
+		$(".search_news").click(function(){
+			var key = $("#key").val();
+			news_search_location(key);
+		});
+		function news_search_location(key)
+		{
+			$("body").append('<div id="pageloadingbox">页面加载中....<div id="pageloadingbg">');
+			$("#pageloadingbg").css("opacity", 0.5);
+			$.get("/plus/ajax_search_location.php", {"act":"QS_newssearch","key":key},
+					function (data,textStatus)
+					 {
+						 window.location.href=data;
+					 }
+				);
+		}
+		// 等比例缩放图片
+		var w = $(".left_area .news_box").width();//容器宽度 
+	    $(".news_txt img").each(function(){//如果有很多图片，我们可以使用each()遍历 
+	        var img_w = $(this).width();//图片宽度 
+	        var img_h = $(this).height();//图片高度 
+	        if(img_w>w){//如果图片宽度超出容器宽度--要撑破了 
+	            var height = (w*img_h)/img_w; //高度等比缩放 
+	            $(this).css({"width":w,"height":height});//设置缩放后的宽度和高度 
+	        } 
+	    });
+});
+</script>
+</head>
+<body>
+<div id="new-header">
+	<div class="top-bar">
+	<div class="index-container clearfix">
+		<div class="welcome f-left" id="top_loginform"></div>
+		<ul class="top-nav f-right">
+<li class="t-nav-item f-left mobile"><a href="../mobile.html" class="underline">手机频道</a></li>
+			<li class="t-nav-item f-left"><a href="../index.html" class="underline nav-link">网站首页</a></li>
+			<li class="t-nav-item f-left mr15"><a href="../plus/shortcut.php" class="underline nav-link">保存到桌面</a></li>
+			<li class="t-nav-item f-left nav-more">
+				<span class="nav-more-type">网站导航<i class="more-arrow"></i></span>
+				<div class="sub-menu-out">
+                	<div class="sub-menu nav">
+                        <ul>
+<li>
+                            	<strong>个人服务</strong>
+                                <a href="../user/personal/personal_resume.php%EF%BC%9Fact=make1" target="_blank">创简历</a>
+                                <a href="../salary.html" target="_blank">查薪资</a>
+                                <a href="../evaluation/index.php" target="_blank">人才测评</a>
+                                <a href="../jobs/map-search.php%EF%BC%9Fid=1" target="_blank">地图找工作</a>
+                            </li>
+                            <li>
+                            	<strong>企业服务</strong>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank">发职位</a>
+                                <a href="../jobfair/jobfair-list.php" target="_blank">招聘会</a>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=simple_jobs" target="_blank">微信招聘</a>
+                                <a href="../hrtools/index.php" target="_blank">HR工具箱</a>
+                            </li>
+                            <li class="bd0">
+                            	<strong>更多</strong>
+                                <a rel="nofollow" href="../campus/index.php" target="_blank">校园招聘</a>
+                                <a rel="nofollow" href="../hunter/index.html" target="_blank">猎聘专区</a>
+                                <a rel="nofollow" href="../train/index.html" target="_blank">培训信息</a>
+                                <a rel="nofollow" href="../shop/index.php" target="_blank">积分商城</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+			</li>
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+	//顶部部登录
+	$.get('/plus/ajax_user.php', {"act":"top_loginform"}, function(data) {
+		$("#top_loginform").html(data);
+	});
+	$(".nav-more").hover(function() {
+		$(".sub-menu").toggle();
+	});
+</script><div class="header-main">
+		<div class="index-container clearfix">
+			<div class="common-logo f-left"><a href="../index.html"><img src="../data/images/logo.png" alt="随州人才网" width="251" height="85"></a></div>
+			<!--<div class="sub-station f-left">
+				<span class="station-control">总站<i class="station-arrow"></i></span>
+			</div>-->
+			<ul class="common-nav f-right">
+<li><a href="../index.html" target="_self">首  页</a></li>
+								<li><a href="../jobs/jobs-list.php" target="_self">找工作</a></li>
+								<li><a href="../resume/resume-list.php" target="_self">聘人才</a></li>
+								<li><a href="../simple/simple-list.php" target="_self">微招聘</a></li>
+								<li><a href="../hrtools/index.php" target="_self">HR工具箱</a></li>
+								<li><a href="../company/index.php" target="_self">企业黄页</a></li>
+								<li><a href="../jobs/map-search-1.html" target="_self">地图找工作</a></li>
+								<li class="active"><a href="index.html" target="_self">新闻资讯</a></li>
+							</ul>
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.common-nav li:last').css({'border-right':0});
+		$('.t-nav-item:last').css({'margin-right':0});
+	});
+</script><!-- 当前位置 --><div class="page_location link_bk">
+当前位置：<a href="../index.html">首页</a> &gt; <a href="index.html">新闻资讯</a> &gt; 
+<a href="news-list.php%EF%BC%9Fid=6">政策法规</a> &gt; 正文
+</div>
+	<!-- 主体内容 -->
+	<div class="container link_bk">
+		
+		<!-- 左边内容 -->
+		<div class="left_area">
+			<div class="news_box">
+				<div class="com_container">
+					<div class="title">毕业生求职就业分析(1)</div>
+					<div class="news_dateil">
+						<div class="time">2013-07-03 11:07</div>
+						<div class="time">查看：<span id="click"></span> 次</div>
+						<div>
+<a href="javascript:window.print();">[打印]</a> <a href="javascript:void(0);" onclick="window.external.addFavorite(parent.location.href,document.title);">[收藏]</a>
+</div>
+						<div class="clear"></div>
+					</div>
+					<div class="news_txt">
+						<p>    3月，传统的新一届毕业生开始签约的季节。来自北京的消息显示，虽然2005的毕业生们仍然面临就业的压力，但日渐畅通的渠道，更加多元的需求与毕业生自身观念的调整转变，也使得2005的毕业生在签约季节里收获着比以往更多的机遇和帮助。 2005年，北京市属高校毕业生总数近16万人，在市内需求总数逐渐上扬的同时，伴随着就业走四方观念的深入人心，伴随着西部就业浪潮的继续高涌，伴随着政策与服务更加细致的体现，北京在为毕业生，包括更多的外地毕业生提供更大就业空间的同时，也在展现出服务全方位、需求多元化的新特点。</p>
+<p>　　<strong>● 北京服务<br>    <br>　　十八区县齐努力 就业之门更畅通</strong><br>    <br>　　2004年底，北京市人事局发出通知，取消了定于每年11月20日后举办的5场大型毕业生双选会，改由北京十八区县人才机构共同举办'双向选择招聘月'活动。这可以被视为2005年北京毕业生就业服务走向更加细致，更具指向性和功能性的一个信号。<br>     <br>　　据权威部门最新统计，2005年北京地区高校共有本专科（高职）、研究生毕业生约15.5万人，比去年增加约3万人，增幅25%。将传统的大型、专场招聘会化整为零，以更利于用人单位与毕业生交流，成为北京市人事部门加强毕业生就业服务的新创举。<br>     <br>　　与此同时，北京市人事局大中专毕业生就业服务中心面向2005届毕业生推出了“就业服务卡”项目，持卡学生可免费在《北京人才市场报》及北京毕业生就业工作协会会刊上发布个人求职信息；可免费优先获得招聘信息和面试机会；可免费参加北京毕业生就业市场周三定期招聘会以及免费获得职业测评和就业指导。<br>     <br>　　在细化服务的同时，大型就业活动也在寻找方向。今年2月末，北京市人才服务中心举办了第十届“北京人才大市场”。参会企业近1500家，仅100多家的外资、民营高科技企业就提供职位5200多个，这其中相当一部分职位也将毕业生纳入视野之中。<br>     <br>　　面向毕业生的网络招聘会在2005年里也有了新的发展。北京市高校毕业生就业指导中心利用自身资源迅速搭建起高效快捷的网络招聘平台，从去年年末到今年8月5日，将陆续举办5场网上双选会，全部向毕业生和企业免费开放。<br>     <br>　　为保证网上双选重要信息的真实性，北京市教委采取了四项措施：一是要求毕业生在网站上填写的简历内容与毕业时所持的“北京高校毕业生就业推荐表”一致；二是经过事先认证的毕业生学籍信息先转入就业信息网上；三是学生在网上激活自己的学籍信息，并根据学校发的推荐表内容在网站上填写电子推荐表；四是高校对该电推荐表的真实性进行审核。推荐表还增加“实践”项，让招聘单位做到心中有数。<br>     <br>　　除上述举措外，北京市人事局、北京市教委、北京市劳动局还举办了多场专场招聘会以及就业咨询等活动。<br>    <br>　　<strong>中小型企业需求增加   高职专科就业率回升</strong><br>    <br>　　一个又一个的现场双选会，一场连一场的网上招聘会，一拨儿接一拨儿的就业指导咨询。<br>     <br>　　在北京市毕业生就业服务中心主任任占忠的工作日程表上，几乎看不到一天的空闲。而这正是北京毕业生各个就业服务部门在每年早春季节一个具有共性的特点。与往年不同的是，今年他们接待的企业需求咨询开始越来越多，大量中小企业今年将目光对准的即将走出校门的毕业生。<br>     <br>　　对于北京的毕业生来说，今年的需求状况到底怎样？据北京市毕业生就业服务中心主任任占忠分析，各校就业状况的不平衡情况依然存在，北大、清华等名校毕业生基本上不存在找不到工作的问题，他们的主要矛盾是找什么工作。而一般性院校就业难度相对加大。各专业就业状况不平衡，工科的需求情况比文科类专业好一些，一些相对冷的专业就业状况相对差些。<br>    　　<br>　　但任占忠也告诉记者，随着就业观念以及市场发展的变化，中小企业需求上扬等一些可喜的转变正在改变毕业生就业需求的整体格局。</p>
+<p>　　一是今年北京地区需求略有增长，企业特别是中小型企业需求增加，相对量呈上升趋势。建筑类、英语、师范类、机械类、计算机、电子、通信等专业需求量明显增加。<br>     <br>　　二是外地生毕业后留京的数量相对减少，就业观念的转变使外地生就业更加务实。<br>     <br>　　三是以往被认为就业最难的专科生、高职生，从2004年开始就业率明显回升，这缘于社会对高职生培养方式的认可度，同时，高职生与专科生在适应社会的方面有了很大的改进。<br>     <br>　　任占忠说，毕业生不愿去离市区较远的基层单位的状况比前两年有了改善。此外，毕业生的起薪并非像外界报道的有所下降，而是依行业不同，随行就市，一些行业的薪酬实际上是呈上升趋势。<br>    <br>　　紧缺目录有调整    三个专业成新宠<br>    <br>　　记者对北京市3年来引进毕业生紧缺专业作了比较分析，从中可以看出，在北京,哪些专业趋于饱和，哪些专业正紧俏，哪些专业呈持续需求之势。 <br>     <br>　　<strong>三个专业成新宠</strong><br>     <br>　　2005年，北京市人事局发布的引进非北京生源本科毕业生紧缺专业目录为：计算机、机械、建筑、汽车、通信工程、网络与信息安全、电力系统及其自动化、道路与桥梁工程、临床医学、护理学、人力资源管理、市场营销、会计专业。<br>     <br>　　教育系统引进师范类本科毕业生紧缺专业为：汉语言文学、数学、英语。 <br>     <br>　　与去年本科毕业生紧缺专业目录相比，去年的目录有16个专业，今年去掉了英语、汉语言文学、数学、药学、物理学、经济学6个专业，新增了网络与信息安全、电力系统及其自动化、道路与桥梁工程3个专业。<br>     <br>　　<strong>10个专业二年榜上有名</strong><br>     <br>　　计算机、建筑、机械、通信工程、汽车、临床医学、护理学、人力资源管理、市场营销、会计专业10个专业,在2004年和2005年两年在紧缺专业目录中都榜上有名。<br>     <br>　　<strong>8个专业3年成旺势</strong><br>     <br>　　计算机、建筑、机械、汽车、临床医学、护理学、人力资源管理、市场营销8个专业连续3年登上了紧缺专业排行榜。这8个专业在北京呈现用人单位多，需求旺盛之势。<br>     <br>　<strong>　英语须有四六级证书</strong><br>     <br>　　属于引进范围的非北京生源本科毕业生，英语必须通过国家四级或六级考试；进入北京市国家公务员队伍的毕业生，还必须有《北京市应届毕业生国家公务员录用考试公共科目笔试合格证书》。 <br>     <br>　　<strong>在规定院校内引进</strong><br>     <br>　　用人单位须在教育部直属院校、其它部委所属院校、中央与地方共建院校及列入“211”工程的地方院校范围内，引进紧缺专业本科学历应届毕业生。用人单位引进非北京生源毕业生的审批工作于4月1日开始，6月25日结束。<br>    <br>　　<strong>人才闲置岗位空缺并存   毕业生尚须调整择业观</strong><br>    <br>　　中央民族大学学生处尹哲爱老师认为，今年大学生就业形势依然严峻。首先，由于近两三年大学生就业矛盾比较突出，每年都有一定数量毕业生没能就业，社会消化这部分毕业生的压力增大。其次，2001年普通高等学校和成人高等学校招生数量大约比2000年增加80万人，虽然今年研究生招生数量较上年有所增加，能够使部分大学生推迟就业，但今年需就业的毕业生数量还是明显增加。再者，目前许多大学生首选大中城市和高薪岗位，不愿到落后地区和收入水平低的岗位就业，在目前情况下，必定有一部分学生的愿望难以实现，这无疑加大了供需双方的矛盾，导致人才闲置和岗位空缺并存。<br>     <br>　　中国人民大学学生处文书锋老师认为，今年大学生就业仍有难度，主要有以下原因：一是毕业生数量迅猛增加，与社会有效需求短期内增幅有限的供需结构性矛盾突出。二是受长期计划经济和精英教育影响，部分毕业生择业观念存在偏差，就业期望值高，错位现象依然存在。三是高校毕业生流向不合理，一些毕业生宁可“漂”着也不愿意去郊区和西部地区。文书锋认为，要解决就业难问题，高校毕业生就业指导和服务工作有待进一步加强，而高校在专业设置、人才培养模式、培养目标等方面一定要适应经济发展和人才与劳动力市场变化的需求。<br>    <br>　　<strong>新增岗位多   需求空间大</strong><br>    <br>　　据此次市人事局大中专毕业生就业处和北京市毕业生就业服务中心统计结果，截至２００４年１１月中旬，本市各类用人单位需求2005年应届毕业生56600多人。与2004年相比，净增7700多人。其中需求量较大的专业有：计算机\\\\市场营销\\\\通信与信息系统\\\\电子信息科学与技术\\\\会务会计\\\\工商管理\\\\机电一体化\\\\英语\\\\机械制造及自动化\\\\工业与民用建筑等。<br>     <br>　　据记者从此份资料信息初步统计来看，招聘人数在20人以上的单位就有百家左右。如北京现代\\\\北汽福田\\\\SMC(中国)公司\\\\北京重汽轮电机公司\\\\清华同方\\\\华为公司北京研究所等,其中华为研究所研究生学历要百余人。北重\\\\北汽福田\\\\北京现代\\\\SMC(中国)4家企业招收的大中专生总和就有600人之多。公路桥梁建设公司年度要吸纳150多名本科生，该公司人力资源部一名工作人员告诉记者,目前公司最缺的是汽轮机和电机专业的本科生，有多少要多少。<br>    　　<br>　　教育系统也是今年接收毕业生的大户，尤其是郊区县，对教师是求才若渴。需求总量不小。<br>     <br>　　此外，一些外资企业未来几年规模招聘毕业生计划已经有条不紊地展开：松下电器从今年4月份开始，3年内将录用2000名优秀毕业生；德勤将招聘1万名员工；西门子公司今年计划在京招聘员工1000多人；普华永道日前也宣布，未来几年，公司每年将招聘1000名应届毕业生，最终使得员工总数达到3万人。</p>
+<br><br><div class="share">
+							<!-- Baidu Button BEGIN -->
+						    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+						        <a class="bds_qzone"></a>
+						        <a class="bds_tsina"></a>
+						        <a class="bds_tqq"></a>
+						        <a class="bds_renren"></a>
+						        <span class="bds_more">更多</span>
+						    </div>
+						<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=659075"></script><script type="text/javascript" id="bdshell_js"></script><script type="text/javascript">
+							document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+						</script><div class="clear"></div>	
+						<!-- Baidu Button END -->
+						</div>
+						<div class="clear"></div>
+						<div class="next_page">
+							<div class="prev">
+																<a href="634.html">上一篇：淡雅无痕精致面试妆3重点</a>
+															</div>
+							<div class="next">
+																<a href="652.html">下一篇：提问的重要准则</a>
+															</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+		<!-- 右边内容 -->
+		<div class="right_area">
+			
+			<div class="right_box">
+				<div class="title_box">
+					<h5>资讯分类</h5>
+				</div>
+				<div class="list">
+					<ul class="sort">
+<li><a href="news-list.php%EF%BC%9Fid=11">随州资讯</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=6" class="select">政策法规</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=13">下载中心</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=5">职场动态</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=4">面试指南</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=3">简历指南</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=2">职业培训</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=7">创业精英</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=8">职场测试</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=9">职场智慧</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=10">职场策略</a></li>
+												<div class="clear"></div>
+					</ul>
+<div class="clear"></div>
+				</div>
+			</div>
+			<div class="right_search">
+				<div class="news_search"><input type="text" name="key" id="key"></div>
+				<button class="news_sreach_but search_news">搜索</button>
+			</div>
+			<div class="clear"></div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>相关阅读</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6492.html" target="_blank">随州市关于进一步加强医疗救助 同基</a></li>
+												<li><a href="6474.html" target="_blank">跨省异地就医直接结算相关政策解读</a></li>
+												<li><a href="6463.html" target="_blank">随州10月底可网上办理养老保险</a></li>
+												<li><a href="6439.html" target="_blank">湖北省大学生创业孵化示范基地奖补</a></li>
+												<li><a href="6438.html" target="_blank">湖北省就业提升计划实施方案和社保</a></li>
+												<li><a href="6405.html" target="_blank">“黑名单”管理+联合惩戒 让农民工</a></li>
+											</ul>
+</div>
+			</div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>最新资讯</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6507.html" target="_blank">随县万福店农场“农民”评上职称了</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+											</ul>
+</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- 主体内容 结束 -->
+	<div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="../suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="../explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="../subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="../explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="../hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="../train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="../resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="../hrtools/hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="../user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="../jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="../data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="../index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html>

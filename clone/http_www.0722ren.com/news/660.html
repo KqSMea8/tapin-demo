@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>面试经典14问答 - 随州人才网</title>
+<meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp; 这个面试点评有关错误和正确答案不敢苟同。且不评论是什么了不起的企业需要这么去面试一个普通的应聘者。仅对">
+<meta name="keywords" content="面试经典14问答">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/news.css" rel="stylesheet" type="text/css">
+<script src="../templates/demo11/js/jquery.js" type="text/javascript"></script><script type="text/javascript">
+$(document).ready(function()
+{
+		var id="660";
+		var tsTimeStamp= new Date().getTime();
+		$.get("/plus/ajax_click.php", { "id": id,"time":tsTimeStamp,"act":"news_click"},
+			function (data,textStatus)
+			 {			
+				$("#click").html(data);
+			 }
+		);
+		$(".search_news").click(function(){
+			var key = $("#key").val();
+			news_search_location(key);
+		});
+		function news_search_location(key)
+		{
+			$("body").append('<div id="pageloadingbox">页面加载中....<div id="pageloadingbg">');
+			$("#pageloadingbg").css("opacity", 0.5);
+			$.get("/plus/ajax_search_location.php", {"act":"QS_newssearch","key":key},
+					function (data,textStatus)
+					 {
+						 window.location.href=data;
+					 }
+				);
+		}
+		// 等比例缩放图片
+		var w = $(".left_area .news_box").width();//容器宽度 
+	    $(".news_txt img").each(function(){//如果有很多图片，我们可以使用each()遍历 
+	        var img_w = $(this).width();//图片宽度 
+	        var img_h = $(this).height();//图片高度 
+	        if(img_w>w){//如果图片宽度超出容器宽度--要撑破了 
+	            var height = (w*img_h)/img_w; //高度等比缩放 
+	            $(this).css({"width":w,"height":height});//设置缩放后的宽度和高度 
+	        } 
+	    });
+});
+</script>
+</head>
+<body>
+<div id="new-header">
+	<div class="top-bar">
+	<div class="index-container clearfix">
+		<div class="welcome f-left" id="top_loginform"></div>
+		<ul class="top-nav f-right">
+<li class="t-nav-item f-left mobile"><a href="../mobile.html" class="underline">手机频道</a></li>
+			<li class="t-nav-item f-left"><a href="../index.html" class="underline nav-link">网站首页</a></li>
+			<li class="t-nav-item f-left mr15"><a href="../plus/shortcut.php" class="underline nav-link">保存到桌面</a></li>
+			<li class="t-nav-item f-left nav-more">
+				<span class="nav-more-type">网站导航<i class="more-arrow"></i></span>
+				<div class="sub-menu-out">
+                	<div class="sub-menu nav">
+                        <ul>
+<li>
+                            	<strong>个人服务</strong>
+                                <a href="../user/personal/personal_resume.php%EF%BC%9Fact=make1" target="_blank">创简历</a>
+                                <a href="../salary.html" target="_blank">查薪资</a>
+                                <a href="../evaluation/index.php" target="_blank">人才测评</a>
+                                <a href="../jobs/map-search.php%EF%BC%9Fid=1" target="_blank">地图找工作</a>
+                            </li>
+                            <li>
+                            	<strong>企业服务</strong>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank">发职位</a>
+                                <a href="../jobfair/jobfair-list.php" target="_blank">招聘会</a>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=simple_jobs" target="_blank">微信招聘</a>
+                                <a href="../hrtools/index.php" target="_blank">HR工具箱</a>
+                            </li>
+                            <li class="bd0">
+                            	<strong>更多</strong>
+                                <a rel="nofollow" href="../campus/index.php" target="_blank">校园招聘</a>
+                                <a rel="nofollow" href="../hunter/index.html" target="_blank">猎聘专区</a>
+                                <a rel="nofollow" href="../train/index.html" target="_blank">培训信息</a>
+                                <a rel="nofollow" href="../shop/index.php" target="_blank">积分商城</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+			</li>
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+	//顶部部登录
+	$.get('/plus/ajax_user.php', {"act":"top_loginform"}, function(data) {
+		$("#top_loginform").html(data);
+	});
+	$(".nav-more").hover(function() {
+		$(".sub-menu").toggle();
+	});
+</script><div class="header-main">
+		<div class="index-container clearfix">
+			<div class="common-logo f-left"><a href="../index.html"><img src="../data/images/logo.png" alt="随州人才网" width="251" height="85"></a></div>
+			<!--<div class="sub-station f-left">
+				<span class="station-control">总站<i class="station-arrow"></i></span>
+			</div>-->
+			<ul class="common-nav f-right">
+<li><a href="../index.html" target="_self">首  页</a></li>
+								<li><a href="../jobs/jobs-list.php" target="_self">找工作</a></li>
+								<li><a href="../resume/resume-list.php" target="_self">聘人才</a></li>
+								<li><a href="../simple/simple-list.php" target="_self">微招聘</a></li>
+								<li><a href="../hrtools/index.php" target="_self">HR工具箱</a></li>
+								<li><a href="../company/index.php" target="_self">企业黄页</a></li>
+								<li><a href="../jobs/map-search-1.html" target="_self">地图找工作</a></li>
+								<li class="active"><a href="index.html" target="_self">新闻资讯</a></li>
+							</ul>
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.common-nav li:last').css({'border-right':0});
+		$('.t-nav-item:last').css({'margin-right':0});
+	});
+</script><!-- 当前位置 --><div class="page_location link_bk">
+当前位置：<a href="../index.html">首页</a> &gt; <a href="index.html">新闻资讯</a> &gt; 
+<a href="news-list.php%EF%BC%9Fid=7">创业精英</a> &gt; 正文
+</div>
+	<!-- 主体内容 -->
+	<div class="container link_bk">
+		
+		<!-- 左边内容 -->
+		<div class="left_area">
+			<div class="news_box">
+				<div class="com_container">
+					<div class="title">面试经典14问答</div>
+					<div class="news_dateil">
+						<div class="time">2013-07-04 13:05</div>
+						<div class="time">查看：<span id="click"></span> 次</div>
+						<div>
+<a href="javascript:window.print();">[打印]</a> <a href="javascript:void(0);" onclick="window.external.addFavorite(parent.location.href,document.title);">[收藏]</a>
+</div>
+						<div class="clear"></div>
+					</div>
+					<div class="news_txt">
+						<p>    这个面试点评有关错误和正确答案不敢苟同。且不评论是什么了不起的企业需要这么去面试一个普通的应聘者。仅对所提出的问题的错与正确而言，这种定义本身就不能令人服气。不同角度、不同身份当然会有不同的理解和回答，何谓对与错、以什么为标准来衡量、有依据和权威界定吗?谁能保证答所谓正确的人不是擅长耍嘴皮子呢?不能以貌、以语言取人，那是形而上学的唯心主义。实践才是检验真理的唯一标准!以下仅供大家探讨思考</p>
+<p>   <strong> (1)问题：你能够在压力状态下工作得很好吗?</strong></p>
+<p>    分析：很显然，这个问题是要直接了解求职者对压力的反应。</p>
+<p>    错误回答：我在压力下会茁壮成长，实际上，事情变得越乱我就越高兴。毕竟，如今的社会是一个充满竞争的社会，在这个社会里，没有压力就不会有成功。相比之下，我更怕无聊。如果无事可做，我就会变得很懒散，但应对压力我就没问题了。</p>
+<p>    评论：这种回答会让人怀疑：“真有这样的人吗?”除了不可信之外，它还表达了一种消极论调：如果没有压力，求职者就不会得到激励。</p>
+<p>    正确回答：在从事有价值的工作时，任何人都会在工作中时不时地遇到压力。我能够应付一定量的压力，甚至在有些情况下还可以承受极大的压力。对我来说，应对压力的关键是找到一种方法控制形势，从而减轻压力的剧烈程度――通过这种方式，压力就不会影响我的生产力。我知道任何工作都有压力，如果必要的话，我会在压力下工作得很好。</p>
+<p>    评论：这种回答表明，求职者对工作压力的本质和程度都有比较现实的期望。这种回答很有说服力，但又没有对压力表现出过度热情。求职者的表述还说明，他(她)在过去曾经应对过压力，而且还制定过策略有效地处理了工作中的压力。</p>
+<p>   <strong> (2)问题：在成年以后，哪些成就能给你带来最大程度的满足?</strong></p>
+<p>    分析：这个问题可以让面试人很快了解你的个人价值观和道德标准。你选择要说的话会立竿见影地表明你最看重哪些东西。</p>
+<p>    错误回答：在我的上一份工作中，我努力积攒足够多的钱――不管是奖金还是投资等收益――以便实现我的汽车梦。我认为这是一个了不起的成就。</p>
+<p>    评论：除了表明求职者的个人理财能力外，这种回答基本上不能说明求职者的成熟度。相反，由于重视实现个人利益，从某种程度上反映了求职者没有职业抱负。</p>
+<p>    正确回答：在我的上一份工作中，老板曾经病了两个月，在此期间我承担了老板的职责。尽管这份工作对我来说相对陌生，但我还是能承担起这个额外的工作，而且能有效地同时适应两个职位的要求。能够在这样的紧要关头做出响应，并且能妥善解决问题，这确实令我感到满足。</p>
+<p>    评论：这种说法的好处在于，它与独特的成就联系起来，它强调了求职者的投入和勤奋，同时也表明求职者具有不可低估的能力。通过阐述自己为什么会感到满足，求职者为自己塑造了一个非常令人欣赏的候选者形象――一个愿意而且能够表现出很高绩效的人。</p>
+<p>  <strong>  (3)问题：你怎样成为一名领导者?</strong></p>
+<p>    分析：在企业界，领导潜能是一个最有价值的特征。如果对这个问题回答得很恰当，可以使你在求职过程中受到更多的青睐。</p>
+<p>    错误回答：有些人生来就是领导者，我认为我就是其中的一个。我认为，领导能力并不是教育出来的。你要么天生就有，要么永远都不会有。</p>
+<p>    评论：除了再次犯下狂妄自大的错误外，这种回答还有几个缺陷。它并没有说出求职者的任何实质性特点，而且还意味着求职者根本不会帮助企业中的其他人，更不会去发展他们的领导潜能。</p>
+<p>    正确回答：我曾经在几份工作中担任领导职务，负责监管工作，并且一直都很成功。更重要的是，在过去几年的工作中，我感到自己的能力得到了发展。我能够发现别人的领导潜能，而且能够培育他们的领导能力。对我来说，帮助别人开发他们的潜能，这才是对领导者的真正挑战。</p>
+<p>    评论：这种回答表明你有成功的历史(加上一个实例会强化这一点)。更重要的是，它表明你了解有效领导会产生什么样的效果，从而说明你是根据实际经验回答这个问题的。</p>
+<p>    <strong>(4)问题：如果可以在企业内自主选择工作，你想选择什么样的工作?</strong></p>
+<p>    分析：这个问题旨在了解求职者是否了解现代职场的复杂性。它的目的是考查求职者是否清楚，面试人要招聘的是能为企业做出一系列贡献的人。</p>
+<p>    错误回答：我最希望企业能把我承担的责任界定得很清楚，同时也能实现我的期望，这是我最重要的标准。我认为很多人之所以工作不如意，是因为他们直到工作一段时间后，才在某一天突然发现自己并没有得到应有的重视。</p>
+<p>    评论：这种回答描述了员工的一种不良形象，他(她)看得比较长远，但同时又等待着成为牺牲品。它表明求职者并不理解企业的工作重点，不明白对企业来说，最重要的是招聘到能适应多种需要的职员。</p>
+<p>    正确回答：首先，我希望找到的工作能够发挥我的特长和技能，具体地说……(提到一些具体技能)我还希望自己的工作能够得到企业的认可，也就是说，这份工作对实现企业目标确实很必要。如果有一定的发展空间或者有多样化的可能，那这份工作就更理想了。</p>
+<p>    评论：这种回答反映了求职者的看法，说明他(她)知道某一工作应该由合适的人来完成。在这个回答中，求职者认为招聘到的人应该具有相应的技能，他(她)的责任应该非常清楚，他(她)的潜力也应该非常大。这种回答给面试人留下的印象是，如果被选中，这个求职者可以为企业做出巨大的贡献。</p>
+<p>   <strong> (5)问题：你是否认为大学的学习成绩能决定你在本企业的成功程度?</strong></p>
+<p>    分析：这个问题有两个目的。如果求职者在学校成绩很好，面试人希望通过这个问题让求职者知道，工作上的成功与学习上的成功并不一样。如果求职者在学校成绩不佳，面试人希望通过这个问题了解到，求职者是否认为自己解决问题的能力有所欠缺。</p>
+<p>    错误回答：(对那些成绩不佳的人)我不知道，看看DanQuayle(一位美国政治家――译者注)，他当然做得很好――但他的平均成绩只有C.我不认为成绩能有多大作用。</p>
+<p>    错误回答：(对那些成绩很好的人)是的，我认为，如果你能像我一样在一个好学校取得这样的成绩，那就意味着你能够在工作中取得成功。</p>
+<p>    评论：第一种回答明显是答非所问，而且这种回答将政治带入了面试过程，这将产生令人失望的后果。</p>
+<p>    第二种回答表现出了求职者的傲慢，同时也说明求职者不理解学术问题与工作问题的差别。</p>
+<p>    正确回答：(对那些成绩不佳的人)我认为有能力取得好成绩是很重要的。如果一个人在每个科目上成绩都不佳的话，那就会让人非常担心。然而，并非所有人都能在每一个科目上取得优异成绩。对我来说，重要的是在个人学习成绩中要有一些突出的地方，因为这些地方代表着一个人的潜力。</p>
+<p>    正确回答：(对那些成绩较好的人)虽然规划学习生涯不会像管理高难度工作那么复杂，但是我认为两者之间存在着联系。我认为，取得优异的学习成绩的最大意义是它可以反映一个人追求卓越的决心。</p>
+<p>    评论：这两种回答都从正面反映了求职者的观点：第一种回答指出了求职者有一些不错的学习成绩，第二种回答指出了求职者卓越的追求。这两种回答都以第三人称的形式进行了有效表述，从而避免使自己看起来过于谦卑或者过于傲慢。</p>
+<p>  <strong>  (6)问题：在你所做过的事情中，最有创造性的是什么?</strong></p>
+<p>    分析：除了通过寻找实例验证求职者的创造能力外，这个问题还可以发现求职者最重视哪些创造能力。</p>
+<p>    错误回答：在上高中的时候，我在班级演出中扮演了一个非常重要的角色。实际上我在高中时做了很多演出工作。可以说，那是我最有创造力的一个阶段。</p>
+<p>    评论：这里求职者犯了一个典型错误，即把创造力与传统的创造活动等同起来。不幸的是，大多数面试人很少能看到这种差别，不知道创造活动与创造性地解决工作中的问题有什么关系。</p>
+<p>    正确回答：我最有创造性的一个阶段是在大学时，那时我曾经帮助一个朋友竞选学生会主席。实际上，我基本上是在主持她的竞选活动，具体地说，我为她创造了竞选舞台，制定了竞选策略，而且想方设法增加她的支持率。比如，我们所做的一件事情是开办免费咖啡屋，在这间咖啡屋里，同学们可以听到好听的音乐，并知道我们竞选的职位。这是我一生中最有创造力的一段时光，因为我必须不断寻找新的角度去追求成功。</p>
+<p>    评论：这种回答的好处在于，它指出了求职者怎样将创造能力应用到复杂情形中。它表明求职者能够以一种创造性的、解决问题的方式去面对一项复杂的任务。通过给出实例，求职者表明自己有能力创造性地解决问题。<br><br>   <strong> (7)问题：在决定这一职位聘用什么人时，你认为哪些资格是最重要的?</strong></p>
+<p>    分析：通过这个问题对求职者进行反问，面试人可以获悉求职者如何理解这一职位的要求，以及他(她)如何理解企业的工作重点。</p>
+<p>    错误回答：我会聘用像我一样的人!我聪明、能干，而且能够自我激励。这正是这个职位需要的品质――它需要一个迫切希望得到这份工作的人。</p>
+<p>    评论：在这种回答中，求职者并没有接受面试人的挑战，也没有进一步将谈话重点转移到自己身上，结果就注定了他(她)无法看到问题的全部。这种回答还使求职者看起来好像非常迫切地希望得到这份工作――这是一个十分严重的误区。</p>
+<p>    正确回答：我认为21世纪对企业提出了一些真正的挑战。如果我做招聘者的话，不管什么职位，我都会考虑以下几个方面：我想招聘那些既可以做决策又能参与团队工作的人;我想招聘能理解全球竞争但又不害怕全球市场的人;最后，我想招聘能真正意识到质量和服务是企业成功之本的人。</p>
+<p>    评论：尽管回答得很简单、很直接，但求职者表明了自己能够发现雇主的需要，而且也能理解雇主的需要。通过关注团队工作、决策、全球市场、质量和服务，求职者清晰地阐述了21世纪企业面临的几个工作重点。</p>
+<p>   <strong> (8)问题：你怎样做出自己的职业选择?</strong></p>
+<p>    分析：面试人提出这个问题是为了了解求职者的动机，看看他(她)应聘这份工作是否有什么历史渊源，是否有职业规划，是不是仅仅在漫无目的地申请很多工作。</p>
+<p>    错误回答：我一直都想在企业界工作。自孩提时代起，我就梦想自己至少也要成为大企业的副总裁。</p>
+<p>    评论：除了难以令人相信之外，这种回答还存在一个问题：它表明求职者会对副总裁以下的职位不感兴趣。</p>
+<p>    正确回答：在上大学四年级前的那个夏天，我决定集中精力在某一领域谋求发展。尽管我是学商业的，但是我不知道自己最终会从事哪一行业的工作。我花了一定的时间考虑自己的目标，想清楚了自己擅长做的事情以及想从工作中得到的东西，最后我得出了一个坚定的结论，那就是这个行业是最适合我的。</p>
+<p>    评论：这种回答表明，求职者认真地做过一些计划，缩小了自己的关注点，而且也认准了前进的方向。这种回答还表明，求职者理解个人职业规划的重要性，并且有能力做出认真的个人决策。</p>
+<p>   <strong> (11)问题：你最大的长处和弱点分别是什么?这些长处和弱点对你在企业的业绩会有什么样的影响?</strong></p>
+<p>    分析：这个问题的最大陷阱在于，第一个问题实际上是两个问题，而且还要加上一个后续问题。这两个问题的陷阱并不在于你是否能认真地看待自己的长处，也不在于你是否能正确认识自己的弱点。记住，你的回答不仅是向面试人说明你的优势和劣势，也能在总体上表现你的价值观和对自身价值的看法。</p>
+<p>    错误回答：从长处来说，我实在找不出什么突出的方面，我认为我的技能是非常广泛的。至于弱点，我想，如果某个项目时间拖得太久，我可能会感到厌倦。</p>
+<p>    评论：这种回答的最大问题在于，求职者实际上是拒绝回答问题的第一部分。对第二部分的回答暗示了求职者可能缺乏热情。另外，基于对这一问题前两个部分的回答，求职者对后面的问题很难再做出令人满意的回答。</p>
+<p>    正确回答：从长处来说，我相信我最大的优点是我有一个高度理性的头脑，能够从混乱中整理出头绪来。我最大的弱点是，对那些没有秩序感的人，可能缺乏足够的耐心。我相信我的组织才能可以帮助企业更快地实现目标，而且有时候，我处理复杂问题的能力也能影响我的同事。</p>
+<p>    评论：这个回答做到了“一箭三雕”。首先，它确实表明了求职者的最大长处。其次，它所表达的弱点实际上很容易被理解为长处。最后，它指出了这个求职者的长处和弱点对企业和其他员工的好处。</p>
+<p>   <strong>  (12)问题：出于工作晋升的考虑，你打算继续深造吗?</strong></p>
+<p>     分析：这是一个简单的问题，它可以用来衡量你的雄心，也可以判断企业对你的重视程度是否会影响你对自己未来的重视程度。</p>
+<p>    错误回答：我不知道。我已获得了管理学学士学位，我认为自己已经受到了很好的教育。我觉得实际工作经验比在学校里学到的东西更有价值。</p>
+<p>    评论：尽管求职者试图通过这种回答反映其积极的一面，而且这样回答从某种程度上也可以间接地讨好面试人(面试人就是“实际工作”的一部分)，但是，它根本没有反映出求职者追求上进的意愿。因此，根据求职者所表达的信息，如果碰上一个乐观的面试者，他(她)会认为你缺乏雄心，如果碰上一个悲观的面试者，他(她)可能会认为你很自负。</p>
+<p>    正确回答：作为一名大学生，我学到了很多知识。如果有合适的机会，我当然会考虑继续深造。但是，我会认真考虑这件事情，我觉得很多人回学校学习是很盲目的。如果我发现自己所做的工作确实有价值，而且也需要获得更多的教育才能在这一领域做得出色，我当然会毫不犹豫地去学习。</p>
+<p>    评论：这种回答显示了求职者的雄心、热情以及动力。同时也表明，求职者具有与众不同的头脑，而且对重大职业决策非常认真。</p>
+<p>   <strong> (13)问题：你曾经参加过哪些竞争活动?这些活动值得吗?</strong></p>
+<p>    分析：通过调查你经历过的实际竞争场景，可以反映你对竞争环境的适应程度，也可以反映你的自信心。当竞争成为关键因素时，正是讨论小组活动或企业业务的一个绝好机会。</p>
+<p>    错误回答：从本质上说，我是一个竞争性很强的人。我认为，在所有我做过的事情中，我实际上都采取了一种竞争性的态度。毕竟，只有这样你才能在竞争激烈的企业界生存，对吧?</p>
+<p>    评论：这样的求职者阅读了太多关于鲨鱼和汉斯之类的故事，他这样回答让人感觉在企业界不是你死就是我活。尽管企业界是高度竞争的，但是企业中的人憎恨别人把自己看成是凶猛的梭子鱼。</p>
+<p>    正确回答：我喜欢小组运动，我一直都尽我所能参加这些活动。我过去经常打篮球，现在有时候也打。同小组一起工作、为实现共同目标而努力、在竞争中争取胜利……这些事情确实非常令人兴奋。</p>
+<p>    评论：这种回答表明，求职者能够正确看待竞争。这意味着他(她)能够利用竞争力量在竞争中取胜，而不会毁掉同事的工作成果。</p>
+<p>    <strong>(14)问题：上下级之间应该怎样交往?</strong></p>
+<p>    分析：通过这个问题可以了解求职者在企业等级结构中的沟通方式。通过对这一问题的回答，求职者可以展示自己在复杂领域工作的技能水平。</p>
+<p>    错误回答：我愿意并且相信我们可以成为朋友。毕竟，如果你要和某人团结合作，你最好要了解这个人。只有这样，大家才能互相理解，而且你也可以避免很多不必要的冲突。</p>
+<p>    评论：这个回答的最糟糕之处在于，它表明求职者非常不成熟。任何对工作中的人际关系稍微有点了解的人都知道，冲突在工作中是不可避免的。认为建立亲密友谊可以化解矛盾的想法，表明求职者不能真正理解工作关系与个人关系的界限。</p>
+<p>    正确回答：我认为，能在企业各个层面上清楚地进行交流，这对企业的生存至关重要。我认为自己已经在这个方面培养了很强的能力。从上下级关系来说，我认为最重要的是应该意识到每个人以及每种关系都是不同的。对我来说最好的方式就是始终不带任何成见地来对待这种关系的发展。</p>
+<p>    评论：这种回答表明，求职者理解人际关系的复杂性以及多样性。求职者明确地表达了高效沟通技能的重要性，同时也显示了自己在这方面的自信。</p>
+<p>（编辑：王茜）</p>
+<p> </p>
+<br><br><div class="share">
+							<!-- Baidu Button BEGIN -->
+						    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+						        <a class="bds_qzone"></a>
+						        <a class="bds_tsina"></a>
+						        <a class="bds_tqq"></a>
+						        <a class="bds_renren"></a>
+						        <span class="bds_more">更多</span>
+						    </div>
+						<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=659075"></script><script type="text/javascript" id="bdshell_js"></script><script type="text/javascript">
+							document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+						</script><div class="clear"></div>	
+						<!-- Baidu Button END -->
+						</div>
+						<div class="clear"></div>
+						<div class="next_page">
+							<div class="prev">
+																<a href="650.html">上一篇：求职不要输在第一面</a>
+															</div>
+							<div class="next">
+																<a href="664.html">下一篇：面试没有技巧只有经验教训</a>
+															</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+		<!-- 右边内容 -->
+		<div class="right_area">
+			
+			<div class="right_box">
+				<div class="title_box">
+					<h5>资讯分类</h5>
+				</div>
+				<div class="list">
+					<ul class="sort">
+<li><a href="news-list.php%EF%BC%9Fid=11">随州资讯</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=6">政策法规</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=13">下载中心</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=5">职场动态</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=4">面试指南</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=3">简历指南</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=2">职业培训</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=7" class="select">创业精英</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=8">职场测试</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=9">职场智慧</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=10">职场策略</a></li>
+												<div class="clear"></div>
+					</ul>
+<div class="clear"></div>
+				</div>
+			</div>
+			<div class="right_search">
+				<div class="news_search"><input type="text" name="key" id="key"></div>
+				<button class="news_sreach_but search_news">搜索</button>
+			</div>
+			<div class="clear"></div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>相关阅读</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6502.html" target="_blank">广水173名农民成功实现自主创业</a></li>
+												<li><a href="6454.html" target="_blank">广水市电子商务进农村综合示范项目</a></li>
+												<li><a href="6422.html" target="_blank">首届“最美随县人”评选――身边的</a></li>
+												<li><a href="6392.html" target="_blank">“小个头”领跑脱贫路――随州残疾</a></li>
+												<li><a href="6375.html" target="_blank">随县吴山镇河西村贫困户温宝成的脱</a></li>
+												<li><a href="6345.html" target="_blank">心怀责任勇担当――记市政协委员、</a></li>
+												<li><a href="6344.html" target="_blank">核桃树上结“金果”――记湖北泰和</a></li>
+											</ul>
+</div>
+			</div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>最新资讯</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6507.html" target="_blank">随县万福店农场“农民”评上职称了</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+											</ul>
+</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- 主体内容 结束 -->
+	<div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="../suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="../explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="../subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="../explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="../hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="../train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="../resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="../hrtools/hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="../user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="../jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="../data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="../index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html>

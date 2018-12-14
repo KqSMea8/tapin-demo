@@ -1,0 +1,704 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>渠道专员 - 湖北驭兴信息服务有限公司 - 随州人才网</title>
+<meta name="description" content="湖北驭兴信息服务有限公司招聘渠道专员">
+<meta name="keywords" content="渠道专员,湖北驭兴信息服务有限公司">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/tpl_company/blackstyle/css/css.css" rel="stylesheet" type="text/css">
+<link href="../templates/tpl_company/blackstyle/css/ui-dialog.css" rel="stylesheet" type="text/css">
+<script src="../templates/tpl_company/blackstyle/js/jquery.js"></script><script src="../templates/tpl_company/blackstyle/js/dialog-min.js"></script><script src="../templates/demo11/js/dialog-min-common.js"></script><script src="../templates/tpl_company/blackstyle/js/simplefoucs.js" type="text/javascript"></script><script type="text/javascript" src="../../http_api.map.baidu.com/api.html%EF%BC%9Fv=2.0&amp;ak=DFVUjY92RghIGQS6nGHcFBk2KDGPscCs"></script><script type="text/javascript">
+$(document).ready(function(){
+	$.ajaxSetup ({
+		cache: false //关闭AJAX相应的缓存
+	});
+	var id="8266";
+	var company_id="2959";
+	var tsTimeStamp= new Date().getTime();
+	$.get("/plus/ajax_click.php", { "id": id,"time":tsTimeStamp,"act":"jobs_click"},
+		function (data,textStatus)
+		 {			
+			$(".click").html(data);
+		 }
+	);
+	/* 联系方式 */
+	$.get("/plus/ajax_contact.php", { "id": id,"time":tsTimeStamp,"act":"jobs_contact"},
+		function (data,textStatus)
+		 {			
+			$("#jobs_contact").html(data);
+		 }
+	);
+	$("#tel_show_pic").live('click',function()
+	{
+		$.get("/plus/ajax_contact.php", { "id": id,"time":tsTimeStamp,"hashstr":"e67b8a1842aa6188","act":"jobs_contact"},
+			function (data,textStatus)
+			 {			
+				$("#jobs_contact").html(data);
+			 	$("#show_detail").show();
+			 	$("#tel_show_pic").remove();
+			 }
+		);
+	});	
+	// 点击查看大图
+	$("#img_show").click(function() {
+		dialog({
+			title: '企业风采',
+		    content: $("#focus")
+		}).showModal();
+	});
+	//收藏职位
+	favoritesJob_dialog('.add_favorites','/user/user_favorites_job.php?id=8266&act=add');
+	//申请职位
+	applyJob_dialog(".app_jobs","/user/user_apply_jobs.php","1");
+	//举报信息
+	reportJob_dialog(".report_button","/user/user_report.php");
+	// 用户登录
+	$(".ajax_user_login").live('click',function(){
+		var myDialog = dialog();// 初始化一个带有loading图标的空对话框
+		jQuery.ajax({
+		    url: '/user/user_ajax_login.php',
+		    success: function (data) {
+		    	myDialog.width(475);
+		        myDialog.content(data);// 填充对话框内容
+		        myDialog.title('用户登录');// 填充对话框内容
+		    	myDialog.showModal();
+		    }
+		});
+	});
+});
+</script>
+</head>
+<body>
+<div class="user_top_nav">
+	<div class="main">
+	    <div class="ltit"><span id="top_loginform"></span></div>	
+	    <div class="rlink link_lan">
+	    		    	<a href="../mobile/index.html" class="mphone">手机频道</a>
+			<a href="../salary.html">薪酬统计</a>
+			<a href="../index.html">网站首页</a>
+			<a href="../plus/shortcut.php">保存到桌面</a>
+
+	    </div>	
+	    <div class="clear"></div>
+    </div>
+</div>
+
+<div class="com_top_box">
+	<div class="com_logo f-left"><img src="../data/logo/2018/05/14/12058.jpg" alt="公司logo"></div>
+	<div class="com_info f-left">
+		<div class="t">湖北驭兴信息服务有限公司</div>
+		<div class="i">行业：中介服务/家政服务    性质：民营    地区：湖北省/随州市</div>
+		<div class="i">规模：20人以下    </div>
+		<div class="i">地址：曾都区沿河大道校场巷2号</div>
+	</div>
+	<div class="com_Qrcode f-left">
+		<div class="qrimg">
+			<img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fm-wzp.php%3Fcompany_id%3D2959" alt="扫描二维码">
+</div>
+		<div class="qrtext">微信扫描，手机浏览</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<script type="text/javascript">
+//顶部部登录
+$.get("/plus/ajax_user.php", {"act":"top_loginform"},
+function (data,textStatus)
+{			
+$("#top_loginform").html(data);
+}
+);
+//
+var headHeight=$(".header").height()+10;
+    var nav=$(".nav");
+    $(window).scroll(function(){
+        if($(this).scrollTop()>headHeight){
+            nav.addClass("navFix");
+            }
+        else{
+            nav.removeClass("navFix");
+            }
+});
+//
+$("#t_so").hover(
+function(){
+$("#t_so").css("position","relative");
+$("#op_search").show();
+},
+function(){
+$("#op_search").hide();
+$("#t_so").css("position","");	
+}
+);
+$(".top-search-button").click(function()
+{
+	$("body").append('<div id="pageloadingbox">页面加载中....<div id="pageloadingbg">');
+	$("#pageloadingbg").css("opacity", 0.5);
+	$.get("/plus/ajax_search_location.php", {"act":$(this).attr('id'),"key":$("#top-search-key").val()},
+			function (data,textStatus)
+			 {
+				 window.location.href=data;
+			 }
+		);
+});
+</script><!-- 导航 --><div class="com_top_nav">
+	<a href="../c2959.html">企业主页</a>
+	<a href="../c2959/company.html">公司介绍</a>
+	<a href="../c2959/jobs-list-1.html" class="active">招聘职位</a>
+	<a href="../c2959/news-list-1.html">新闻动态</a>
+	<a href="../c2959/comment-list-1.html">评论</a>
+</div>
+<!-- 导航 End-->
+<!-- 内容 -->
+<div class="talents_information">
+	<div class="hunterbox_container position_summary">
+		<div class="box_content">
+			<div class="cell">
+				<h3>渠道专员</h3>
+				<div class="info">
+					<span class="data"><!--2018-06-11-->2018年10月16日</span>					<span class="watch">浏览：<font class="click"></font>次</span>
+					<span class="delivery">4人投递简历</span>
+				</div>
+								<div class="welfare">
+					<ul>
+<li>
+							<p>环境好</p>
+						</li>
+												<li>
+							<p>双休</p>
+						</li>
+												<li>
+							<p>管理规范</p>
+						</li>
+												<li>
+							<p>有年假</p>
+						</li>
+												<li>
+							<p>旅游</p>
+						</li>
+											</ul>
+<div class="clear"></div>
+				</div>
+								<div class="apply_job_colorpiece" aid="8266">￥3000~5000元/月 </div>
+				<div class="share-box">
+					<div class="share-item clearfix">
+						<span class="f-left"><a class="report_button" href="javascript:void(0);" jobs_id="8266" jobs_name="渠道专员" jobs_addtime="">举报</a>  分享到</span>
+						<div class="bdsharebuttonbox f-left">
+							<a href="8266.html" class="bds_more" data-cmd="more"></a>
+							<a href="8266.html" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+							<a href="8266.html" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+							<a href="8266.html" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+							<a href="8266.html" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+							<a href="8266.html" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+						</div>
+						<script>
+							window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+						</script>
+</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 职位信息 -->
+	<div class="hunterbox_container job_detailed_box">
+		<div class="h">
+			<div class="t">职位信息</div>
+			<div class="clear"></div>
+		</div>
+		<div class="box_content">
+			<div class="cell">
+				<div class="c">职位性质：全职</div>
+				<div class="c">职位类别：业务员/销售代表</div>
+				<div class="cright">招聘人数：5人</div>
+				<div class="c">工作地区：湖北省-随州市</div>
+				<div class="c">性别要求：不限</div>
+				<div class="cright">年龄要求：18-30岁</div>
+				<div class="c">学历要求：中专</div>
+				<div class="c">工作年限：无经验</div>
+			</div>
+			<div class="app-job-item clearfix">
+								<img src="../templates/demo11/images/job_gq.gif" style="position: absolute;top:10px;right:200px">
+</div>
+		</div>
+	</div>
+	<!-- 职位信息 End-->
+		<!-- 职位描述 -->
+	<div class="hunterbox_container job_describe_box">
+		<div class="h">
+			<div class="t">职位描述</div>
+			<div class="clear"></div>
+		</div>
+		<div class="box_content">
+			<div class="cell">	
+				<div class="ctext">
+<p>
+	岗位职责：
+</p>
+<p>
+	1、负责公司产品的销售及推广；
+</p>
+<p>
+	2、根据市场营销计划，完成部门销售指标；
+</p>
+<p>
+	3、开拓新市场,发展新客户,增加产品销售范围；
+</p>
+<p>
+	4、负责辖区市场信息的收集及竞争对手的分析；
+</p>
+<p>
+	5、负责销售区域内销售活动的策划和执行，完成销售任务；
+</p>
+<p>
+	6、管理维护客户关系以及客户间的长期战略合作计划。
+</p>
+<p>
+	岗位要求：
+</p>
+<p>
+	1、负责公司产品的销售及推广；
+</p>
+<p>
+	2、根据市场营销计划，完成部门销售指标；
+</p>
+<p>
+	3、开拓新市场,发展新客户,增加产品销售范围；
+</p>
+<p>
+	4、负责辖区市场信息的收集及竞争对手的分析；
+</p>
+<p>
+	5、负责销售区域内销售活动的策划和执行，完成销售任务；
+</p>
+<p>
+	6、管理维护客户关系以及客户间的长期战略合作计划。
+</p>
+</div>
+			</div>
+		</div>
+	</div>
+	<!-- 职位描述 End-->
+		<!-- 联系方式 -->
+	<div class="hunterbox_container job_describe_box">
+		<div class="h">
+			<div class="t">联系方式</div>
+			<div class="clear"></div>
+		</div>
+		<div class="box_content">
+			<div class="cell">
+				<div id="jobs_contact"></div>
+								<div class="contact-map">
+					<style>
+						.map_l{width:580px;float: left;}
+						.map_r{width:80px;float: right;padding-left: 20px;}
+						.map_r li{margin:5px 0;}
+						.map_r li label input {vertical-align:middle;}
+						.map_bottom {margin:10px 0;}
+						.map_bottom h4{display: inline-block;margin-right: 10px;}
+						.map_bottom span {display: inline-block;margin-right: 10px;}
+						.map_bottom .addr_inpt{width:180px;}
+						.map_bottom span .bus_submit{cursor: pointer;margin-left:5px;}
+					</style>
+<div class="company_map">
+						<div class="map_l">
+							<div style="width:100%;height:300px;border:1px #CCCCCC solid; margin:0 auto;" id="map"></div>
+						</div>
+						<div class="map_r">
+							<b>周边查询</b>
+							<ul>
+<li>
+									<label for="hotel"><input type="checkbox" value="酒店" id="hotel" class="serch"> 酒店</label>
+								</li>
+								<li>
+									<label for="catering"><input type="checkbox" value="餐饮" id="catering" class="serch"> 餐饮</label>
+								</li>
+								<li>
+									<label for="supermarket"><input type="checkbox" value="超市" id="supermarket" class="serch"> 超市</label>
+								</li>
+								<li>
+									<label for="bank"><input type="checkbox" value="银行" id="bank" class="serch"> 银行</label>
+								</li>
+								<li>
+									<label for="hospital"><input type="checkbox" value="医院" id="hospital" class="serch"> 医院</label>
+								</li>
+								<li>
+									<label for="scholl"><input type="checkbox" value="学校" id="scholl" class="serch"> 学校</label>
+								</li>
+								<li>
+									<label for="bus"><input type="checkbox" value="公交" id="bus" class="serch"> 公交</label>
+								</li>
+							</ul>
+</div>
+						<div class="clear"></div>
+						<div class="map_bottom">
+							<h4>线路查询</h4>
+							<span>起点：<input type="text" name="start" value="" class="addr_inpt"></span>
+							<span>终点：<input type="text" name="end" value="曾都区沿河大道校场巷2号" class="addr_inpt" readonly></span>
+							<span><input type="button" value="公交查询" class="bus_submit"></span>
+						</div>
+						<div id="r-result" style="margin-bottom: 10px;"></div>
+					</div>
+					<script type="text/javascript">
+						var map = new BMap.Map("map");
+						var point = new BMap.Point(113.37018, 31.724803);
+						map.centerAndZoom(point, 18);
+						map.setZoom(13);
+						var opts = {type: BMAP_NAVIGATION_CONTROL_SMALL,anchor: BMAP_ANCHOR_TOP_RIGHT}
+						map.addControl(new BMap.NavigationControl(opts)); //添加鱼骨
+						// 创建标注
+						var qs_marker = new BMap.Marker(point);           
+						map.addOverlay(qs_marker);
+						// 关键字检索
+						$(".serch").click(function(){
+							var search_key = "["+getSelectVal()+"]";
+							if(search_key=="[]"){
+							map.centerAndZoom(point, 18);
+							}else{
+							map.centerAndZoom(new BMap.Point(113.37018, 31.724803),11);
+							var local = new BMap.LocalSearch(map, {
+							renderOptions:{map: map},
+							pageCapacity:5
+							});
+							local.searchInBounds(search_key, map.getBounds());
+							}
+						});
+						// 获取 关键字方法
+						function getSelectVal() {
+							var a_cn = new Array();
+							$(":checkbox[checked][class='serch']").each(function(index, el) {
+							var checkText = $(this).val();
+							a_cn[index]='"'+checkText+'"';
+							});
+							return a_cn.join(",");
+						}
+						// 公交查询
+						$(".bus_submit").click(function() {
+							var start =$("input[name=start]").val();
+							var end =$("input[name=end]").val();
+							if(start!="" && end!=""){
+							var transit = new BMap.TransitRoute(map, {
+							renderOptions: {map: map, panel: "r-result"}
+							});
+							transit.search(""+start+"", ""+end+"");
+							}else{
+							alert("输入起点！");
+							}
+						});
+					</script>
+</div>
+							</div>
+		</div>
+		<div class="fzp"><div class="te">提示：在应聘过程中用人单位以任何名义向应聘者收取费用都属于违法内容！</div></div>
+	</div>
+	<!-- 联系方式 End-->
+</div>
+<!-- 内容 End-->
+<div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="../suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="../explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="../news/news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="../subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="../explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="../hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="../train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="../resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="../hrtools/hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="../user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="../jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="../data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="../index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html><html>
+<link href="../templates/demo11/css/login.css" rel="stylesheet" type="text/css">
+<script src="../data/cache_classify.js" type="text/javascript" charset="utf-8"></script><script src="../templates/demo11/js/jquery.ajax.personal.selectlayer.js" type="text/javascript" language="javascript"></script><script type="text/javascript">
+	/*
+		快速创建 简历 js start
+	*/
+	$("form[id=creat_form]").submit(function(e) {
+	e.preventDefault();
+		// 姓名
+		if ($("#fullname").val()=="")
+		{			
+			$(".quick-error").html("请填写姓名！");	
+			$(".quick-error").show();
+			return false;
+		}
+		// 最高学历 
+		if($("#education").val()=="")
+		{	
+			$(".quick-error").html("请选择最高学历！");	
+			$(".quick-error").show();
+			return false;
+		}
+		//工作经验
+		if($("#experience").val()=="")
+		{
+			$(".quick-error").html("请选择工作经验！");	
+			$(".quick-error").show();
+			return false;
+		}
+		// 期望职位
+		if($("#intention_jobs").val()=="")
+		{
+			$(".quick-error").html("请选择期望职位！");	
+			$(".quick-error").show();
+			return false;
+		}
+		// 期望行业
+		if($("#trade").val()=="")
+		{
+			$(".quick-error").html("请选择期望行业！");	
+			$(".quick-error").show();
+			return false;
+		}
+		// 期望地区
+		if($("#district").val()=="")
+		{
+			$(".quick-error").html("请选择期望地区！");	
+			$(".quick-error").show();
+			return false;
+		}
+		// 期望薪资
+		if($("#wage").val()=="")
+		{
+			$(".quick-error").html("请选择期望薪资！");	
+			$(".quick-error").show();
+			return false;
+		}
+		// 手机号
+		if($("#telephone").val()=="")
+		{
+			$(".quick-error").html("请填写手机号！");	
+			$(".quick-error").show();
+			return false;
+		}
+		$("#telephone").change(function(event) {
+			var mobile= $(this).val();
+			$.post("/user/user_apply_jobs_creat_resume.php",{'mobile':mobile,"act":"check_mobile"}, function(data, textStatus, xhr) {
+				if(data!="ok")
+				{
+					$(".quick-error").html(data);	
+					$(".quick-error").show();
+					return false;
+				}
+			});
+		});
+		// 手机验证码
+		if($("#telephone_code").val()=="")
+		{
+			$(".quick-error").html("请填写手机验证码！");	
+			$(".quick-error").show();
+			return false;
+		}
+		$("#telephone_code").change(function(event) {
+			var mobile =$("#telephone").val();
+			var code = $(this).val();
+			$.post("/user/user_apply_jobs_creat_resume.php",{'mobile':mobile,'code':code,"act":"check_code"}, function(data, textStatus, xhr) {
+				if(data!="ok")
+				{
+					$(".quick-error").html(data);	
+					$(".quick-error").show();
+					return false;
+				}
+			});
+		});
+		//目前状态 
+		if($("#current").val()=="")
+		{
+			$(".quick-error").html("请选择目前状态！");	
+			$(".quick-error").show();
+			return false;
+		}
+		$(".quick-error").hide();
+		$(".quick-submit-btn").val("正在提交");
+		var fullname =$("#fullname").val();
+		var sex =$("input[name=sex]").val();
+		var sex_cn =$("input[name=sex]").attr('data');
+		var education =$("#education").val();
+		var education_cn =$("#education").attr('data');
+		var experience =$("#experience").val();
+		var experience_cn =$("#experience").attr('data');
+		var intention_jobs =$("#intention_jobs").val();
+		var intention_jobs_id =$("#intention_jobs_id").val();
+		var district =$("#district").val();
+		var district_cn =$("#district_cn").val();
+		var wage =$("#wage").val();
+		var wage_cn =$("#wage").attr('data');
+		var telephone =$("#telephone").val();
+		var current =$("#current").val();
+		var current_cn =$("#current").attr('data');
+		var jobsid= $("#jobsid").val();
+		$.post("/user/user_apply_jobs_creat_resume.php", {'fullname':fullname,'sex':sex,'sex_cn':sex_cn,'education':education,'education_cn':education_cn,'experience':experience,'intention_jobs':intention_jobs,'intention_jobs_id':intention_jobs_id,'district':district,'district_cn':district_cn,'wage':wage,'wage_cn':wage_cn,'telephone':telephone,'current':current,'current_cn':current_cn,'jobsid':jobsid,'act':'create_resume'},
+		 	function (data,textStatus)
+		 	 {
+		 	 	alert(data);
+		 	 	window.location.reload();
+		 	 })		
+	});
+	// 发送短信
+	$('#codeBtn').on('click', function() {
+		// 发送短信
+		var mobile =$("#telephone").val();
+		$.post("/user/user_apply_jobs_creat_resume.php",{'mobile':mobile,"act":"send_code"}, function(data, textStatus, xhr) {
+			if(data!="ok")
+			{
+				$(".quick-error").html(data);	
+				$(".quick-error").show();
+				return false;
+			}
+			else
+			{
+				showTime(100);
+			}
+		});
+	});
+	// 下拉选择
+	$('.quick-drop').on('click', function(e) {
+		$(this).find('.quick-drop-list').slideToggle('fast');
+		$(this).toggleClass('has-drop');
+		$(document).one('click', function() {
+			$('.quick-drop-list').stop().slideUp('fast');
+			$('.quick-drop').removeClass('has-drop');
+		})
+		e.stopPropagation();
+		$(".quick-drop").not($(this)).removeClass('has-drop').find('.quick-drop-list').hide();
+	});
+	$('.quick-drop-list').on('click', function(e) {
+		e.stopPropagation();
+	})
+	$('.quick-drop-list a').on('click', function() {
+		$(this).parents('.quick-drop-list').prevUntil().find('span').css('color', '#666').text($(this).html());
+		$(this).parents('.quick-drop-list').hide().prev('input').val($(this).attr('id'));
+		$(this).parents('.quick-drop-list').hide().prev('input').attr('data', $(this).attr('title'));
+		$('.quick-drop').removeClass('has-drop');
+	})
+
+  // 用户登录
+  $(".quick-login").live('click',function(){
+
+    jQuery.ajax({
+        url: '/user/user_ajax_login.php',
+        success: function (data) {
+          $(".quick-reg-dialog").html(data);
+        }
+    });
+  });
+	function updateP(num, time) {
+		if(num == time) {
+			$('#codeBtn').val('重新发送').prop('disabled', false).removeClass('disabled');
+		}else{
+			var printnr = time - num;
+			$('#codeBtn').val(printnr +"秒重新发送");
+		}
+	}
+	function showTime(time){
+		$('#codeBtn').prop('disabled', true).addClass('disabled');
+
+		for (var i = 0; i <= time; i++) {
+			window.setTimeout("updateP("+ i +","+time+")", i*1000);
+		};
+	};
+</script>
+</html>

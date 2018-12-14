@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>入职新人为什么爱跳槽? - 随州人才网</title>
+<meta name="description" content="当不少应届生感叹“找不到工作”时，不少往届生正“动不动就跳槽”，这一“怪局”令人费解。当前大学生面临的就业矛盾究竟是企业">
+<meta name="keywords" content="入职新人为什么爱跳槽?">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/news.css" rel="stylesheet" type="text/css">
+<script src="../templates/demo11/js/jquery.js" type="text/javascript"></script><script type="text/javascript">
+$(document).ready(function()
+{
+		var id="10";
+		var tsTimeStamp= new Date().getTime();
+		$.get("/plus/ajax_click.php", { "id": id,"time":tsTimeStamp,"act":"news_click"},
+			function (data,textStatus)
+			 {			
+				$("#click").html(data);
+			 }
+		);
+		$(".search_news").click(function(){
+			var key = $("#key").val();
+			news_search_location(key);
+		});
+		function news_search_location(key)
+		{
+			$("body").append('<div id="pageloadingbox">页面加载中....<div id="pageloadingbg">');
+			$("#pageloadingbg").css("opacity", 0.5);
+			$.get("/plus/ajax_search_location.php", {"act":"QS_newssearch","key":key},
+					function (data,textStatus)
+					 {
+						 window.location.href=data;
+					 }
+				);
+		}
+		// 等比例缩放图片
+		var w = $(".left_area .news_box").width();//容器宽度 
+	    $(".news_txt img").each(function(){//如果有很多图片，我们可以使用each()遍历 
+	        var img_w = $(this).width();//图片宽度 
+	        var img_h = $(this).height();//图片高度 
+	        if(img_w>w){//如果图片宽度超出容器宽度--要撑破了 
+	            var height = (w*img_h)/img_w; //高度等比缩放 
+	            $(this).css({"width":w,"height":height});//设置缩放后的宽度和高度 
+	        } 
+	    });
+});
+</script>
+</head>
+<body>
+<div id="new-header">
+	<div class="top-bar">
+	<div class="index-container clearfix">
+		<div class="welcome f-left" id="top_loginform"></div>
+		<ul class="top-nav f-right">
+<li class="t-nav-item f-left mobile"><a href="../mobile.html" class="underline">手机频道</a></li>
+			<li class="t-nav-item f-left"><a href="../index.html" class="underline nav-link">网站首页</a></li>
+			<li class="t-nav-item f-left mr15"><a href="../plus/shortcut.php" class="underline nav-link">保存到桌面</a></li>
+			<li class="t-nav-item f-left nav-more">
+				<span class="nav-more-type">网站导航<i class="more-arrow"></i></span>
+				<div class="sub-menu-out">
+                	<div class="sub-menu nav">
+                        <ul>
+<li>
+                            	<strong>个人服务</strong>
+                                <a href="../user/personal/personal_resume.php%EF%BC%9Fact=make1" target="_blank">创简历</a>
+                                <a href="../salary.html" target="_blank">查薪资</a>
+                                <a href="../evaluation/index.php" target="_blank">人才测评</a>
+                                <a href="../jobs/map-search.php%EF%BC%9Fid=1" target="_blank">地图找工作</a>
+                            </li>
+                            <li>
+                            	<strong>企业服务</strong>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank">发职位</a>
+                                <a href="../jobfair/jobfair-list.php" target="_blank">招聘会</a>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=simple_jobs" target="_blank">微信招聘</a>
+                                <a href="../hrtools/index.php" target="_blank">HR工具箱</a>
+                            </li>
+                            <li class="bd0">
+                            	<strong>更多</strong>
+                                <a rel="nofollow" href="../campus/index.php" target="_blank">校园招聘</a>
+                                <a rel="nofollow" href="../hunter/index.html" target="_blank">猎聘专区</a>
+                                <a rel="nofollow" href="../train/index.html" target="_blank">培训信息</a>
+                                <a rel="nofollow" href="../shop/index.php" target="_blank">积分商城</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+			</li>
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+	//顶部部登录
+	$.get('/plus/ajax_user.php', {"act":"top_loginform"}, function(data) {
+		$("#top_loginform").html(data);
+	});
+	$(".nav-more").hover(function() {
+		$(".sub-menu").toggle();
+	});
+</script><div class="header-main">
+		<div class="index-container clearfix">
+			<div class="common-logo f-left"><a href="../index.html"><img src="../data/images/logo.png" alt="随州人才网" width="251" height="85"></a></div>
+			<!--<div class="sub-station f-left">
+				<span class="station-control">总站<i class="station-arrow"></i></span>
+			</div>-->
+			<ul class="common-nav f-right">
+<li><a href="../index.html" target="_self">首  页</a></li>
+								<li><a href="../jobs/jobs-list.php" target="_self">找工作</a></li>
+								<li><a href="../resume/resume-list.php" target="_self">聘人才</a></li>
+								<li><a href="../simple/simple-list.php" target="_self">微招聘</a></li>
+								<li><a href="../hrtools/index.php" target="_self">HR工具箱</a></li>
+								<li><a href="../company/index.php" target="_self">企业黄页</a></li>
+								<li><a href="../jobs/map-search-1.html" target="_self">地图找工作</a></li>
+								<li class="active"><a href="index.html" target="_self">新闻资讯</a></li>
+							</ul>
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.common-nav li:last').css({'border-right':0});
+		$('.t-nav-item:last').css({'margin-right':0});
+	});
+</script><!-- 当前位置 --><div class="page_location link_bk">
+当前位置：<a href="../index.html">首页</a> &gt; <a href="index.html">新闻资讯</a> &gt; 
+<a href="news-list.php%EF%BC%9Fid=2">职业培训</a> &gt; 正文
+</div>
+	<!-- 主体内容 -->
+	<div class="container link_bk">
+		
+		<!-- 左边内容 -->
+		<div class="left_area">
+			<div class="news_box">
+				<div class="com_container">
+					<div class="title">入职新人为什么爱跳槽?</div>
+					<div class="news_dateil">
+						<div class="time">2013-04-16 14:36</div>
+						<div class="time">查看：<span id="click"></span> 次</div>
+						<div>
+<a href="javascript:window.print();">[打印]</a> <a href="javascript:void(0);" onclick="window.external.addFavorite(parent.location.href,document.title);">[收藏]</a>
+</div>
+						<div class="clear"></div>
+					</div>
+					<div class="news_txt">
+						<p></p>
+<p>当不少应届生感叹“找不到工作”时，不少往届生正“动不动就跳槽”，这一“怪局”令人费解。当前大学生面临的就业矛盾究竟是企业提供的岗位数量不够，还是大学生本身要求太高？</p>
+<p>　　《2010年中国大学生就业报告》昨天公布，2009届大学毕业生毕业半年后的就业率约为86.6%，比2008届（85.6%）高1个百分点，但比2007届（87.5%）低0.9个百分点。值得注意的是，大学毕业生半年内离职率达到了38%，三年内平均工作单位数为2.0个，大学生为何对第一份工作难以“长情”备受关注。</p>
+<p>　　毕业生学校越好离职越缓</p>
+<p>　　调查显示，大学毕业生半年内离职率（曾发生过离职）约为38%，三年内平均工作单位数为2.0个。值得注意的是，大学生毕业学校的层次越高，离职率越低。</p>
+<p>　　据了解，2009届大学毕业生中，毕业于“211”院校的学生，半年内的离职率为22%，非“211”本科院校的毕业生离职率为33%，而高职高专院校的毕业生离职率达45%。</p>
+<p>　　同样情况还反映在对2006届大学毕业生毕业三年后的跟踪调查上。调查发现，2006届大学毕业生中，“211”院校的毕业生三年内平均工作单位数为1.7个，非“211”本科院校的毕业生为1.9个，高职高专院校的毕业生为2.2个。大学毕业生三年内平均每个单位工作时间是，“211”院校毕业生为1.5年，非“211”本科院校毕业生为1.4年，高职高专院校毕业生为1.2年。</p>
+<p>　　近九成毕业生系主动离职</p>
+<p>　　据调查，离职大学生中，主动离职的情况占到了88%，被雇主解职的只占到了2%，而主动离职和被解职两者情况兼有的为10%。</p>
+<p>　　主动离职的原因依次是：个人发展空间不够（31%）、薪资福利偏低（25%）及想改变职业和行业（13%）、其他原因（10%）、就业没有安全感（7%）、对企业管理制度和文化不适应（7%）、工作要求和压力太大（4%）、准备求学深造（3%）。</p>
+<p>　　中小学教师类职位最稳定</p>
+<p>　　从毕业生专业来看，2009届本科毕业生半年内离职率最高的专业是编辑（51%），高职高专毕业生半年内离职率最高的专业是计算机多媒体技术（56%）。</p>
+<p>　　而从2006届本科毕业三年内从事的转换率最高的前10位职业和职位分布来看，从高到低依次为其他教育、培训和图书馆职业类，运输或货运搬运人员的经理类，零售人员类，其他生产加工人员类，公司内办公与行政辅助人员的经理，其他教师和讲员类，其他办公和行政辅助人员类，销售代表、服务业如广告、保险、理财、旅行类，公司和团体的最高主管，销售人员的经理。</p>
+<p>　　相比之下，最为稳定的十大职业或职位分别是小学、中学和特殊教育的教师类，计算机专职，健康诊所和治疗临床人员类、金融财务专职，媒体和传播类人员，建筑师，测量师和绘图师类，高等教育教师类，律师、法官及相关人员类，空运人员类，工程师类等。</p>
+<p>　　工作没劲 回家“自我雇佣”</p>
+<p>　　小于是本市的一所211高校的2009届毕业生，如今他在朋友的文化公司进行“帮忙式自我雇佣”，利用大学里在学生社团积累下的经验担任录音师，收入时多时少，工作时忙时闲，但这是小于“喜欢的工作”。</p>
+<p>　　此前，小于在一家国企担任企划，可不到三个月他就辞职了。“待遇还可以，工作也不算太辛苦，但天天坐在格子间，办公室里除了我以外最年轻的同事也有32岁，完全融入不进去，这种日子太没劲了，我不要过。”小于如此解释自己辞职的原因。对于未来，他有自己的设想：先帮朋友的忙，学习怎么运作文化公司，以后有了渠道自己创业。</p>
+<p>　　记者采访发现，像小于一样辞职并实行“自我雇佣”的2009届毕业生不在少数。他们给出的理由多为“灌录自己的唱片是我的理想”、“我才不要在一个格子间一坐30年”、“常规就业赚钱太慢啦，我还要买房子呢”……种种理由令人忍俊不禁，同时也发人深省。</p>
+<p>　　幻想落空 “85后”有点脆弱</p>
+<p>　　Kathy2009年6月毕业后进入一家外贸公司财务部担任助理。科班出身的Kathy渐渐不能忍受经理总是让她从事枯燥的数据录入，认为这是“典型的大材小用”，因此工作起来无精打采的。一次，由于Kathy的一个纰漏，导致整个部门陪她加班到晚上10点，一位资历较长的同事批评了她，Kathy转天就交了辞职信，从此“赋闲在家”。</p>
+<p>　　中智人力资源管理咨询有限公司薪酬调研运营总监耿俊华指出，很多大学生对企业的期待和企业对他们的要求存在“错位”，尤其是大学生不能忍受基层岗位的繁琐工作，过高的期待落空，也是导致大学生第一份工作“短命”的原因之一。</p>
+<p>　　工作难找 “先找一份再说”</p>
+<p>　　盛大车险人力资源总监屈辉告诉记者，该公司曾招聘进来一名名校毕业的大学生担任销售管理职位。这名大学生刚入职时表现得很积极，但时间一长，部门经理就听到同事反映他“太把自己当回事”。原来，这名“85后”大学生不按企业规章和既有的模式办事，喜欢随心所欲地发挥，老同事善意的提议也很难被他接受，得罪了不少客户，最后还搞砸了一张重要订单。四个月后，这位大学生主动辞职，理由是“无法适应”。</p>
+<p>　　屈辉认为，行业选择的定位不明确、没有做好职业规划是许多大学生第一份工作不能持久的主要原因。一些大学生面临求职压力，往往胡乱找一份工作再说，他们和自己的第一份工作“因不了解而结合、因了解而分手”。</p>
+<p>　　就业质量不高</p>
+<p>　　“大学生离职率高，说明初次就业质量不高。”21世纪教育研究院副院长熊丙奇指出，学生面对不太满意的就业去向犹豫时，就业指导老师便说“先就业后择业”，劝他们先干着，以后找到满意的工作再跳槽。不过，随着经济复苏，就业紧张的氛围缓解，2009届毕业生跳槽的心思便活动起来。</p>
+<p>　　对企业而言，每招聘、录用、培训一个应届大学生，都要付出相应的人力和物力成本。大学生动辄离职，势必影响企业的正常生产、经营秩序，也使企业这部分付出形同虚掷。</p>
+<p>　　“这样的情况如果频繁发生，'吃了亏'的企业很可能在下一年度削减校园招聘的名额，形成'往届生跳槽频、应届生求职难'的恶性循环。”屈辉说道。</p>
+<p>　　择业观需调整</p>
+<p>　　安捷力CEO杨敬宇说：“我们去年招了十几个大学生，今年只剩下了三个人，他们不是自己走掉就是被我炒掉，因为这些人普遍好高骛远，一见面就说自己要当主管要拿多少薪水。”</p>
+<p>　　大学生初次就业质量不高的背后，还有学校就业率的催赶以及政府相关部门政绩的紧逼。</p>
+<p>　　市教委一位相关负责人日前在参加一就业活动中坦陈，为了促进大学生就业，他们曾一度提倡“先就业再择业”，这一观念容易让学生产生误解走极端，因为它抵消了学生的敬业精神和企业忠诚度。这在一定程度上是教育行政部门和高校从自己的工作出发而提出的口号，忽视了对大学生综合就业理念的树立，应当调整。</p>
+<p>　　频跳槽隐患多</p>
+<p>　　对职场新人个人而言，频繁离职也会对职业生涯产生负面影响。屈辉表示，初涉职场就要养成良好的职业习惯，若刚开始工作就总是“三分钟热度”，形成定势的话，不利于新人们的职场进步，以后再找工作时，一份“三年打五份工”的简历也很难赢得未来雇主的信赖。</p>
+<p>　　寿光人才信息港提醒说，频繁离职看似很爽气，但有时会使人付出高昂的“隐性代价”。“一个不顺心就离职，其实是剥夺了自己在某个行业积累专业技能、积累人脉的机会。”她强调，“三百六十行、行行出状元”绝非一句空话，通常在才市上令自己成为“卖方市场”、在雇主面前有“定价权”的人，都至少在自己的行业打拼了八年，而成功的企业家创业更是注重厚积薄发。指出，频繁离职的人往往一直在基层徘徊，拥有的只是“伪自由”，反而具备一定年资的成熟型人才拥有更大的选择权，“企业倚重的往往是资深的内部员工。”</p>
+						<div class="share">
+							<!-- Baidu Button BEGIN -->
+						    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+						        <a class="bds_qzone"></a>
+						        <a class="bds_tsina"></a>
+						        <a class="bds_tqq"></a>
+						        <a class="bds_renren"></a>
+						        <span class="bds_more">更多</span>
+						    </div>
+						<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=659075"></script><script type="text/javascript" id="bdshell_js"></script><script type="text/javascript">
+							document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+						</script><div class="clear"></div>	
+						<!-- Baidu Button END -->
+						</div>
+						<div class="clear"></div>
+						<div class="next_page">
+							<div class="prev">
+																<a href="9.html">上一篇：职场观察：这六种人不会加薪</a>
+															</div>
+							<div class="next">
+																<a href="11.html">下一篇：快乐工作需要哪些因素</a>
+															</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+		<!-- 右边内容 -->
+		<div class="right_area">
+			
+			<div class="right_box">
+				<div class="title_box">
+					<h5>资讯分类</h5>
+				</div>
+				<div class="list">
+					<ul class="sort">
+<li><a href="news-list.php%EF%BC%9Fid=11">随州资讯</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=6">政策法规</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=13">下载中心</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=5">职场动态</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=4">面试指南</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=3">简历指南</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=2" class="select">职业培训</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=7">创业精英</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=8">职场测试</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=9">职场智慧</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=10">职场策略</a></li>
+												<div class="clear"></div>
+					</ul>
+<div class="clear"></div>
+				</div>
+			</div>
+			<div class="right_search">
+				<div class="news_search"><input type="text" name="key" id="key"></div>
+				<button class="news_sreach_but search_news">搜索</button>
+			</div>
+			<div class="clear"></div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>相关阅读</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6507.html" target="_blank">随县万福店农场“农民”评上职称了</a></li>
+												<li><a href="6493.html" target="_blank">随州市举办农业转基因科普法规培训</a></li>
+												<li><a href="6490.html" target="_blank">随州市移民系统干部培训班在中南民</a></li>
+												<li><a href="6479.html" target="_blank">曾都区举办首批电商服务站培训班</a></li>
+												<li><a href="6477.html" target="_blank">曾都区不动产登记局参加服务礼仪培</a></li>
+												<li><a href="6473.html" target="_blank">曾都经济开发区举行实习实训大学生</a></li>
+												<li><a href="6472.html" target="_blank">随州市建筑设计院组织人员参加注册</a></li>
+											</ul>
+</div>
+			</div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>最新资讯</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6507.html" target="_blank">随县万福店农场“农民”评上职称了</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+											</ul>
+</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- 主体内容 结束 -->
+	<div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="../suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="../explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="../subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="../explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="../hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="../train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="../resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="../hrtools/hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="../user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="../jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="../data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="../index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html>

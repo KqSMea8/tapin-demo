@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>面试中的“降龙十八掌” - 随州人才网</title>
+<meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp; 如何在最短的时间内去伪存真，去粗取精，获得应聘者的准确信息，以提高面试效率，降低用人风险，这是摆在HR面">
+<meta name="keywords" content="面试中的“降龙十八掌”">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/news.css" rel="stylesheet" type="text/css">
+<script src="../templates/demo11/js/jquery.js" type="text/javascript"></script><script type="text/javascript">
+$(document).ready(function()
+{
+		var id="452";
+		var tsTimeStamp= new Date().getTime();
+		$.get("/plus/ajax_click.php", { "id": id,"time":tsTimeStamp,"act":"news_click"},
+			function (data,textStatus)
+			 {			
+				$("#click").html(data);
+			 }
+		);
+		$(".search_news").click(function(){
+			var key = $("#key").val();
+			news_search_location(key);
+		});
+		function news_search_location(key)
+		{
+			$("body").append('<div id="pageloadingbox">页面加载中....<div id="pageloadingbg">');
+			$("#pageloadingbg").css("opacity", 0.5);
+			$.get("/plus/ajax_search_location.php", {"act":"QS_newssearch","key":key},
+					function (data,textStatus)
+					 {
+						 window.location.href=data;
+					 }
+				);
+		}
+		// 等比例缩放图片
+		var w = $(".left_area .news_box").width();//容器宽度 
+	    $(".news_txt img").each(function(){//如果有很多图片，我们可以使用each()遍历 
+	        var img_w = $(this).width();//图片宽度 
+	        var img_h = $(this).height();//图片高度 
+	        if(img_w>w){//如果图片宽度超出容器宽度--要撑破了 
+	            var height = (w*img_h)/img_w; //高度等比缩放 
+	            $(this).css({"width":w,"height":height});//设置缩放后的宽度和高度 
+	        } 
+	    });
+});
+</script>
+</head>
+<body>
+<div id="new-header">
+	<div class="top-bar">
+	<div class="index-container clearfix">
+		<div class="welcome f-left" id="top_loginform"></div>
+		<ul class="top-nav f-right">
+<li class="t-nav-item f-left mobile"><a href="../mobile.html" class="underline">手机频道</a></li>
+			<li class="t-nav-item f-left"><a href="../index.html" class="underline nav-link">网站首页</a></li>
+			<li class="t-nav-item f-left mr15"><a href="../plus/shortcut.php" class="underline nav-link">保存到桌面</a></li>
+			<li class="t-nav-item f-left nav-more">
+				<span class="nav-more-type">网站导航<i class="more-arrow"></i></span>
+				<div class="sub-menu-out">
+                	<div class="sub-menu nav">
+                        <ul>
+<li>
+                            	<strong>个人服务</strong>
+                                <a href="../user/personal/personal_resume.php%EF%BC%9Fact=make1" target="_blank">创简历</a>
+                                <a href="../salary.html" target="_blank">查薪资</a>
+                                <a href="../evaluation/index.php" target="_blank">人才测评</a>
+                                <a href="../jobs/map-search.php%EF%BC%9Fid=1" target="_blank">地图找工作</a>
+                            </li>
+                            <li>
+                            	<strong>企业服务</strong>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank">发职位</a>
+                                <a href="../jobfair/jobfair-list.php" target="_blank">招聘会</a>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=simple_jobs" target="_blank">微信招聘</a>
+                                <a href="../hrtools/index.php" target="_blank">HR工具箱</a>
+                            </li>
+                            <li class="bd0">
+                            	<strong>更多</strong>
+                                <a rel="nofollow" href="../campus/index.php" target="_blank">校园招聘</a>
+                                <a rel="nofollow" href="../hunter/index.html" target="_blank">猎聘专区</a>
+                                <a rel="nofollow" href="../train/index.html" target="_blank">培训信息</a>
+                                <a rel="nofollow" href="../shop/index.php" target="_blank">积分商城</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+			</li>
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+	//顶部部登录
+	$.get('/plus/ajax_user.php', {"act":"top_loginform"}, function(data) {
+		$("#top_loginform").html(data);
+	});
+	$(".nav-more").hover(function() {
+		$(".sub-menu").toggle();
+	});
+</script><div class="header-main">
+		<div class="index-container clearfix">
+			<div class="common-logo f-left"><a href="../index.html"><img src="../data/images/logo.png" alt="随州人才网" width="251" height="85"></a></div>
+			<!--<div class="sub-station f-left">
+				<span class="station-control">总站<i class="station-arrow"></i></span>
+			</div>-->
+			<ul class="common-nav f-right">
+<li><a href="../index.html" target="_self">首  页</a></li>
+								<li><a href="../jobs/jobs-list.php" target="_self">找工作</a></li>
+								<li><a href="../resume/resume-list.php" target="_self">聘人才</a></li>
+								<li><a href="../simple/simple-list.php" target="_self">微招聘</a></li>
+								<li><a href="../hrtools/index.php" target="_self">HR工具箱</a></li>
+								<li><a href="../company/index.php" target="_self">企业黄页</a></li>
+								<li><a href="../jobs/map-search-1.html" target="_self">地图找工作</a></li>
+								<li class="active"><a href="index.html" target="_self">新闻资讯</a></li>
+							</ul>
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.common-nav li:last').css({'border-right':0});
+		$('.t-nav-item:last').css({'margin-right':0});
+	});
+</script><!-- 当前位置 --><div class="page_location link_bk">
+当前位置：<a href="../index.html">首页</a> &gt; <a href="index.html">新闻资讯</a> &gt; 
+<a href="news-list.php%EF%BC%9Fid=7">创业精英</a> &gt; 正文
+</div>
+	<!-- 主体内容 -->
+	<div class="container link_bk">
+		
+		<!-- 左边内容 -->
+		<div class="left_area">
+			<div class="news_box">
+				<div class="com_container">
+					<div class="title">面试中的“降龙十八掌”</div>
+					<div class="news_dateil">
+						<div class="time">2013-06-26 17:28</div>
+						<div class="time">查看：<span id="click"></span> 次</div>
+						<div>
+<a href="javascript:window.print();">[打印]</a> <a href="javascript:void(0);" onclick="window.external.addFavorite(parent.location.href,document.title);">[收藏]</a>
+</div>
+						<div class="clear"></div>
+					</div>
+					<div class="news_txt">
+						<p>    如何在最短的时间内去伪存真，去粗取精，获得应聘者的准确信息，以提高面试效率，降低用人风险，这是摆在HR面前的现实挑战。</p>
+<p>    如何在最短的时间内去伪存真，去粗取精，获得应聘者的准确信息，以提高面试效率，降低用人风险，这是摆在HR面前的现实挑战。笔者从十几年的面试、阅人经历中总结了十八条基本经验，简称面试中的“降龙十八掌”，以供HR同仁参考。</p>
+<p>  <strong>  一、相由心生，直觉判定</strong></p>
+<p>    “相由心生”并非无稽之谈，作为常识性感觉，一般人都会有这样的概念：贼眉鼠眼之人会有偷盗之嫌；目露凶光之人暗藏杀机，使人远而避之……中国古代有 “识人八相”之说，比如“威相”的人威仪刚猛，一般具有决断力与行动力：“厚相”的人厚朴稳重，一般性情温和，心胸宽广：“清相”的人清秀疏朗，气度纯和，一般性情爽朗，思维敏捷，富有创造力：“古相”的人形象古怪，一般性格内向，性情孤傲：“孤相”的人体形微弱，神色浑浊，摇摆不定，一般性格内向，心胸狭窄：“恶相”的人凶神恶煞，一般性情卑劣，不讲信用：“薄相”的人体格劣弱，身轻气怯，一般孤僻、内向、无主见；俗相的人粗俗鲁莽，一般喜怒无常，惟利是图……当然，面试不能仅仅以貌取人，要辅以其他测评手段来综合判断。</p>
+<p>    笔者同时从另外一个角度看待岗位与个性特质的适应度，在实践中发现：同一职业人群的个性特质在总体上有很多相似的地方。曾在一商业地产公司工作时，我将前台接待人员、销售人员、人事经理、财务出纳的个性特质做了这样的定位：前台接待人员――“顺眼不惹眼、吸引不勾引”；销售人员――“铜头、铁嘴、飞毛腿”；人事经理――“外圆内方、刚柔并济”；财务出纳――“四平八稳、胆小如鼠”……这些，是职业人群共性特质的一部分，是同一类职业人员因实际工作的需要长期形成的共性特征，具有一定的代表性，可以通过面试感觉而初步定位。当然，这需要在阅人无数、积累了丰富的识人经验后方可判断，而且只是初步判断，是否录用，一定要结合其他测评工具。</p>
+<p>    <strong>二、兵不厌诈，验明正身</strong></p>
+<p>    各类证件是否真假，工作经历是否属实，不一定通过网络查询、调查取证的方式进行，因为调查有一定的难度，有时费时费力。在把握不准的情况下，可以适当尝试用杜撰对方毕业学校、前工作单位等的领导或同事姓名或其他虚拟场景来试探对方，看对方的反应，如果对方唯唯诺诺，以假乱真，那一定有诈；如果对方立即纠正错误，而且清晰地告诉正确答案，说明情况属实。</p>
+<p>    <strong>三、开门见山，直抵核心</strong></p>
+<p>    为节约面试时间，要尽量减少寒暄，直接进入面试主题，抓住要害。结合招聘岗位的工作内容、核心素质要求以及应聘者简历的内容，直接进行实质性面试，这可以在最短时间内观察应聘者的反应能力、专业深度等情况。</p>
+<p>   <strong> 四、避实击虚，见缝插针</strong></p>
+<p>    简历中发现的一些疑点或在面试中对方回答问题的漏洞应当引起面试考官的关注，围绕这些问题要及时进行询问与验证，以了解事情真相，避免面试盲点。</p>
+<p>    <strong>五、顺藤摸瓜，步步为营</strong></p>
+<p>    当我们问到某些问题的时候，对方在回答时可能会反馈出很多信息，我们要随时把握突破口，富有逻辑性地顺藤摸瓜、刨根问底，获取对面试有参考价值的信息。比如面试人事经理，当我们问及薪酬管理方面的问题时，如果对方在回答时涉及到了绩效考核、职位价值、市场调研方面的信息时，等对方把这个问题回答完毕后，我们可以接着问关于绩效管理、岗位评价等方面的问题；如果谈到绩效管理时，对方若涉及到企业文化或执行力的信息时，我们再接着聊关于企业文化或执行力的话题……随着问题的深入，我们会越来越清晰地了解对方的知识、经验、价值观等有效信息。</p>
+<p>  <strong>  六、案例讨论，旁观者清</strong></p>
+<p>    招聘时，笔者有时会用案例讨论的方式进行，让几个备选人共同探讨某一个话题。作为面试考官，只在一旁静静的观察，必要时予以适当的引导。这时候不仅仅看发言人的表现，更重要的是观察其他备选人的反应，如果旁观者聚精会神地聆听或认真地思考，甚至记录或点头微笑，说明他具有团队合作的意识，在关注并分享他人的感受，这当然是我们对人才的基本要求。相反，如果别人发言的时候，有的人漫不经心，甚至表现出不屑一顾，这说明他不尊重别人，情商指数有待提高，他将是我们首先PASS的对象。</p>
+<p>    <strong>七、龙马过招，自有分明</strong></p>
+<p>    这是在几个候选人基本条件相近，势均力敌、不分上下，让面试考官在短时间内难以选择的情况下采取的非常手段：让几个备选人互相提问（当然提问的问题与应聘岗位的工作有关），规则是提问者在对方回答完毕后，其本人也要阐述对自己所提问题的看法。通过这种过招方式，看谁能在整个过程中发挥自如、游刃有余，以此来判断谁是比较合适的候选人。</p>
+<p><strong>    八、真刀真枪，实力作证</strong></p>
+<p>    在招聘某些专业技能较强的岗位人员时，可以先进入实操性测试，再进行综合测评。例如平面设计人员可先直接上机操作，根据要求现场设计作品；招聘司机，直接在车场设置障碍物，现场测试其驾驶技术；招聘编辑人员，先直接根据要求现场写一篇文章，看其文采与创作思维……有没有实力，立即会露出真实面目。</p>
+<p>    <strong>九、车轮战术，全面评定</strong></p>
+<p>    招聘一些需要经常与相关部门协作的岗位人员时，需要各相关部门负责人轮流面试，从不同的角度考察，相当于车轮作战。这样会从多个视角全面把握这个人能否适应公司的文化，当大家都认同他时，录取后他会更快、更好地进入工作角色，与大家愉快的合作。</p>
+<p>   <strong> 十、排山倒海，压力盖顶</strong></p>
+<p>    当我们招聘业务类、公关类、管理类等要求心理承受能力较强的岗位人员时，可以采取多个面试考官集中面试，轮番提问，造成压力盖顶之势，来测试其心理素质。抗压能力差的人会经不起考验，立即败下阵来。</p>
+<p>   <strong> 十一、角色模拟，渐入佳境</strong></p>
+<p>    招聘业务类人员时，经过初步面试后，复试时可以模拟一个正常的工作情境，让其直接扮演公司业务人员向面试考官进行产品推销，在测试过程中，考官也要进入日常的业务沟通状态，故意设计一些刁蛮的问题，观察其反应能力、沟通能力、推销技巧及心理素质等。</p>
+<p>   <strong> 十二、历史回顾，返朴归真</strong></p>
+<p>    与行为面试法接近，通过应聘者对过去特定情境下行为的回忆来了解其过去的表现、业绩、是否真诚等信息。需要注意的是：不仅要认真倾听，观察其表情与肢体语言，还要寻找关键点作为突破口顺势询问，以判断信息的真伪。如：一位应聘考核主管的人回忆在上一个单位制定考核方案的情景时滔滔不绝，说方案全是他一人策划、制定的，但考官顺势一问方案内容中的一些制定依据及目的时他却张口结舌，支支吾吾，显然他不是方案的策划人，只是执行者或者至多是参与者。</p>
+<p>    <strong>十三、重复提问，巧设迷阵</strong></p>
+<p>    对于一些关键问题，为了验证应聘者的回答是否真诚，可以在对方回答完毕后，先询问其他问题，当对方陷入问题的“漩涡”后，过一二十分钟再问刚才的关键问题或类似刚才的问题，通过这种方式来检测对方回答的结果与刚才的回答是否一致。</p>
+<p>    <strong>十四、行为细节，考察个性</strong></p>
+<p>    一个人的口头语言及书面语言可以掩饰内心世界，但行为细节却很难掩盖自己的个性特征，因为它往往是潜意识的自我流露。一个人表情的变化、细节的动作乃至站姿走势都是其深层次特征的信息符号。笔者曾在招聘业务人员时，中午代表公司请候选人吃饭，提前通知食堂准备三个密封的调味小瓶，分别装上酱油、醋、辣椒油，瓶上没有任何提示性标志。我告诉他们，某些菜加上调味品味道会更好。这时，有些人连看都没看就倒了一点调味品，然后才发现是辣椒油――不是他要的醋；有些人谨小慎微，分别打开瓶盖，仔细观察，甚至用鼻子闻闻然后再选择……因此我判断：前者虽然有点粗心，但富有冒险精神，敢于挑战；后者虽然心细如发，但过于谨慎，缺乏挑战精神。而当时公司发展的特定阶段要求业务人员的基本个性特质是“可以不拘小节，但必须具备挑战精神”，显然，前者在个性方面是与公司的要求相吻合的。</p>
+<p>  <strong>  十五、欲擒故纵，显露胸襟</strong></p>
+<p>    当招聘某些岗位，需要该岗位从业人员心胸宽广，同时具有较强的抗挫折能力的时候，我们可以在面试结束时故意暗示或直接表明对方不符合公司要求，当接收到这一信号时，应聘者的表现是不一样的：有的惊诧，有的黯然，有的表现不悦，有的甚至没有道别就拂袖走人……当然，我们最希望的状态是保持君子风度，不卑不亢，坦然面对，理解面试考官的同时不失自信。因为录用与否都有其特定的理由，没有录取并不代表应聘者不优秀，即使无法合作，至少也给应聘者提供了一次了解企业及自己的机会。</p>
+<p>    <strong>十六、书面改错，以假乱真</strong></p>
+<p>    应聘者往往对正面问题回答的比较自如，但实际经验、技能水平状况如果通过反面的改错更能反应其真实状态。比如：招聘一名秘书，可以设计一篇错误百出的公文，从格式上、语句上乃至标点符号、盖章位置上制造明显的错误让其纠正；招聘人事经理，结合企业背景设计一套漏洞百出的考核方案或薪酬方案，让其对方案进行诊断与纠正……有些人在探讨理论时夸夸其谈，但改错时无从下手，甚至越改越错，这种情况下实操能力已经无法恭维了。</p>
+<p>   <strong> 十七、旧主评说，透视人品</strong></p>
+<p>    在面试过程中涉及到应聘人员对过去单位的看法时可获得应聘者一些基本道德品性的信息。有人将原雇主说的一塌糊涂；有人则客观地评价原单位，不搀杂个人的感情色彩，同时保守原公司的商业机密……事实上，人都应有感恩之心，不管过去单位如何，至少给自己付出了劳动报酬，给自己提供了一次实践的机会；同时，没有问题的企业是不存在的，如果将来离开本公司会不会同样“出卖”企业？毕竟，“曹操之心”，人皆有之，在用人单位眼中，恪守基本的职业准则是人品的直接体现。</p>
+<p>    <strong>十八、好事多磨，表现真诚</strong></p>
+<p>    招聘中高层人员或其他特殊类岗位，需要测试其对公司的认同度，最好不要一次性决定是否录用。可多次邀请对方来公司洽谈（也可以安排在业余时间），一方面增进对方对本公司的了解，一方面看其合作的诚意，如果两次以后对方再也不来公司面谈，企业要果断舍弃，因为适当的放弃也是一种美。试想：如果对方没有真正认同公司的价值观，没有诚意与公司合作，即使录取了，也不会在公司久留，公司可能还要面临重新选择。</p>
+<p>（编辑：王茜）<br> <br></p>
+<br><br><div class="share">
+							<!-- Baidu Button BEGIN -->
+						    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+						        <a class="bds_qzone"></a>
+						        <a class="bds_tsina"></a>
+						        <a class="bds_tqq"></a>
+						        <a class="bds_renren"></a>
+						        <span class="bds_more">更多</span>
+						    </div>
+						<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=659075"></script><script type="text/javascript" id="bdshell_js"></script><script type="text/javascript">
+							document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+						</script><div class="clear"></div>	
+						<!-- Baidu Button END -->
+						</div>
+						<div class="clear"></div>
+						<div class="next_page">
+							<div class="prev">
+																<a href="439.html">上一篇：求职 做份视频简历当“面霸”</a>
+															</div>
+							<div class="next">
+																<a href="456.html">下一篇：面试10大不能说</a>
+															</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+		<!-- 右边内容 -->
+		<div class="right_area">
+			
+			<div class="right_box">
+				<div class="title_box">
+					<h5>资讯分类</h5>
+				</div>
+				<div class="list">
+					<ul class="sort">
+<li><a href="news-list.php%EF%BC%9Fid=11">随州资讯</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=6">政策法规</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=13">下载中心</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=5">职场动态</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=4">面试指南</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=3">简历指南</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=2">职业培训</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=7" class="select">创业精英</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=8">职场测试</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=9">职场智慧</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=10">职场策略</a></li>
+												<div class="clear"></div>
+					</ul>
+<div class="clear"></div>
+				</div>
+			</div>
+			<div class="right_search">
+				<div class="news_search"><input type="text" name="key" id="key"></div>
+				<button class="news_sreach_but search_news">搜索</button>
+			</div>
+			<div class="clear"></div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>相关阅读</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6502.html" target="_blank">广水173名农民成功实现自主创业</a></li>
+												<li><a href="6454.html" target="_blank">广水市电子商务进农村综合示范项目</a></li>
+												<li><a href="6422.html" target="_blank">首届“最美随县人”评选――身边的</a></li>
+												<li><a href="6392.html" target="_blank">“小个头”领跑脱贫路――随州残疾</a></li>
+												<li><a href="6375.html" target="_blank">随县吴山镇河西村贫困户温宝成的脱</a></li>
+												<li><a href="6345.html" target="_blank">心怀责任勇担当――记市政协委员、</a></li>
+												<li><a href="6344.html" target="_blank">核桃树上结“金果”――记湖北泰和</a></li>
+											</ul>
+</div>
+			</div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>最新资讯</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6507.html" target="_blank">随县万福店农场“农民”评上职称了</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+											</ul>
+</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- 主体内容 结束 -->
+	<div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="../suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="../explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="../subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="../explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="../hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="../train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="../resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="../hrtools/hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="../user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="../jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="../data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="../index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html>

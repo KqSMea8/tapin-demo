@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>随州市环境状况公报（2013年度） - 随州人才网</title>
+<meta name="description" content="一、环境质量状况
+    1、空气环境质量
+    2013年随州市空气环境质量保持良好状态，全年达到二级及以上的天数为290天，达标率79.4%。与2012年相比，全年达到二级及以上的天数332天，达标率减少了11.3个百分点。
+">
+<meta name="keywords" content="随州市环境状况公报（2013年度）">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/news.css" rel="stylesheet" type="text/css">
+<script src="../templates/demo11/js/jquery.js" type="text/javascript"></script><script type="text/javascript">
+$(document).ready(function()
+{
+		var id="2249";
+		var tsTimeStamp= new Date().getTime();
+		$.get("/plus/ajax_click.php", { "id": id,"time":tsTimeStamp,"act":"news_click"},
+			function (data,textStatus)
+			 {			
+				$("#click").html(data);
+			 }
+		);
+		$(".search_news").click(function(){
+			var key = $("#key").val();
+			news_search_location(key);
+		});
+		function news_search_location(key)
+		{
+			$("body").append('<div id="pageloadingbox">页面加载中....<div id="pageloadingbg">');
+			$("#pageloadingbg").css("opacity", 0.5);
+			$.get("/plus/ajax_search_location.php", {"act":"QS_newssearch","key":key},
+					function (data,textStatus)
+					 {
+						 window.location.href=data;
+					 }
+				);
+		}
+		// 等比例缩放图片
+		var w = $(".left_area .news_box").width();//容器宽度 
+	    $(".news_txt img").each(function(){//如果有很多图片，我们可以使用each()遍历 
+	        var img_w = $(this).width();//图片宽度 
+	        var img_h = $(this).height();//图片高度 
+	        if(img_w>w){//如果图片宽度超出容器宽度--要撑破了 
+	            var height = (w*img_h)/img_w; //高度等比缩放 
+	            $(this).css({"width":w,"height":height});//设置缩放后的宽度和高度 
+	        } 
+	    });
+});
+</script>
+</head>
+<body>
+<div id="new-header">
+	<div class="top-bar">
+	<div class="index-container clearfix">
+		<div class="welcome f-left" id="top_loginform"></div>
+		<ul class="top-nav f-right">
+<li class="t-nav-item f-left mobile"><a href="../mobile.html" class="underline">手机频道</a></li>
+			<li class="t-nav-item f-left"><a href="../index.html" class="underline nav-link">网站首页</a></li>
+			<li class="t-nav-item f-left mr15"><a href="../plus/shortcut.php" class="underline nav-link">保存到桌面</a></li>
+			<li class="t-nav-item f-left nav-more">
+				<span class="nav-more-type">网站导航<i class="more-arrow"></i></span>
+				<div class="sub-menu-out">
+                	<div class="sub-menu nav">
+                        <ul>
+<li>
+                            	<strong>个人服务</strong>
+                                <a href="../user/personal/personal_resume.php%EF%BC%9Fact=make1" target="_blank">创简历</a>
+                                <a href="../salary.html" target="_blank">查薪资</a>
+                                <a href="../evaluation/index.php" target="_blank">人才测评</a>
+                                <a href="../jobs/map-search.php%EF%BC%9Fid=1" target="_blank">地图找工作</a>
+                            </li>
+                            <li>
+                            	<strong>企业服务</strong>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank">发职位</a>
+                                <a href="../jobfair/jobfair-list.php" target="_blank">招聘会</a>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=simple_jobs" target="_blank">微信招聘</a>
+                                <a href="../hrtools/index.php" target="_blank">HR工具箱</a>
+                            </li>
+                            <li class="bd0">
+                            	<strong>更多</strong>
+                                <a rel="nofollow" href="../campus/index.php" target="_blank">校园招聘</a>
+                                <a rel="nofollow" href="../hunter/index.html" target="_blank">猎聘专区</a>
+                                <a rel="nofollow" href="../train/index.html" target="_blank">培训信息</a>
+                                <a rel="nofollow" href="../shop/index.php" target="_blank">积分商城</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+			</li>
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+	//顶部部登录
+	$.get('/plus/ajax_user.php', {"act":"top_loginform"}, function(data) {
+		$("#top_loginform").html(data);
+	});
+	$(".nav-more").hover(function() {
+		$(".sub-menu").toggle();
+	});
+</script><div class="header-main">
+		<div class="index-container clearfix">
+			<div class="common-logo f-left"><a href="../index.html"><img src="../data/images/logo.png" alt="随州人才网" width="251" height="85"></a></div>
+			<!--<div class="sub-station f-left">
+				<span class="station-control">总站<i class="station-arrow"></i></span>
+			</div>-->
+			<ul class="common-nav f-right">
+<li><a href="../index.html" target="_self">首  页</a></li>
+								<li><a href="../jobs/jobs-list.php" target="_self">找工作</a></li>
+								<li><a href="../resume/resume-list.php" target="_self">聘人才</a></li>
+								<li><a href="../simple/simple-list.php" target="_self">微招聘</a></li>
+								<li><a href="../hrtools/index.php" target="_self">HR工具箱</a></li>
+								<li><a href="../company/index.php" target="_self">企业黄页</a></li>
+								<li><a href="../jobs/map-search-1.html" target="_self">地图找工作</a></li>
+								<li class="active"><a href="index.html" target="_self">新闻资讯</a></li>
+							</ul>
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.common-nav li:last').css({'border-right':0});
+		$('.t-nav-item:last').css({'margin-right':0});
+	});
+</script><!-- 当前位置 --><div class="page_location link_bk">
+当前位置：<a href="../index.html">首页</a> &gt; <a href="index.html">新闻资讯</a> &gt; 
+<a href="news-list.php%EF%BC%9Fid=11">随州资讯</a> &gt; 正文
+</div>
+	<!-- 主体内容 -->
+	<div class="container link_bk">
+		
+		<!-- 左边内容 -->
+		<div class="left_area">
+			<div class="news_box">
+				<div class="com_container">
+					<div class="title">随州市环境状况公报（2013年度）</div>
+					<div class="news_dateil">
+						<div class="time">2014-06-05 09:07</div>
+						<div class="time">查看：<span id="click"></span> 次</div>
+						<div>
+<a href="javascript:window.print();">[打印]</a> <a href="javascript:void(0);" onclick="window.external.addFavorite(parent.location.href,document.title);">[收藏]</a>
+</div>
+						<div class="clear"></div>
+					</div>
+					<div class="news_txt">
+						<p>一、环境质量状况<br>
+    1、空气环境质量<br>
+    2013年<a href="../index.html" target="_blank">随州</a>市空气环境质量保持良好状态，全年达到二级及以上的天数为290天，达标率79.4%。与2012年相比，全年达到二级及以上的天数332天，达标率减少了11.3个百分点。<br>
+    二氧化硫：年平均浓度为0.020毫克/立方米，比2012年（0.018毫克/立方米）上升11.1%。<br>
+    二氧化氮：年平均浓度为0.023毫克/立方米，比2012年（0.021毫克/立方米）上升9.5%。<br>
+    可吸入颗粒物：年平均浓度为0.097毫克/立方米，比2012年 （0.084毫克/立方米）上升了15.5％。<br>
+    降尘：市区空气环境中降尘年平均浓度为7.13吨/平方公里/月，比上年上升0.07吨/平方公里/月。<br>
+    降水：市区环境空气中降水的PH值在6.21-6.67之间,全年未检出酸雨。<br>
+    2、地表水环境质量<br>
+    （1）河流<br>
+    府河流域随州段水质质量状况保持在上年的水平：?水洪山镇断面水质为III类；?水王福窑断面水质为III类；氵厥水厉山镇断面水质III类；氵厥水自来水上游断面水质为III类；府河魏家畈断面水质为III类；府河平林断面水质为III类；淮河除山大桥断面水质为III类，以上断面均能达到III类功能区控制目标。<br>
+    （2）水库<br>
+    2013年，主要对先觉庙水库、徐家河水库进行了监测：先觉庙水库水质为III类，符合III类功能区控制目标；徐家河水库库心、出口为II类水质，符合II类功能区控制目标。<br>
+    （3）饮用水源<br>
+    随州城区饮用水水源地先觉庙水库和?水王福窑断面的水质达标率均为100%。<br>
+    3、声环境质量<br>
+    城市环境噪声：城市市区环境噪声平均等效声级为51.7分贝，比上年下降0.7分贝；城市交通干线噪声：城市市区交通干线噪声平均等效声级为65.4分贝，比上年下降3.0分贝。<br>
+二、污染物排放状况<br>
+    1、废水排放状况<br>
+    全市废水排放总量为7491.491万吨，其中生活污水排放量为5723.2万吨，占总量的76.4%，工业废水排放量为1761.186万吨，占总量的23.5%，集中式治理设施废水排放量为7.105万吨，占总量的0.1%。<br>
+    我市工业废水排放的主要行业是化学原料及化学制品制造业、造纸及纸制品业、食品制造业、交通运输设备制造业、黑色金属冶炼业、烟草制品业等。<br>
+    废水中化学需氧量排放总量为50240.7009吨，其中生活污水中化学需氧量排放26169.353吨，占排放总量的52%，工业废水中化学需氧量排放3256.3219吨，占排放总量的6.5%,农业源化学需氧量排放19581.026吨,占排放总量的39%,集中式治理设施化学需氧量排放1234吨,占排放总量的2.5%.<br>
+    废水中氨氮排放量为5766.584吨，其中生活污水中氨氮排放量为3251.282吨，占排放总量的56%，工业废水中氨氮排放量为289.452吨，占排放总量的5%。农业源氨氮排放量为1945.85吨,占排放总量的34%,集中式治理设施氨氮排放量为280吨,占排放总量的5%.<br>
+    2、废气排放状况<br>
+    从行业上看，工业废气排放主要行业是非金属矿物制品业、化工原料及化学制品制造业、黑色金属冶炼业、造纸及纸制品业等。废气中排放的主要污染物是二氧化硫、氮氧化物和工业烟（粉）尘。<br>
+    二氧化硫排放总量为7921.77吨，其中工业二氧化硫排放4096.77吨，占排放总量的51.7%，生活二氧化硫排放3825吨，占排放总量的48.3%。<br>
+    氮氧化物排放总量为8652.18吨，其中工业氮氧化物排放847.91吨，占排放总量的9.8%，生活氮氧化物排放200吨，占排放总量的2.3%，机动车氮氧化物排放7604.27吨，占排放总量的87.9%。<br>
+    烟（粉）尘排放总量为17834.235吨，其中工业烟（粉）尘排放16001.105吨，占排放总量的89.7%，生活烟（粉）尘排放1125吨，占排放总量的6.3%，机动车烟 （粉）尘排放708.13吨，占排放总量的4%。<br>
+    3、工业固体废物<br>
+    全市工业固体废弃物产生量13.913万吨，以炉渣和冶炼废渣为主。工业固体废弃物综合利用量13.908万吨，处置量0.0044万吨。<br>
+    4、医疗废物<br>
+    全市医疗废物产生量429.525吨，全部转移到有资质处置的单位进行了安全处置。<br>
+三、环境管理<br>
+    1、主要污染物总量减排<br>
+    为完成省政府下达的化学需氧量、氨氮、二氧化硫3项主要污染物排放总量分别比2012年下降2%、2%、0.2%、氮氧化物排放总量与2012年持平的减排目标，我市筛选确定了30个减排项目，其中：工业废水治理项目2个、集中式污水处理项目4个、畜禽污染治理项目21个、结构调整项目1个，煤改天然气项目1个、煤改生物质项目1个。扣除新增量，全市全年共削减化学需氧量2063.84吨、氨氮235.5吨、二氧化硫401吨、氮氧化物16.6吨，4项主要污染物排放总量分别比2012年下降3.86%、4.02%、5.23%、0.23%，全面完成年度减排目标任务。<br>
+    2、环境监察与执法<br>
+    继续推进环保专项行动，共出动环境监察人员1208人次、车辆约500余台次，检查企业425家，先后对“两高一资”、饮用水源保护区、城镇污水处理厂、垃圾填埋厂、2012年省级挂牌督办企业、化工行业及涉危单位、造纸行业、尾矿库进行了集中整治，责令18家企业限期治理污染，关停2家，解除挂牌督办1家 （随州市飞普电瓶有限公司）。督促970个企业办理了排污申报登记，并依法、全面、足额核定排污费。<br>
+    3、建设项目环境监管<br>
+    对277个建设项目执行了环境影响评价审批制度，对144个项目开展了环保验收，项目总投资68.925亿元，其中环保投资1.86亿元。<br>
+四、环境宣传和教育<br>
+    以 “6・5”世界环境日为契机，举行 “随州市纪念6・5世界环境日大会”，组织开展 “我环保・我健康”自行车骑行巡游宣传活动，结合环保科技下乡、环保普法宣传、 “地球一小时”等，发放宣传资料20000多份，宣传受众10余万人。全市有72名青年环保志愿者被授予 “湖北青年环境友好使者”、18名中小学生被授予“湖北绿色环保少年”。<br>
+    认真开展环保世纪行活动，组织市内各新闻媒体对环保中心工作、重点工作进行采访报道。邀请专家举办“网络时代的舆论引导”专题讲座，提升环境舆情及媒体应对能力。全年全市环保系统共被采用信息227条、新闻稿件306篇。<br>
+    随州市环保局获全省环保新闻宣传工作进步奖，被评为全省环保系统宣传教育工作先进单位。<br>
+五、环境质量监测<br>
+    2013年，环境监测部门对空气、地面水、饮用水水源、噪声和生物等环境要素进行了监测，全年获取监测数据74603个，其中小时空气环境监测数据705960个、地表水监测数据1632个，其它数据2891个。全年获取污染源监测数据10772个，其中废气2724个、废水3547个、噪声2333个，其它2168个。<br>
+六、农村环境保护<br>
+    结合“万民干部进万村洁万家”及“洁美家园”大行动，选定30个村作为农村环境综合整治试点，共配置垃圾桶3000余个、修建垃圾池150余座、配置各类型垃圾转运车40余台、建成污水治理设施20余处。<br>
+    积极推进推行清洁养殖，指导湖北新欣牧业有限公司等16家养殖企业建成了生态养殖示范基地。<br>
+    大力开展生态村、生态镇创建工作，组织申报省级生态村9个、生态镇2个，创建市级生态村80个、生态镇1个。<br></p>
+						<div class="share">
+							<!-- Baidu Button BEGIN -->
+						    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+						        <a class="bds_qzone"></a>
+						        <a class="bds_tsina"></a>
+						        <a class="bds_tqq"></a>
+						        <a class="bds_renren"></a>
+						        <span class="bds_more">更多</span>
+						    </div>
+						<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=659075"></script><script type="text/javascript" id="bdshell_js"></script><script type="text/javascript">
+							document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+						</script><div class="clear"></div>	
+						<!-- Baidu Button END -->
+						</div>
+						<div class="clear"></div>
+						<div class="next_page">
+							<div class="prev">
+																<a href="2248.html">上一篇：湖北龙舟大赛随州市喜获第三名</a>
+															</div>
+							<div class="next">
+																<a href="2250.html">下一篇：随州市环保局依法行政服务发展公开承诺</a>
+															</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+		<!-- 右边内容 -->
+		<div class="right_area">
+			
+			<div class="right_box">
+				<div class="title_box">
+					<h5>资讯分类</h5>
+				</div>
+				<div class="list">
+					<ul class="sort">
+<li><a href="news-list.php%EF%BC%9Fid=11" class="select">随州资讯</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=6">政策法规</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=13">下载中心</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=5">职场动态</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=4">面试指南</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=3">简历指南</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=2">职业培训</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=7">创业精英</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=8">职场测试</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=9">职场智慧</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=10">职场策略</a></li>
+												<div class="clear"></div>
+					</ul>
+<div class="clear"></div>
+				</div>
+			</div>
+			<div class="right_search">
+				<div class="news_search"><input type="text" name="key" id="key"></div>
+				<button class="news_sreach_but search_news">搜索</button>
+			</div>
+			<div class="clear"></div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>相关阅读</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+												<li><a href="6503.html" target="_blank">2019年度随州城乡居民医保征收工作</a></li>
+												<li><a href="6501.html" target="_blank">随州市三季度农民工呈现回流迹象</a></li>
+											</ul>
+</div>
+			</div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>最新资讯</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6507.html" target="_blank">随县万福店农场“农民”评上职称了</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+											</ul>
+</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- 主体内容 结束 -->
+	<div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="../suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="../explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="../subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="../explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="../hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="../train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="../resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="../hrtools/hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="../user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="../jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="../data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="../index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>随州市城乡社区居家养老服务建设实施方案 - 随州人才网</title>
+<meta name="description" content="随州市城乡社区居家养老服务建设实施方案
+&amp;nbsp;　　为积极应对人口老龄化，不断满足人民群众日益增长的养老服务需求，加快推进">
+<meta name="keywords" content="随州市城乡社区居家养老服务建设实施方案">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/news.css" rel="stylesheet" type="text/css">
+<script src="../templates/demo11/js/jquery.js" type="text/javascript"></script><script type="text/javascript">
+$(document).ready(function()
+{
+		var id="954";
+		var tsTimeStamp= new Date().getTime();
+		$.get("/plus/ajax_click.php", { "id": id,"time":tsTimeStamp,"act":"news_click"},
+			function (data,textStatus)
+			 {			
+				$("#click").html(data);
+			 }
+		);
+		$(".search_news").click(function(){
+			var key = $("#key").val();
+			news_search_location(key);
+		});
+		function news_search_location(key)
+		{
+			$("body").append('<div id="pageloadingbox">页面加载中....<div id="pageloadingbg">');
+			$("#pageloadingbg").css("opacity", 0.5);
+			$.get("/plus/ajax_search_location.php", {"act":"QS_newssearch","key":key},
+					function (data,textStatus)
+					 {
+						 window.location.href=data;
+					 }
+				);
+		}
+		// 等比例缩放图片
+		var w = $(".left_area .news_box").width();//容器宽度 
+	    $(".news_txt img").each(function(){//如果有很多图片，我们可以使用each()遍历 
+	        var img_w = $(this).width();//图片宽度 
+	        var img_h = $(this).height();//图片高度 
+	        if(img_w>w){//如果图片宽度超出容器宽度--要撑破了 
+	            var height = (w*img_h)/img_w; //高度等比缩放 
+	            $(this).css({"width":w,"height":height});//设置缩放后的宽度和高度 
+	        } 
+	    });
+});
+</script>
+</head>
+<body>
+<div id="new-header">
+	<div class="top-bar">
+	<div class="index-container clearfix">
+		<div class="welcome f-left" id="top_loginform"></div>
+		<ul class="top-nav f-right">
+<li class="t-nav-item f-left mobile"><a href="../mobile.html" class="underline">手机频道</a></li>
+			<li class="t-nav-item f-left"><a href="../index.html" class="underline nav-link">网站首页</a></li>
+			<li class="t-nav-item f-left mr15"><a href="../plus/shortcut.php" class="underline nav-link">保存到桌面</a></li>
+			<li class="t-nav-item f-left nav-more">
+				<span class="nav-more-type">网站导航<i class="more-arrow"></i></span>
+				<div class="sub-menu-out">
+                	<div class="sub-menu nav">
+                        <ul>
+<li>
+                            	<strong>个人服务</strong>
+                                <a href="../user/personal/personal_resume.php%EF%BC%9Fact=make1" target="_blank">创简历</a>
+                                <a href="../salary.html" target="_blank">查薪资</a>
+                                <a href="../evaluation/index.php" target="_blank">人才测评</a>
+                                <a href="../jobs/map-search.php%EF%BC%9Fid=1" target="_blank">地图找工作</a>
+                            </li>
+                            <li>
+                            	<strong>企业服务</strong>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank">发职位</a>
+                                <a href="../jobfair/jobfair-list.php" target="_blank">招聘会</a>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=simple_jobs" target="_blank">微信招聘</a>
+                                <a href="../hrtools/index.php" target="_blank">HR工具箱</a>
+                            </li>
+                            <li class="bd0">
+                            	<strong>更多</strong>
+                                <a rel="nofollow" href="../campus/index.php" target="_blank">校园招聘</a>
+                                <a rel="nofollow" href="../hunter/index.html" target="_blank">猎聘专区</a>
+                                <a rel="nofollow" href="../train/index.html" target="_blank">培训信息</a>
+                                <a rel="nofollow" href="../shop/index.php" target="_blank">积分商城</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+			</li>
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+	//顶部部登录
+	$.get('/plus/ajax_user.php', {"act":"top_loginform"}, function(data) {
+		$("#top_loginform").html(data);
+	});
+	$(".nav-more").hover(function() {
+		$(".sub-menu").toggle();
+	});
+</script><div class="header-main">
+		<div class="index-container clearfix">
+			<div class="common-logo f-left"><a href="../index.html"><img src="../data/images/logo.png" alt="随州人才网" width="251" height="85"></a></div>
+			<!--<div class="sub-station f-left">
+				<span class="station-control">总站<i class="station-arrow"></i></span>
+			</div>-->
+			<ul class="common-nav f-right">
+<li><a href="../index.html" target="_self">首  页</a></li>
+								<li><a href="../jobs/jobs-list.php" target="_self">找工作</a></li>
+								<li><a href="../resume/resume-list.php" target="_self">聘人才</a></li>
+								<li><a href="../simple/simple-list.php" target="_self">微招聘</a></li>
+								<li><a href="../hrtools/index.php" target="_self">HR工具箱</a></li>
+								<li><a href="../company/index.php" target="_self">企业黄页</a></li>
+								<li><a href="../jobs/map-search-1.html" target="_self">地图找工作</a></li>
+								<li class="active"><a href="index.html" target="_self">新闻资讯</a></li>
+							</ul>
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.common-nav li:last').css({'border-right':0});
+		$('.t-nav-item:last').css({'margin-right':0});
+	});
+</script><!-- 当前位置 --><div class="page_location link_bk">
+当前位置：<a href="../index.html">首页</a> &gt; <a href="index.html">新闻资讯</a> &gt; 
+<a href="news-list.php%EF%BC%9Fid=6">政策法规</a> &gt; 正文
+</div>
+	<!-- 主体内容 -->
+	<div class="container link_bk">
+		
+		<!-- 左边内容 -->
+		<div class="left_area">
+			<div class="news_box">
+				<div class="com_container">
+					<div class="title">随州市城乡社区居家养老服务建设实施方案</div>
+					<div class="news_dateil">
+						<div class="time">2013-11-26 23:45</div>
+						<div class="time">查看：<span id="click"></span> 次</div>
+						<div>
+<a href="javascript:window.print();">[打印]</a> <a href="javascript:void(0);" onclick="window.external.addFavorite(parent.location.href,document.title);">[收藏]</a>
+</div>
+						<div class="clear"></div>
+					</div>
+					<div class="news_txt">
+						<p></p>
+<p align="center">随州市城乡社区居家养老服务建设实施方案</p>
+<p> 　　为积极应对人口老龄化，不断满足人民群众日益增长的养老服务需求，加快推进居家养老服务工作，根据《省人民政府办公厅关于加快发展城乡社区居家养老服务的意见》（鄂政办发〔2012〕83号）和《市人民政府关于推进社会化养老服务发展的实施意见》（随政发〔2012〕40号）精神，结合工作实际制定本方案。<br>
+　　一、指导思想<br>
+　　以贯彻落实党的十八大精神、邓小平理论、“三个代表”重要思想、科学发展观为指导；以弘扬中华民族尊老敬老优良传统，尊重老年人情感和心理需求为目标；以保障特困群体老年人为重点，以社区建设为依托；以养老服务信息化系统为平台，构建社区服务、志愿者服务和社会化服务为一体的城乡社区居家养老服务体系。<br>
+　　二、基本原则<br>
+　　推进城乡社区居家养老服务工作，必须坚持以下几项原则：<br>
+　　（一）坚持政府主导、部门配合、市场运作、社会参与相结合原则。<br>
+　　（二）坚持结合实际、因地制宜、循序渐进、稳步推进相结合原则。<br>
+　　（三）坚持依托社区、整合社会资源、调动各方积极性相结合原则。<br>
+　　（四）坚持无偿、低偿和有偿服务相结合原则。<br>
+　　三、目标和任务<br>
+　　城乡社区居家养老服务是指政府和社会力量依托社区，为居家的老年人提供生活照料、家政服务、康复护理和精神慰藉等方面服务的一种服务形式，是传统家庭养老模式的补充与更新，是养老服务体系的一项重要内容。各地可结合实际，按以下三个层次逐步推进：一是为城乡社区老年人提供文化娱乐和简单的健身康复平台，满足其文体娱乐活动需要；二是增设老年食堂，为城乡社区老年人提供配餐送餐及其他家政、医疗、康复、陪护等各项上门服务；三是增加日间照料服务功能，为白天无人看护又不愿意入住养老机构的失能半失能老人提供全方位的日托或全托式服务。同时超前预留配套设施建设空间，以体现科学发展的要求。<br>
+　　年度目标分别为：到2015年，力争居家养老服务和为老服务信息系统基本覆盖全市所有城市社区，老年人互助照料活动中心覆盖50%以上农村社区。全市所有的城市社区基本建立起多种形式、广泛覆盖的居家养老信息服务网络，使社区居家养老服务设施不断充实，服务内容和形式不断丰富，专业化和志愿者相结合的居家养老服务队伍不断壮大，居家养老服务的组织管理体制和监督评估机制逐步建立和完善。农村社区依托乡镇福利院、村级组织活动场所、文化中心户等现有设施资源，力争50%左右的乡镇拥有一处集院舍住养和社区照料、居家养老等多种服务功能于一体的综合性老年福利中心或文化活动服务（站）点。基本建成10分钟“养老服务圈”。<br>
+　　四、保障措施<br>
+　　（一）加强组织领导。各级政府应充分认识新形势下城乡社区居家养老服务工作的重要性，将其列入政府工作议程，成立由政府分管领导任组长，有关部门参加的城乡社区居家养老服务领导小组。成员单位要切实履行职责，在组织领导上加大力度，在政策扶持上给予倾斜。各地要根据实际情况制定工作计划，积极支持城乡社区居家养老服务的发展。<br>
+　　（二）落实优惠政策。按照《省人民政府办公厅关于加快发展城乡社区居家养老服务的意见》（鄂政办发〔2012〕83号）和《市人民政府关于推进社会化养老服务发展的实施意见》（随政发〔2012〕40号）的精神，切实落实发展社区居家养老服务的各项优惠政策。各地政府对70岁以上的低保对象、重点优抚对象和80岁以上老年人自愿入网的免费发放“一键通”；对60岁以上 “三无”对象、低保对象、重点优抚对象和80岁以上老年人自愿入网的，每人每月终端呼叫补贴5元通话费。<br>
+　　（三）强化部门职责。民政部门要认真履行牵头职责，制定居家养老服务发展规划，搞好检查督办；发展改革部门要将居家养老服务业纳入全市经济社会发展总体规划，对居家养老服务项目优先立项；国土部门要优先安排居家养老服务设施建设用地，并给予价格优惠；规划部门要将居家养老服务设施优先纳入建设规划；人社部门要落实好养老护理从业人员职业技能培训和社会保险待遇，将养老服务公益性岗位列入年度工作计划；非营利性居家养老服务实体用水、用气、用电价格按当地居民用水、用气、用电价格执行。<br>
+　　（四）加大资金投入。加强城乡社区居家养老服务建设，各级政府要发挥财政资金引导作用，结合财政状况在年度预算中安排相应专项资金，将福利彩票公益金留存部分按一定比例用于居家养老服务体系建设。同时，要千方百计动员和吸引社会力量、社会资本积极参与，多方筹集建设资金支持城乡社区居家养老服务设施建设。<br>
+　　（五）开发信息系统。信息化是社区居家养老服务的有力支撑。要利用现代化信息技术手段，加快建立居家养老服务信息系统，力争到2015年底，居家养老服务信息网络和服务平台覆盖所有城市社区。为整合资源，节约成本，信息化系统平台可依托本地规模较大的家政服务公司或社会福利院、社区便民服务中心等场所、设备开展建设。系统硬件建成后，要加强基础数据库建设，落实服务管理人员，录入辖区老年人基本信息，加盟提供服务的各类服务实体信息以及志愿者信息等，老年人通过“一键通”设备拨通呼叫热线后，通过信息系统或电话方式及时向服务机构分派任务，由服务机构完成服务任务。<br>
+　　（六）健全工作机制。发展城乡社区居家养老服务必须依托社会组织和市场主体参与服务，走社会化、市场化的路子。各地可引进专业化的社会组织或企业托管服务，或让社会组织及企业加盟，在社区设置营业网点，如开设老年食堂，也可与社区签订协议开展菜单式、组合式的“约定服务”，如餐饮、家庭保洁、家电维修等。要注重引导和培育一批服务质量高、讲诚信、管理规范、综合实力强的家政服务、餐饮服务、卫生医疗服务等社会组织和企业参与发展社区居家养老服务。通过政府招标采购方式，将其确定为承担本区域居家养老服务和政府购买养老服务的定点单位，支持其发展连片辐射、连锁经营、统一管理的服务模式，按市场机制实行市场化运营，打造社区居家养老服务的市场品牌。<br>
+　　五、实施步骤<br>
+　　根据全省统一部署，我市城乡社区居家养老服务体系建设分四个步骤实施：<br>
+　　（一）部署阶段（2013年10月底前）。调查摸底，掌握服务对象数量和需求，吸引社会力量参与和洽谈；考察借鉴省内其他市州先进经验；制定各级城乡社区居家养老服务体系建设规划，出台加强城乡社区居家养老服务体系建设实施意见（方案）；选择3―5个社区作为试点单位。城市社区完成总目标任务10%，农村社区完成总目标任务10%。<br>
+　　（二）实施阶段（2013年11月―2015年6月）。各地根据规划和实施意见（方案），将目标任务进行年度分解和细化，逐级明确责任人、完成时限和工作措施，狠抓落实、有序推进，城市社区完成总目标任务80%，农村社区完成总目标任务80%，力争时间任务同步。<br>
+　　（三）继续推进和初期评估阶段（2015年7月―12月）。各地继续完成目标任务各10%并提档升级。完善各项制度，建立长效机制。评估本地区开展情况，总结经验，推广典型，巩固发展成果。<br>
+　　（四）终期评估阶段（2016年1月―2月）。在各地自查自评的基础上，组织力量对全市完成目标任务情况进行全面评估验收，总结表彰。</p>
+<p> </p>
+						<div class="share">
+							<!-- Baidu Button BEGIN -->
+						    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+						        <a class="bds_qzone"></a>
+						        <a class="bds_tsina"></a>
+						        <a class="bds_tqq"></a>
+						        <a class="bds_renren"></a>
+						        <span class="bds_more">更多</span>
+						    </div>
+						<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=659075"></script><script type="text/javascript" id="bdshell_js"></script><script type="text/javascript">
+							document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+						</script><div class="clear"></div>	
+						<!-- Baidu Button END -->
+						</div>
+						<div class="clear"></div>
+						<div class="next_page">
+							<div class="prev">
+																<a href="953.html">上一篇：随州市人民政府关于推进社会化养老服务发展的实施意见</a>
+															</div>
+							<div class="next">
+																<a href="1011.html">下一篇：原省专汽220名退休高级技师首批养老调补资金发放到位</a>
+															</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+		<!-- 右边内容 -->
+		<div class="right_area">
+			
+			<div class="right_box">
+				<div class="title_box">
+					<h5>资讯分类</h5>
+				</div>
+				<div class="list">
+					<ul class="sort">
+<li><a href="news-list.php%EF%BC%9Fid=11">随州资讯</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=6" class="select">政策法规</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=13">下载中心</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=5">职场动态</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=4">面试指南</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=3">简历指南</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=2">职业培训</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=7">创业精英</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=8">职场测试</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=9">职场智慧</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=10">职场策略</a></li>
+												<div class="clear"></div>
+					</ul>
+<div class="clear"></div>
+				</div>
+			</div>
+			<div class="right_search">
+				<div class="news_search"><input type="text" name="key" id="key"></div>
+				<button class="news_sreach_but search_news">搜索</button>
+			</div>
+			<div class="clear"></div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>相关阅读</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6492.html" target="_blank">随州市关于进一步加强医疗救助 同基</a></li>
+												<li><a href="6474.html" target="_blank">跨省异地就医直接结算相关政策解读</a></li>
+												<li><a href="6463.html" target="_blank">随州10月底可网上办理养老保险</a></li>
+												<li><a href="6439.html" target="_blank">湖北省大学生创业孵化示范基地奖补</a></li>
+												<li><a href="6438.html" target="_blank">湖北省就业提升计划实施方案和社保</a></li>
+												<li><a href="6405.html" target="_blank">“黑名单”管理+联合惩戒 让农民工</a></li>
+											</ul>
+</div>
+			</div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>最新资讯</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6507.html" target="_blank">随县万福店农场“农民”评上职称了</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+											</ul>
+</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- 主体内容 结束 -->
+	<div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="../suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="../explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="../subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="../explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="../hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="../train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="../resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="../hrtools/hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="../user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="../jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="../data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="../index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html>

@@ -1,0 +1,1066 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="index37-bg">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>随才网-随州人才网-随州招聘类专业网站</title>
+<meta name="description" content="随州人才网（0722ren.com） 是随州市大型专业的人才招聘网站。它采用先进的技术平台，面向全市所有企事业和行政单位，提供人才、招聘信息发布、智能搜索、测评、猎头信息、HR管理信息咨询、人才培训信息等多方位的资源服务。">
+<meta name="keywords" content="随州人才网,随州招聘,随州求职,随才网,随州招聘网，随州人才网">
+<link rel="shortcut icon" href="favicon.ico">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<link rel="stylesheet" href="templates/demo11/css/common.css">
+<link rel="stylesheet" href="templates/demo11/css/index.css">
+<script src="templates/demo11/js/jquery.js"></script><script src="templates/demo11/js/jquery.index.js" type="text/javascript" language="javascript"></script><script src="templates/demo11/js/jquery.lazyload.js" type="text/javascript" language="javascript"></script><script src="templates/demo11/js/jquery.autocomplete.js" type="text/javascript" language="javascript"></script><script type="text/javascript">
+	$(document).ready(function() {
+		index("/","/templates/demo11/");
+	});
+</script><base target="_blank">
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="new-header">
+	<div class="top-bar">
+	<div class="index-container clearfix">
+		<div class="welcome f-left" id="top_loginform"></div>
+		<ul class="top-nav f-right">
+<li class="t-nav-item f-left mobile"><a href="mobile.html" class="underline">手机频道</a></li>
+			<li class="t-nav-item f-left"><a href="index.html" class="underline nav-link">网站首页</a></li>
+			<li class="t-nav-item f-left mr15"><a href="plus/shortcut.php" class="underline nav-link">保存到桌面</a></li>
+			<li class="t-nav-item f-left nav-more">
+				<span class="nav-more-type">网站导航<i class="more-arrow"></i></span>
+				<div class="sub-menu-out">
+                	<div class="sub-menu nav">
+                        <ul>
+<li>
+                            	<strong>个人服务</strong>
+                                <a href="user/personal/personal_resume.php%EF%BC%9Fact=make1" target="_blank">创简历</a>
+                                <a href="salary.html" target="_blank">查薪资</a>
+                                <a href="evaluation/index.php" target="_blank">人才测评</a>
+                                <a href="jobs/map-search.php%EF%BC%9Fid=1" target="_blank">地图找工作</a>
+                            </li>
+                            <li>
+                            	<strong>企业服务</strong>
+                                <a href="user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank">发职位</a>
+                                <a href="jobfair/jobfair-list.php" target="_blank">招聘会</a>
+                                <a href="user/company/company_jobs.php%EF%BC%9Fact=simple_jobs" target="_blank">微信招聘</a>
+                                <a href="hrtools/index.php" target="_blank">HR工具箱</a>
+                            </li>
+                            <li class="bd0">
+                            	<strong>更多</strong>
+                                <a rel="nofollow" href="campus/index.php" target="_blank">校园招聘</a>
+                                <a rel="nofollow" href="hunter/index.html" target="_blank">猎聘专区</a>
+                                <a rel="nofollow" href="train/index.html" target="_blank">培训信息</a>
+                                <a rel="nofollow" href="shop/index.php" target="_blank">积分商城</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+			</li>
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+	//顶部部登录
+	$.get('/plus/ajax_user.php', {"act":"top_loginform"}, function(data) {
+		$("#top_loginform").html(data);
+	});
+	$(".nav-more").hover(function() {
+		$(".sub-menu").toggle();
+	});
+</script><div class="header-main">
+		<div class="index-container clearfix">
+			<div class="common-logo f-left"><a href="index.html"><img src="data/images/logo.png" alt="随州人才网" width="251" height="85"></a></div>
+			<!--<div class="sub-station f-left">
+				<span class="station-control">总站<i class="station-arrow"></i></span>
+			</div>-->
+			<ul class="common-nav f-right">
+<li class="active"><a href="index.html" target="_self">首  页</a></li>
+								<li><a href="jobs/jobs-list.php" target="_self">找工作</a></li>
+								<li><a href="resume/resume-list.php" target="_self">聘人才</a></li>
+								<li><a href="simple/simple-list.php" target="_self">微招聘</a></li>
+								<li><a href="hrtools/index.php" target="_self">HR工具箱</a></li>
+								<li><a href="company/index.php" target="_self">企业黄页</a></li>
+								<li><a href="jobs/map-search-1.html" target="_self">地图找工作</a></li>
+								<li><a href="news/index.html" target="_self">新闻资讯</a></li>
+							</ul>
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.common-nav li:last').css({'border-right':0});
+		$('.t-nav-item:last').css({'margin-right':0});
+	});
+</script><!-- 搜索 --><div class="function-wrap">
+		<div class="index-container clearfix">
+			<div class="search-area f-left">
+				<div class="search-wrap clearfix">
+					<div class="search-box f-left">
+						<div class="search-type f-left">
+							<div class="search-type-show" title="找工作" code="QS_jobslist" data="请输入职位名称或企业名称">
+<span>找工作</span><i class="search-icon"></i>
+</div>
+							<div class="search-type-drop" title="找人才" code="QS_resumelist" data="请输入简历关键字"><a href="javascript:;">找人才</a></div>
+						</div>
+						<div class="search-text f-left">
+							<input type="text" name="keyForIndexSearch" id="keyForIndexSearch" placeholder="请输入职位名称或企业名称">
+</div>
+					</div>
+					<div class="search-submit f-left">
+						<input type="button" name="btnForIndexSearch" id="btnForIndexSearch" code="QS_jobslist" value="搜  索" class="search-submit-btn">
+</div>
+					<a href="jobs/index.html" target="_blank" class="high-level-search f-left underline">高级<br>搜索</a>
+				</div>
+				<div class="hot-search">
+															<a href="jobs/jobs-list.php%EF%BC%9Fkey=%CF%FA%CA%DB%B4%FA%B1%ED" target="_blank" class="underline">销售代表</a>
+										<a href="jobs/jobs-list.php%EF%BC%9Fkey=%CF%FA%CA%DB%BE%AD%C0%ED" target="_blank" class="underline">销售经理</a>
+										<a href="jobs/jobs-list.php%EF%BC%9Fkey=%BB%E1%BC%C6" target="_blank" class="underline">会计</a>
+										<a href="jobs/jobs-list.php%EF%BC%9Fkey=%CF%FA%CA%DB%B9%A4%B3%CC%CA%A6" target="_blank" class="underline">销售工程师</a>
+										<a href="jobs/jobs-list.php%EF%BC%9Fkey=%CF%FA%CA%DB%D6%FA%C0%ED" target="_blank" class="underline">销售助理</a>
+										<a href="jobs/jobs-list.php%EF%BC%9Fkey=%D2%B5%CE%F1%D4%B1" target="_blank" class="underline">业务员</a>
+										<a href="jobs/jobs-list.php%EF%BC%9Fkey=%CF%FA%CA%DB%D6%F7%B9%DC" target="_blank" class="underline">销售主管</a>
+									</div>
+			</div>
+			<div class="login-box f-right">
+				<a href="user/personal/personal_resume.php%EF%BC%9Fact=resume_list" target="_blank" class="login-btn f-left has-border">个人免费注册求职简历</a>
+				<a href="user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank" class="login-btn f-left">企业免费发布招聘信息</a>
+				<span class=" ring ring-top"></span>
+				<span class=" ring ring-bottom"></span>
+			</div>
+		</div>
+	</div>
+	<!-- 主体 -->			
+	<div class="index-container">
+					<!-- 首页上方横幅广告位 -->
+								<div class="lazyload">
+			<div class="ad-1200">
+				<a href="c1926.html"><img original="/data/comads/2017/08/30/1504082391696.jpg" src="templates/demo11/images/index/84.gif" alt="随州随广文化传媒有限公司" width="1200" height="60"></a>
+			</div>
+		</div>
+						<!-- 首页上方横幅广告位end -->
+		<input type="hidden" id="templatedir" value="/templates/demo11/"><!-- 紧急招聘&公告 --><div class="main-area-top clearfix">
+			<div class="urgent-wrap f-left">
+				<div class="urgent-title clearfix">
+					<h3 class="f-left">急聘专区</h3>
+					<a href="jobs/jobs-list.php" target="_blank" class="f-right underline">更多&gt;&gt;</a>
+				</div>
+				<ul class="urgent-list clearfix">
+<li class="urgent-job-item f-left">
+						<div class="u-job-title clearfix">
+							<div class="ujob-name f-left"><a href="jobs/6821.html" target="_blank" class="underline">业务代表/客户代表/</a></div>
+							<span class="f-right job-pay">1500~2000</span>
+						</div>
+						<p class="ujob-com"><a href="c1926.html" target="_blank" class="underline">随州随广文化传媒有限公司</a></p>
+					</li>
+										<li class="urgent-job-item f-left">
+						<div class="u-job-title clearfix">
+							<div class="ujob-name f-left"><a href="jobs/6819.html" target="_blank" class="underline">网站编辑</a></div>
+							<span class="f-right job-pay">2000~3000</span>
+						</div>
+						<p class="ujob-com"><a href="c1926.html" target="_blank" class="underline">随州随广文化传媒有限公司</a></p>
+					</li>
+										<li class="urgent-job-item f-left">
+						<div class="u-job-title clearfix">
+							<div class="ujob-name f-left"><a href="jobs/7416.html" target="_blank" class="underline">微信运营人员</a></div>
+							<span class="f-right job-pay">2000~3000</span>
+						</div>
+						<p class="ujob-com"><a href="c1926.html" target="_blank" class="underline">随州随广文化传媒有限公司</a></p>
+					</li>
+										<li class="urgent-job-item f-left">
+						<div class="u-job-title clearfix">
+							<div class="ujob-name f-left"><a href="jobs/7193.html" target="_blank" class="underline"><span style="color:#bc123a">电商专员</span></a></div>
+							<span class="f-right job-pay">3000~5000</span>
+						</div>
+						<p class="ujob-com"><a href="c1926.html" target="_blank" class="underline">随州随广文化传媒有限公司</a></p>
+					</li>
+										<li class="urgent-job-item f-left">
+						<div class="u-job-title clearfix">
+							<div class="ujob-name f-left"><a href="jobs/8162.html" target="_blank" class="underline">置业顾问</a></div>
+							<span class="f-right job-pay">5000~10000</span>
+						</div>
+						<p class="ujob-com"><a href="c2862.html" target="_blank" class="underline">武汉易居投资有限公司</a></p>
+					</li>
+										<li class="urgent-job-item f-left">
+						<div class="u-job-title clearfix">
+							<div class="ujob-name f-left"><a href="jobs/8161.html" target="_blank" class="underline">拓客专员</a></div>
+							<span class="f-right job-pay">3000~5000</span>
+						</div>
+						<p class="ujob-com"><a href="c2862.html" target="_blank" class="underline">武汉易居投资有限公司</a></p>
+					</li>
+										<li class="urgent-job-item f-left">
+						<div class="u-job-title clearfix">
+							<div class="ujob-name f-left"><a href="jobs/8160.html" target="_blank" class="underline">策划助理</a></div>
+							<span class="f-right job-pay">3000~5000</span>
+						</div>
+						<p class="ujob-com"><a href="c2862.html" target="_blank" class="underline">武汉易居投资有限公司</a></p>
+					</li>
+										<li class="urgent-job-item f-left">
+						<div class="u-job-title clearfix">
+							<div class="ujob-name f-left"><a href="jobs/8159.html" target="_blank" class="underline">案场助理</a></div>
+							<span class="f-right job-pay">3000~5000</span>
+						</div>
+						<p class="ujob-com"><a href="c2862.html" target="_blank" class="underline">武汉易居投资有限公司</a></p>
+					</li>
+										<li class="urgent-job-item f-left">
+						<div class="u-job-title clearfix">
+							<div class="ujob-name f-left"><a href="jobs/7678.html" target="_blank" class="underline">业务经理</a></div>
+							<span class="f-right job-pay">3000~5000</span>
+						</div>
+						<p class="ujob-com"><a href="c2525.html" target="_blank" class="underline">稻花香苦荞酒随州运营中心</a></p>
+					</li>
+										<li class="urgent-job-item f-left">
+						<div class="u-job-title clearfix">
+							<div class="ujob-name f-left"><a href="jobs/7680.html" target="_blank" class="underline">销售代表</a></div>
+							<span class="f-right job-pay">2000~3000</span>
+						</div>
+						<p class="ujob-com"><a href="c2525.html" target="_blank" class="underline">稻花香苦荞酒随州运营中心</a></p>
+					</li>
+									</ul>
+</div>
+			<div class="bulletin-box f-left">
+				<div class="bulletin-wrap">
+					<h4>网站公告</h4>
+					<ul class="bulletin-list">
+<li><a href="notice/480.html" target="_blank" class="underline">随县2018年专项公开招聘县直医疗卫生单...</a></li>
+												<li><a href="notice/479.html" target="_blank" class="underline">湖北省工会首届“工友杯”职工创业创新...</a></li>
+												<li><a href="notice/478.html" target="_blank" class="underline">随州市关于在农村实用人才中开展中级职...</a></li>
+												<li><a href="notice/477.html" target="_blank" class="underline">广水市第二人民医院2018年（秋冬季）招...</a></li>
+												<li><a href="notice/476.html" target="_blank" class="underline">中国工商银行随州分行招聘启事</a></li>
+												<li><a href="notice/475.html" target="_blank" class="underline">交通银行随州分行2019年校园招聘公告</a></li>
+												<li><a href="notice/474.html" target="_blank" class="underline"><span style="color:#000099;">随县公安局招聘公安协警公告</span></a></li>
+												<li><a href="notice/473.html" target="_blank" class="underline">汉口银行随州分行（筹）招聘启事</a></li>
+												<li><a href="notice/472.html" target="_blank" class="underline"><span style="color:#FF0000;">9月26日2018年高校毕业生就业服务月暨复...</span></a></li>
+												<li><a href="notice/471.html" target="_blank" class="underline"><span style="color:#FF0000;">随州市发改委公益性岗位招聘公告</span></a></li>
+											</ul>
+</div>
+			</div>
+		</div>
+
+				<!-- 首页中部横幅广告 -->
+						<!-- 首页中部横幅广告end -->
+		<div class="ad-tag-wrap clearfix">
+			<!-- 中间格子广告 -->
+			<div class="block-ad-box f-left">
+												<div class="block-ad-list clearfix lazyload">
+										<div class="block-ad f-left">
+						<a href="c1926.html" target="_blank"><img original="/data/comads/2016/05/05/1462397103451.gif" src="templates/demo11/images/index/84.gif" alt="随房网诚聘英才" width="133" height="100"></a>
+											</div>
+										<div class="block-ad f-left">
+						<a href="c2945.html" target="_blank"><img original="http://www.0722ren.com/data/logo/2018/04/19/11984.png" src="templates/demo11/images/index/84.gif" alt="随州碧桂园" width="133" height="100"></a>
+											</div>
+										<div class="block-ad f-left">
+						<a href="c2862.html" target="_blank"><img original="http://www.0722ren.com/data/logo/2018/01/19/11622.jpg" src="templates/demo11/images/index/84.gif" alt="易居投资" width="133" height="100"></a>
+											</div>
+										<div class="block-ad f-left">
+						<a href="c2370.html" target="_blank"><img original="/data/comads/2016/05/05/1462398011690.gif" src="templates/demo11/images/index/84.gif" alt="随州电视台" width="133" height="100"></a>
+											</div>
+										<div class="block-ad f-left">
+						<a href="c2646.html" target="_blank"><img original="http://www.0722ren.com/data/comads/2017/06/01/1496304056855.gif" src="templates/demo11/images/index/84.gif" alt="随州鸿扬装饰" width="133" height="100"></a>
+											</div>
+										<div class="block-ad f-left">
+						<a href="c2816.html" target="_blank"><img original="http://www.0722ren.com/data/comads/2017/11/15/1510736654637.jpg" src="templates/demo11/images/index/84.gif" alt="湖北辰百装饰工程" width="133" height="100"></a>
+											</div>
+										<div class="block-ad f-left">
+						<a href="c2598.html" target="_blank"><img original="/data/comads/2018/07/05/1530766564809.jpg" src="templates/demo11/images/index/84.gif" alt="优宝小主播" width="133" height="100"></a>
+											</div>
+										<div class="block-ad f-left">
+						<a href="c2978.html" target="_blank"><img original="http://www.0722ren.com/data/logo/2018/05/22/12123.jpg" src="templates/demo11/images/index/84.gif" alt="中国铁建" width="133" height="100"></a>
+											</div>
+										<div class="block-ad f-left">
+						<a href="c2430.html" target="_blank"><img original="/data/comads/2016/05/05/1462398549693.gif" src="templates/demo11/images/index/84.gif" alt="太平洋保险随州分公司" width="133" height="100"></a>
+											</div>
+										<div class="block-ad f-left">
+						<a href="c2434.html" target="_blank"><img original="/data/comads/2016/05/05/1462398660317.gif" src="templates/demo11/images/index/84.gif" alt="途牛旅游随州分公司" width="133" height="100"></a>
+											</div>
+										<div class="block-ad f-left">
+						<a href="c2998.html" target="_blank"><img original="http://www.0722ren.com/data/logo/2018/05/26/12153.jpg" src="templates/demo11/images/index/84.gif" alt="中梁物业" width="133" height="100"></a>
+											</div>
+										<div class="block-ad f-left">
+						<a href="c2900.html" target="_blank"><img original="/data/comads/2018/03/22/1521703566483.jpg" src="templates/demo11/images/index/84.gif" alt="宜信普惠信息咨询（北京）" width="133" height="100"></a>
+											</div>
+										<div class="block-ad f-left">
+						<a href="c3031.html" target="_blank"><img original="/data/comads/2018/07/18/1531883996854.jpg" src="templates/demo11/images/index/84.gif" alt="平安人寿" width="133" height="100"></a>
+											</div>
+										<div class="block-ad f-left">
+						<a href="c2415.html" target="_blank"><img original="/data/comads/2016/05/05/1462399415211.gif" src="templates/demo11/images/index/84.gif" alt="厦工楚胜（湖北）专用汽车" width="133" height="100"></a>
+											</div>
+										<div class="block-ad f-left">
+						<a href="c3049.html" target="_blank"><img original="/data/comads/2018/07/29/1532793604262.jpg" src="templates/demo11/images/index/84.gif" alt="中国铁塔随州分公司" width="133" height="100"></a>
+											</div>
+										<div class="block-ad f-left">
+						<a href="c2395.html" target="_blank"><img original="/data/comads/2016/05/05/1462399632374.gif" src="templates/demo11/images/index/84.gif" alt="建信人寿保险有限公司" width="133" height="100"></a>
+											</div>
+										<div class="block-ad f-left">
+						<a href="c2309.html" target="_blank"><img original="/data/comads/2016/05/05/1462399757276.gif" src="templates/demo11/images/index/84.gif" alt="中国人寿保险股份有限公司" width="133" height="100"></a>
+											</div>
+									</div>
+							</div>
+			<!-- 中间格子广告end -->
+			<div class="ad-tag-right f-left">
+				<div class="tag-box clearfix">
+															<a href="jobs/jobs-list.php%EF%BC%9Fjobtag=145" target="_blank" class="tag-item f-left">环境好</a>
+										<a href="jobs/jobs-list.php%EF%BC%9Fjobtag=146" target="_blank" class="tag-item f-left">年终奖</a>
+										<a href="jobs/jobs-list.php%EF%BC%9Fjobtag=147" target="_blank" class="tag-item f-left">双休</a>
+										<a href="jobs/jobs-list.php%EF%BC%9Fjobtag=148" target="_blank" class="tag-item f-left">五险一金</a>
+										<a href="jobs/jobs-list.php%EF%BC%9Fjobtag=149" target="_blank" class="tag-item f-left">加班费</a>
+										<a href="jobs/jobs-list.php%EF%BC%9Fjobtag=150" target="_blank" class="tag-item f-left">朝九晚五</a>
+										<a href="jobs/jobs-list.php%EF%BC%9Fjobtag=151" target="_blank" class="tag-item f-left">交通方便</a>
+										<a href="jobs/jobs-list.php%EF%BC%9Fjobtag=152" target="_blank" class="tag-item f-left">加班补助</a>
+										<a href="jobs/jobs-list.php%EF%BC%9Fjobtag=153" target="_blank" class="tag-item f-left">包食宿</a>
+										<a href="jobs/jobs-list.php%EF%BC%9Fjobtag=154" target="_blank" class="tag-item f-left">管理规范</a>
+									</div>
+				<div class="side-sm-ad"><a href="simple/simple-list.php"><img src="templates/demo11/images/shouyelouti.gif" alt="" width="255" height="78"></a></div>
+			</div>
+		</div>
+		<!-- 推荐职位 -->
+		<div class="recommend-wrap clearfix">
+			<div class="recommend f-left">
+				<div class="recom-title clearfix">
+					<h3 class="f-left">推荐职位</h3>
+					<a href="jobs/jobs-list.php" target="_blank" class="f-right underline">更多&gt;&gt;</a>
+				</div>
+				<div class="recom-list clearfix">
+															<div class="recom-item f-left">
+						<div class="r-job-name"><a href="jobs/6821.html" target="_blank" class="underline">业务代表/客户代表/</a></div>
+						<div class="r-job-info clearfix">
+<div class="claim f-left">1-3年 / 高中</div>
+<span class="r-job-pay f-right">1500~2000元/月</span>
+</div>
+						<p class="r-job-com"><a href="c1926.html" target="_blank" class="underline">随州随广文化传媒有限公司</a></p>
+					</div>
+										<div class="recom-item f-left">
+						<div class="r-job-name"><a href="jobs/6819.html" target="_blank" class="underline">网站编辑</a></div>
+						<div class="r-job-info clearfix">
+<div class="claim f-left">无经验 / 大专</div>
+<span class="r-job-pay f-right">2000~3000元/月</span>
+</div>
+						<p class="r-job-com"><a href="c1926.html" target="_blank" class="underline">随州随广文化传媒有限公司</a></p>
+					</div>
+										<div class="recom-item f-left">
+						<div class="r-job-name"><a href="jobs/7934.html" target="_blank" class="underline">销售代表</a></div>
+						<div class="r-job-info clearfix">
+<div class="claim f-left">1-3年 / 初中</div>
+<span class="r-job-pay f-right">5000~10000元/月</span>
+</div>
+						<p class="r-job-com"><a href="c2727.html" target="_blank" class="underline">勾梁画栋装饰有限公司</a></p>
+					</div>
+										<div class="recom-item f-left">
+						<div class="r-job-name"><a href="jobs/7416.html" target="_blank" class="underline">微信运营人员</a></div>
+						<div class="r-job-info clearfix">
+<div class="claim f-left">1-3年 / 大专</div>
+<span class="r-job-pay f-right">2000~3000元/月</span>
+</div>
+						<p class="r-job-com"><a href="c1926.html" target="_blank" class="underline">随州随广文化传媒有限公司</a></p>
+					</div>
+										<div class="recom-item f-left">
+						<div class="r-job-name"><a href="jobs/7193.html" target="_blank" class="underline"><span style="color:#bc123a">电商专员</span></a></div>
+						<div class="r-job-info clearfix">
+<div class="claim f-left">无经验 / 高中</div>
+<span class="r-job-pay f-right">3000~5000元/月</span>
+</div>
+						<p class="r-job-com"><a href="c1926.html" target="_blank" class="underline">随州随广文化传媒有限公司</a></p>
+					</div>
+										<div class="recom-item f-left">
+						<div class="r-job-name"><a href="jobs/8266.html" target="_blank" class="underline">渠道专员</a></div>
+						<div class="r-job-info clearfix">
+<div class="claim f-left">无经验 / 中专</div>
+<span class="r-job-pay f-right">3000~5000元/月</span>
+</div>
+						<p class="r-job-com"><a href="c2959.html" target="_blank" class="underline">湖北驭兴信息服务有限公司</a></p>
+					</div>
+										<div class="recom-item f-left">
+						<div class="r-job-name"><a href="jobs/8162.html" target="_blank" class="underline">置业顾问</a></div>
+						<div class="r-job-info clearfix">
+<div class="claim f-left">无经验 / 大专</div>
+<span class="r-job-pay f-right">5000~10000元/月</span>
+</div>
+						<p class="r-job-com"><a href="c2862.html" target="_blank" class="underline">武汉易居投资有限公司</a></p>
+					</div>
+										<div class="recom-item f-left">
+						<div class="r-job-name"><a href="jobs/8161.html" target="_blank" class="underline">拓客专员</a></div>
+						<div class="r-job-info clearfix">
+<div class="claim f-left">无经验 / 大专</div>
+<span class="r-job-pay f-right">3000~5000元/月</span>
+</div>
+						<p class="r-job-com"><a href="c2862.html" target="_blank" class="underline">武汉易居投资有限公司</a></p>
+					</div>
+										<div class="recom-item f-left">
+						<div class="r-job-name"><a href="jobs/8160.html" target="_blank" class="underline">策划助理</a></div>
+						<div class="r-job-info clearfix">
+<div class="claim f-left">1-3年 / 大专</div>
+<span class="r-job-pay f-right">3000~5000元/月</span>
+</div>
+						<p class="r-job-com"><a href="c2862.html" target="_blank" class="underline">武汉易居投资有限公司</a></p>
+					</div>
+										<div class="recom-item f-left">
+						<div class="r-job-name"><a href="jobs/8159.html" target="_blank" class="underline">案场助理</a></div>
+						<div class="r-job-info clearfix">
+<div class="claim f-left">1-3年 / 大专</div>
+<span class="r-job-pay f-right">3000~5000元/月</span>
+</div>
+						<p class="r-job-com"><a href="c2862.html" target="_blank" class="underline">武汉易居投资有限公司</a></p>
+					</div>
+										<div class="recom-item f-left">
+						<div class="r-job-name"><a href="jobs/7678.html" target="_blank" class="underline">业务经理</a></div>
+						<div class="r-job-info clearfix">
+<div class="claim f-left"> / </div>
+<span class="r-job-pay f-right">3000~5000元/月</span>
+</div>
+						<p class="r-job-com"><a href="c2525.html" target="_blank" class="underline">稻花香苦荞酒随州运营中心</a></p>
+					</div>
+										<div class="recom-item f-left">
+						<div class="r-job-name"><a href="jobs/7680.html" target="_blank" class="underline">销售代表</a></div>
+						<div class="r-job-info clearfix">
+<div class="claim f-left">1-3年 / 大专</div>
+<span class="r-job-pay f-right">2000~3000元/月</span>
+</div>
+						<p class="r-job-com"><a href="c2525.html" target="_blank" class="underline">稻花香苦荞酒随州运营中心</a></p>
+					</div>
+									</div>
+			</div>
+			<div class="recom-side f-left">
+				<div class="side-lg-ad"><a href="simple/simple-resume-list.php"><img src="templates/demo11/images/index-ad255x332.jpg" alt="" width="255" height="332"></a></div>
+				<div class="side-sm-ad"><a href="evaluation/index.php"><img src="templates/demo11/images/index-ad255x78.jpg" alt="" width="255" height="78"></a></div>
+			</div>
+		</div>
+		<!-- 中间横幅广告 -->
+						<!-- 中间横幅广告end -->
+		<!-- 最新职位 -->
+		<div class="index-data-container">
+			<div class="index-data-title clearfix">
+				<h3 class="f-left">最新职位</h3>
+				<a href="jobs/jobs-list.php" target="_blank" class="f-right underline">更多&gt;&gt;</a>
+			</div>
+			<ul class="new-job-list clearfix">
+<li class="n-job-item f-left">
+<a href="c1926.html" target="_blank" class="n-job-com underline">随州随广文化传媒有限公司</a>
+										<a href="jobs/6821.html" class="n-job underline" target="_blank">业务代表/客户代表/</a>
+										<a href="jobs/6819.html" class="n-job underline" target="_blank">网站编辑</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2995.html" target="_blank" class="n-job-com underline">小商品批发交易市场78号批</a>
+										<a href="jobs/8417.html" class="n-job underline" target="_blank">销售业务员</a>
+										<a href="jobs/8323.html" class="n-job underline" target="_blank">销售员</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3031.html" target="_blank" class="n-job-com underline">中国平安人寿保险股份有限</a>
+										<a href="jobs/8368.html" class="n-job underline" target="_blank">销售精英</a>
+										<a href="jobs/8369.html" class="n-job underline" target="_blank">销售主管</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2786.html" target="_blank" class="n-job-com underline">湖北久鼎汽车有限公司</a>
+										<a href="jobs/8416.html" class="n-job underline" target="_blank">网络销售经理</a>
+										<a href="jobs/8024.html" class="n-job underline" target="_blank">销售经理</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2598.html" target="_blank" class="n-job-com underline">UBTV小主播</a>
+										<a href="jobs/8230.html" class="n-job underline" target="_blank">市场专员</a>
+										<a href="jobs/8395.html" class="n-job underline" target="_blank">文秘</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3076.html" target="_blank" class="n-job-com underline">吴宗华康复中心</a>
+										<a href="jobs/8415.html" class="n-job underline" target="_blank">医护人员</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2770.html" target="_blank" class="n-job-com underline">中航国铁教育集团湖北分公</a>
+										<a href="jobs/8003.html" class="n-job underline" target="_blank">学管老师</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2727.html" target="_blank" class="n-job-com underline">勾梁画栋装饰有限公司</a>
+										<a href="jobs/7934.html" class="n-job underline" target="_blank">销售代表</a>
+										<a href="jobs/7936.html" class="n-job underline" target="_blank">设计师</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3045.html" target="_blank" class="n-job-com underline">随州梁泰地产有限公司</a>
+										<a href="jobs/8404.html" class="n-job underline" target="_blank">资料员</a>
+										<a href="jobs/8405.html" class="n-job underline" target="_blank">置业顾问</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3073.html" target="_blank" class="n-job-com underline">武汉永怡纸业有限公司</a>
+										<a href="jobs/8413.html" class="n-job underline" target="_blank">装箱工</a>
+										<a href="jobs/8414.html" class="n-job underline" target="_blank">研发员、质检员</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3072.html" target="_blank" class="n-job-com underline">随县双河石业有限公司</a>
+										<a href="jobs/8410.html" class="n-job underline" target="_blank">泵房开票员</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3068.html" target="_blank" class="n-job-com underline">程力专用汽车股份有限公司</a>
+										<a href="jobs/8406.html" class="n-job underline" target="_blank">专用车销售经理</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2979.html" target="_blank" class="n-job-com underline">湖北天成文化传播有限公司</a>
+										<a href="jobs/8301.html" class="n-job underline" target="_blank">校对</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2978.html" target="_blank" class="n-job-com underline">中铁十一局集团有限公司</a>
+										<a href="jobs/8407.html" class="n-job underline" target="_blank">安全员</a>
+										<a href="jobs/8302.html" class="n-job underline" target="_blank">文员</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3067.html" target="_blank" class="n-job-com underline">武汉宏创兴恒技术工程有限</a>
+										<a href="jobs/8401.html" class="n-job underline" target="_blank">兼职驻地技术员（安防）</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3058.html" target="_blank" class="n-job-com underline">湖北千年银杏谷健康产业有</a>
+										<a href="jobs/8398.html" class="n-job underline" target="_blank">洗车工</a>
+										<a href="jobs/8397.html" class="n-job underline" target="_blank">汽车美容</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3063.html" target="_blank" class="n-job-com underline">湖北天瑞采光材料有限公司</a>
+										<a href="jobs/8400.html" class="n-job underline" target="_blank">普工，操作工</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3061.html" target="_blank" class="n-job-com underline">湖北景宜环保科技有限公司</a>
+										<a href="jobs/8399.html" class="n-job underline" target="_blank">环保监测技术人员</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2570.html" target="_blank" class="n-job-com underline">随州长欣汽车销售有限公司</a>
+										<a href="jobs/8396.html" class="n-job underline" target="_blank">吉利汽车销售</a>
+										<a href="jobs/7724.html" class="n-job underline" target="_blank">保险理赔员</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3018.html" target="_blank" class="n-job-com underline">湖北绿城生态景观工程有限</a>
+										<a href="jobs/8355.html" class="n-job underline" target="_blank">施工员</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2974.html" target="_blank" class="n-job-com underline">随州市天铭机械制造有限公</a>
+										<a href="jobs/8296.html" class="n-job underline" target="_blank">会计</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3027.html" target="_blank" class="n-job-com underline">随州市金石网络科技有限公</a>
+										<a href="jobs/8380.html" class="n-job underline" target="_blank">网络产品销售</a>
+										<a href="jobs/8381.html" class="n-job underline" target="_blank">网络产品推广</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2640.html" target="_blank" class="n-job-com underline">远成快运有限公司</a>
+										<a href="jobs/8394.html" class="n-job underline" target="_blank">营业员</a>
+										<a href="jobs/7822.html" class="n-job underline" target="_blank">快递员</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2948.html" target="_blank" class="n-job-com underline">欧洲之星瓷砖</a>
+										<a href="jobs/8378.html" class="n-job underline" target="_blank">设计师</a>
+										<a href="jobs/8382.html" class="n-job underline" target="_blank">销售业务员</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3051.html" target="_blank" class="n-job-com underline">随州市畅泰新能源汽车有限</a>
+										<a href="jobs/8391.html" class="n-job underline" target="_blank">销售主管</a>
+										<a href="jobs/8389.html" class="n-job underline" target="_blank">销售代表</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2397.html" target="_blank" class="n-job-com underline">湖北程力专用汽车股份有限</a>
+										<a href="jobs/8388.html" class="n-job underline" target="_blank">销售代表，网络营销</a>
+										<a href="jobs/7457.html" class="n-job underline" target="_blank">销售员</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2413.html" target="_blank" class="n-job-com underline">随州大方精密机电工程有限</a>
+										<a href="jobs/8387.html" class="n-job underline" target="_blank">质检员</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3029.html" target="_blank" class="n-job-com underline">随州市合信房地产开发有限</a>
+										<a href="jobs/8376.html" class="n-job underline" target="_blank">员工食堂厨师</a>
+										<a href="jobs/8356.html" class="n-job underline" target="_blank">置业顾问</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3037.html" target="_blank" class="n-job-com underline">湖北广顺专用汽车有限公司</a>
+										<a href="jobs/8375.html" class="n-job underline" target="_blank">专用汽车生产工人</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3032.html" target="_blank" class="n-job-com underline">随州凯翔广告文化传媒有限</a>
+										<a href="jobs/8372.html" class="n-job underline" target="_blank">平面设计</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3033.html" target="_blank" class="n-job-com underline">成都红秀文化传媒有限公司</a>
+										<a href="jobs/8373.html" class="n-job underline" target="_blank">运营总监</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3009.html" target="_blank" class="n-job-com underline">随州启程人力资源服务有限</a>
+										<a href="jobs/8359.html" class="n-job underline" target="_blank">车工</a>
+										<a href="jobs/8358.html" class="n-job underline" target="_blank">机械工程师</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2968.html" target="_blank" class="n-job-com underline">湖北梯田文化传播有限公司</a>
+										<a href="jobs/8283.html" class="n-job underline" target="_blank">销售经理</a>
+										<a href="jobs/8286.html" class="n-job underline" target="_blank">出纳会计（环潭）</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3013.html" target="_blank" class="n-job-com underline">湖北俊浩底盘合作社</a>
+										<a href="jobs/8354.html" class="n-job underline" target="_blank">销售代表</a>
+										<a href="jobs/8348.html" class="n-job underline" target="_blank">销售代表</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2966.html" target="_blank" class="n-job-com underline">随州市云昕网络科技有限公</a>
+										<a href="jobs/8273.html" class="n-job underline" target="_blank">销售代表</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3006.html" target="_blank" class="n-job-com underline">随州王老吉</a>
+										<a href="jobs/8335.html" class="n-job underline" target="_blank">随州王老吉直招厂家业务代</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3004.html" target="_blank" class="n-job-com underline">湖北巨世医药有限公司</a>
+										<a href="jobs/8333.html" class="n-job underline" target="_blank">医药代表</a>
+										<a href="jobs/8332.html" class="n-job underline" target="_blank">药品代理商</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2923.html" target="_blank" class="n-job-com underline">湖北楚瑞汽车销售有限公司</a>
+										<a href="jobs/8252.html" class="n-job underline" target="_blank">汽车销售</a>
+										<a href="jobs/8231.html" class="n-job underline" target="_blank">汽车销售</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3016.html" target="_blank" class="n-job-com underline">随州鹏达信息科技有限公司</a>
+										<a href="jobs/8350.html" class="n-job underline" target="_blank">销售代表/业务员</a>
+										<a href="jobs/8349.html" class="n-job underline" target="_blank">销售人员</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3015.html" target="_blank" class="n-job-com underline">随州万佳酒店用品设备有限</a>
+										<a href="jobs/8347.html" class="n-job underline" target="_blank">送货员</a>
+										<a href="jobs/8346.html" class="n-job underline" target="_blank">店内销售员</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3012.html" target="_blank" class="n-job-com underline">随县欣盛机动车检测有限公</a>
+										<a href="jobs/8341.html" class="n-job underline" target="_blank">文员</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c1993.html" target="_blank" class="n-job-com underline">爱丁堡教育</a>
+										<a href="jobs/8340.html" class="n-job underline" target="_blank">全职少儿英语教师伙伴人才</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3011.html" target="_blank" class="n-job-com underline">程力重工汽车股份有限公司</a>
+										<a href="jobs/8339.html" class="n-job underline" target="_blank">销售经理</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c3010.html" target="_blank" class="n-job-com underline">随州市神州机动车驾驶员培</a>
+										<a href="jobs/8337.html" class="n-job underline" target="_blank">神州驾校招聘文员</a>
+										<a href="jobs/8336.html" class="n-job underline" target="_blank">神州驾校招聘会计</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2945.html" target="_blank" class="n-job-com underline">随州碧桂园房地产开发有限</a>
+										<a href="jobs/8264.html" class="n-job underline" target="_blank">随州碧桂园紫宸项目（高级</a>
+										<a href="jobs/8263.html" class="n-job underline" target="_blank">随州碧桂园紫宸项目（高级</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2999.html" target="_blank" class="n-job-com underline">随州一家建筑装饰工程有限</a>
+										<a href="jobs/8329.html" class="n-job underline" target="_blank">销售经理</a>
+										<a href="jobs/8328.html" class="n-job underline" target="_blank">工程监理</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2959.html" target="_blank" class="n-job-com underline">湖北驭兴信息服务有限公司</a>
+										<a href="jobs/8266.html" class="n-job underline" target="_blank">渠道专员</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2900.html" target="_blank" class="n-job-com underline">宜信普惠信息咨询（北京）</a>
+										<a href="jobs/8209.html" class="n-job underline" target="_blank">销售经理</a>
+										<a href="jobs/8205.html" class="n-job underline" target="_blank">销售代表</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2993.html" target="_blank" class="n-job-com underline">湖北艾美嘉形象策划有限公</a>
+										<a href="jobs/8321.html" class="n-job underline" target="_blank">前台接待</a>
+										<a href="jobs/8319.html" class="n-job underline" target="_blank">形象顾问</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2994.html" target="_blank" class="n-job-com underline">随州市诚品汽车销售有限公</a>
+										<a href="jobs/8322.html" class="n-job underline" target="_blank">汽车销售/网络销售</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2792.html" target="_blank" class="n-job-com underline">爱家智能家居有限公司</a>
+										<a href="jobs/8050.html" class="n-job underline" target="_blank">业务精英</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2990.html" target="_blank" class="n-job-com underline">随州宜居房地产经纪有限公</a>
+										<a href="jobs/8318.html" class="n-job underline" target="_blank">房产店长/经理</a>
+										<a href="jobs/8317.html" class="n-job underline" target="_blank">房产经纪人</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2988.html" target="_blank" class="n-job-com underline">上海中梁物业发展有限公司</a>
+										<a href="jobs/8315.html" class="n-job underline" target="_blank">客服专员</a>
+										<a href="jobs/8314.html" class="n-job underline" target="_blank">秩序维护员</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2986.html" target="_blank" class="n-job-com underline">武汉市尚上游科技有限公司</a>
+										<a href="jobs/8310.html" class="n-job underline" target="_blank">游戏美术（原画/动画/平面</a>
+										<a href="jobs/8309.html" class="n-job underline" target="_blank">游戏开发助理</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2985.html" target="_blank" class="n-job-com underline">武汉万家汇房地产营销顾问</a>
+										<a href="jobs/8307.html" class="n-job underline" target="_blank">店长、经理</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2983.html" target="_blank" class="n-job-com underline">陕西浦思金融网络科技有限</a>
+										<a href="jobs/8306.html" class="n-job underline" target="_blank">POS机维护员（广水）</a>
+										<a href="jobs/8305.html" class="n-job underline" target="_blank">POS机维护员</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2962.html" target="_blank" class="n-job-com underline">湖北汉锋专用汽车销售有限</a>
+										<a href="jobs/8270.html" class="n-job underline" target="_blank">专用汽车销售</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2982.html" target="_blank" class="n-job-com underline">随州市澜鲸教育科技有限公</a>
+										<a href="jobs/8304.html" class="n-job underline" target="_blank">【底薪+提成+奖金+补贴+其</a>
+										<a href="jobs/8303.html" class="n-job underline" target="_blank">【底薪+课时+提成+奖金+补</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2971.html" target="_blank" class="n-job-com underline">随州市天威汽车销售有限公</a>
+										<a href="jobs/8279.html" class="n-job underline" target="_blank">4S店文员</a>
+										<a href="jobs/8278.html" class="n-job underline" target="_blank">汽车销售（海马4S店）</a>
+									</li>
+								<li class="n-job-item f-left">
+<a href="c2977.html" target="_blank" class="n-job-com underline">随州市一家建筑装饰工程有</a>
+										<a href="jobs/8299.html" class="n-job underline" target="_blank">销售经理</a>
+										<a href="jobs/8298.html" class="n-job underline" target="_blank">设计师</a>
+									</li>
+							</ul>
+</div>
+		<!-- 照片简历 -->
+		<div class="index-data-container">
+			<div class="index-data-title photo clearfix">
+				<h3 class="f-left">照片简历</h3>
+				<a href="resume/resume-list.php%EF%BC%9Fphoto=1" target="_blank" class="f-right underline">更多&gt;&gt;</a>
+			</div>
+			<div class="photo-resumes clearfix">
+												<div class="photo-item f-left">
+					<div class="photo-top"><a href="resume/7965.html" target="_blank"><img src="data/photo/thumb/2018/10/05/1538740664.jpg" alt="李少典" width="70" height="70"></a></div>
+					<div class="photo-link"><a href="resume/7965.html" target="_blank" class="photo-name">李少典</a></div>
+					<div class="photo-info">
+						<p>高中,5-10年</p>
+						<p>货运/运输管理,商务司机,安全管...</p>
+					</div>
+				</div>
+								<div class="photo-item f-left">
+					<div class="photo-top"><a href="resume/6767.html" target="_blank"><img src="data/photo/thumb/2017/02/15/1487137810.jpg" alt="王祖涛" width="70" height="70"></a></div>
+					<div class="photo-link"><a href="resume/6767.html" target="_blank" class="photo-name">王祖涛</a></div>
+					<div class="photo-info">
+						<p>中技,5-10年</p>
+						<p>货运/运输管理</p>
+					</div>
+				</div>
+								<div class="photo-item f-left">
+					<div class="photo-top"><a href="resume/7964.html" target="_blank"><img src="data/photo/thumb/2018/10/05/1538704049.jpg" alt="代佳" width="70" height="70"></a></div>
+					<div class="photo-link"><a href="resume/7964.html" target="_blank" class="photo-name">代佳</a></div>
+					<div class="photo-info">
+						<p>高中,5-10年</p>
+						<p>销售人员,销售管理,销售行政商...</p>
+					</div>
+				</div>
+								<div class="photo-item f-left">
+					<div class="photo-top"><a href="resume/7960.html" target="_blank"><img src="data/photo/thumb/2018/09/30/1538319988964.jpg" alt="喻苗苗" width="70" height="70"></a></div>
+					<div class="photo-link"><a href="resume/7960.html" target="_blank" class="photo-name">喻苗苗</a></div>
+					<div class="photo-info">
+						<p>大专,5-10年</p>
+						<p>财务/审计/税务</p>
+					</div>
+				</div>
+								<div class="photo-item f-left">
+					<div class="photo-top"><a href="resume/7717.html" target="_blank"><img src="data/photo/thumb/2018/07/07/1530931199.jpg" alt="金艳娥" width="70" height="70"></a></div>
+					<div class="photo-link"><a href="resume/7717.html" target="_blank" class="photo-name">金艳娥</a></div>
+					<div class="photo-info">
+						<p>中技,3-5年</p>
+						<p>平面设计,广告创意/设计,排版设...</p>
+					</div>
+				</div>
+								<div class="photo-item f-left">
+					<div class="photo-top"><a href="resume/7785.html" target="_blank"><img src="data/photo/thumb/2018/07/18/1531907180.jpg" alt="孔德军" width="70" height="70"></a></div>
+					<div class="photo-link"><a href="resume/7785.html" target="_blank" class="photo-name">孔德军</a></div>
+					<div class="photo-info">
+						<p>大专,10年以上</p>
+						<p>采购经理/主管,物流经理/主管,...</p>
+					</div>
+				</div>
+								<div class="photo-item f-left">
+					<div class="photo-top"><a href="resume/7805.html" target="_blank"><img src="data/photo/thumb/2018/07/24/1532423616.jpg" alt="沈瑞洲" width="70" height="70"></a></div>
+					<div class="photo-link"><a href="resume/7805.html" target="_blank" class="photo-name">沈瑞洲</a></div>
+					<div class="photo-info">
+						<p>大专,10年以上</p>
+						<p>工程/设备管理</p>
+					</div>
+				</div>
+							</div>
+		</div>
+		<!-- 新闻 -->
+		<div class="news-wrap clearfix">
+			<!-- 新闻推荐广告 -->
+												<div class="lazyload">
+				<div class="news-img-block f-left">
+					<a href="simple/simple-list.php"><img original="/data/comads/2016/05/05/1462392473243.gif" src="templates/demo11/images/index/84.gif" alt="快速发布微招聘（无需注册" width="384" height="333"></a>
+				</div>
+			</div>
+									<!-- 新闻推荐广告end -->
+			<div class="news-img-list f-left">
+																<div class="news-item clearfix lazyload">
+					<div class="news-content f-left">
+						<h4><a href="news/6475.html" class="underline" target="_blank">随州市劳动就业管理局就业创业培训工作纪实</a></h4>
+						<p>       
+	 随州日报通讯员 张扬 李海波
+　　【导读】
+　　按照党的十九大提出的大规模开展职业技能培训的要求和国务院印发《...</p>
+					</div>
+					<div class="news-photo f-right"><a href="news/6475.html" target="_blank"><img original="/data/images/thumb/2018/09/26/1537933188596.jpg" src="templates/demo11/images/index/84.gif" width="100" height="75"></a></div>
+				</div>
+																<div class="news-item clearfix lazyload">
+					<div class="news-content f-left">
+						<h4><a href="news/6310.html" class="underline" target="_blank">随州市人社局曝光“拒不支付劳动报酬”典型案例</a></h4>
+						<p>       　　为加大对拖欠劳动报酬违法行为的惩戒和震慑力度，督促用人单位依法用工，强化诚信体系建设，切实维护劳动者的劳动报...</p>
+					</div>
+					<div class="news-photo f-right"><a href="news/6310.html" target="_blank"><img original="/data/images/thumb/2018/07/27/1532658340279.jpg" src="templates/demo11/images/index/84.gif" width="100" height="75"></a></div>
+				</div>
+																<div class="news-item clearfix lazyload">
+					<div class="news-content f-left">
+						<h4><a href="news/6262.html" class="underline" target="_blank">2017年随州市在岗职工平均工资和城乡居民人均可支配收人启用通知</a></h4>
+						<p>       
+	随州市人力资源和社会保障局办公室关于启用2017年在岗职工平均工资和城乡居民人均可支配收人的通知
+
+
+
+	随人社办...</p>
+					</div>
+					<div class="news-photo f-right"><a href="news/6262.html" target="_blank"><img original="/data/images/thumb/2018/07/08/1531032516890.jpg" src="templates/demo11/images/index/84.gif" width="100" height="75"></a></div>
+				</div>
+											</div>
+			<div class="news-tab-wrap f-left lazyload">
+				<div class="news-tab clearfix">
+															<a href="javascript:;" class="news-tab-link f-left active">随州资讯<i class="active-arrow"><em></em></i></a>
+										<a href="javascript:;" class="news-tab-link f-left">政策法规<i class="active-arrow"><em></em></i></a>
+										<a href="javascript:;" class="news-tab-link f-left">下载中心<i class="active-arrow"><em></em></i></a>
+									</div>
+				<div class="tab-box">
+															<ul class="tab-news-list" style="display:block;">
+<li class="tabnews-img"><a href="news/news-list.php%EF%BC%9Fid=11" target="_blank"><img original="/templates/demo11/images/news0.jpg" src="templates/demo11/images/index/84.gif" width="227" height="75"></a></li>
+																		<li class="tab-news">
+<i class="tab-icon"></i><a target="_blank" href="news/6510.html" class="underline" title="随县、曾都区“金秋招聘月暨就业扶贫行动日”即将启动">随县、曾都区“金秋招聘月暨就业扶贫行...</a>
+</li>
+												<li class="tab-news">
+<i class="tab-icon"></i><a target="_blank" href="news/6509.html" class="underline" title="随州市就业局聚焦就业扶贫助力企业发展">随州市就业局聚焦就业扶贫助力企业发展</a>
+</li>
+												<li class="tab-news">
+<i class="tab-icon"></i><a target="_blank" href="news/6508.html" class="underline" title="直击“神农工匠杯”2018年随州市首届茶业职业技能大赛现场">直击“神农工匠杯”2018年随州市首届茶...</a>
+</li>
+												<li class="tab-news">
+<i class="tab-icon"></i><a target="_blank" href="news/6506.html" class="underline" title="曾都区为“两属两户”对象购买农房保险">曾都区为“两属两户”对象购买农房保险</a>
+</li>
+												<li class="tab-news">
+<i class="tab-icon"></i><a target="_blank" href="news/6504.html" class="underline" title="随州市邮政分公司招聘公告">随州市邮政分公司招聘公告</a>
+</li>
+												<li class="tab-news">
+<i class="tab-icon"></i><a target="_blank" href="news/6503.html" class="underline" title="2019年度随州城乡居民医保征收工作启动">2019年度随州城乡居民医保征收工作启动</a>
+</li>
+											</ul>
+<ul class="tab-news-list">
+<li class="tabnews-img"><a href="news/news-list.php%EF%BC%9Fid=6" target="_blank"><img original="/templates/demo11/images/news1.jpg" src="templates/demo11/images/index/84.gif" width="227" height="75"></a></li>
+																		<li class="tab-news">
+<i class="tab-icon"></i><a target="_blank" href="news/6505.html" class="underline" title="当前阶段人社领域支持实体经济发展政策清单">当前阶段人社领域支持实体经济发展政策...</a>
+</li>
+												<li class="tab-news">
+<i class="tab-icon"></i><a target="_blank" href="news/6492.html" class="underline" title="随州市关于进一步加强医疗救助 同基本医疗保险、大病保险和商业补充医疗保险衔接的通知">随州市关于进一步加强医疗救助 同基本医...</a>
+</li>
+												<li class="tab-news">
+<i class="tab-icon"></i><a target="_blank" href="news/6474.html" class="underline" title="跨省异地就医直接结算相关政策解读">跨省异地就医直接结算相关政策解读</a>
+</li>
+												<li class="tab-news">
+<i class="tab-icon"></i><a target="_blank" href="news/6463.html" class="underline" title="随州10月底可网上办理养老保险">随州10月底可网上办理养老保险</a>
+</li>
+												<li class="tab-news">
+<i class="tab-icon"></i><a target="_blank" href="news/6439.html" class="underline" title="湖北省大学生创业孵化示范基地奖补办法（试行）">湖北省大学生创业孵化示范基地奖补办法...</a>
+</li>
+												<li class="tab-news">
+<i class="tab-icon"></i><a target="_blank" href="news/6438.html" class="underline" title="湖北省就业提升计划实施方案和社保共享计划实施方案">湖北省就业提升计划实施方案和社保共享...</a>
+</li>
+											</ul>
+<ul class="tab-news-list">
+<li class="tabnews-img"><a href="news/news-list.php%EF%BC%9Fid=13" target="_blank"><img original="/templates/demo11/images/news2.jpg" src="templates/demo11/images/index/84.gif" width="227" height="75"></a></li>
+																		<li class="tab-news">
+<i class="tab-icon"></i><a target="_blank" href="news/6489.html" class="underline" title="随州市劳动合同书标准样本">随州市劳动合同书标准样本</a>
+</li>
+												<li class="tab-news">
+<i class="tab-icon"></i><a target="_blank" href="news/6328.html" class="underline" title="广水市城区学校2018年公开选聘教师岗位表">广水市城区学校2018年公开选聘教师岗位...</a>
+</li>
+												<li class="tab-news">
+<i class="tab-icon"></i><a target="_blank" href="news/6297.html" class="underline" title="曾都区乡村振兴发展有限责任公司招聘岗位计划表">曾都区乡村振兴发展有限责任公司招聘岗...</a>
+</li>
+												<li class="tab-news">
+<i class="tab-icon"></i><a target="_blank" href="news/6043.html" class="underline" title="随州市市直医疗卫生事业单位2018年公开招聘岗位表">随州市市直医疗卫生事业单位2018年公开...</a>
+</li>
+												<li class="tab-news">
+<i class="tab-icon"></i><a target="_blank" href="news/6036.html" class="underline" title="广水市事业单位2018年统一组织公开招聘报考指南">广水市事业单位2018年统一组织公开招聘...</a>
+</li>
+												<li class="tab-news">
+<i class="tab-icon"></i><a target="_blank" href="news/6035.html" class="underline" title="广水市2018年度事业单位公开招聘岗位计划表">广水市2018年度事业单位公开招聘岗位计...</a>
+</li>
+											</ul>
+</div>
+			</div>
+		</div>
+		<!-- 分站链接&友情链接 -->
+		<div class="f-link-wrap">
+			<div class="f-link-control clearfix">
+				<div class="link-ctrl-item f-left select">友情链接</div>
+			</div>
+			<div class="f-link-content">
+				<div class="f-link-list" style="display:block">
+															<a href="http://www.xinjiren.com/" target="_blank" class="underline">辛集人才网</a>
+										<a href="http://www.bsrcw.cn/" target="_blank" class="underline">璧山招聘</a>
+										<a href="http://www.yxrcw.cn/" target="_blank" class="underline">宜兴人才网</a>
+										<a href="http://www.cxrc.com.cn/" target="_blank" class="underline">成都人才网</a>
+										<a href="http://www.yunyangrc.com/" target="_blank" class="underline">云阳人才网</a>
+										<a href="http://www.lfbole.com/" target="_blank" class="underline">廊坊招聘网</a>
+										<a href="http://www.lujiangjob.com/" target="_blank" class="underline">庐江人才网</a>
+										<a href="http://www.ln-rc.com/" target="_blank" class="underline">枣庄人才网</a>
+										<a href="http://www.flrcw.com/" target="_blank" class="underline">涪陵人才网</a>
+										<a href="http://www.zhuozhourencai.com/" target="_blank" class="underline">涿州人才网</a>
+										<a href="http://shenyang.liepin.com/" target="_blank" class="underline">沈阳招聘</a>
+										<a href="http://www.114zpw.com/" target="_blank" class="underline">溧水114招聘网</a>
+										<a href="http://www.dksrcw.com/" target="_blank" class="underline">昆山人才网</a>
+										<a href="http://www.gongyiyc.com/" target="_blank" class="underline">巩义人才网</a>
+										<a href="http://dy.91job.com/" target="_blank" class="underline">东阳人才网</a>
+										<a href="http://jianzhi.huibo.com/" target="_blank" class="underline">重庆兼职</a>
+										<a href="index.html" target="_blank" class="underline">随州人才网</a>
+										<a href="http://house.0722fc.com/" target="_blank" class="underline">随州房产网</a>
+										<a href="http://www.0722zs.com/" target="_blank" class="underline">随州装饰网</a>
+										<a href="http://www.suizhouren.com/" target="_blank" class="underline">随州人社区</a>
+										<a href="http://www.0722fang.com/" target="_blank" class="underline">随州房产信息网</a>
+										<a href="http://www.0722che.com/" target="_blank" class="underline">随州车网</a>
+										<a href="http://suizhou.ohqly.com/" target="_blank" class="underline">随州论坛</a>
+										<a href="http://www.jz.cc/hubei/" target="_blank" class="underline">湖北人才网</a>
+										<a href="http://ks.58.com/joblist.shtml" target="_blank" class="underline">喀什人才网</a>
+										<a href="http://linyixian.58.com/joblist.shtml" target="_blank" class="underline">临猗人才网</a>
+										<a href="http://sw.pcwl.com/" target="_blank" class="underline">汕尾人才网</a>
+										<a href="http://www.xysrcw.com/" target="_blank" class="underline">信阳人才网</a>
+										<a href="http://www.aijianou.cn/" target="_blank" class="underline">爱建瓯人才网</a>
+										<a href="http://news.0722fc.com/" target="_blank" class="underline">随州房产资讯</a>
+										<a href="http://esf.0722fc.com/" target="_blank" class="underline">随州二手房</a>
+										<a href="http://zu.0722fc.com/" target="_blank" class="underline">随州租房</a>
+										<a href="http://www.foxconnjob.com/" target="_blank" class="underline">郑州富士康招聘</a>
+										<a href="http://cs.jianzhi8.com/" target="_blank" class="underline">长沙兼职吧</a>
+										<a href="http://www.zzfzjob.com/" target="_blank" class="underline">广州服装人才网</a>
+										<a href="http://jobs.zhaopin.com/xiangyang/" target="_blank" class="underline">襄阳人才网</a>
+										<a href="http://suizhou.tianqi.com/15/" target="_blank" class="underline">随州天气预报15天</a>
+										<a href="https://youzhao.io/" target="_blank" class="underline">招聘管理系统</a>
+										<a href="http://www.dayefang.com/" target="_blank" class="underline">大冶房产网</a>
+										<a href="http://campus.goodjobs.cn/" target="_blank" class="underline">应届毕业生网</a>
+										<a href="http://sy.1010jz.com/" target="_blank" class="underline">沈阳兼职</a>
+										<a href="http://www.yueyangrencai.com/" target="_blank" class="underline">岳阳人才网</a>
+										<a href="http://www.hgrencai.com/Person/" target="_blank" class="underline">化工人才</a>
+										<a href="http://www.0714.com/" target="_blank" class="underline">黄石招聘</a>
+										<a href="https://yuhuan.tzzp.com/" target="_blank" class="underline">玉环招聘网</a>
+										<a href="http://www.ygxxg.cn/" target="_blank" class="underline">阳谷信息港</a>
+										<a href="http://www.myzpw.cn/" target="_blank" class="underline">绵阳人才网</a>
+										<a href="/message/index.html%EF%BC%9Fuin=170015691&amp;Menu=yes&amp;Site=%E9%9A%8F%E5%B7%9E%E4%BA%BA%E6%89%8D%E7%BD%91" target="_blank" class="underline">链接申请</a>
+									</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="news/news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="jobs/jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="jobs/jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="hrtools/hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html>

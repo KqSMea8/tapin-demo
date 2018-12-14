@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>实施就业创业新举措 打造经济发展新引擎 - 随州人才网</title>
+<meta name="description" content="就业创业事关经济发展和民生改善大局，牵动着每一个家庭。党中央、国务院和省委、省政府对就业创业给予了前所未有的高度重视，把">
+<meta name="keywords" content="实施就业创业新举措 打造经济发展新引擎">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/news.css" rel="stylesheet" type="text/css">
+<script src="../templates/demo11/js/jquery.js" type="text/javascript"></script><script type="text/javascript">
+$(document).ready(function()
+{
+		var id="4260";
+		var tsTimeStamp= new Date().getTime();
+		$.get("/plus/ajax_click.php", { "id": id,"time":tsTimeStamp,"act":"news_click"},
+			function (data,textStatus)
+			 {			
+				$("#click").html(data);
+			 }
+		);
+		$(".search_news").click(function(){
+			var key = $("#key").val();
+			news_search_location(key);
+		});
+		function news_search_location(key)
+		{
+			$("body").append('<div id="pageloadingbox">页面加载中....<div id="pageloadingbg">');
+			$("#pageloadingbg").css("opacity", 0.5);
+			$.get("/plus/ajax_search_location.php", {"act":"QS_newssearch","key":key},
+					function (data,textStatus)
+					 {
+						 window.location.href=data;
+					 }
+				);
+		}
+		// 等比例缩放图片
+		var w = $(".left_area .news_box").width();//容器宽度 
+	    $(".news_txt img").each(function(){//如果有很多图片，我们可以使用each()遍历 
+	        var img_w = $(this).width();//图片宽度 
+	        var img_h = $(this).height();//图片高度 
+	        if(img_w>w){//如果图片宽度超出容器宽度--要撑破了 
+	            var height = (w*img_h)/img_w; //高度等比缩放 
+	            $(this).css({"width":w,"height":height});//设置缩放后的宽度和高度 
+	        } 
+	    });
+});
+</script>
+</head>
+<body>
+<div id="new-header">
+	<div class="top-bar">
+	<div class="index-container clearfix">
+		<div class="welcome f-left" id="top_loginform"></div>
+		<ul class="top-nav f-right">
+<li class="t-nav-item f-left mobile"><a href="../mobile.html" class="underline">手机频道</a></li>
+			<li class="t-nav-item f-left"><a href="../index.html" class="underline nav-link">网站首页</a></li>
+			<li class="t-nav-item f-left mr15"><a href="../plus/shortcut.php" class="underline nav-link">保存到桌面</a></li>
+			<li class="t-nav-item f-left nav-more">
+				<span class="nav-more-type">网站导航<i class="more-arrow"></i></span>
+				<div class="sub-menu-out">
+                	<div class="sub-menu nav">
+                        <ul>
+<li>
+                            	<strong>个人服务</strong>
+                                <a href="../user/personal/personal_resume.php%EF%BC%9Fact=make1" target="_blank">创简历</a>
+                                <a href="../salary.html" target="_blank">查薪资</a>
+                                <a href="../evaluation/index.php" target="_blank">人才测评</a>
+                                <a href="../jobs/map-search.php%EF%BC%9Fid=1" target="_blank">地图找工作</a>
+                            </li>
+                            <li>
+                            	<strong>企业服务</strong>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank">发职位</a>
+                                <a href="../jobfair/jobfair-list.php" target="_blank">招聘会</a>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=simple_jobs" target="_blank">微信招聘</a>
+                                <a href="../hrtools/index.php" target="_blank">HR工具箱</a>
+                            </li>
+                            <li class="bd0">
+                            	<strong>更多</strong>
+                                <a rel="nofollow" href="../campus/index.php" target="_blank">校园招聘</a>
+                                <a rel="nofollow" href="../hunter/index.html" target="_blank">猎聘专区</a>
+                                <a rel="nofollow" href="../train/index.html" target="_blank">培训信息</a>
+                                <a rel="nofollow" href="../shop/index.php" target="_blank">积分商城</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+			</li>
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+	//顶部部登录
+	$.get('/plus/ajax_user.php', {"act":"top_loginform"}, function(data) {
+		$("#top_loginform").html(data);
+	});
+	$(".nav-more").hover(function() {
+		$(".sub-menu").toggle();
+	});
+</script><div class="header-main">
+		<div class="index-container clearfix">
+			<div class="common-logo f-left"><a href="../index.html"><img src="../data/images/logo.png" alt="随州人才网" width="251" height="85"></a></div>
+			<!--<div class="sub-station f-left">
+				<span class="station-control">总站<i class="station-arrow"></i></span>
+			</div>-->
+			<ul class="common-nav f-right">
+<li><a href="../index.html" target="_self">首  页</a></li>
+								<li><a href="../jobs/jobs-list.php" target="_self">找工作</a></li>
+								<li><a href="../resume/resume-list.php" target="_self">聘人才</a></li>
+								<li><a href="../simple/simple-list.php" target="_self">微招聘</a></li>
+								<li><a href="../hrtools/index.php" target="_self">HR工具箱</a></li>
+								<li><a href="../company/index.php" target="_self">企业黄页</a></li>
+								<li><a href="../jobs/map-search-1.html" target="_self">地图找工作</a></li>
+								<li class="active"><a href="index.html" target="_self">新闻资讯</a></li>
+							</ul>
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.common-nav li:last').css({'border-right':0});
+		$('.t-nav-item:last').css({'margin-right':0});
+	});
+</script><!-- 当前位置 --><div class="page_location link_bk">
+当前位置：<a href="../index.html">首页</a> &gt; <a href="index.html">新闻资讯</a> &gt; 
+<a href="news-list.php%EF%BC%9Fid=6">政策法规</a> &gt; 正文
+</div>
+	<!-- 主体内容 -->
+	<div class="container link_bk">
+		
+		<!-- 左边内容 -->
+		<div class="left_area">
+			<div class="news_box">
+				<div class="com_container">
+					<div class="title">实施就业创业新举措 打造经济发展新引擎</div>
+					<div class="news_dateil">
+						<div class="time">2015-08-07 11:57</div>
+						<div class="time">查看：<span id="click"></span> 次</div>
+						<div>
+<a href="javascript:window.print();">[打印]</a> <a href="javascript:void(0);" onclick="window.external.addFavorite(parent.location.href,document.title);">[收藏]</a>
+</div>
+						<div class="clear"></div>
+					</div>
+					<div class="news_txt">
+						<p></p>
+<p style="text-indent:24pt;"><span style="font-family:宋体;font-size:12pt;">就业</span><span style="font-family:宋体;font-size:12pt;">创业</span><span style="font-family:宋体;font-size:12pt;">事关经济发展和民生改善大局</span><span style="font-family:宋体;font-size:12pt;">，牵动着每一个家庭</span><span style="font-family:宋体;font-size:12pt;">。党中央、国务院</span><span style="font-family:宋体;font-size:12pt;">和省委、省政府对就业创业给予了前所未有的高度</span><span style="font-family:宋体;font-size:12pt;">重视，把稳定和扩大就业作为宏观调控的重要目标，大力实施就业优先战略，积极深化行政审批制度和商事制度改革，推动大众创业、万众创新，</span><span style="font-family:宋体;font-size:12pt;">打造经济发展新引擎，</span><span style="font-family:宋体;font-size:12pt;">创业带动就业倍增效应进一步释放，就业局势</span><span style="font-family:宋体;font-size:12pt;">保持基本</span><span style="font-family:宋体;font-size:12pt;">稳定。</span><span style="font-family:宋体;font-size:12pt;"><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /></span></p>
+<p style="text-indent:24pt;"><span style="font-family:宋体;font-size:12pt;">8月5日下午，省政府新闻办召开“大众创业  万众创新”系列新闻发布会，重点发布省政府《关于做好新形势下就业创业工作的实施意见》（鄂政发〔2015〕46号）文件精神。省委组织部副部长、省人社厅厅长翟天山对新政进行了讲解，省教育厅、省财政厅、省地税局、省工商局相关负责同志也进行了情况介绍。</span></p>
+<p style="text-indent:24pt;"><span style="font-family:宋体;font-size:12pt;">翟天山重点介绍了新出台的一系列促进就业创业的新政策、新举措，即省政府《关于做好新形势下就业创业工作的实施意见》（鄂政发〔2015〕46号）文件的主要精神。该政策被称为“湖北积极就业创业政策4.0版”，包括“全面落实就业优先战略、全力推进大众创业万众创新、突出做好高校毕业生等重点群体就业工作、提升就业创业服务水平、完善就业创业工作机制”等五个方面28条意见，新一轮就业创业政策最大的亮点是推进大众创业、万众创新，28条新政中有12条是直接助推大众创业、万众创新的，</span><span style="font-family:宋体;font-size:12pt;">把创业和就业</span><span style="font-family:宋体;font-size:12pt;">紧密</span><span style="font-family:宋体;font-size:12pt;">结合起来，</span><span style="font-family:宋体;font-size:12pt;">以创新推进创业，</span><span style="font-family:宋体;font-size:12pt;">以创业带动就业，催生经济社会发展新动力，为促进民生改善、经济结构调整和社会和谐稳定提供新动能。</span><span style="font-family:宋体;font-size:12pt;">新政策、新举措主要有以下“五个方面”</span><span style="font-family:宋体;font-size:12pt;">：</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">（一）全力推进大众创业万众创新</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">一是着力营造宽松便捷的市场准入环境。</span><span style="font-family:宋体;font-size:12pt;">深化商事制度改革，坚决推行“三证合一”、“一照一码”、“先照后证”、“一址多照”，实行“一个窗口”受理、网上并联审批，大幅降低市场准入门槛。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">二是积极打造创业创新公共平台。</span><span style="font-family:宋体;font-size:12pt;">运用市场机制，建设面向各类创业创新群体的众创空间，重点推进科技企业孵化器、大学生创新创业基地、留学人员创业园、回归创业基地、创业见习实训基地等，并给予场租、水电费、宽带网络、公共软件等补贴，形成市场主导、政府积极支持的创业生态系统。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">三是完善创业投融资机制。</span><span style="font-family:宋体;font-size:12pt;">积极支持风险投资、创业投资、天使投资等发展，引导社会资金和金融资本支持创业活动，壮大创业投资规模，加大对中小微企业的融资支持力度。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">四是大力发展创业担保贷款。</span><span style="font-family:宋体;font-size:12pt;">将贷款对象由国家规定的“五类人员”，拓展到在我省依法开办个体工商户，自主、合伙经营及创办小微企业的各类城乡劳动者，贷款额度为个人最高10万元、合伙最高50万元，在贷款期限内给予全额财政贴息。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">五是加大减税降费力度。</span><span style="font-family:宋体;font-size:12pt;">对高校毕业生、登记失业人员、退役士兵等符合条件人员创业，在3年内以每户每年9600元为限额按规定扣减税，在国家标准基础上上浮了20%。创业企业吸纳登记失业半年以上人员就业，可在3年内以每人每年5200元为限额按规定扣减税，在国家标准基础上上浮了30%。强化小微企业暂免征收营业税、减半征收所得税等税费优惠政策的落实。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">六是鼓励和支持网络创业。</span><span style="font-family:宋体;font-size:12pt;">适应“互联网+”创业趋势，为推动我省网络创业蓬勃发展，对未进行工商登记注册的网络商户创业者，可认定为灵活就业人员，参加社会保险及享受灵活就业人员扶持政策，其中在网络平台实名注册、稳定经营、信誉良好的网络商户创业者，可享受创业担保贷款及贴息政策。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">七是鼓励大学生在湖北创新创业。</span><span style="font-family:宋体;font-size:12pt;">毕业3年内大学生创业，可在创业地申请5000元的一次性创业补贴。毕业5年内和在校大学生，在经认定的创业孵化基地创业，可享受每年最高1.8万元的场租水电费补贴。港澳台籍、留学回国和外省籍大学生在湖北创业可同等享受我省大学生创业扶持政策。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">八是促进科研人员创新创业。</span><span style="font-family:宋体;font-size:12pt;">对高校、科研院所等事业单位专业技术人员离岗创业的，经原单位同意并签订合同，可在5年内保留人事关系，与原单位在岗人员同等享有参加职称评聘、岗</span><span style="font-family:宋体;font-size:12pt;">位等级晋升和社会保险等方面的权利，充分释放科技人员创业潜力。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">九是鼓励农村劳动者创业。</span><span style="font-family:宋体;font-size:12pt;">积极支持农民工返乡创业，热情欢迎返乡就业。整合创建一批农民工返乡创业园，大力发展农产</span><span style="font-family:宋体;font-size:12pt;">品加工、休闲农业、乡村旅游、农村服务业等劳动密集型产业项目。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">十是项目化推进各类群体创业。</span><span style="font-family:宋体;font-size:12pt;">实施大学生创业扶持项目，按规定给予2万元至20万元的无偿扶持，创业项目在创业地申请，不受户籍、生源地限制。实施大学生科技创业专项、残疾人就业创业计划、农民工回归创业工程，以及民间技能传承创业、农家乐创业、妇女“巾帼创业”等创业扶持项目。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">十一是扶持失业人员和低保家庭成员创业。</span><span style="font-family:宋体;font-size:12pt;">失业人员领取失业保险金期间创业的，可一次性领取应享受期限的失业保险金。实行积极就业创业家庭低保渐退制度，对自主就业创业的低保对象，在核算家庭收入时，可以扣减必要的就业创业成本。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">十二是积极营造大众创业创新氛围。</span><span style="font-family:宋体;font-size:12pt;">开展创业型城市创建工作，举办“创业湖北”创业大赛、“创业湖北”大讲堂、创业沙龙、创业赶集会等活动，营造鼓励创业、宽容失败的时代风尚，形成政府激励创业、社会支持创业、劳动者勇于创业的良好环境。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">（二）突出做好高校毕业生等重点群体就业工作</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">一是拓宽高校毕业生就业渠道。</span><span style="font-family:宋体;font-size:12pt;">继续把高校毕业生摆在就业工作首位。政府购买一批基层岗位用于吸纳高校毕业生就业。统筹实施“三支一扶”、大学生村官、志愿服务西部计划等项目。对小微企业新招用毕业年度高校毕业生，给予1年社会保险补贴。对就业见习基地开展大学生就业见习，按最低工资标准的60%给予就业见习补贴。对城乡低保家庭、获得国家助学贷款以及属于社会孤儿、烈属、残疾人的毕业年度内高校、职业院校、技工院校毕业生，给予每人800元的一次性求职补贴。将大学生就业创业政策拓展到技师学院和职业院校毕业生。鼓励和支持更多青年大学生在鄂就业创业，推动我省人才优势转变为发展优势。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">二是强化困难人员就业援助。</span><span style="font-family:宋体;font-size:12pt;">加强实名制动态管理和分类帮扶，重点做好零就业家庭和低保家庭成员、残疾人、大龄失业人员等群体就业援助工作，落实社会保险补贴、公益性岗位补贴等政策，确保零就业家庭和低保家庭至少有一人实现就业。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">三是推进农村劳动力转移就业。</span><span style="font-family:宋体;font-size:12pt;">建立健全城乡劳动者平等就业制度，清理和废止各项就业歧视性规定。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">四是</span><span style="font-family:宋体;font-size:12pt;font-weight:bold;">扶持自主择业军转干部、自主就业退役士兵就业创业。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">（三）全面落实就业优先战略</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">一是把扩大就业作为经济社会发展优先目标</span><span style="font-family:宋体;font-size:12pt;">。把稳定和扩大就业作为经济运行合理区间的下限。将城镇新增就业、调查失业率作为宏观调控重要指标。实施政府投资和重大建设项目带动就业评估制度，建立宏观经济政策对就业影响评价机制，促进经济发展与扩大就业良性互动。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">二是着力培育新的就业增长点。</span><span style="font-family:宋体;font-size:12pt;">大力发展新一代信息技术、高端装备制造等战略性新兴产业，突破性发展生产性、生活性服务业及人力资源服务业，以农业产业化推进农业现代化和农民就业增收，落实支持小微企业发展的金融税收政策，对小微企业新招用劳动者按规定给予支持。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">三是实行积极的失业保险政策。</span><span style="font-family:宋体;font-size:12pt;">全面落实失业保险费率调整政策，失业保险费率统一由3%降至2%。实施失业保险稳岗补贴政策，对没有人员失业、依法参保缴费的用人单位，给予不超过上年度失业保险缴费额50%的稳岗补贴。各地可按规定将部分失业保险基金安排用作创业担保贷款基金，扩大创业担保贷款规模。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">（四）提升就业创业服务水平</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">一是提升公共就业创业服务信息化水平。</span><span style="font-family:宋体;font-size:12pt;">全面建成“湖北公共招聘网”和“十五分钟就业服务圈”，力争到2016年基本实现就业管理和就业服务工作全程信息化。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">二是加强职业培训和创业培训。</span><span style="font-family:宋体;font-size:12pt;">优化高校学科专业结构，加快发展现代职业教育。广泛开展“培训鉴定进企业、进校园、进园区”活动，运用政府购买培训成果的方式，给予职业培训补贴和创业培训补贴。大力支持企业开展新型学徒制培训。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">三是优化失业登记和统计监测。</span><span style="font-family:宋体;font-size:12pt;">将《就业失业登记证》调整为《就业创业证》，免费发放，促进劳动者享受就业创业公共服务和扶持政策。建立完善城镇新增就业、调查失业率统计制度，建立创业工作统计指标。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">四是促进就业公平。</span><span style="font-family:宋体;font-size:12pt;">用人单位招聘中不得设置歧视性条件。实行国有企事业单位公开招聘制度，招聘信息、招聘过程和招聘结果要全面公开，报名时间和拟聘人员公示期均不得少于7天。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">（五）完善就业创业工作机制</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">一是强化组织领导。</span><span style="font-family:宋体;font-size:12pt;">各市、州、县人民政府主要负责人是本地区就业创业工作的第一责任人，建立就业工作领导小组和联席会议制度，形成就业创业工作合力。建立就业信息和税收、户籍、工商、社保等信息的交换协查机制，促进政策落实。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">二是保障资金投入。</span><span style="font-family:宋体;font-size:12pt;">各级人民政府要根据就业状况和就业工作目标，在财政预算中合理安排就业相关资金，确保各项就业创业政策落实。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">三是落实目标责任。</span><span style="font-family:宋体;font-size:12pt;">将就业创业工作作为地方党政领导班子考核和县域经济考核的重要指标，纳入政绩考核内容，并层层分解，督促落实。取消政策落实中不必要、不合理的办理手续和证明材料，建立部门联评联审、并行审查机制，简化办事流程，明</span><span style="font-family:宋体;font-size:12pt;">确办理时限，提高服务效率，解决政策落实的“最后一公里”问题。</span></p>
+<p style="text-indent:24pt;"><span style="font-family:宋体;font-size:12pt;">据了解，今年上半年，全省就业形势总体平稳、稳中向好。全省城镇新增就业45.08万人，失业人员再就业15.58万人，困难人员就业7.95万人，均实现任务完成过半，同比基本持平。截至6月底，全省城镇登记失业率3.02%，低于4.5%的控制目标，也低于去年底的3.10%，就业局势基本稳定。在经济增速趋缓背景下，就业局势保持基本稳定是多种因素共同作用的结果。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">（一）得益于经济规模的不断扩大。</span><span style="font-family:宋体;font-size:12pt;">虽然经济增速有所放缓，但依然处在中高速增长区间，我省经济上半年实现8.7%的增速，GDP总量达到1.31万亿元，有效拉动了就业增长。我省在全国率先出台政府投资和重大项目带动就业评估办法，促进了项目投资结构与人力资源结构相匹配。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">（二）得益于产业结构的逐步优化。</span><span style="font-family:宋体;font-size:12pt;">近年来我省大力发展高新技术产业、先进制造业和现代服务业，产业结构逐步优化。今年以来，第三产业继续保持增速快于第二产业、占GDP比重不断提高的良好势头，第三产业的蓬勃发展带动了更多就业增长。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">（三）得益于大众创业、万众创新。</span><span style="font-family:宋体;font-size:12pt;">市场主体的创新创业活力竞相迸发，全省市场主体总量达到417.86万户，比上年底增长4.11%，创造了大量就业岗位，能够较快吸纳新出现的失业人员。全省累计发放创业担保贷款28.62万笔，贷款金额214.88亿元，扶持创业54.3万人，带动就业185.6万人，有效缓解了创业融资难问题。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">（四）得益于就业创业政策效应的进一步发挥。</span><span style="font-family:宋体;font-size:12pt;">为保障和改善民生，国家和我省陆续出台了一系列扶持就业创业的政策措施，政策力度不断加大，各地也加大落实力度。这些政策每年惠及我省150万人次，成为促进就业创业的强大推力，有力维护了就业局势稳定。</span></p>
+<p style="text-indent:24pt;"><span style="font-family:宋体;font-size:12pt;">今后一段时期，随着改革力度加大，稳增长、惠民生政策效应持续释放，预计就业将会延续总体平稳态势。但也应看到，宏观经济依然复杂多变，经济下行压力依然较大，这些都会传导、影响到就业领域，就业形势依然严峻，就业任务仍然繁重。面对新常态、新形势，全省人社部门将继续把促进就业创业作为政治责任和首要任务，精准发力，狠抓落实，确保完成各项工作，确保就业局势稳定。重点做好“五个方面”工作：</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">（一）全面实施更加积极的就业创业政策。</span><span style="font-family:宋体;font-size:12pt;">贯彻落实省人民政府关于做好新形势下就业创业工作文件精神，实施新一轮更加积极的就业创业政策。对全省政策落实情况进行督办调度，着力推进重点地区、重点群体政策落实。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">（二）大力推进创业创新带动就业。</span><span style="font-family:宋体;font-size:12pt;">全面开展“创业创新年”活动，启动新一轮创业型城市创建工作。针对不同群体实施各类创业扶持项目，重点抓好大学生创业、农民工回归创业、民间技艺传承等项目。组建湖北省大学生创业导师团，积极开展创业大讲堂、创业赶集会、创业典型评选等活动。举办“创业湖北”系列创业创新大赛，培育创客文化，打造“创业湖北”品牌。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">（三）突出做好大学生就业创业工作。</span><span style="font-family:宋体;font-size:12pt;">继续把大学生摆在就业工作首位，深入实施大学生“就业促进计划”和“创业引领计划”。精心组织就业创业政策服务进校园、培训鉴定进校园等活动。落实大学生创业补贴、求职补贴、就业见习补贴、就业创业培训、实名制服务等政策措施，确保大学生就业创业水平有新提高。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">（四）着力解决就业结构性矛盾。</span><span style="font-family:宋体;font-size:12pt;">完善和落实失业保险稳岗补贴政策，促进培训、稳定就业。大力实施农民工技能提升“春潮行动”和“湖北省紧缺技能人才振兴计划”，广泛开展工业园区培训、学徒制培训、劳务品牌培训等项目。落实学历文凭与职业资格“双证书”制度，推行“一证多本”。运用政府购买培训成果的方式，发挥市场力量开展培训，服务经济发展，服务转型升级。</span></p>
+<p style="text-indent:24.1pt;"><span style="font-family:宋体;font-size:12pt;font-weight:bold;">（五）提升就业服务信息化水平。</span><span style="font-family:宋体;font-size:12pt;">健全完善和推广使用“湖北公共招聘网”和就业服务信息化系统，充分利用微信、手机APP等新型平台发布就业政策和就业信息，为劳动者提供高效便捷的服务。完善就业创业调查统计制度，密切关注经济和就业形势变化，制定防范预案，提高工作的预见性和主动性。</span></p>
+<p style="text-indent:24pt;"><span style="font-family:宋体;font-size:12pt;">促进就业创业，不仅关系千万劳动者自身价值的实现，关系我省人力资源优势向经济社会发展优势的转化，更关系社会创新能力的提高，关系经济发展与和谐稳定。我们将全面贯彻落实省委、省政府促进就业创业的一系列政策措施，全力以赴做好就业创业工作，确保我省就业局势稳定，为湖北“建成支点、走在前列”提供创新动力支撑和人力资源保障。</span></p>
+						<div class="share">
+							<!-- Baidu Button BEGIN -->
+						    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+						        <a class="bds_qzone"></a>
+						        <a class="bds_tsina"></a>
+						        <a class="bds_tqq"></a>
+						        <a class="bds_renren"></a>
+						        <span class="bds_more">更多</span>
+						    </div>
+						<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=659075"></script><script type="text/javascript" id="bdshell_js"></script><script type="text/javascript">
+							document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+						</script><div class="clear"></div>	
+						<!-- Baidu Button END -->
+						</div>
+						<div class="clear"></div>
+						<div class="next_page">
+							<div class="prev">
+																<a href="4259.html">上一篇：曾都区再次提高城乡低保标准 保持全市最高水平</a>
+															</div>
+							<div class="next">
+																<a href="4261.html">下一篇：湖北省出台28条新政促就业创业</a>
+															</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+		<!-- 右边内容 -->
+		<div class="right_area">
+			
+			<div class="right_box">
+				<div class="title_box">
+					<h5>资讯分类</h5>
+				</div>
+				<div class="list">
+					<ul class="sort">
+<li><a href="news-list.php%EF%BC%9Fid=11">随州资讯</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=6" class="select">政策法规</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=13">下载中心</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=5">职场动态</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=4">面试指南</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=3">简历指南</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=2">职业培训</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=7">创业精英</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=8">职场测试</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=9">职场智慧</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=10">职场策略</a></li>
+												<div class="clear"></div>
+					</ul>
+<div class="clear"></div>
+				</div>
+			</div>
+			<div class="right_search">
+				<div class="news_search"><input type="text" name="key" id="key"></div>
+				<button class="news_sreach_but search_news">搜索</button>
+			</div>
+			<div class="clear"></div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>相关阅读</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6492.html" target="_blank">随州市关于进一步加强医疗救助 同基</a></li>
+												<li><a href="6474.html" target="_blank">跨省异地就医直接结算相关政策解读</a></li>
+												<li><a href="6463.html" target="_blank">随州10月底可网上办理养老保险</a></li>
+												<li><a href="6439.html" target="_blank">湖北省大学生创业孵化示范基地奖补</a></li>
+												<li><a href="6438.html" target="_blank">湖北省就业提升计划实施方案和社保</a></li>
+												<li><a href="6405.html" target="_blank">“黑名单”管理+联合惩戒 让农民工</a></li>
+											</ul>
+</div>
+			</div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>最新资讯</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6507.html" target="_blank">随县万福店农场“农民”评上职称了</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+											</ul>
+</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- 主体内容 结束 -->
+	<div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="../suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="../explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="../subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="../explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="../hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="../train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="../resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="../hrtools/hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="../user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="../jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="../data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="../index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html>

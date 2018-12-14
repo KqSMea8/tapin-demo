@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>其它 - HR工具箱</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/hrtools.css" rel="stylesheet" type="text/css">
+<script src="../templates/demo11/js/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="new-header">
+	<div class="top-bar">
+	<div class="index-container clearfix">
+		<div class="welcome f-left" id="top_loginform"></div>
+		<ul class="top-nav f-right">
+<li class="t-nav-item f-left mobile"><a href="../mobile.html" class="underline">手机频道</a></li>
+			<li class="t-nav-item f-left"><a href="../index.html" class="underline nav-link">网站首页</a></li>
+			<li class="t-nav-item f-left mr15"><a href="../plus/shortcut.php" class="underline nav-link">保存到桌面</a></li>
+			<li class="t-nav-item f-left nav-more">
+				<span class="nav-more-type">网站导航<i class="more-arrow"></i></span>
+				<div class="sub-menu-out">
+                	<div class="sub-menu nav">
+                        <ul>
+<li>
+                            	<strong>个人服务</strong>
+                                <a href="../user/personal/personal_resume.php%EF%BC%9Fact=make1" target="_blank">创简历</a>
+                                <a href="../salary.html" target="_blank">查薪资</a>
+                                <a href="../evaluation/index.php" target="_blank">人才测评</a>
+                                <a href="../jobs/map-search.php%EF%BC%9Fid=1" target="_blank">地图找工作</a>
+                            </li>
+                            <li>
+                            	<strong>企业服务</strong>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank">发职位</a>
+                                <a href="../jobfair/jobfair-list.php" target="_blank">招聘会</a>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=simple_jobs" target="_blank">微信招聘</a>
+                                <a href="index.php" target="_blank">HR工具箱</a>
+                            </li>
+                            <li class="bd0">
+                            	<strong>更多</strong>
+                                <a rel="nofollow" href="../campus/index.php" target="_blank">校园招聘</a>
+                                <a rel="nofollow" href="../hunter/index.html" target="_blank">猎聘专区</a>
+                                <a rel="nofollow" href="../train/index.html" target="_blank">培训信息</a>
+                                <a rel="nofollow" href="../shop/index.php" target="_blank">积分商城</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+			</li>
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+	//顶部部登录
+	$.get('/plus/ajax_user.php', {"act":"top_loginform"}, function(data) {
+		$("#top_loginform").html(data);
+	});
+	$(".nav-more").hover(function() {
+		$(".sub-menu").toggle();
+	});
+</script><div class="header-main">
+		<div class="index-container clearfix">
+			<div class="common-logo f-left"><a href="../index.html"><img src="../data/images/logo.png" alt="随州人才网" width="251" height="85"></a></div>
+			<!--<div class="sub-station f-left">
+				<span class="station-control">总站<i class="station-arrow"></i></span>
+			</div>-->
+			<ul class="common-nav f-right">
+<li><a href="../index.html" target="_self">首  页</a></li>
+								<li><a href="../jobs/jobs-list.php" target="_self">找工作</a></li>
+								<li><a href="../resume/resume-list.php" target="_self">聘人才</a></li>
+								<li><a href="../simple/simple-list.php" target="_self">微招聘</a></li>
+								<li class="active"><a href="index.php" target="_self">HR工具箱</a></li>
+								<li><a href="../company/index.php" target="_self">企业黄页</a></li>
+								<li><a href="../jobs/map-search-1.html" target="_self">地图找工作</a></li>
+								<li><a href="../news/index.html" target="_self">新闻资讯</a></li>
+							</ul>
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.common-nav li:last').css({'border-right':0});
+		$('.t-nav-item:last').css({'margin-right':0});
+	});
+</script><!-- 当前位置 --><div class="page_location link_bk">
+  当前位置：<a href="../index.html">首页</a> &gt; <a href="index.php">HR工具箱</a> &gt; 其它
+</div>
+  <!-- 主体内容 -->
+  <div class="container link_bk">
+    <div class="hr_dateil">
+      <h2>其它</h2>
+      <div class="clear"></div>
+      <div class="hr_list">
+        <ul>
+<li><a href="../data/hrtools/2007082302.doc" target="_blank">中小型企业行政事务</a></li>
+                        <li><a href="../data/hrtools/2007082301.doc" target="_blank">公司档案管理制度</a></li>
+                        <li><a href="../data/hrtools/2007081302.doc" target="_blank">员工婚丧喜庆应酬办法</a></li>
+                        <li><a href="../data/hrtools/2007081301.doc" target="_blank">安全保卫防范工作规则</a></li>
+                        <li><a href="../data/hrtools/2007081002.doc" target="_blank">文书管理规则</a></li>
+                        <li><a href="../data/hrtools/2007081001.doc" target="_blank">电话管理制度</a></li>
+                        <li><a href="../data/hrtools/2007072402.doc" target="_blank">岗位分析调查问卷</a></li>
+                        <li><a href="../data/hrtools/2007072401.doc" target="_blank">人力资源规划表</a></li>
+                        <li><a href="../data/hrtools/2007062002.doc" target="_blank">印章管理办法</a></li>
+                        <li><a href="../data/hrtools/2007051402.xls" target="_blank">费用报销单</a></li>
+                        <li><a href="../data/hrtools/2007043002.doc" target="_blank">客户档案登记表</a></li>
+                        <li><a href="../data/hrtools/2007051102.doc" target="_blank">客户跟踪表-营销人员</a></li>
+                        <li><a href="../data/hrtools/2007051101.xls" target="_blank">意见反馈表</a></li>
+                        <li><a href="../data/hrtools/2007050802.xls" target="_blank">收货凭证</a></li>
+                        <li><a href="../data/hrtools/2007050801.xls" target="_blank">周计划表</a></li>
+                        <li><a href="../data/hrtools/2007042302.doc" target="_blank">回款计划</a></li>
+                        <li><a href="../data/hrtools/2007032902.xls" target="_blank">员工损耗指数统计表</a></li>
+                        <li><a href="../data/hrtools/2007032901.doc" target="_blank">企业聘请律师委托书</a></li>
+                        <li><a href="../data/hrtools/2007012702.doc" target="_blank">提案单</a></li>
+                        <li><a href="../data/hrtools/2007012701.doc" target="_blank">客户访问预定及实施表</a></li>
+                        <li><a href="../data/hrtools/2007011901.doc" target="_blank">企业应急计划样本</a></li>
+                        <li><a href="../data/hrtools/2007011902.doc" target="_blank">年度经营目标预测表</a></li>
+                        <li><a href="../data/hrtools/2007011702.doc" target="_blank">历年销售业绩比较表</a></li>
+                        <li><a href="../data/hrtools/2007011701.doc" target="_blank">每月巡回调查状况报告书</a></li>
+                        <li><a href="../data/hrtools/2006121402.doc" target="_blank">工作分析流程</a></li>
+                        <li><a href="../data/hrtools/2006121401.doc" target="_blank">广告预算表</a></li>
+                        <li><a href="../data/hrtools/2006121202.doc" target="_blank">产品售价表</a></li>
+                        <li><a href="../data/hrtools/2006121201.doc" target="_blank">产品市场性分析表</a></li>
+                        <li><a href="../data/hrtools/2006112101.doc" target="_blank">历年客户营业额统计表</a></li>
+                        <li><a href="../data/hrtools/2006111702.doc" target="_blank">表格请印申请单</a></li>
+                        <li><a href="../data/hrtools/2006111701.doc" target="_blank">打卡申请单</a></li>
+                        <li><a href="../data/hrtools/2006111602.doc" target="_blank">产品质量管理表</a></li>
+                        <li><a href="../data/hrtools/2006111102.doc" target="_blank">每日销售报表</a></li>
+                        <li><a href="../data/hrtools/2006110302.doc" target="_blank">业务处理表使用例范</a></li>
+                        <li><a href="../data/hrtools/2006110301.doc" target="_blank">经理范围及规模表</a></li>
+                        <li><a href="../data/hrtools/2006102802.doc" target="_blank">用印申请单</a></li>
+                        <li><a href="../data/hrtools/2006102801.doc" target="_blank">劳务费用报销单</a></li>
+                        <li><a href="../data/hrtools/2006102602.doc" target="_blank">领用单</a></li>
+                        <li><a href="../data/hrtools/2006102601.doc" target="_blank">会议记录格式</a></li>
+                        <li><a href="../data/hrtools/2006101802.DOC" target="_blank">访问客户预定及结果报告书</a></li>
+                        <li><a href="../data/hrtools/2006101801.doc" target="_blank">年度业务报告格式</a></li>
+                        <li><a href="../data/hrtools/2006101302.doc" target="_blank">职员纪律处分通知书</a></li>
+                        <li><a href="../data/hrtools/2006101301.doc" target="_blank">客户数量变动分析表</a></li>
+                        <li><a href="../data/hrtools/2006092602.doc" target="_blank">收货款自动报告表</a></li>
+                        <li><a href="../data/hrtools/2006092601.DOC" target="_blank">市场总需求量调查估计表</a></li>
+                        <li><a href="../data/hrtools/2006091301.doc" target="_blank">XX公司用车申请单</a></li>
+                        <li><a href="../data/hrtools/2006091202.doc" target="_blank">同业产品市场价格调查表</a></li>
+                        <li><a href="../data/hrtools/2006091201.doc" target="_blank">推销日报</a></li>
+                        <li><a href="../data/hrtools/2006090902.doc" target="_blank">产品广告预定及实施报告表</a></li>
+                        <li><a href="../data/hrtools/2006090901.doc" target="_blank">产品定价分析表</a></li>
+                        <li><a href="../data/hrtools/2006082202.doc" target="_blank">抱怨处理报告书</a></li>
+                        <li><a href="../data/hrtools/2006082201.doc" target="_blank">报价单</a></li>
+                        <li><a href="../data/hrtools/2006080201.DOC" target="_blank">名片申请单</a></li>
+                        <li><a href="../data/hrtools/2006072902.DOC" target="_blank">销售额回收额管理一览表</a></li>
+                        <li><a href="../data/hrtools/2006072102.DOC" target="_blank">采购验收单</a></li>
+                        <li><a href="../data/hrtools/2006071902.doc" target="_blank">销售额统计表</a></li>
+                        <li><a href="../data/hrtools/2006071901.doc" target="_blank">用印申请单</a></li>
+                        <li><a href="../data/hrtools/2006071301.doc" target="_blank">销售计划分析表</a></li>
+                        <li><a href="../data/hrtools/2006071102.doc" target="_blank">展厅助理岗位手册</a></li>
+                        <li><a href="../data/hrtools/2006071101.doc" target="_blank">销货明细表</a></li>
+                        <li><a href="../data/hrtools/2006070502.doc" target="_blank">部门决策权一览表</a></li>
+                        <li><a href="../data/hrtools/2006070501.doc" target="_blank">各种委员会一览表</a></li>
+                        <li><a href="../data/hrtools/2006062302.doc" target="_blank">销售日报表</a></li>
+                        <li><a href="../data/hrtools/2006062301.doc" target="_blank">销售人员业务预定及实绩报告表</a></li>
+                        <li><a href="../data/hrtools/2006061202.doc" target="_blank">销售效率分析表</a></li>
+                        <li><a href="../data/hrtools/2006061201.doc" target="_blank">销售业务状况报告书</a></li>
+                        <li><a href="../data/hrtools/2006060801.doc" target="_blank">销售预测表</a></li>
+                        <li><a href="../data/hrtools/2006052401.doc" target="_blank">成本估价</a></li>
+                        <li><a href="../data/hrtools/2006052201.doc" target="_blank">内审检查表</a></li>
+                        <li><a href="../data/hrtools/2006051801.doc" target="_blank">销售月报</a></li>
+                        <li><a href="../data/hrtools/2006051602.doc" target="_blank">新产品潜在客户追踪表</a></li>
+                        <li><a href="../data/hrtools/2006051601.doc" target="_blank">新开发客户报告表</a></li>
+                        <li><a href="../data/hrtools/2006051302.doc" target="_blank">新事业开拓调查检查表</a></li>
+                        <li><a href="../data/hrtools/2006051301.doc" target="_blank">营业日报</a></li>
+                        <li><a href="../data/hrtools/2006051002.doc" target="_blank">月份产销统计表</a></li>
+                        <li><a href="../data/hrtools/2006051001.doc" target="_blank">月份经营利益检核表</a></li>
+                        <li><a href="../data/hrtools/2006050802.doc" target="_blank">产品售价表</a></li>
+                        <li><a href="../data/hrtools/2006042802.doc" target="_blank">有效的散会检查表</a></li>
+                        <li><a href="../data/hrtools/2006041402.doc" target="_blank">企业文化共识化调查</a></li>
+                        <li><a href="../data/hrtools/2006041401.doc" target="_blank">经理人的影响力计分表</a></li>
+                        <li><a href="../data/hrtools/%E7%AD%96%E5%88%92%E9%83%A8%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93.doc" target="_blank">策划部个人年度工作总结</a></li>
+                        <li><a href="../data/hrtools/051212.doc" target="_blank">人力资源部工作总结</a></li>
+                        <li><a href="../data/hrtools/2005092601.doc" target="_blank">管理费用设定表</a></li>
+                        <li><a href="../data/hrtools/2005091401.doc" target="_blank">会议开销表</a></li>
+                        <li><a href="../data/hrtools/2005083102.doc" target="_blank">劳动争议仲裁申诉登记表</a></li>
+                        <li><a href="../data/hrtools/2005082202.doc" target="_blank">企业优势和劣势评价表</a></li>
+                        <li><a href="../data/hrtools/2005082201.doc" target="_blank">管理者确认评价表</a></li>
+                        <li><a href="../data/hrtools/2005072902.doc" target="_blank">开会通知表</a></li>
+                        <li><a href="../data/hrtools/2005072901.doc" target="_blank">公司部门间需求请调单</a></li>
+                        <li><a href="../data/hrtools/2005061402.doc" target="_blank">生产线进度安排表</a></li>
+                        <li><a href="../data/hrtools/2005060802.doc" target="_blank">工资标准表</a></li>
+                        <li><a href="../data/hrtools/2005060801.doc" target="_blank">生产日报表</a></li>
+                        <li><a href="../data/hrtools/2005052303.doc" target="_blank">月份式成本管理表</a></li>
+                        <li><a href="../data/hrtools/2005052302.doc" target="_blank">月份式赔偿处理报表</a></li>
+                        <li><a href="../data/hrtools/2005052301.doc" target="_blank">订货明细表</a></li>
+                        <li><a href="../data/hrtools/2005051603.doc" target="_blank">停工报告单</a></li>
+                        <li><a href="../data/hrtools/2005051602.doc" target="_blank">生产数量统计表</a></li>
+                        <li><a href="../data/hrtools/2005051101.doc" target="_blank">生产主管业务审核一览表</a></li>
+                        <li><a href="../data/hrtools/05041201.ppt" target="_blank">定岗定编原理与操作</a></li>
+                        <li><a href="../data/hrtools/2005032802.doc" target="_blank">销售人员考核办法</a></li>
+                        <li><a href="../data/hrtools/2005032801.doc" target="_blank">外国人就业申请表</a></li>
+                        <li><a href="../data/hrtools/2005031801.doc" target="_blank">部门销售管理月报表</a></li>
+                        <li><a href="../data/hrtools/2005031603.doc" target="_blank">员工手册（工厂类）</a></li>
+                        <li><a href="../data/hrtools/2005022302.doc" target="_blank">生产效率日报表</a></li>
+                        <li><a href="../data/hrtools/2005022301.doc" target="_blank">工作进度周报表</a></li>
+                        <li><a href="../data/hrtools/2005022103.doc" target="_blank">工作申请书</a></li>
+                        <li><a href="../data/hrtools/2005022102.doc" target="_blank">制造月报表</a></li>
+                        <li><a href="../data/hrtools/2005022101.doc" target="_blank">作业时间与计件工资标准表</a></li>
+                        <li><a href="../data/hrtools/2005021603.doc" target="_blank">生产车间工作管理表</a></li>
+                        <li><a href="../data/hrtools/2005021602.doc" target="_blank">销售报表</a></li>
+                        <li><a href="../data/hrtools/2005021601.doc" target="_blank">产量分析表</a></li>
+                        <li><a href="../data/hrtools/2004122703.doc" target="_blank">员工保险办法</a></li>
+                        <li><a href="../data/hrtools/2004122001.doc" target="_blank">消防设施器材检查月报表</a></li>
+                        <li><a href="../data/hrtools/2004111601.doc" target="_blank">书面请示表格</a></li>
+                        <li><a href="../data/hrtools/2004111202.doc" target="_blank">一周业务报表</a></li>
+                        <li><a href="../data/hrtools/2004103002.doc" target="_blank">间接部门活性化检讨表</a></li>
+                        <li><a href="../data/hrtools/%E7%BB%93%E6%AC%BE%E9%80%9A%E7%9F%A5%E5%8D%95.doc" target="_blank">结款通知单</a></li>
+                        <li><a href="../data/hrtools/%E9%87%87%E8%B4%AD%E9%83%A8%E7%9B%AE%E6%A0%87%E8%BE%BE%E6%88%90%E8%80%83%E6%A0%B8%E8%A1%A8.doc" target="_blank">采购部目标达成考核表</a></li>
+                        <li><a href="../data/hrtools/%E4%BA%A7%E9%87%8F%E8%AE%B0%E5%BD%95%E8%A1%A8.doc" target="_blank">产量记录表</a></li>
+                        <li><a href="../data/hrtools/%E9%83%A8%E9%97%A8%E5%B9%B4%E5%BA%A6%E5%B7%A5%E4%BD%9C%E7%9B%AE%E6%A0%87%E6%B2%9F%E9%80%9A%E4%B8%8E%E8%AF%84%E4%BB%B7%E8%A1%A8.doc" target="_blank">部门年度工作目标沟通与评价表</a></li>
+                        <li><a href="../data/hrtools/2004728142112.doc" target="_blank">特殊违规及处理方式</a></li>
+                        <li><a href="../data/hrtools/2004728141630.doc" target="_blank">人力资源部年度目标</a></li>
+                        <li><a href="../data/hrtools/2004712141440.doc" target="_blank">员工过失单</a></li>
+                        <li><a href="../data/hrtools/2004712141401.doc" target="_blank">部门季度工作计划评价表</a></li>
+                        <li><a href="../data/hrtools/2004616145846.doc" target="_blank">例会主题检查表</a></li>
+                        <li><a href="../data/hrtools/2004616145825.doc" target="_blank">签呈表格</a></li>
+                        <li><a href="../data/hrtools/2004510150837.doc" target="_blank">标准、指导书划定权责表</a></li>
+                        <li><a href="../data/hrtools/2004510150821.doc" target="_blank">异动、辞职、退休等作业程序</a></li>
+                        <li><a href="../data/hrtools/2003114111021.doc" target="_blank">工作成果周报表</a></li>
+                        <li><a href="../data/hrtools/2003911113341.doc" target="_blank">综合长期计划表</a></li>
+                        <li><a href="../data/hrtools/2003723102954.doc" target="_blank">财务损益表</a></li>
+                        <li><a href="../data/hrtools/2002109122804.doc" target="_blank">暂借款管理办法</a></li>
+                        <li><a href="../data/hrtools/2002109122757.doc" target="_blank">员工手册</a></li>
+                        <li><a href="../data/hrtools/2002109122749.doc" target="_blank">印章管理办法</a></li>
+                        <li><a href="../data/hrtools/2002109122741.doc" target="_blank">医疗及人身意外伤害保险管理办法</a></li>
+                        <li><a href="../data/hrtools/2002109122724.doc" target="_blank">休假程序</a></li>
+                        <li><a href="../data/hrtools/2002109122717.doc" target="_blank">物资管理办法</a></li>
+                        <li><a href="../data/hrtools/2002109122710.doc" target="_blank">文书管理办法</a></li>
+                        <li><a href="../data/hrtools/2002109122701.doc" target="_blank">图书、报刊管理办法</a></li>
+                        <li><a href="../data/hrtools/2002109122654.doc" target="_blank">经济合同管理办法</a></li>
+                        <li><a href="../data/hrtools/2002109122647.doc" target="_blank">计算机管理规定</a></li>
+                        <li><a href="../data/hrtools/2002109122640.doc" target="_blank">会议管理规定</a></li>
+                        <li><a href="../data/hrtools/2002109122629.doc" target="_blank">规范化管理实施大纲</a></li>
+                        <li><a href="../data/hrtools/2002109122623.doc" target="_blank">费用开支管理办法</a></li>
+                        <li><a href="../data/hrtools/2002109122615.doc" target="_blank">费用报销规定</a></li>
+                        <li><a href="../data/hrtools/2002109122607.doc" target="_blank">法律工作制度</a></li>
+                        <li><a href="../data/hrtools/2002109122559.doc" target="_blank">档案管理规定</a></li>
+                        <li><a href="../data/hrtools/2002109122550.doc" target="_blank">餐饮业人事管理规章</a></li>
+                        <li><a href="../data/hrtools/2002109122541.doc" target="_blank">财务管理规定</a></li>
+                        <li><a href="../data/hrtools/2002109122510.doc" target="_blank">保密制度</a></li>
+                        <li><a href="../data/hrtools/2002109122502.doc" target="_blank">办公行为规范</a></li>
+                        <li><a href="../data/hrtools/2002109122453.doc" target="_blank">办公室物资管理条例</a></li>
+                        <li><a href="../data/hrtools/8.doc" target="_blank">员工请假单</a></li>
+                        <li><a href="../data/hrtools/9.doc" target="_blank">请购单</a></li>
+                        <li><a href="../data/hrtools/10.doc" target="_blank">考核制度</a></li>
+                      <div class="clear"></div>
+        </ul>
+<div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <!-- 主体内容 结束 -->
+<div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="../suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="../explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="../news/news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="../subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="../explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="../hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="../train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="../resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="../user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="../jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="../data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="../index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html>

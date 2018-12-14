@@ -1,0 +1,1215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>职位列表  - 随州人才网</title>
+<meta name="description" content="随州人才网招聘首页汇聚了随州大部分的招聘企业的招聘信息，欢迎更多的企业前来发布招聘信息和更多的求职者前来挑选工作。">
+<meta name="keywords" content="随州招聘单位，随州招聘企业，随州招聘信息">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/jobs.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/ui-dialog.css" rel="stylesheet" type="text/css">
+<script src="../templates/demo11/js/jquery.js" type="text/javascript"></script><script src="../templates/demo11/js/jquery.jobs-search.js" type="text/javascript"></script><script src="../templates/demo11/js/jquery.jobs-list.js" type="text/javascript"></script><script src="../templates/demo11/js/dialog-min.js" type="text/javascript" language="javascript"></script><script src="../templates/demo11/js/dialog-min-common.js" type="text/javascript" language="javascript"></script><script src="../templates/demo11/js/jquery.cookie.js" type="text/javascript"></script><script src="../data/cache_classify.js" type="text/javascript" charset="utf-8"></script><script src="../templates/demo11/js/jquery.autocomplete.js" type="text/javascript"></script><script type="text/javascript">
+	$(document).ready(function() {
+		//详细下拉
+		$('.list-item-ctrl').each(function(){
+			if ($(this).hasClass('ishow')) {
+				$(this).parent().next().show();
+			};
+			$(this).on('click', function(){
+				if ($(this).hasClass('ishow')) {
+					$(this).removeClass('ishow');
+					$(this).parent().next().hide();
+					$('.infolist-row').removeClass('infolist-row').addClass('infolist-row');  //IE7 BUG Fix
+				}else{
+					$(this).addClass('ishow');
+					$(this).parent().next().show();
+					$('.infolist-row').removeClass('infolist-row').addClass('infolist-row');  //IE7 BUG Fix
+				};
+			});
+		});
+		allaround("/");
+	    // 职位类别填充数据 
+		job_filldata("#job_list", QS_jobs_parent, QS_jobs, "#result-list-job", "#aui_outer_job", "#job_result_show", "#jobcategory", "/");
+		// 所属行业填充数据
+		trade_filldata("#trad_list", QS_trade, "#aui_outer", "#result-list-trade", "#trade_result_show", "#trade", "/");
+		// 工作地区填充数据
+		city_filldata("#city_list", QS_city_parent, QS_city, "#result-list-city", "#aui_outer_city", "#city_result_show", "#citycategory", "/");
+		// 合并公司职位弹出
+		$(".mjob_name").hover(function(){
+			$(this).find(".merger_job_info").show();
+		}, function(){
+			$(this).find(".merger_job_info").hide();
+		})
+		//
+		var mode= $.cookie('mode');
+		if(mode==1)
+		{
+			$('#list').removeClass('select');
+			$('#detail').addClass('select');
+			$(".xiala").addClass("ishow");
+			$(".txt_detail").show();
+		}
+		else
+		{
+			$('#detail').removeClass('select');
+			$('#list').addClass('select');
+			$(".xiala").removeClass("ishow");
+			$(".txt_detail").hide();
+		}
+		$(".tab-list").die().live('click', function(event) {
+			$(this).addClass('select');
+			$(".tab-detail").removeClass('select');
+			$('.list-item-ctrl').removeClass('ishow');
+			$(".info-list-detail").hide();
+			$('.infolist-row').removeClass('infolist-row').addClass('infolist-row');
+		});
+		$(".tab-detail").die().live('click', function(event) {
+			$(this).addClass('select');
+			$(".tab-list").removeClass('select');
+			$('.list-item-ctrl').addClass('ishow');
+			$(".info-list-detail").show();
+			$('.infolist-row').removeClass('infolist-row').addClass('infolist-row');
+		});
+		$(".infolists .merger_com_box:last").css({"border-bottom":"0"});
+		//单个职位  下拉显示
+		$(".xiala").click(function(){
+			if($(this).hasClass("ishow")) {
+				$(this).parent().next().hide();
+				$(this).removeClass("ishow");
+			} else {
+				$(this).parent().next().show();
+				$(this).addClass("ishow");
+			}
+		});
+		$("#infolists .infolist-row:last").css("border-bottom","none");
+		//申请职位
+		apply_jobs("/");
+		// 收藏职位
+		favorites("/");
+		// 合并公司
+		var com_list= $.cookie('com_list');
+		if(com_list ==1)
+		{
+			$("#merge_com_btn").attr("checked",true);
+		}
+		
+		$("#merge_com_btn").click(function(){
+			generateBackground();
+			if($(this).attr('checked')){
+				$.cookie('com_list','1');
+				window.location.reload();
+
+			} else {
+				$.cookie("com_list", null); 
+				window.location.reload();
+			}
+		})
+		$(".jobinfolists .tit .sort a").click(function(event) {
+			generateBackground();
+		});
+		// 正在加载
+		function generateBackground() {
+			var backgroundHtm = '<div id="bonfire-pageloader"><div class="bonfire-pageloader-icon">';
+			var html = jQuery('body');
+			html.append(backgroundHtm);
+			jQuery(window).resize(function(){
+				 resizenow();
+			});
+			function resizenow() {
+				var browserwidth = jQuery(window).width();
+				var browserheight = jQuery(window).height();
+				jQuery('.bonfire-pageloader-icon').css('right', ((browserwidth - jQuery(".bonfire-pageloader-icon").width())/2)).css('top', ((browserheight - jQuery(".bonfire-pageloader-icon").height())/2 + $(document).scrollTop() - 109));
+			};
+			resizenow();
+		}
+	});
+</script>
+</head>
+<body>
+<div id="new-header">
+	<div class="top-bar">
+	<div class="index-container clearfix">
+		<div class="welcome f-left" id="top_loginform"></div>
+		<ul class="top-nav f-right">
+<li class="t-nav-item f-left mobile"><a href="../mobile.html" class="underline">手机频道</a></li>
+			<li class="t-nav-item f-left"><a href="../index.html" class="underline nav-link">网站首页</a></li>
+			<li class="t-nav-item f-left mr15"><a href="../plus/shortcut.php" class="underline nav-link">保存到桌面</a></li>
+			<li class="t-nav-item f-left nav-more">
+				<span class="nav-more-type">网站导航<i class="more-arrow"></i></span>
+				<div class="sub-menu-out">
+                	<div class="sub-menu nav">
+                        <ul>
+<li>
+                            	<strong>个人服务</strong>
+                                <a href="../user/personal/personal_resume.php%EF%BC%9Fact=make1" target="_blank">创简历</a>
+                                <a href="../salary.html" target="_blank">查薪资</a>
+                                <a href="../evaluation/index.php" target="_blank">人才测评</a>
+                                <a href="map-search.php%EF%BC%9Fid=1" target="_blank">地图找工作</a>
+                            </li>
+                            <li>
+                            	<strong>企业服务</strong>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank">发职位</a>
+                                <a href="../jobfair/jobfair-list.php" target="_blank">招聘会</a>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=simple_jobs" target="_blank">微信招聘</a>
+                                <a href="../hrtools/index.php" target="_blank">HR工具箱</a>
+                            </li>
+                            <li class="bd0">
+                            	<strong>更多</strong>
+                                <a rel="nofollow" href="../campus/index.php" target="_blank">校园招聘</a>
+                                <a rel="nofollow" href="../hunter/index.html" target="_blank">猎聘专区</a>
+                                <a rel="nofollow" href="../train/index.html" target="_blank">培训信息</a>
+                                <a rel="nofollow" href="../shop/index.php" target="_blank">积分商城</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+			</li>
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+	//顶部部登录
+	$.get('/plus/ajax_user.php', {"act":"top_loginform"}, function(data) {
+		$("#top_loginform").html(data);
+	});
+	$(".nav-more").hover(function() {
+		$(".sub-menu").toggle();
+	});
+</script><div class="header-main">
+		<div class="index-container clearfix">
+			<div class="common-logo f-left"><a href="../index.html"><img src="../data/images/logo.png" alt="随州人才网" width="251" height="85"></a></div>
+			<!--<div class="sub-station f-left">
+				<span class="station-control">总站<i class="station-arrow"></i></span>
+			</div>-->
+			<ul class="common-nav f-right">
+<li><a href="../index.html" target="_self">首  页</a></li>
+								<li class="active"><a href="jobs-list.php" target="_self">找工作</a></li>
+								<li><a href="../resume/resume-list.php" target="_self">聘人才</a></li>
+								<li><a href="../simple/simple-list.php" target="_self">微招聘</a></li>
+								<li><a href="../hrtools/index.php" target="_self">HR工具箱</a></li>
+								<li><a href="../company/index.php" target="_self">企业黄页</a></li>
+								<li><a href="map-search-1.html" target="_self">地图找工作</a></li>
+								<li><a href="../news/index.html" target="_self">新闻资讯</a></li>
+							</ul>
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.common-nav li:last').css({'border-right':0});
+		$('.t-nav-item:last').css({'margin-right':0});
+	});
+</script><div class="page_location link_bk">
+当前位置：<a href="../index.html">首页</a> &gt;&gt; <a href="index.html">招聘信息</a>
+</div>
+<div class="container">
+	<div id="filterSearch">
+		<div class="search-tab clearfix">
+			<a href="jobs-list.php" class="s-tab-item f-left active">高级搜索</a>
+			<a href="street-search.php" class="s-tab-item f-left">道路搜索</a>
+			<a href="map-search.php%EF%BC%9Fid=1" class="s-tab-item f-left">地图搜索</a>
+			<a href="view-jobs.php" class="s-tab-item f-left">浏览过的职位</a>
+		</div>
+		<div class="top-search clearfix">
+			<div class="t-search-box f-left">
+				<div class="type-input-box f-left" id="hidden_input_box">
+					<div class="key">请输入关键字</div>
+					<input type="text" name="key" id="key" value="" style="display:none;"><input name="jobcategory" id="jobcategory" type="hidden" value=""><input name="trade" id="trade" type="hidden" value=""><input name="citycategory" id="citycategory" type="hidden" value=""><input type="hidden" name="wage" id="wage" value=""><input type="hidden" name="jobtag" id="jobtag" value=""><input type="hidden" name="education" id="education" value=""><input type="hidden" name="experience" id="experience" value=""><input type="hidden" name="settr" id="settr" value=""><input type="hidden" name="nature" id="nature" value=""><input type="hidden" name="scale" id="scale" value=""><input type="hidden" name="sort" id="sort" value=""><input type="hidden" name="page" id="page" value="2">
+</div>
+			</div>
+			<div class="t-search-btn f-left"><input type="button" detype="QS_jobslist" id="searcnbtn" value="搜 索"></div>
+		</div>
+		<div class="fliter-wrap">
+			<div class="filter-drop clearfix">
+				<div class="filter-item f-left">
+					<div class="choose-item">
+						<div class="choose-control">
+							<span class="cc-default" id="job_result_show">选择职位类别</span><i class="choose-icon"></i>
+							<!-- 职位类别弹出框 -->
+							<div class="aui_outer" id="aui_outer_job">
+								<table class="aui_border"><tbody><tr>
+<td class="aui_c">
+												<div class="aui_inner">
+													<table class="aui_dialog"><tbody><tr>
+<td class="aui_main">
+																	<div class="aui_content" style="padding: 0px;">
+																		<div class="LocalDataMultiC">
+																			<div class="selector-header">
+<span class="selector-title">职位选择</span><div></div>
+<span id="jb-selector-save" class="selector-save">确定</span><span class="selector-close">X</span><div class="clear"></div>
+</div>
+
+																			<div class="data-row-head">
+<div class="data-row">
+<div class="data-row-side">最多选 <strong class="text-warning">3</strong> 项  已选 <strong id="ars" class="text-warning">0</strong> 项</div>
+<div id="result-list-job" class="result-list data-row-side-ra"></div>
+</div>
+<div class="cla"></div>
+</div>
+																			<div class="data-row-list data-row-main" id="job_list">
+																				<!-- 列表内容 -->
+																			</div>
+																		</div>
+																	</div>
+																</td>
+															</tr></tbody></table>
+</div>
+											</td>
+										</tr></tbody></table>
+</div>
+							<!-- 职位类别弹出框 End-->
+						</div>
+					</div>
+				</div>
+				<div class="filter-item f-left">
+					<div class="choose-item">
+						<div class="choose-control">
+							<span class="cc-default" id="trade_result_show">选择行业类别</span><i class="choose-icon"></i>
+							<!-- 所属行业弹出框 -->
+							<div class="aui_outer" id="aui_outer">
+								<table class="aui_border"><tbody><tr>
+<td class="aui_c">
+												<div class="aui_inner">
+													<table class="aui_dialog"><tbody><tr>
+<td class="aui_main">
+																	<div class="aui_content">
+																		<div class="items jquery-localdata">
+																			<div class="selector-header">
+<span class="selector-title">行业选择</span><div></div>
+<span id="tr-selector-save" class="selector-save">确定</span><span class="selector-close">X</span><div class="clear"></div>
+</div>
+
+																			<div class="data-row-head">
+<div class="data-row">
+<div class="data-row-side">最多选 <strong class="text-warning">3</strong> 项  已选 <strong id="arstrade" class="text-warning">0</strong> 项</div>
+<div id="result-list-trade" class="result-list data-row-side-ra"></div>
+</div>
+<div class="cla"></div>
+</div>
+																			<div class="item-table">
+																				<table class="options-table options-table-7"><tbody class="item-list"><tr><td class="bno"><table><tbody id="trad_list"><!-- 列表内容 --></tbody></table></td></tr></tbody></table>
+</div>
+																		</div>
+																	</div>
+																</td>
+															</tr></tbody></table>
+</div>
+											</td>
+										</tr></tbody></table>
+</div>
+							<!-- 所属行业弹出框 End-->
+						</div>
+					</div>
+				</div>
+				<div class="filter-item f-left">
+					<div class="choose-item">
+						<div class="choose-control">
+							<span class="cc-default" id="city_result_show">选择地区类别</span><i class="choose-icon"></i>
+							<!-- 工作地区弹出框 -->
+							<div class="aui_outer" style="left:-396px;" id="aui_outer_city">
+								<table class="aui_border"><tbody><tr>
+<td class="aui_c">
+												<div class="aui_inner">
+													<table class="aui_dialog"><tbody><tr>
+<td class="aui_main">
+																	<div class="aui_content" style="padding: 0px;">
+																		<div class="LocalDataMultiC" style="width:623px;">
+																			<div class="selector-header">
+<span class="selector-title">地区选择</span><div></div>
+<span id="ct-selector-save" class="selector-save">确定</span><span class="selector-close">X</span><div class="clear"></div>
+</div>
+
+																			<div class="data-row-head">
+<div class="data-row">
+<div class="data-row-side data-row-side-c">最多选 <strong class="text-warning">3</strong> 项  已选 <strong id="arscity" class="text-warning">0</strong> 项</div>
+<div id="result-list-city" class="result-list data-row-side-ra"></div>
+</div>
+<div class="cla"></div>
+</div>
+																			<div class="data-row-list data-row-main" id="city_list">
+																				<!-- 列表内容 -->
+																			</div>
+																		</div>
+																	</div>
+																</td>
+															</tr></tbody></table>
+</div>
+											</td>
+										</tr></tbody></table>
+</div>
+							<!-- 工作地区弹出框 End-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="filter-list-wrap clearfix">
+				<div class="fl-type f-left">职位月薪：</div>
+				<div class="fl-content r-choice f-left">
+															<div class="fl-content-li" type="wage" code="56">1000~1500元/月</div>
+										<div class="fl-content-li" type="wage" code="57">1500~2000元/月</div>
+										<div class="fl-content-li" type="wage" code="58">2000~3000元/月</div>
+										<div class="fl-content-li" type="wage" code="59">3000~5000元/月</div>
+										<div class="fl-content-li" type="wage" code="60">5000~10000元/月</div>
+										<div class="fl-content-li" type="wage" code="61">1万以上/月</div>
+									</div>
+			</div>
+			<div class="filter-list-wrap clearfix">
+				<div class="fl-type f-left">福利亮点：</div>
+				<div class="fl-content f-left forShowMore" id="fliterMore">
+															<div class="fl-content-li" type="jobtag" code="145">环境好</div>
+										<div class="fl-content-li" type="jobtag" code="146">年终奖</div>
+										<div class="fl-content-li" type="jobtag" code="147">双休</div>
+										<div class="fl-content-li" type="jobtag" code="148">五险一金</div>
+										<div class="fl-content-li" type="jobtag" code="149">加班费</div>
+										<div class="fl-content-li" type="jobtag" code="150">朝九晚五</div>
+										<div class="fl-content-li" type="jobtag" code="151">交通方便</div>
+										<div class="fl-content-li" type="jobtag" code="152">加班补助</div>
+										<div class="fl-content-li" type="jobtag" code="153">包食宿</div>
+										<div class="fl-content-li" type="jobtag" code="154">管理规范</div>
+										<div class="fl-content-li" type="jobtag" code="155">有提成</div>
+										<div class="fl-content-li" type="jobtag" code="156">全勤奖</div>
+										<div class="fl-content-li" type="jobtag" code="157">有年假</div>
+										<div class="fl-content-li" type="jobtag" code="158">专车接送</div>
+										<div class="fl-content-li" type="jobtag" code="159">有补助</div>
+										<div class="fl-content-li" type="jobtag" code="160">晋升快</div>
+										<div class="fl-content-li" type="jobtag" code="161">车贴</div>
+										<div class="fl-content-li" type="jobtag" code="162">房贴</div>
+										<div class="fl-content-li" type="jobtag" code="163">压力小</div>
+										<div class="fl-content-li" type="jobtag" code="164">技术培训</div>
+										<div class="fl-content-li" type="jobtag" code="165">旅游</div>
+										<a href="javascript:;" class="show-more">展开</a>
+				</div>
+			</div>
+			<div class="filter-list-wrap clearfix">
+				<div class="fl-type f-left">更多筛选：</div>
+				<div class="fl-content f-left">
+					<div class="saixuan">
+												<div class="saixuans">
+							<div class="line"></div>
+														<a defvalue="65" type="education" href="javascript:;">初中</a>
+														<a defvalue="66" type="education" href="javascript:;">高中</a>
+														<a defvalue="67" type="education" href="javascript:;">中技</a>
+														<a defvalue="68" type="education" href="javascript:;">中专</a>
+														<a defvalue="69" type="education" href="javascript:;">大专</a>
+														<a defvalue="70" type="education" href="javascript:;">本科</a>
+														<a defvalue="71" type="education" href="javascript:;">硕士</a>
+														<a defvalue="72" type="education" href="javascript:;">博士</a>
+														<a defvalue="73" type="education" href="javascript:;">博后</a>
+													</div>
+						学历要求
+					</div>
+					<div class="saixuan">
+												<div class="saixuans">
+							<div class="line"></div>
+														<a defvalue="74" type="experience" href="javascript:;">无经验</a>
+														<a defvalue="75" type="experience" href="javascript:;">1年以下</a>
+														<a defvalue="76" type="experience" href="javascript:;">1-3年</a>
+														<a defvalue="77" type="experience" href="javascript:;">3-5年</a>
+														<a defvalue="78" type="experience" href="javascript:;">5-10年</a>
+														<a defvalue="79" type="experience" href="javascript:;">10年以上</a>
+													</div>
+						工作经验
+					</div>
+					<div class="saixuan">
+						<div class="saixuans">
+							<div class="line"></div>
+							<a defvalue="3" type="settr" href="javascript:;">3天内</a>
+							<a defvalue="7" type="settr" href="javascript:;">7天内</a>
+							<a defvalue="15" type="settr" href="javascript:;">15天内</a>
+							<a defvalue="30" type="settr" href="javascript:;">30天内</a>
+						</div>
+						更新时间
+					</div>
+					<div class="saixuan">
+												<div class="saixuans">
+							<div class="line"></div>
+														<a defvalue="62" type="nature" href="javascript:;">全职</a>
+														<a defvalue="63" type="nature" href="javascript:;">兼职</a>
+														<a defvalue="64" type="nature" href="javascript:;">实习</a>
+													</div>
+						工作性质
+					</div>
+					<div class="saixuan">
+												<div class="saixuans">
+							<div class="line"></div>
+														<a defvalue="80" type="scale" href="javascript:;">20人以下</a>
+														<a defvalue="81" type="scale" href="javascript:;">20-99人</a>
+														<a defvalue="82" type="scale" href="javascript:;">100-499人</a>
+														<a defvalue="83" type="scale" href="javascript:;">500-999人</a>
+														<a defvalue="84" type="scale" href="javascript:;">1000-9999人</a>
+														<a defvalue="85" type="scale" href="javascript:;">10000人以上</a>
+													</div>
+						企业规模
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fliter-result clearfix" id="has_result">
+			<div class="fr-type f-left">已选条件：</div>
+			<div class="fr-content f-left rl">
+																																				</div>
+			<div class="fliter-clear f-right" id="clear_all_selected"><a href="javascript:;" class="clear-link">清空所选</a></div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- 职位列表 -->
+<div class="jobinfolists">
+	<div class="tit">
+		<div class="sort">
+			<span class="job_list_type">排序</span>
+			<a href="jobs-list.php%EF%BC%9Fsort=&amp;key=&amp;jobcategory=&amp;education=&amp;citycategory=&amp;experience=&amp;settr=&amp;trade=&amp;wage=&amp;nature=&amp;page=1" class="slect">综合排序</a>
+			<a href="jobs-list.php%EF%BC%9Fkey=&amp;jobcategory=&amp;education=&amp;citycategory=&amp;experience=&amp;settr=&amp;trade=&amp;wage=&amp;nature=&amp;page=1&amp;sort=rtime">更新时间</a>
+						<a href="jobs-list.php%EF%BC%9Fkey=&amp;jobcategory=&amp;education=&amp;citycategory=&amp;experience=&amp;settr=&amp;trade=&amp;wage=&amp;nature=&amp;page=1&amp;sort=wage">薪资待遇</a>
+			<!-- <a href="http://www.0722ren.com/jobs/jobs-list.php?sort=hot&page=1&key=&jobcategory=&education=&citycategory=&experience=&settr=&trade=&wage=&nature=" >热度</a> -->
+					</div>
+		<div class="sort">
+			<span class="job_list_type">筛选</span>
+			<label class="merger_company"><input type="checkbox" name="" id="merge_com_btn"> 合并公司</label>
+		</div>
+		<div class="pagerow">
+			<div class="pageminnav">
+<li><a href="jobs-list.php%EF%BC%9Fpage=1"></a></li>
+<li>
+<b style="color:#ff9900">2</b>/47页</li>
+<li><a href="jobs-list.php%EF%BC%9Fpage=3">&gt;</a></li>
+<div class="clear"></div>
+</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="infolists" id="infolists">
+		<div class="infolists-head clearfix">
+			<label class="f-left"><input type="checkbox" name="selectall" id="selectall" class="checkbox">全选</label>
+			<div class="all-ctrl f-left"><input type="button" value="申请职位" class="all-down-btn deliver"></div>
+			<div class="all-ctrl f-left"><a href="javascript:;" class="collect-link collecter">收藏职位</a></div>
+						<div class="list-tab f-right">
+				<a href="javascript:;" id="list" class="tab-item tab-list">列表</a>
+				<a href="javascript:;" id="detail" class="tab-item tab-detail">详细</a>
+			</div>
+					</div>
+				<div class="info-list-wrap">
+									<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="8003" id="" class="checkbox"><a href="8003.html" target="_blank" class="underline">学管老师</a>
+																		<img title="欢迎应届生投递简历" src="../templates/demo11/images/ying.jpg" border="0" class="vtip">
+</div>
+					<div class="list-item item2 f-left"><a href="../c2770.html" target="_blank" class="underline job-company">中航国铁教育集团湖北分公司 </a></div>
+					<div class="list-item item3 f-left"><span>2000~3000元/月</span></div>
+					<div class="list-item item4 f-left">湖北省/随州市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--10-10-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：大专  |  工作经验：1-3年  |  职位性质：全职  |  招聘人数：5人  |  性别要求：女</p>
+						<div>岗位职责：任职要求：
+1、学历：大专及以上学历
+2、专业：教育类、英语、旅游类专业优先。
+3、要求：对教育行业有浓厚兴趣，能够熟练使用办公软件，认真配合上级完成教学工作，责任心强，执行力强，思想端正，爱岗敬业。
+薪资待遇：
+1、基本工资1500元/月+绩效1500/月+招生奖+年终奖+年底双薪+社保...</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="8003" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="8003"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+												<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="8323" id="" class="checkbox"><a href="8323.html" target="_blank" class="underline">销售员</a>
+																							</div>
+					<div class="list-item item2 f-left"><a href="../c2995.html" target="_blank" class="underline job-company">小商品批发交易市场78号批发部 </a></div>
+					<div class="list-item item3 f-left"><span>3000~5000元/月</span></div>
+					<div class="list-item item4 f-left">随州市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--10-06-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：不限  |  工作经验：  |  职位性质：全职  |  招聘人数：若干人  |  性别要求：不限</p>
+						<div>岗位职责：货物配送业务员</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="8323" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="8323"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+												<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="7934" id="" class="checkbox"><a href="7934.html" target="_blank" class="underline">销售代表</a>
+												<img title="推荐职位" src="../templates/demo11/images/iconjian.gif" border="0" class="vtip">
+</div>
+					<div class="list-item item2 f-left"><a href="../c2727.html" target="_blank" class="underline job-company">勾梁画栋装饰有限公司 </a></div>
+					<div class="list-item item3 f-left"><span>5000~10000元/月</span></div>
+					<div class="list-item item4 f-left">湖北省/随州市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--10-03-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：初中  |  工作经验：1-3年  |  职位性质：全职  |  招聘人数：2人  |  性别要求：不限</p>
+						<div>岗位职责：
+1、市场营销等相关专业；
+3、具有丰富的客户资源和客户关系，业绩优秀；
+热诚欢迎渴望高薪的回乡精英! 有意者直接来公司面试。</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="7934" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="7934"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+												<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="7936" id="" class="checkbox"><a href="7936.html" target="_blank" class="underline">设计师</a>
+																							</div>
+					<div class="list-item item2 f-left"><a href="../c2727.html" target="_blank" class="underline job-company">勾梁画栋装饰有限公司 </a></div>
+					<div class="list-item item3 f-left"><span>5000~10000元/月</span></div>
+					<div class="list-item item4 f-left">湖北省/随州市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--10-03-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：初中  |  工作经验：1-3年  |  职位性质：全职  |  招聘人数：5人  |  性别要求：不限</p>
+						<div>岗位职责：能独立完成设计作品。
+熟悉施工流程，懂得客户交流技巧。
+</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="7936" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="7936"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+												<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="7935" id="" class="checkbox"><a href="7935.html" target="_blank" class="underline">绘图员</a>
+																							</div>
+					<div class="list-item item2 f-left"><a href="../c2727.html" target="_blank" class="underline job-company">勾梁画栋装饰有限公司 </a></div>
+					<div class="list-item item3 f-left"><span>2000~3000元/月</span></div>
+					<div class="list-item item4 f-left">湖北省/随州市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--10-03-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：初中  |  工作经验：1-3年  |  职位性质：全职  |  招聘人数：3人  |  性别要求：不限</p>
+						<div>岗位职责：
+	
+	
+</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="7935" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="7935"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+												<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="8404" id="" class="checkbox"><a href="8404.html" target="_blank" class="underline">资料员</a>
+																							</div>
+					<div class="list-item item2 f-left"><a href="../c3045.html" target="_blank" class="underline job-company">随州梁泰地产有限公司 <img src="../templates/demo11/images/yan.gif" alt="已验证"></a></div>
+					<div class="list-item item3 f-left"><span>3000~5000元/月</span></div>
+					<div class="list-item item4 f-left">湖北省/随州市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--09-27-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：本科  |  工作经验：1-3年  |  职位性质：全职  |  招聘人数：1人  |  性别要求：不限</p>
+						<div>岗位职责：
+	岗位职责：
+
+
+	1、负责工程部档案文件的归档、移交、借阅管理；
+
+
+	&amp;nbsp;2、负责工程资料、图纸的管理，工程文件的处理；&amp;nbsp;
+
+
+	3、负责会议纪要、周工作计划、月度工作简报等公文整理；
+
+
+	&amp;nbsp;4、完成上级交办的其他任务。
+
+
+	&amp;nbsp;岗位要求：&amp;nbsp;
+
+
+	1、大...</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="8404" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="8404"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+												<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="8413" id="" class="checkbox"><a href="8413.html" target="_blank" class="underline">装箱工</a>
+																							</div>
+					<div class="list-item item2 f-left"><a href="../c3073.html" target="_blank" class="underline job-company">武汉永怡纸业有限公司 </a></div>
+					<div class="list-item item3 f-left"><span>3000~5000元/月</span></div>
+					<div class="list-item item4 f-left">湖北省/武汉市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--09-22-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：初中  |  工作经验：无经验  |  职位性质：全职  |  招聘人数：若干人  |  性别要求：男</p>
+						<div>岗位职责：试用期3000元，转正后月薪18—52周岁</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="8413" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="8413"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+												<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="8414" id="" class="checkbox"><a href="8414.html" target="_blank" class="underline">研发员、质检员</a>
+																							</div>
+					<div class="list-item item2 f-left"><a href="../c3073.html" target="_blank" class="underline job-company">武汉永怡纸业有限公司 </a></div>
+					<div class="list-item item3 f-left"><span>3000~5000元/月</span></div>
+					<div class="list-item item4 f-left">湖北省/武汉市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--09-22-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：中专  |  工作经验：无经验  |  职位性质：全职  |  招聘人数：若干人  |  性别要求：不限</p>
+						<div>岗位职责：试用期3000元，转正后月薪20—35周岁，中专及以上学历</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="8414" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="8414"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+												<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="8412" id="" class="checkbox"><a href="8412.html" target="_blank" class="underline">包装工</a>
+																							</div>
+					<div class="list-item item2 f-left"><a href="../c3073.html" target="_blank" class="underline job-company">武汉永怡纸业有限公司 </a></div>
+					<div class="list-item item3 f-left"><span>3000~5000元/月</span></div>
+					<div class="list-item item4 f-left">湖北省/武汉市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--09-22-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：初中  |  工作经验：无经验  |  职位性质：全职  |  招聘人数：若干人  |  性别要求：女</p>
+						<div>岗位职责：试用期3000元，转正后月薪18—48周岁</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="8412" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="8412"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+												<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="8411" id="" class="checkbox"><a href="8411.html" target="_blank" class="underline">生产操作工</a>
+																							</div>
+					<div class="list-item item2 f-left"><a href="../c3073.html" target="_blank" class="underline job-company">武汉永怡纸业有限公司 </a></div>
+					<div class="list-item item3 f-left"><span>5000~10000元/月</span></div>
+					<div class="list-item item4 f-left">湖北省/武汉市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--09-20-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：初中  |  工作经验：无经验  |  职位性质：全职  |  招聘人数：若干人  |  性别要求：男</p>
+						<div>岗位职责：熟练操作工，免试用期，直接上岗，月薪4500—10000元；学徒工，试用期1—3个月，试用期月薪3000元，转正后月薪4500—7000元。要求：男性，年龄20—35周岁，初中及以上学历。</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="8411" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="8411"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+												<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="8410" id="" class="checkbox"><a href="8410.html" target="_blank" class="underline">泵房开票员</a>
+																							</div>
+					<div class="list-item item2 f-left"><a href="../c3072.html" target="_blank" class="underline job-company">随县双河石业有限公司 </a></div>
+					<div class="list-item item3 f-left"><span>2000~3000元/月</span></div>
+					<div class="list-item item4 f-left">湖北省/随州市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--09-19-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：大专  |  工作经验：3-5年  |  职位性质：全职  |  招聘人数：5人  |  性别要求：不限</p>
+						<div>岗位职责：
+	泵房进出开票记账
+
+
+	简单的账务处理等等简单的出纳工作 
+</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="8410" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="8410"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+												<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="8406" id="" class="checkbox"><a href="8406.html" target="_blank" class="underline">专用车销售经理</a>
+																							</div>
+					<div class="list-item item2 f-left"><a href="../c3068.html" target="_blank" class="underline job-company">程力专用汽车股份有限公司市场三部 <img src="../templates/demo11/images/yan.gif" alt="已验证"></a></div>
+					<div class="list-item item3 f-left"><span>1万以上/月</span></div>
+					<div class="list-item item4 f-left">湖北省/随州市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--09-13-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：大专  |  工作经验：无经验  |  职位性质：全职  |  招聘人数：30人  |  性别要求：不限</p>
+						<div>岗位职责：
+	职位要求
+
+</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="8406" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="8406"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+												<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="8301" id="" class="checkbox"><a href="8301.html" target="_blank" class="underline">校对</a>
+																		<img title="欢迎应届生投递简历" src="../templates/demo11/images/ying.jpg" border="0" class="vtip">
+</div>
+					<div class="list-item item2 f-left"><a href="../c2979.html" target="_blank" class="underline job-company">湖北天成文化传播有限公司 </a></div>
+					<div class="list-item item3 f-left"><span>2000~3000元/月</span></div>
+					<div class="list-item item4 f-left">湖北省/随州市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--09-12-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：大专  |  工作经验：无经验  |  职位性质：全职  |  招聘人数：10人  |  性别要求：不限</p>
+						<div>岗位职责：工作内容：核对初中稿件是否有误。
+薪资待遇：随州月工资2500―3000元，特别优秀的可在此基础上增加200元/月的特殊津贴。
+员工福利：除法定假日外另每年10天带薪年假，工作满一年后有养老保险。</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="8301" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="8301"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+												<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="8407" id="" class="checkbox"><a href="8407.html" target="_blank" class="underline">安全员</a>
+																		<img title="欢迎应届生投递简历" src="../templates/demo11/images/ying.jpg" border="0" class="vtip">
+</div>
+					<div class="list-item item2 f-left"><a href="../c2978.html" target="_blank" class="underline job-company">中铁十一局集团有限公司 <img src="../templates/demo11/images/yan.gif" alt="已验证"></a></div>
+					<div class="list-item item3 f-left"><span>3000~5000元/月</span></div>
+					<div class="list-item item4 f-left">湖北省/随州市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--09-11-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：高中  |  工作经验：无经验  |  职位性质：全职  |  招聘人数：2人  |  性别要求：不限</p>
+						<div>岗位职责：
+	汉十高铁项目工程线安全员
+
+
+	1、懂电脑，会基本的word,excel文档处理；
+
+
+	2、工作内容：内业资料处理，铁路工程线安全巡查及防护
+
+
+	3、单休，月薪3500-4000元
+</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="8407" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="8407"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+												<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="8324" id="" class="checkbox"><a href="8324.html" target="_blank" class="underline">司机</a>
+																							</div>
+					<div class="list-item item2 f-left"><a href="../c2995.html" target="_blank" class="underline job-company">小商品批发交易市场78号批发部 </a></div>
+					<div class="list-item item3 f-left"><span>3000~5000元/月</span></div>
+					<div class="list-item item4 f-left">随州市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--09-06-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：不限  |  工作经验：  |  职位性质：全职  |  招聘人数：若干人  |  性别要求：不限</p>
+						<div>岗位职责：送货下乡司机师傅，B证，驾龄两年以上，40岁以下，</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="8324" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="8324"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+												<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="8405" id="" class="checkbox"><a href="8405.html" target="_blank" class="underline">置业顾问</a>
+																							</div>
+					<div class="list-item item2 f-left"><a href="../c3045.html" target="_blank" class="underline job-company">随州梁泰地产有限公司 <img src="../templates/demo11/images/yan.gif" alt="已验证"></a></div>
+					<div class="list-item item3 f-left"><span>1万以上/月</span></div>
+					<div class="list-item item4 f-left">湖北省/随州市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--09-06-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：大专  |  工作经验：3-5年  |  职位性质：全职  |  招聘人数：若干人  |  性别要求：不限</p>
+						<div>岗位职责：
+	1、市场营销、房地产等相关专业大专及以上学历；
+
+
+	2、1年以上房地产销售经验，有丰富的客户资源；
+
+
+	3、熟悉房地产开发与销售流程、客户分析与谈判、客户拓展等；
+
+
+	4、具有较强的客户管理能力、团队协作能力、执行力及抗压能力。
+
+
+	5、有房地产工作经验者优先，优秀应届...</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="8405" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="8405"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+												<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="8402" id="" class="checkbox"><a href="8402.html" target="_blank" class="underline">合约规划专员</a>
+																							</div>
+					<div class="list-item item2 f-left"><a href="../c3045.html" target="_blank" class="underline job-company">随州梁泰地产有限公司 <img src="../templates/demo11/images/yan.gif" alt="已验证"></a></div>
+					<div class="list-item item3 f-left"><span>5000~10000元/月</span></div>
+					<div class="list-item item4 f-left">湖北省/随州市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--09-06-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：本科  |  工作经验：1-3年  |  职位性质：全职  |  招聘人数：1人  |  性别要求：不限</p>
+						<div>岗位职责：
+	岗位职责：
+
+
+	主要负责事业部营销供方考察与管理，组织事业部营销招标采购工作以及营销费用发生和支付流程审批，保障项目营销费用使用合理，合规，流程规范。
+
+
+
+	岗位要求：
+
+
+	1、市场营销、房地产、经济学、广告学、新闻等相关专业本科及以上学历；
+
+2、1年以上房地产市场...</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="8402" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="8402"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+												<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="8401" id="" class="checkbox"><a href="8401.html" target="_blank" class="underline">兼职驻地技术员（安防）</a>
+																							</div>
+					<div class="list-item item2 f-left"><a href="../c3067.html" target="_blank" class="underline job-company">武汉宏创兴恒技术工程有限公司 </a></div>
+					<div class="list-item item3 f-left"><span>3000~5000元/月</span></div>
+					<div class="list-item item4 f-left">湖北省/随州市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--09-05-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：高中  |  工作经验：1-3年  |  职位性质：兼职  |  招聘人数：3人  |  性别要求：男</p>
+						<div>岗位职责：1.弱电、安防监控、智能楼宇项目
+2.负责当地售后维修等工作
+3.服务对象：当地各大银行
+4.公司提供施工材料、协助甲方沟通等
+
+	
+</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="8401" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="8401"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+												<!-- 职位模式 -->
+			<div class="infolist-row">
+				<div class="info-list-block job clearfix">
+					<div class="list-item item1 f-left">
+						<input type="checkbox" name="jid" value="8302" id="" class="checkbox"><a href="8302.html" target="_blank" class="underline">文员</a>
+																		<img title="欢迎应届生投递简历" src="../templates/demo11/images/ying.jpg" border="0" class="vtip">
+</div>
+					<div class="list-item item2 f-left"><a href="../c2978.html" target="_blank" class="underline job-company">中铁十一局集团有限公司 <img src="../templates/demo11/images/yan.gif" alt="已验证"></a></div>
+					<div class="list-item item3 f-left"><span>3000~5000元/月</span></div>
+					<div class="list-item item4 f-left">湖北省/随州市</div>
+					<div class="list-item item5 f-left" style="line-height:50px;">
+													<!--09-03-->10月16日											</div>
+					<a href="javascript:;" class="list-item-ctrl f-left"></a>
+				</div>
+				<div class="info-list-detail clearfix">
+					<div class="info-text f-left">
+						<p>学历要求：高中  |  工作经验：无经验  |  职位性质：全职  |  招聘人数：1人  |  性别要求：女</p>
+						<div>岗位职责：
+	岗位职责：
+1、年龄在18-35岁，女士；&amp;nbsp;
+
+
+	&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;2、熟悉公文写作格式，熟练运用OFFICE等办公软件；&amp;nbsp;
+
+
+	&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;3、工程项目安质部门文员，主要工作为收...</div>
+					</div>
+					<div class="info-control f-left">
+						<input type="button" value="申请职位" jobs_id="8302" class="apply-job-btn app_jobs"><p><a href="javascript:;" class="collect-btn add_favorites" jobs_id="8302"></a></p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- 职位模式结束 -->
+								</div>
+		<div class="infolists-head clearfix" style="border-top:1px solid #cccccc;border-bottom:none;">
+			<label class="f-left"><input type="checkbox" name="selectall" id="selectall" class="checkbox">全选</label>
+			<div class="all-ctrl f-left"><input type="button" value="申请职位" class="all-down-btn deliver"></div>
+			<div class="all-ctrl f-left"><a href="javascript:;" class="collect-link collecter">收藏职位</a></div>
+		</div>
+						<table border="0" align="center" cellpadding="0" cellspacing="0" class="link_bk"><tr>
+<td height="50" align="center"> <div class="page link_bk">
+<li><a href="jobs-list.php%EF%BC%9Fpage=1">首页</a></li>
+<li><a href="jobs-list.php%EF%BC%9Fpage=1">上一页</a></li>
+<li><a href="jobs-list.php%EF%BC%9Fpage=1">1</a></li>
+<li><a class="select">2</a></li>
+<li><a href="jobs-list.php%EF%BC%9Fpage=3">3</a></li>
+<li><a href="jobs-list.php%EF%BC%9Fpage=4">4</a></li>
+<li><a href="jobs-list.php%EF%BC%9Fpage=5">5</a></li>
+<li><a href="jobs-list.php%EF%BC%9Fpage=6">6</a></li>
+<li><a href="jobs-list.php%EF%BC%9Fpage=7">7</a></li>
+<li><a href="jobs-list.php%EF%BC%9Fpage=8">8</a></li>
+<li><a href="jobs-list.php%EF%BC%9Fpage=9">9</a></li>
+<li><a href="jobs-list.php%EF%BC%9Fpage=10">10</a></li>
+<li><a href="jobs-list.php%EF%BC%9Fpage=3">下一页</a></li>
+<li><a href="jobs-list.php%EF%BC%9Fpage=47">尾页</a></li>
+<li class="page_all">2/47页</li>
+<div class="clear"></div>
+</div>
+</td>
+			          	</tr></table>
+</div>
+</div>
+<script src="../templates/demo11/js/jquery.jobs-list.js" type="text/javascript"></script><div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="../suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="../explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="../news/news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="../subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="../explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="../hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="../train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="../resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="../hrtools/hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="../user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="../jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="../data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="../index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html>

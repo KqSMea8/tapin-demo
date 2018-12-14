@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>2013年随州市经济形势调查分析 - 随州人才网</title>
+<meta name="description" content="　　2013年，面对复杂多变的国内外经济环境，随州市坚持稳增长、调结构、促改革、惠民生，激发市场活力和社会内生动力，经济表现">
+<meta name="keywords" content="2013年随州市经济形势调查分析">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/news.css" rel="stylesheet" type="text/css">
+<script src="../templates/demo11/js/jquery.js" type="text/javascript"></script><script type="text/javascript">
+$(document).ready(function()
+{
+		var id="1488";
+		var tsTimeStamp= new Date().getTime();
+		$.get("/plus/ajax_click.php", { "id": id,"time":tsTimeStamp,"act":"news_click"},
+			function (data,textStatus)
+			 {			
+				$("#click").html(data);
+			 }
+		);
+		$(".search_news").click(function(){
+			var key = $("#key").val();
+			news_search_location(key);
+		});
+		function news_search_location(key)
+		{
+			$("body").append('<div id="pageloadingbox">页面加载中....<div id="pageloadingbg">');
+			$("#pageloadingbg").css("opacity", 0.5);
+			$.get("/plus/ajax_search_location.php", {"act":"QS_newssearch","key":key},
+					function (data,textStatus)
+					 {
+						 window.location.href=data;
+					 }
+				);
+		}
+		// 等比例缩放图片
+		var w = $(".left_area .news_box").width();//容器宽度 
+	    $(".news_txt img").each(function(){//如果有很多图片，我们可以使用each()遍历 
+	        var img_w = $(this).width();//图片宽度 
+	        var img_h = $(this).height();//图片高度 
+	        if(img_w>w){//如果图片宽度超出容器宽度--要撑破了 
+	            var height = (w*img_h)/img_w; //高度等比缩放 
+	            $(this).css({"width":w,"height":height});//设置缩放后的宽度和高度 
+	        } 
+	    });
+});
+</script>
+</head>
+<body>
+<div id="new-header">
+	<div class="top-bar">
+	<div class="index-container clearfix">
+		<div class="welcome f-left" id="top_loginform"></div>
+		<ul class="top-nav f-right">
+<li class="t-nav-item f-left mobile"><a href="../mobile.html" class="underline">手机频道</a></li>
+			<li class="t-nav-item f-left"><a href="../index.html" class="underline nav-link">网站首页</a></li>
+			<li class="t-nav-item f-left mr15"><a href="../plus/shortcut.php" class="underline nav-link">保存到桌面</a></li>
+			<li class="t-nav-item f-left nav-more">
+				<span class="nav-more-type">网站导航<i class="more-arrow"></i></span>
+				<div class="sub-menu-out">
+                	<div class="sub-menu nav">
+                        <ul>
+<li>
+                            	<strong>个人服务</strong>
+                                <a href="../user/personal/personal_resume.php%EF%BC%9Fact=make1" target="_blank">创简历</a>
+                                <a href="../salary.html" target="_blank">查薪资</a>
+                                <a href="../evaluation/index.php" target="_blank">人才测评</a>
+                                <a href="../jobs/map-search.php%EF%BC%9Fid=1" target="_blank">地图找工作</a>
+                            </li>
+                            <li>
+                            	<strong>企业服务</strong>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank">发职位</a>
+                                <a href="../jobfair/jobfair-list.php" target="_blank">招聘会</a>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=simple_jobs" target="_blank">微信招聘</a>
+                                <a href="../hrtools/index.php" target="_blank">HR工具箱</a>
+                            </li>
+                            <li class="bd0">
+                            	<strong>更多</strong>
+                                <a rel="nofollow" href="../campus/index.php" target="_blank">校园招聘</a>
+                                <a rel="nofollow" href="../hunter/index.html" target="_blank">猎聘专区</a>
+                                <a rel="nofollow" href="../train/index.html" target="_blank">培训信息</a>
+                                <a rel="nofollow" href="../shop/index.php" target="_blank">积分商城</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+			</li>
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+	//顶部部登录
+	$.get('/plus/ajax_user.php', {"act":"top_loginform"}, function(data) {
+		$("#top_loginform").html(data);
+	});
+	$(".nav-more").hover(function() {
+		$(".sub-menu").toggle();
+	});
+</script><div class="header-main">
+		<div class="index-container clearfix">
+			<div class="common-logo f-left"><a href="../index.html"><img src="../data/images/logo.png" alt="随州人才网" width="251" height="85"></a></div>
+			<!--<div class="sub-station f-left">
+				<span class="station-control">总站<i class="station-arrow"></i></span>
+			</div>-->
+			<ul class="common-nav f-right">
+<li><a href="../index.html" target="_self">首  页</a></li>
+								<li><a href="../jobs/jobs-list.php" target="_self">找工作</a></li>
+								<li><a href="../resume/resume-list.php" target="_self">聘人才</a></li>
+								<li><a href="../simple/simple-list.php" target="_self">微招聘</a></li>
+								<li><a href="../hrtools/index.php" target="_self">HR工具箱</a></li>
+								<li><a href="../company/index.php" target="_self">企业黄页</a></li>
+								<li><a href="../jobs/map-search-1.html" target="_self">地图找工作</a></li>
+								<li class="active"><a href="index.html" target="_self">新闻资讯</a></li>
+							</ul>
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.common-nav li:last').css({'border-right':0});
+		$('.t-nav-item:last').css({'margin-right':0});
+	});
+</script><!-- 当前位置 --><div class="page_location link_bk">
+当前位置：<a href="../index.html">首页</a> &gt; <a href="index.html">新闻资讯</a> &gt; 
+<a href="news-list.php%EF%BC%9Fid=11">随州资讯</a> &gt; 正文
+</div>
+	<!-- 主体内容 -->
+	<div class="container link_bk">
+		
+		<!-- 左边内容 -->
+		<div class="left_area">
+			<div class="news_box">
+				<div class="com_container">
+					<div class="title">2013年随州市经济形势调查分析</div>
+					<div class="news_dateil">
+						<div class="time">2014-02-20 00:00</div>
+						<div class="time">查看：<span id="click"></span> 次</div>
+						<div>
+<a href="javascript:window.print();">[打印]</a> <a href="javascript:void(0);" onclick="window.external.addFavorite(parent.location.href,document.title);">[收藏]</a>
+</div>
+						<div class="clear"></div>
+					</div>
+					<div class="news_txt">
+						<p></p>
+<p>　　2013年，面对复杂多变的国内外经济环境，<a href="../index.html" target="_blank">随州市</a>坚持稳增长、调结构、促改革、惠民生，激发市场活力和社会内生动力，经济表现出稳中有进、进中向好的发展态势。主要调查指标显示，农业形势总体偏好，城乡居民收入稳步增长，物价指数维持在相对低位，小微企业在激烈的市场竞争中表现出较强的生存和发展能力。 </p>
+<p><strong>　　一、全年主要调查指标分析 </strong></p>
+<p>　　（一）农业形势总体偏好 </p>
+<p>　　1、夏粮增产，收购价格上涨。2013年，全市夏粮播种面积167.19万亩，同比增长2.57%；夏粮总产达49.3万吨，同比增长9.24%。其中小麦播种面积142.99万亩，同比增长3.08%；小麦总产达44.34万吨，同比增长10.2%。随县小麦单产345.57公斤，同比增长9.79%；广水市小麦单产340.53公斤，同比增长8.63%。2013年随州片区的小麦托市收购价格为2.24元/公斤，较上年的2.04元/公斤的价格上浮了9.8%，托市收购价格近五年持续上涨。 </p>
+<p>　　2、秋粮略增，种植结构合理调整。据对全市66个样本单位区的中稻进行实割实测的调查结果显示，2013年全市秋粮播种面积为186.38万亩，同比增长0.87%；秋粮总产达108.87万吨，同比增长1.55%。随县中稻单产633.98公斤，同比增长0.72%；广水市中稻单产626.55公斤，同比下降0.34%。近几年持续干旱，各地调减水稻播种面积，增加玉米等其他耐旱粮食作物的播种面积，种植结构合理调整。2013年随州片区的中稻托市收购价格为2.7元/公斤，较上年的2.5元/公斤的价格上涨了8%。 </p>
+<p>　　3、生猪数量增加，经济效益下滑。据主要畜禽监测调查数据显示，2013年随县生猪存栏40.34万头，同比增长14.28%，出栏81.89万头，同比增长4.63%；广水生猪存栏34.52万头，同比增长13.66%，出栏56.52万头，同比增长11%。2014年生猪因供大于求，市场价格整体偏低，养猪收益不如往年。 </p>
+<p>　　（二）城乡居民收入稳步增长 </p>
+<p>　　抽样调查显示，2013年全市城镇居民可支配收入为19806.39元，同比增加1635.39元，增长9%；农民人均纯收入为9489.54元，同比增加1070.85元，增长12.72%。 </p>
+<p>　　1、城镇居民收入情况 </p>
+<p>　　一是工资性收入平稳增长。全年城镇居民人均工资性收入14585.99元，同比增加1119.99元，增长8.32%。 </p>
+<p>　　二是经营净收入增幅较大。全年城镇居民人均经营净收入3138.87元，同比增加387.87元，增长14.1%。 </p>
+<p>　　三是财产、转移性收入持续增长。全年城镇居民人均财产性收入951.14元，同比增加49.14元，增长5.45%；人均转移性收入2143.18元，同比增加121.18元，增长5.99%。 </p>
+<p>　　2、农村居民收入情况 </p>
+<p>　　一是务工收入强劲增长为农民工资性收入快速增长提供动力。全年农民人均工资性收入为3756.94元，同比增加590.83元，增长18.66%。 </p>
+<p>　　二是农业生产形势稳定和非农产业的发展为农民经营性收入增长提供了重要保证。全年农民人均家庭经营性纯收入为5012.32元，同比增加362.86元，增长7.8%。 </p>
+<p>　　三是财产、转移性纯收入快速增长。2013年全市农民人均财产性纯收入为251.68元，同比增加44.99元，增长21.77%；农民人均转移性纯收入468.6元，同比增加72.34元，增长18.26%。 </p>
+<p>　　（三）物价指数维持在相对低位 </p>
+<p>　　1、居民消费价格总体平稳 </p>
+<p>　　2013年，随州居民消费价格上涨2.5%，比2012年涨幅下降了0.7个百分点。 </p>
+<p>　　从消费类别上看，八大类商品及服务价格呈现“六涨二跌”格局，其中，食品、衣着、家庭设备用品及维修服务、医疗保健和个人用品、娱乐教育文化用品及服务、居住分别上涨4.6%、4.5%、1.3%、1.1%、4.7%、1.7%.；烟酒、交通和通信分别下降2.4%、5.5%。 </p>
+<p>　　食品价格上涨对CPI涨幅影响最大。全年食品价格比去年同期上涨4.6％，拉动居民消费价格总水平上涨1.5个百分点，是推动居民消费价格总水平走高的主要因素。 </p>
+<p>　　2、工业品价格在低位徘徊 </p>
+<p>　　2013年，随州市工业品出厂价格（PPI）呈现涨幅逐步回落态势，全年工业生产者出厂价格累计上涨1.0%，但涨幅较上年同期回落2.7个百分点；工业生产者购进价格持续走低，累计下跌2.0%。 </p>
+<p>　　（四）规下工业企业调查情况 </p>
+<p>　　1、主营业务收入增长 </p>
+<p>　　1-11月，随州规下工业企业正常填报的14个抽样调查单位主营业务收入达5671.87万元，同比增长10.7%。 </p>
+<p>　　2、企业经营成本继续上升 </p>
+<p>　　1-11月，调查单位主营业务成本为3041.36万元，同比增长13.9%。调查显示，有7家企业认为经营中面临最突出的问题为原材料上涨，占总数的50%。有6家企业认为经营中面临最突出的问题为用工成本上升快，占总数的42.9%。 </p>
+<p>　　3、流动资金基本正常 </p>
+<p>　　调查资料显示，有10家企业表示无借款需求，占调查单位总数的71.4%。有12家企业表示流动资金基本正常，占总数的85.7%，仅有1家企业表示资金紧张，有融资需求。 </p>
+<p>　　4、职工薪酬涨幅明显 </p>
+<p>　　1-11月，调查企业应付职工薪酬累计为409.8万元，人均工资为1862.7元/月，同比上涨20.6%。 </p>
+<p>　　5、多数企业无招工需求 </p>
+<p>　　有11家调查企业“无招工需求”，占调查总数的78.6%。 </p>
+<p><strong>　　二、当前经济运行中存在的主要问题 </strong></p>
+<p>　　（一）城乡居民持续快速增收的难度加大。从农民收入结构来看，一方面农产品生产成本的增加，部分农资价格上涨，影响了农民种粮积极性；另一方面，随着消费市场的变化，供给与需求的矛盾会日益突出，农产品价格增速放缓，为农民增收带来实际的困难。工资性收入是城镇居民家庭收入构成和增长的主体。近几年来，由于政策性增资幅度有所缩小，影响了一部分城镇居民工资性收入增长。同时当前中小微企业经营形势较为严峻，经济效益下滑，部分企业面临被淘汰的危险，对企业职工工资性收入产生一定的影响。 </p>
+<p>　　（二）经济结构性矛盾突出。2013年，全市CPI平稳运行，指数表现前低后高，呈小幅回升态势，而PPI却高开低走，指数逐月下行，下半年指数持续在负区间运行，与居民消费价格指数背道而驰。PPI下行，表明企业生产经营状况在恶化，企业生产的产品在低价销售，社会生产能力与市场需求能力存在结构性的矛盾，企业处在经济转型结构调整的痛苦时期。而CPI指数上涨，在很大程度上会增加企业的经营成本，压缩企业的利润空间，最终会影响到工人工资和困难群众的生活。 </p>
+<p>　　（三）规下工业企业面临系列困难。一是成本上升成为头等问题，人工及原材料的成本是企业经营成本中上升最快的部分，尤其是在企业赢利状况不强的情况下，职工工资只涨不跌，进一步增大了企业的成本。二是关、停、转企业较多，规下工业企业由于底子薄弱，产品竞争力不强等原因，往往生命周期较短。随州目录企业24家样本单位，已有6家企业停转产或者关闭，占总数的25%。三是享受的优惠政策较少，小微企业往往家族经营，由于财务制度不健全，申报资料不完整，能享受到优惠扶持政策的企业较少。 </p>
+<p><strong>　　三、经济发展的对策及建议 </strong></p>
+<p>　　（一）多措并举提高城乡居民收入。一是加大对三农的投入，调整政府财政支出结构，促进城乡基本公共服务均等化，使农民增收有生产经营环境、资金和物质保障。二是深化改革，统筹城乡发展。加快土地流转，利用规模效应提高土地种植收益。发展优势农业，全面落实强农惠农富农政策，确保农民收入维持在合理的增长水平。三是加强收入分配调节力度，加快完善职工工资正常增长机制，逐步提高保障房、义务教育、医疗救助、居民养老保障水平和困难群众最低生活费标准，确保城镇中低收入居民生活水平稳步提高。 </p>
+<p>　　（二）积极应对工业生产者价格持续下降所带来的负面影响。帮助企业拓展新市场扩大销售，解决重点难点问题，引导企业顺应市场需求开发生产新产品，提高产品竞争力；坚持把优化环境作为发展工业经济的主要措施来抓，努力为企业创造良好的社会环境和政务服务环境；要抓住传统的资源型、高耗能产业发展遭遇寒冬的机遇，转变观念，形成合力，加快推进战略性新兴产业的培育和发展，同时重视运用高新技术改造提升传统产业，延长产业链，提高产品附加值。 </p>
+<p>　　（三）加大对小微工业企业的扶持力度。一是拓宽融资渠道，引导金融机构加大对优势行业、重点企业的资金支持力度。二是积极转变经济发展方式，加快技术改造和产业升级，提升管理水平，加强对现有员工的培训，提高企业从业人员业务水平和劳动效率，减缓用工成本上升的压力。三是加大公共服务力度，规范和指导企业管理，提高企业的经营管理能力。四是进一步加大政策扶持及落实力度，扩大税收优惠政策的覆盖层面。 （王  洁 ） </p>
+						<div class="share">
+							<!-- Baidu Button BEGIN -->
+						    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+						        <a class="bds_qzone"></a>
+						        <a class="bds_tsina"></a>
+						        <a class="bds_tqq"></a>
+						        <a class="bds_renren"></a>
+						        <span class="bds_more">更多</span>
+						    </div>
+						<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=659075"></script><script type="text/javascript" id="bdshell_js"></script><script type="text/javascript">
+							document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+						</script><div class="clear"></div>	
+						<!-- Baidu Button END -->
+						</div>
+						<div class="clear"></div>
+						<div class="next_page">
+							<div class="prev">
+																<a href="1486.html">上一篇：随县努力把教育实践活动办成群众满意工程</a>
+															</div>
+							<div class="next">
+																<a href="1489.html">下一篇：随州市小微企业用工成本节节攀升</a>
+															</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+		<!-- 右边内容 -->
+		<div class="right_area">
+			
+			<div class="right_box">
+				<div class="title_box">
+					<h5>资讯分类</h5>
+				</div>
+				<div class="list">
+					<ul class="sort">
+<li><a href="news-list.php%EF%BC%9Fid=11" class="select">随州资讯</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=6">政策法规</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=13">下载中心</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=5">职场动态</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=4">面试指南</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=3">简历指南</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=2">职业培训</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=7">创业精英</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=8">职场测试</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=9">职场智慧</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=10">职场策略</a></li>
+												<div class="clear"></div>
+					</ul>
+<div class="clear"></div>
+				</div>
+			</div>
+			<div class="right_search">
+				<div class="news_search"><input type="text" name="key" id="key"></div>
+				<button class="news_sreach_but search_news">搜索</button>
+			</div>
+			<div class="clear"></div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>相关阅读</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+												<li><a href="6503.html" target="_blank">2019年度随州城乡居民医保征收工作</a></li>
+												<li><a href="6501.html" target="_blank">随州市三季度农民工呈现回流迹象</a></li>
+											</ul>
+</div>
+			</div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>最新资讯</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6507.html" target="_blank">随县万福店农场“农民”评上职称了</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+											</ul>
+</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- 主体内容 结束 -->
+	<div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="../suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="../explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="../subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="../explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="../hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="../train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="../resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="../hrtools/hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="../user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="../jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="../data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="../index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html>

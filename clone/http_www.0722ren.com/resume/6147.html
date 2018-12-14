@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>李红玉的个人简历 - 随州人才网</title>
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/tpl_resume/sunshine/css/css.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/ui-dialog.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../templates/demo11/css/datepicker.css">
+<script src="../templates/demo11/js/jquery.js" type="text/javascript"></script><script src="../templates/demo11/js/dialog-min.js" type="text/javascript" language="javascript"></script><script src="../templates/demo11/js/dialog-min-common.js" type="text/javascript" language="javascript"></script><script type="text/javascript" src="../templates/demo11/js/jquery.datepicker.js"></script><!--[if lte IE 7]>
+<style type="text/css">
+.resume-block-detail .folder-item{
+    position:relative;
+    overflow:hidden;
+}
+.resume-block-detail .folder-item span{
+    position:absolute;
+    left:50%;top:50%;
+}
+.resume-block-detail .folder-item img{
+    position:relative;
+    left:-50%;top:-50%;
+}
+</style>
+<![endif]--><script type="text/javascript">
+$(document).ready(function()
+{
+	var id="6147";
+	var tsTimeStamp= new Date().getTime();
+	$.get("/plus/ajax_click.php", { "id": id,"time":tsTimeStamp,"act":"resume_click"},
+		function (data,textStatus)
+		{			
+			$(".click").html(data);
+		}
+	);
+		$.get("/plus/ajax_contact.php", { "id": id,"time":tsTimeStamp,"act":"resume_contact"},
+	function (data,textStatus)
+	{      
+		$("#resume_contact").html(data);
+		var user_utype = "";
+		if(user_utype=='3')
+		{
+			//下载简历
+			downResume_dialog(".download","/user/user_hunter_download_resume.php","6147");
+			//邀请面试
+			inviteJob_dialog("#invited","/user/user_hunter_invited.php",user_utype);
+		}
+		else 
+		{
+			//下载简历
+			downResume_dialog(".download","/user/user_download_resume.php","6147");
+			//邀请面试
+			inviteJob_dialog("#invited","/user/user_invited.php",user_utype);
+		}
+		//简历标记
+		$(".interview-state").live('click',function() {
+			var resume_state= $(this).attr('state');
+			var resume_state_cn =$(this).val();
+			var resume_id =$(this).attr('resume_id');
+			var myDialog=dialog();
+			$.post('/user/user_label_resume.php', {"resume_state":resume_state,"resume_state_cn":resume_state_cn,"resume_id":resume_id}, function(data) 
+			{
+				if(data=="ok")
+				{
+					window.location.reload();
+				}
+				else
+				{
+					myDialog.title('系统提示');
+					myDialog.content(data); 
+					myDialog.width('350'); 
+					myDialog.showModal();
+				}
+			});
+		});
+    });
+    //添加到人才库
+    favoritesResume_dialog(".add_resume_pool","/user/user_favorites_resume.php?id="+id+"&act=add&t="+tsTimeStamp);
+    //举报信息
+    reportResume_dialog(".report_button","/user/user_report_resume.php");
+    });
+$(function(){
+	$("input[type='button']").hover(function(){
+		$(this).addClass("hover");
+	},function(){
+		$(this).removeClass("hover");
+	})
+})
+// 用户登录
+$(".ajax_user_login").live('click',function(){
+  var myDialog = dialog();// 初始化一个带有loading图标的空对话框
+  jQuery.ajax({
+      url: '/user/user_ajax_login.php',
+      success: function (data) {
+     	 	myDialog.width(475);
+		myDialog.content(data);// 填充对话框内容
+		myDialog.title('用户登录');// 填充对话框内容
+		myDialog.showModal();
+      }
+  });
+});
+</script>
+</head>
+<body class="tpl-one">
+	<div id="header">
+		<div class="header-wrap"><a href="../index.html"><img src="../data/images/logo.png" alt="随州人才网" height="70"></a></div>
+	</div>
+	<div id="wrap" class="clearfix">
+		<div class="left-main f-left">
+									<div class="personal-info clearfix">
+				<div class="personal-pic f-left"><img src="../data/photo/2017/04/17/1492405461.jpg" alt="" width="160" height="178"></div>
+				<div class="info-text f-left">
+					<h2>李红玉 <span>（女，27岁）</span>
+</h2>
+					<div class="resume-time">更新时间：<!--2017-04-17-->2018年10月16日</div>
+					<div class="resonal-auth clearfix">
+																		<div class="auth-item email f-left">邮箱已认证</div>											</div>
+					<div class="info-detail">
+						<p><span>最高学历：大专</span> | <span>工作经验：5-10年</span> | <span>专业：工商管理类</span></p>
+						<p><span>婚姻状况：未婚</span> | <span>身  高：160 cm</span></p>
+						<p><span>籍  贯：汉族</span> | <span>现居住地：湖北随州</span></p>
+						<p><span>求职状态：我目前已离职，可快速到岗</span></p>					</div>
+									</div>
+			</div>
+			<div class="job-item">
+				<h3>两周内求职情况</h3>
+				<div class="percent clearfix">
+					<i class="right-top-angle"></i>
+					<div class="percent-block f-left">
+						<div class="percent-star f-left star-1">活跃度：</div>
+						<div class="star-state f-left">
+							<p><span><!--2017-04-17-->2018-10-16</span>更新</p>
+							<p>主动申请 <span>0</span> 个职位</p>
+							<p>浏览过 <span>0</span> 个职位</p>
+						</div>
+					</div>
+					<div class="percent-block last f-left">
+						<div class="percent-star f-left star-1">企业关注度：</div>
+						<div class="star-state f-left">
+							<p>简历被浏览 <span>0</span> 次</p>
+							<p>简历被下载 <span>0</span> 次</p>
+							<p>收到面试邀请 <span>0</span> 次</p>
+						</div>
+					</div>
+				</div>
+			</div>
+						<div class="contact-block" id="resume_contact"></div>
+						<div class="resume-title">求职意向</div>
+			<div class="resume-block-detail">
+				<div class="rb-content">期望月薪：面议<span>|</span>工作性质：全职</div>
+				<div class="rb-content">期望地区：湖北省/随州市<span>|</span>期望行业：通信(设备/运营/服务),贸易/进出口,批发/零售</div>
+				<div class="rb-content">期望岗位：销售代表,其他销售类职位,店面销售,业务跟单</div>			</div>
+						<div class="resume-title">自我描述</div>
+			<div class="resume-block-detail">
+				<div class="rb-content-more">性格开朗，积极热情，态度坚定，爱岗敬业；<br>
+自我调节能力强，有突破创新精神，有团队合作精神；<br>
+有良好的沟通能力，组织及协调能力；<br>
+熟练使用各种办公软件。</div>
+			</div>
+									<div class="resume-title">教育经历</div>
+			<div class="resume-block-detail">
+								<div class="rb-content">2013年0月-2016年3月<span>|</span>华中师范大学<span>|</span>工商管理类<span>|</span>大专</div>
+							</div>
+									<div class="resume-title">工作经历</div>
+			<div class="resume-block-detail">
+								<div class="work-item">
+					<div class="rb-content">2016年4月-2017年2月<span>|</span>销售跟单<span>|</span>随州摩根电子有限公司</div>
+					<p>1、 负责销售订单的下达以及发货跟踪； <br>
+2、 负责客户退换货信息跟踪； <br>
+ 3、 负责销售台帐的建立以及应收帐款的回收跟进； <br>
+4、 负责客户投诉的信息接口传递工作；  <br>
+5、 协助销售员建立客户信息维护表，并定期对客户信息进行更新维护； <br>
+6、 协助销售人员对市场信息的整理和上报工作； <br>
+7、 负责销售相关文档管理工作。</p>
+				</div>
+								<div class="work-item">
+					<div class="rb-content">2015年3月-2016年1月<span>|</span>渠道销售<span>|</span>深圳市深莱斯科技有限公司</div>
+					<p>1.完成三星、华为、小米等手机品牌的手机外配件在所属区域的市场开拓及产品销售任务。 <br>
+2.负责所属区域的市场管理，维护市场秩序。 <br>
+3.直接与所属区域的广大贸易公司和国内批发商沟通联系，及时送货；办理售后退货；结算收回货款。<br>
+4.负责所属区域的产品形象、宣传推广工作。 <br>
+5.负责所属区域的市场调研工作和合作商评估工作。 <br>
+6.完成领导交办的工作。</p>
+				</div>
+								<div class="work-item">
+					<div class="rb-content">2014年2月-2015年1月<span>|</span>电话销售<span>|</span>深圳市浩天装饰设计工程有限公司</div>
+					<p>一.参与目标客户群分析<br>
+1.协助主管进行消费市场的研究，收集、整理、归纳市场行情、价格，以及新产品、替代品、客源等信息资料；<br>
+2.以客户群为中心，依据客户特征分析，细化并定位目标客户群；<br>
+3.对目标客户群进行偏好分析，配合公司制定销售方案，以及相关的服务体系支持等；<br>
+二.针对目标客户群协助销售主管制定销售方案<br>
+1.协助分析市场调研内容，确定销售方案的方向；<br>
+2.制定销售目标计划；<br>
+3.以销售目标位中心，制定各项工作安排推进进度表，协助销售方案的开展；<br>
+三.销售目标的完成<br>
+1.依赖公司现有</p>
+				</div>
+								<div class="work-item">
+					<div class="rb-content">2012年2月-2014年1月<span>|</span>品质部组长<span>|</span>汇镀科技深圳有限公司</div>
+					<p>1.全检组、IQC、FQC、OQC、膜厚室等工位人员调配、工作分配安排。<br>
+2.现场巡查、人员管理、工作指导、日常事务处理。<br>
+3.日常工作用品申领、检测治具的维护保养。<br>
+4.部门所有报表审核后交由QE及主管确认。<br>
+5.协助部门主管及QE处理品质异常，向下传达上级指令并执行。<br>
+6.日常工作问题向上报备以及与各部门内部沟通。<br>
+7.现场每日不良品处理进度及跟催以及每天全检组检验出不良品及时清理及开单处理.<br>
+8.各客户产品限度样板的不良样品收集与制作.<br>
+9.现场7S工作的跟进及督导完成.<br>
+10.每</p>
+				</div>
+								<div class="work-item">
+					<div class="rb-content">2009年11月-2012年1月<span>|</span>车工<span>|</span>冰姿 三梦服装责任有限公司</div>
+					<p>1.按质按量的完成日常任务<br>
+2.协作部门根据订单按期的完成生产任务<br>
+3.协作部门组长按时的完成部门的任务</p>
+				</div>
+							</div>
+																	</div>
+		<div class="fix-control">
+			<div class="fix-wrap">
+				<div class="code-box"><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fm.0722ren.com%2Fresume-show.php%3Fid%3D6147" alt="二维码" width="74" height="74"></div>
+				<div class="download"><a href="javascript:;" class="download-btn">下载简历</a></div>
+				<div class="ctrl-text"></div>
+				<div class="ctrl-bar">
+					<a href="javascript:;" class="resume-ctrl add_resume_pool">加入人才库</a>					<a href="javascript:window.print();" class="resume-ctrl">简历打印</a>
+					<a href="resume-doc.php%EF%BC%9Fapply=1&amp;resume_id=6147&amp;uid=9214" class="resume-ctrl">导出word简历</a>
+					<a href="javascript:;" class="resume-ctrl report_button" resume_id="6147" fullname="李红玉" resume_addtime="1456705460">投诉简历</a>									</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		联系地址：随州市尚城国际 联系电话：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179  <br>
+		Copyright @ 2016 0722ren.com All Right Reserved   <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span> <br>
+		Powered by <a href="../index.html" style="color:#999999"> 0722ren.com 随广传媒版权所有</a>
+	</div>
+<div class="resume_foot">
+<script type="text/javascript">
+	$('.work-item:first').css({'margin-top':-10});
+	$('.work-item:last').css({'border-bottom':0, 'padding-bottom':0});
+	$('.folder-item:nth-child(2n)').css({'margin-right':0});
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</div>
+</body>
+</html>

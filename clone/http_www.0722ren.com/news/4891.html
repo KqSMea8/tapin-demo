@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>随州市低保申请家庭收入财产评估办法（试行） - 随州人才网</title>
+<meta name="description" content="&amp;nbsp;&amp;nbsp; 随州市低保申请家庭收入财产评估办法（试行）
+&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 为进一步规范低保申请家庭收入和财产评">
+<meta name="keywords" content="随州市低保申请家庭收入财产评估办法（试行）">
+<meta name="author" content="随州人才网">
+<meta name="copyright" content="0722ren.com">
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../templates/demo11/css/common.css" rel="stylesheet" type="text/css">
+<link href="../templates/demo11/css/news.css" rel="stylesheet" type="text/css">
+<script src="../templates/demo11/js/jquery.js" type="text/javascript"></script><script type="text/javascript">
+$(document).ready(function()
+{
+		var id="4891";
+		var tsTimeStamp= new Date().getTime();
+		$.get("/plus/ajax_click.php", { "id": id,"time":tsTimeStamp,"act":"news_click"},
+			function (data,textStatus)
+			 {			
+				$("#click").html(data);
+			 }
+		);
+		$(".search_news").click(function(){
+			var key = $("#key").val();
+			news_search_location(key);
+		});
+		function news_search_location(key)
+		{
+			$("body").append('<div id="pageloadingbox">页面加载中....<div id="pageloadingbg">');
+			$("#pageloadingbg").css("opacity", 0.5);
+			$.get("/plus/ajax_search_location.php", {"act":"QS_newssearch","key":key},
+					function (data,textStatus)
+					 {
+						 window.location.href=data;
+					 }
+				);
+		}
+		// 等比例缩放图片
+		var w = $(".left_area .news_box").width();//容器宽度 
+	    $(".news_txt img").each(function(){//如果有很多图片，我们可以使用each()遍历 
+	        var img_w = $(this).width();//图片宽度 
+	        var img_h = $(this).height();//图片高度 
+	        if(img_w>w){//如果图片宽度超出容器宽度--要撑破了 
+	            var height = (w*img_h)/img_w; //高度等比缩放 
+	            $(this).css({"width":w,"height":height});//设置缩放后的宽度和高度 
+	        } 
+	    });
+});
+</script>
+</head>
+<body>
+<div id="new-header">
+	<div class="top-bar">
+	<div class="index-container clearfix">
+		<div class="welcome f-left" id="top_loginform"></div>
+		<ul class="top-nav f-right">
+<li class="t-nav-item f-left mobile"><a href="../mobile.html" class="underline">手机频道</a></li>
+			<li class="t-nav-item f-left"><a href="../index.html" class="underline nav-link">网站首页</a></li>
+			<li class="t-nav-item f-left mr15"><a href="../plus/shortcut.php" class="underline nav-link">保存到桌面</a></li>
+			<li class="t-nav-item f-left nav-more">
+				<span class="nav-more-type">网站导航<i class="more-arrow"></i></span>
+				<div class="sub-menu-out">
+                	<div class="sub-menu nav">
+                        <ul>
+<li>
+                            	<strong>个人服务</strong>
+                                <a href="../user/personal/personal_resume.php%EF%BC%9Fact=make1" target="_blank">创简历</a>
+                                <a href="../salary.html" target="_blank">查薪资</a>
+                                <a href="../evaluation/index.php" target="_blank">人才测评</a>
+                                <a href="../jobs/map-search.php%EF%BC%9Fid=1" target="_blank">地图找工作</a>
+                            </li>
+                            <li>
+                            	<strong>企业服务</strong>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs" target="_blank">发职位</a>
+                                <a href="../jobfair/jobfair-list.php" target="_blank">招聘会</a>
+                                <a href="../user/company/company_jobs.php%EF%BC%9Fact=simple_jobs" target="_blank">微信招聘</a>
+                                <a href="../hrtools/index.php" target="_blank">HR工具箱</a>
+                            </li>
+                            <li class="bd0">
+                            	<strong>更多</strong>
+                                <a rel="nofollow" href="../campus/index.php" target="_blank">校园招聘</a>
+                                <a rel="nofollow" href="../hunter/index.html" target="_blank">猎聘专区</a>
+                                <a rel="nofollow" href="../train/index.html" target="_blank">培训信息</a>
+                                <a rel="nofollow" href="../shop/index.php" target="_blank">积分商城</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+			</li>
+		</ul>
+</div>
+</div>
+<script type="text/javascript">
+	//顶部部登录
+	$.get('/plus/ajax_user.php', {"act":"top_loginform"}, function(data) {
+		$("#top_loginform").html(data);
+	});
+	$(".nav-more").hover(function() {
+		$(".sub-menu").toggle();
+	});
+</script><div class="header-main">
+		<div class="index-container clearfix">
+			<div class="common-logo f-left"><a href="../index.html"><img src="../data/images/logo.png" alt="随州人才网" width="251" height="85"></a></div>
+			<!--<div class="sub-station f-left">
+				<span class="station-control">总站<i class="station-arrow"></i></span>
+			</div>-->
+			<ul class="common-nav f-right">
+<li><a href="../index.html" target="_self">首  页</a></li>
+								<li><a href="../jobs/jobs-list.php" target="_self">找工作</a></li>
+								<li><a href="../resume/resume-list.php" target="_self">聘人才</a></li>
+								<li><a href="../simple/simple-list.php" target="_self">微招聘</a></li>
+								<li><a href="../hrtools/index.php" target="_self">HR工具箱</a></li>
+								<li><a href="../company/index.php" target="_self">企业黄页</a></li>
+								<li><a href="../jobs/map-search-1.html" target="_self">地图找工作</a></li>
+								<li class="active"><a href="index.html" target="_self">新闻资讯</a></li>
+							</ul>
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.common-nav li:last').css({'border-right':0});
+		$('.t-nav-item:last').css({'margin-right':0});
+	});
+</script><!-- 当前位置 --><div class="page_location link_bk">
+当前位置：<a href="../index.html">首页</a> &gt; <a href="index.html">新闻资讯</a> &gt; 
+<a href="news-list.php%EF%BC%9Fid=11">随州资讯</a> &gt; 正文
+</div>
+	<!-- 主体内容 -->
+	<div class="container link_bk">
+		
+		<!-- 左边内容 -->
+		<div class="left_area">
+			<div class="news_box">
+				<div class="com_container">
+					<div class="title">随州市低保申请家庭收入财产评估办法（试行）</div>
+					<div class="news_dateil">
+						<div class="time">2016-04-13 23:34</div>
+						<div class="time">查看：<span id="click"></span> 次</div>
+						<div>
+<a href="javascript:window.print();">[打印]</a> <a href="javascript:void(0);" onclick="window.external.addFavorite(parent.location.href,document.title);">[收藏]</a>
+</div>
+						<div class="clear"></div>
+					</div>
+					<div class="news_txt">
+						<p>   随州市低保申请家庭收入财产评估办法（试行）<br>
+ <br>
+    为进一步规范低保申请家庭收入和财产评估工作，促进全市低保工作公开、公平、公正，根据有关政策要求，结合我市实际，制定本办法：<br>
+    一、指导思想<br>
+    全面贯彻《社会救助暂行办法》（中华人民共和国国务院令第649号）和《国务院关于进一步加强和改进最低生活保障工作的意见》（国发〔2012〕45号），以《民政部 国家统计局关于进一步加强农村最低生活保障申请家庭经济状况核查工作的意见》（民发〔2015〕55号）和《湖北省社会救助实施办法》（省人民政府令第374号）为依据，进一步强化低保申请家庭收入和财产的评估工作，通过完善评估内容、细化评估程序、创新评估方法等措施，对低保申请家庭收入和财产状况进行数字量化，为城乡低保准确认定，落实低保按标施保、差额救助提供依据，促进低保救助工作公正、公平、公开。<br>
+    二、适用范围<br>
+    本办法主要适用于对全市城乡提出低保申请家庭和已在享受低保家庭的收入财产情况进行评估，为低保申请家庭是否应享受低保和享受低保后的差额补差标准提供依据。<br>
+    三、基本原则<br>
+    1、坚持因地制宜。各县（市、区）经济社会发展水平不一，要充分结合本地实际，按照国家、省、市相关要求制定适宜于本地区的实施细则。<br>
+    2、坚持量化测算。准确调查申请评估对象家庭状况，以当地财政、人社、统计、物价、卫生、房产等部门所提供权威数据为依据，充分运用各地建立的居民家庭经济状况核对机制和核对平台，重点做好收入和财产核查，量化测算核查结果，用数据来体现家庭经济状况差异，做到简便可行、易于操作。<br>
+    3、坚持公开、公平、公正。困难家庭收入和财产评估要进行民主评议，坚持过程公开，评估结果接受社会监督。评估结果认定要坚持个人申报情况、信息核对情况、入户调查情况、民主评议情况相结合。<br>
+    4、坚持政府主导。充分发挥镇（办）人民政府的主体责任，不断健全基层救助经办机构。各县（市、区）应建立民政部门牵头、相关部门配合的工作机制，协同做好低保申请家庭收入和财产状况评估工作。积极探索社会参与机制，通过政府购买服务等方式引进社会工作服务机构等第三方组织，鼓励、引导社会力量参与评估工作，提高社会参与度和公信力。<br>
+    四、评估范围和内容<br>
+   （一）评估对象。<br>
+    开展低保申请家庭收入和财产评估工作应以户为单位，主要包括户主、配偶、父母、未成年子女、已成年但不能独立生活的子女（含在校接受本科及其以下学历教育的成年子女）以及其他具有法定赡养、扶养、抚养义务关系并长期共同居住的人员。对于应计入或不应计入共同生活家庭成员的人员由县级民政部门依据有关规定确定。<br>
+  （二）评估内容。<br>
+    1、家庭收入<br>
+    主要包括共同生活的家庭成员在规定期限内获得的全部现金及实物收入，即扣除家庭经营费用、生产性固定资产折旧、个人所得税和社会保障支出后，家庭现金收入和实物收入之和。家庭收入主要包括工资性收入、经营净收入、财产净收入、转移净收入、其他收入五个方面。<br>
+   2、家庭财产<br>
+    主要包括家庭成员拥有的全部动产和不动产，即房屋、现金、银行存款、有价证券、机动车辆（不含残疾人功能性补偿代步机动车辆）、船舶、大型农机具等。<br>
+   （三）计算方法<br>
+    1、工资性收入<br>
+    能够出示有效工资性收入证明的，按所证明的收入计算；出具的收入证明低于最低工资标准的，由申请人所在的用人单位携带相关劳动用工资料到当地人社部门接受核查，其收入按照人社部门核定的结果认定；<br>
+   不能出具有效收入证明的，可比照务工所在地或当地自谋职业行业收入评估标准或人社部门工资指导价位计算，无比照标准的按当地最低工资标准计算；<br>
+    处于法定劳动年龄内且身体健康的人员，应当积极就业和从事生产劳动，无正当理由，拒不就业，不从事生产劳动的，按照当地最低工资标准或当地劳动力人均收入计算。<br>
+    2、经营性收入<br>
+    能够出示有效经营性收入证明的，按证明的收入计算；<br>
+    无收入证明，但有合同规定或规定价格的，按合同规定或规定价格计算；<br>
+    无收入证明，又无合同规定或规定价格的，按当地评估标准计算。<br>
+    3、财产性收入<br>
+    有实际发生数额证明的，按实际发生数额计算；<br>
+    有协议、裁决或判决的，按协议、裁决或判决的数额计算；<br>
+    无协议、裁决或判决的，可按当地评估标准计算。<br>
+    土地承包经营权流转所得按照当地上年度该片区实际流转价格计算。<br>
+    4、转移性收入<br>
+    有实际发生数额证明的，按实际发生的数额计算；<br>
+    有协议、裁决或判决的，按照协议、裁决或判决计算；<br>
+    无协议、裁决或判决的，按各类社会救助相应的政策规定计算。<br>
+    5、特殊家庭收入<br>
+    指居民以家庭为生产经营单位，在计算评估社会救助申请家庭收入时要体现人本关怀，考虑家庭成员中有患大病、重残、单亲等家庭成员需要陪护照顾等实际情况。其陪护人员收入难以确定的，可以根据实际在评估标准的基础上按照一定比例适当上下浮动。<br>
+    6、其他家庭收入<br>
+    除以上收入计算评估外，其他家庭收入计算评估项目、标准和方法由县级人民政府民政部门制定。<br>
+    7、家庭财产计算<br>
+    现金、银行存款按照申请人及其家庭成员账户金额认定；股票类金融资产按照股票市值和资金账户余额或净值认定。住房按照产权证、使用证等的登记人认定；机动车辆、船舶和大型农机具（收割机、拖拉机、机动脱粒机等）等按照登记人认定；其他非生活必需的高值物品等财产，按现值认定。<br>
+各地可按照上述方法及原则，进一步细化规定，明确相关事项的具体核算办法。<br>
+    五、评估程序和方法<br>
+   （一）评估程序<br>
+    1、接受申请：申请对家庭收入和财产评估应以户为单位，由户主向户籍所在地镇（办）民政办提出书面申请，在镇（办）民政办、村（居）的指导下填写申请评估授权书，授权书由各县（市、区）社会救助机构根据相关规定统一制定并在授权书中明确说明签约双方的权力和义务。镇（办）民政办在接受书面申请、签订完毕授权书后则视为正式接受评估申请并开始评估工作，对于没有提供书面申请和签订授权书的申请对象不得开展评估工作。对丧失民事行为能力的申请对象应在监护人或户籍所在地村（居）委会的协助下提交申请。<br>
+    2、信息核对：经申请人授权，由镇（办）民政办采集申请人相关信息报县级民政部门社会救助机构，由社会救助机构委托核对机构对申请人家庭经济状况进行核对。核对机构与财政、公安、人力资源社会保障、国土资源、住房城乡建设、农业、工商、税务、住房公积金等部门和机构，对申请家庭的户籍、机动车、就业、保险、住房、农机、农业补贴、纳税、公积金等方面信息和个体工商户信息进行核对，并根据信息核对情况，对申请人家庭户籍状况及经济状况提出完整性意见，并反馈至社会救助机构。<br>
+    3、实证调查：镇（办）人民政府指导村（居）通过入户调查、邻里走访、信函索证、群众评议等方式对申请人家庭经济状况进行调查，侧重查看实物或凭证，做到有据可查、有凭为证，全面了解申请家庭的收入、财产和实际生活情况，以及其申报材料的真实性和完整性。<br>
+   4、评估测算：镇（办）人民政府在村（居）的配合下按照家庭收入和财产的量化计算细则结合申请人家庭情况、核对信息、调查结果对申请人家庭经济状况进行综合评估，最终得出量化数据。申请人家庭收入和财产的量化计算细则由各县（市、区）民政局按照《社会救助暂行办法》（中华人民共和国国务院令第649号）、《湖北省社会救助实施办法》（省人民政府令第374号）、《民政部 国家统计局关于进一步加强农村最低生活保障申请家庭经济状况核查工作的意见》（民发〔2015〕55号）等相关规定制定。<br>
+    5、结果应用：现阶段，低保申请家庭收入和财产状况评估工作主要是为城乡低保、五保对象认定及低保对象差额补助水平计算提供依据。在城乡低保、五保审核的民主评议环节，由评议代表对综合评估后得出的量化数据进行真实性和准确性审核，通过审核的评估结果作为低保、五保审核依据载入档案，审核结果有异议的重新启动评估程序。<br>
+    六、工作要求<br>
+   （一）坚持依法行政。<br>
+     开展低保申请家庭收入和财产状况评估工作应严格遵守国家有关法律法规及评估办法的相关规定。在信息核对、实证调查等环节严格围绕申请人的户籍和经济状况开展工作，严禁询问、打探同评估工作无关的信息。在评估工作中获取的申请人相关信息及评估结果应严格按照规定进行使用，严禁向同评估工作无关的单位、组织和个人泄露。对于在评估工作中滥用职权、玩忽职守、徇私舞弊造成严重后果的，根据国家相关规定给予行政处分；构成犯罪的，依法追究刑事责任。<br>
+   （二）明确职责任务。<br>
+    低保申请家庭收入和财产状况评估是准确认定救助对象的重要手段，是对贫困群众给予合理救助的重要依据，工作政策性强，社会影响面大，各县（市、区）要结合本地实际，研究制定细化操作办法，指导各镇（办）准确、真实评估贫困家庭经济状况。各镇（办）要对申请评估的家庭进行100%入户调查核实，逐项填写调查项目，做到不漏填、不虚报、不瞒报，经办人员要对核查结果进行签字确认，采取多种措施，努力打通服务群众的“最后一公里”。<br>
+   （三）开展广泛宣传。<br>
+    各地要结合《社会救助暂行办法》贯彻实施，广泛宣传低保申请家庭收入财产评估的相关规定，使群众清楚自己依法享受社会救助的权利，诚信申报家庭经济状况、授权评估相关信息的义务，积极主动配合完成评估工作。<br>
+本办法从下发之日起实施。<br></p>
+						<div class="share">
+							<!-- Baidu Button BEGIN -->
+						    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+						        <a class="bds_qzone"></a>
+						        <a class="bds_tsina"></a>
+						        <a class="bds_tqq"></a>
+						        <a class="bds_renren"></a>
+						        <span class="bds_more">更多</span>
+						    </div>
+						<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=659075"></script><script type="text/javascript" id="bdshell_js"></script><script type="text/javascript">
+							document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+						</script><div class="clear"></div>	
+						<!-- Baidu Button END -->
+						</div>
+						<div class="clear"></div>
+						<div class="next_page">
+							<div class="prev">
+																<a href="4890.html">上一篇：随州努力建设现代综合交通运输体系</a>
+															</div>
+							<div class="next">
+																<a href="4892.html">下一篇：随州与赛伯乐集团牵手共建创新创业基地</a>
+															</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+		<!-- 右边内容 -->
+		<div class="right_area">
+			
+			<div class="right_box">
+				<div class="title_box">
+					<h5>资讯分类</h5>
+				</div>
+				<div class="list">
+					<ul class="sort">
+<li><a href="news-list.php%EF%BC%9Fid=11" class="select">随州资讯</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=6">政策法规</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=13">下载中心</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=5">职场动态</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=4">面试指南</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=3">简历指南</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=2">职业培训</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=7">创业精英</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=8">职场测试</a></li>
+												<li class="s"><a href="news-list.php%EF%BC%9Fid=9">职场智慧</a></li>
+												<li><a href="news-list.php%EF%BC%9Fid=10">职场策略</a></li>
+												<div class="clear"></div>
+					</ul>
+<div class="clear"></div>
+				</div>
+			</div>
+			<div class="right_search">
+				<div class="news_search"><input type="text" name="key" id="key"></div>
+				<button class="news_sreach_but search_news">搜索</button>
+			</div>
+			<div class="clear"></div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>相关阅读</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+												<li><a href="6503.html" target="_blank">2019年度随州城乡居民医保征收工作</a></li>
+												<li><a href="6501.html" target="_blank">随州市三季度农民工呈现回流迹象</a></li>
+											</ul>
+</div>
+			</div>
+			<div class="right_box">
+				<div class="title_box">
+					<h5>最新资讯</h5>
+				</div>
+				<div class="list">
+					<ul class="newest">
+<li><a href="6510.html" target="_blank">随县、曾都区“金秋招聘月暨就业扶</a></li>
+												<li><a href="6509.html" target="_blank">随州市就业局聚焦就业扶贫助力企业</a></li>
+												<li><a href="6508.html" target="_blank">直击“神农工匠杯”2018年随州市首</a></li>
+												<li><a href="6507.html" target="_blank">随县万福店农场“农民”评上职称了</a></li>
+												<li><a href="6506.html" target="_blank">曾都区为“两属两户”对象购买农房</a></li>
+												<li><a href="6505.html" target="_blank">当前阶段人社领域支持实体经济发展</a></li>
+												<li><a href="6504.html" target="_blank">随州市邮政分公司招聘公告</a></li>
+											</ul>
+</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- 主体内容 结束 -->
+	<div id="footer">
+	<div class="index-container clearfix">
+		<div class="footer-menu f-left">
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">关于我们</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../explain/3.html">网站声明</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/1.html">服务内容</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/4.html">关于我们</a></li>
+										<li class="f-left"><a target="_blank" href="../suggest.html">意见反馈</a></li>
+															<li class="f-left"><a target="_blank" href="../explain/6.html">联系我们</a></li>
+										<li class="f-left"><a target="_blank" href="../explain/7.html">网站简介</a></li>
+										<li class="f-left"><a target="_blank" href="news-list.php%EF%BC%9Fid=4">职场指南</a></li>
+									</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">帮助中心</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=4">注册登录</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=5">密码找回</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=8">认证管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=10">招聘管理 </a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=17">求职管理</a></li>
+					<li class="f-left"><a target="_blank" href="../help/help-list.php%EF%BC%9Fid=13">充值消费 </a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">个人求职</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php">职位搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../salary.html">薪酬统计</a></li>
+					<li class="f-left"><a target="_blank" href="../subscribe.html">职位订阅</a></li>
+					<li class="f-left"><a target="_blank" href="../explain/explain-show.php%EF%BC%9Fid=6">职场指南</a></li>
+					<li class="f-left"><a target="_blank" href="../hunter/jobs-list.php">猎头职位</a></li>
+					<li class="f-left"><a target="_blank" href="../jobs/jobs-list.php%EF%BC%9Fnature=63">兼职招聘</a></li>
+					<li class="f-left"><a target="_blank" href="../train/train-curriculum-list.php">培训课程</a></li>
+				</ul>
+</div>
+			<div class="f-menu-item f-left">
+				<h4 class="menu-title">企业服务</h4>
+				<ul class="f-menu-list clearfix">
+<li class="f-left"><a target="_blank" href="../user/company/company_jobs.php%EF%BC%9Fact=addjobs">发布职位</a></li>
+					<li class="f-left"><a target="_blank" href="../resume/resume-list.php">简历搜索</a></li>
+					<li class="f-left"><a target="_blank" href="../simple/simple-list.php">招聘普工</a></li>
+					<li class="f-left"><a target="_blank" href="../hrtools/hrtools-list.php">HR工具箱</a></li>
+					<li class="f-left"><a target="_blank" href="../user/login.php">企业注册</a></li>
+					<li class="f-left"><a target="_blank" href="../jobfair/jobfair-list.php">现场招聘会</a></li>
+				</ul>
+</div>
+		</div>
+		<div class="foot-contact f-right">
+			<div class="code-download clearfix">
+				<div class="code-item f-left">
+					<p>客户端下载</p>
+					<div><img src="../plus/url_qrcode.php%EF%BC%9Furl=http%3A%2F%2Fwww.0722ren.com%2Fm%2Fdownload.php%3Fdowntype%3Dandroid" alt="客户端下载" width="80" height="80"></div>
+				</div>
+				<div class="code-item f-left">
+					<p>官方微信</p>
+					<div><img src="../data/images/weixin_img.jpg" alt="官方微信" width="80" height="80"></div>
+				</div>
+			</div>
+			<div class="comment">0722-3588122</div>
+		</div>
+	</div>
+	<div class="copy-right">
+		办公地址：随州市尚城国际 客服热线：0722-3588122 网站备案：鄂ICP备11005521号-4  鄂B2-20170179 
+		  <span style="background:url(http://www.0722fc.com/images/beian.png) no-repeat left center; padding:10px 0 10px 25px;"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42130202002553">鄂公网安备 42130202002553号</a>        </span><br>
+		Copyright @ 2016 0722ren.com All Right Reserved  <script src="../../http_s14.cnzz.com/stat.php%EF%BC%9Fonline=2&amp;id=893868&amp;web_id=893868" language="JavaScript" charset="gb2312"></script><span style="DISPLAY: none"><script language="javascript" type="text/javascript" src="../../http_js.users.51.la/1891441.js"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?d6c43a5b68a1b1eade9b230287ea1290";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></span><br>
+		Powered by <a href="../index.html" target="_blank">0722ren.com 随州人才网版权所有</a>
+</div>
+	</div>
+
+<!-- 回到顶部组件 -->
+<div class="back_to_top" id="back_to_top">
+	<div class="back" style="display:none;">
+		<div>回到顶部</div>
+	</div>
+	<div class="steer">
+		<div onclick="javascript:location.href='/suggest'">我要建议</div>
+	</div>
+	<div class="sub">
+		<div onclick="javascript:location.href='/subscribe'">我要订阅</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		//回到顶部组件出现设置
+		$(window).scroll(function(){
+			if($(window).scrollTop()>200){
+				$(".back").fadeIn(400);
+			}else{
+				$(".back").fadeOut(400);
+			}
+		})
+
+		//回到顶部hover效果
+		$(".back_to_top .back, .steer, .sub").hover(function(){
+			$(this).find("div").css("display","block");
+		},function(){
+			$(this).find("div").css("display","none");
+		})
+
+		//设置滚回顶部方法
+		$(".back").click(function(){
+			$("body,html").animate({scrollTop:0}, 500);
+			return false;
+		})
+	});
+	$(function(){
+		$(".foot_list ul:odd li").css("width", 62);
+		$(".weixin_img:last").css("margin-right", 0);
+	})
+</script><script type="text/javascript" src="../../https_idm-su.baidu.com/su.js"></script>
+</body>
+</html>
